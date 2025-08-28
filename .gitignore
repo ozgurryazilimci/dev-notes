@@ -1,0 +1,9 @@
+.venv/
+site/
+
+################## idea
+
+*.iml
+*.ipr
+*.iws
+.idea/

@@ -1,0 +1,163 @@
+# yaml-language-server: https://squidfunk.github.io/mkdocs-material
+
+# Project information
+site_name: My Dev Notes
+
+# Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.indexes
+    #    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+# Additional configuration
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ozgurryazilimci
+      name: GitHub
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/ozguryazilimci
+      name: Docker Hub
+    - icon: material/copyright
+      link: https://squidfunk.github.io/mkdocs-material/
+      name: Mkdocs Material
+
+# Page tree
+nav:
+  - Home: index.md
+  - Shell:
+      - Shell Commands: shell/shell-commands.md
+      - Bash Completion: shell/bash-completion.md
+  - Git:
+      - Git Cheatsheet: git/git-cheatsheet.md
+      - GitHub Actions: git/github-actions.md
+      - Tmate: git/tmate.md
+      - List GitHub Actions: git/list-github-actions.md
+      - GitHub Pages Custom Domain: git/github-pages-custom-domain.md
+  - Maven:
+      - Maven Wrapper: maven/maven-wrapper.md
+  - Java:
+      - Jenv: java/jenv.md
+      - Sdkman: java/sdkman.md
+  - Docker:
+      - Docker Introduction: docker/docker-introduction.md
+      - Docker Installation: docker/docker-installation.md
+      - Docker Cheatsheet: docker/docker-cheatsheet.md
+      - Docker Examples: docker/docker-examples.md
+      - Docker Useful Scripts: docker/docker-useful-scripts.md
+      - Dockerfile: docker/dockerfile.md
+      - Docker Compose: docker/docker-compose.md
+      - Docker Swarm: docker/docker-swarm.md
+  - Kubernetes:
+      - Kubernetes Introduction: kubernetes/kubernetes-introduction.md
+      - Kubernetes Installation: kubernetes/kubernetes-installation.md
+      - Kubernetes Objects:
+          - Pod: kubernetes/kubernetes-objects/pod.md
+          - Namespace: kubernetes/kubernetes-objects/namespace.md
+          - Label, Selector, Annotation: kubernetes/kubernetes-objects/label-selector-annotation.md
+          - Deployment, ReplicaSet: kubernetes/kubernetes-objects/deployment-replicaset.md
+          - Rollout, Rollback: kubernetes/kubernetes-objects/rollout-rollback.md
+          - StatefulSet: kubernetes/kubernetes-objects/statefulset.md
+          - DaemonSet: kubernetes/kubernetes-objects/daemonset.md
+          - Job, CronJob: kubernetes/kubernetes-objects/job-cronjob.md
+          - Network Structure, Service: kubernetes/kubernetes-objects/network-structure-service.md
+          - Ingress: kubernetes/kubernetes-objects/ingress.md
+          - Network Policy: kubernetes/kubernetes-objects/network-policy.md
+          - ConfigMap: kubernetes/kubernetes-objects/volume-secret-configmap.md
+          - Secret, Image Secret: kubernetes/kubernetes-objects/image-secret.md
+          - Probes, Resource Limits, Environment Variables: kubernetes/kubernetes-objects/probes-resource-limits-env-variables.md
+          - Affinity, Taint, Toleration: kubernetes/kubernetes-objects/affinity-taint-toleration.md
+          - Persistent Volume Claim: kubernetes/kubernetes-objects/persistent-volume-claim.md
+          - Storage Class: kubernetes/kubernetes-objects/storage-class.md
+          - Authentication: kubernetes/kubernetes-objects/authentication.md
+          - RBAC: kubernetes/kubernetes-objects/rbac.md
+          - Service Account: kubernetes/kubernetes-objects/service-account.md
+      - Kubernetes Tools:
+          - Kubectl: kubernetes/kubernetes-tools/kubectl.md
+          - Kubeadm: kubernetes/kubernetes-tools/kubeadm.md
+          - Minikube: kubernetes/kubernetes-tools/minikube.md
+          - Dashboards: kubernetes/kubernetes-tools/dashboards.md
+          - Helm: kubernetes/kubernetes-tools/helm.md
+          - Monitoring (Prometheus, EFK Stack): kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack.md
+          - Service Mesh: kubernetes/kubernetes-tools/service-mesh.md
+  - Terraform:
+      - Terraform Cheatsheet: terraform/terraform-cheatsheet.md
+      - Tfenv: terraform/tfenv.md
+  - Node.js:
+      - Nvm & Npm: nodejs/nvm-npm.md
+  - Database:
+      - MySQL:
+          - MySQL Cheatsheet: database/mysql/mysql-cheatsheet.md
+      - PostgreSQL:
+          - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
+          - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
+  - Network:
+      - DNS & Nameservers: network/dns-nameservers.md
+      - DNS Records: network/dns-records.md
+      - Domain & Hosting Lookup: network/domain-hosting-lookup.md
+      - Shell Network Commands: network/shell-network-commands.md
+      - Overriding Hostnames: network/overriding-hostnames.md
+      - Internet Speed & IP: network/internet-speed-ip.md
+  - Cloud:
+      - AWS:
+          - AWS Introduction: cloud/aws/aws-introduction.md
+          - AWS Services Overview: cloud/aws/aws-services-overview.md
+          - AWS Services:
+              - Billing & Cost Management: cloud/aws/aws-services/aws-billing-and-cost-management.md
+              - IAM: cloud/aws/aws-services/aws-iam.md
+              - IAM Demo: cloud/aws/aws-services/aws-iam-demo.md
+          - Athena: cloud/aws/athena.md
+  - Mobile:
+      - Android:
+          - Android Firebase Integration: mobile/android/android-firebase-integration.md
+          - Android Keystore Settings: mobile/android/android-keystore-settings.md
+          - Android Google Maps Integration: mobile/android/android-google-maps-integration.md
+          - Android Push Notification Integration: mobile/android/android-push-notification-integration.md
+      - iOS:
+          - iOS Firebase Integration: mobile/ios/ios-firebase-integration.md
+          - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
+          - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
+          - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
+  - Slack:
+      - Slack Reminder: slack/slack-reminder.md
+      - Slack Message: slack/slack-message.md
+      - Slack User Group Creation: slack/slack-user-group-creation.md
+      - Slack GitHub Workflows: slack/slack-github-workflows.md
+  - Tools:
+      - Apicurio via Docker: tools/apicurio-via-docker.md
+      - KafkaUI via Docker: tools/kafkaui-via-docker.md
+      - Multi-Gitter: tools/multi-gitter.md
+      - Multipass: tools/multipass.md
+      - BloomRPC: tools/bloomrpc.md
+      - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
+  - Miscellaneous:
+      - Modem Admin & Wi-Fi Passwords: miscellaneous/modem-admin-wifi-passwords.md
