@@ -2,7 +2,7 @@
 
 ## Setup and Configuration
 
-**List user name, user email and more:**
+**List user name, user email and ssh command:**
 
 ```bash
 git config --global user.name
