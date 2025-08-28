@@ -170,7 +170,9 @@ git merge feature-restructure
 **View commit history:**
 
 ```bash
-git log
+git log # detailed view
+git l # same as above
+git log --oneline # concise view
 ```
 
 **Checkout specific commit:**
