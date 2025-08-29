@@ -159,5 +159,6 @@ nav:
       - Multipass: tools/multipass.md
       - BloomRPC: tools/bloomrpc.md
       - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
+      - Android File Transfer: tools/android-file-transfer.md
   - Miscellaneous:
       - Modem Admin & Wi-Fi Passwords: miscellaneous/modem-admin-wifi-passwords.md
