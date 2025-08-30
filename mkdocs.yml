@@ -63,6 +63,7 @@ nav:
       - Tmate: git/tmate.md
       - List GitHub Actions: git/list-github-actions.md
       - GitHub Pages Custom Domain: git/github-pages-custom-domain.md
+      - GitHub Multiple Account: git/github-multiple-accounts.md
   - Maven:
       - Maven Wrapper: maven/maven-wrapper.md
   - Java:
