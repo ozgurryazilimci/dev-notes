@@ -84,6 +84,20 @@ Usage:
 - Set remote URL for personal repos:  
   `git remote set-url origin git@github-personal:personaluser/repo.git`
 
+> Note: If you don't want to use aliases, skip this step and use the script in the next section.
+
+Or you can separate ssh config files and use `-F` option in the script below.
+
+Create `~/.ssh/config_personal`:
+
+```plaintext
+Host *
+  IgnoreUnknown UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519_personal
+```
+
 ---
 
 ## 5. Switching Accounts with a Script
@@ -96,14 +110,14 @@ Create `~/.ssh/switch-github.sh`:
 #!/bin/bash
 
 if [ "$1" == "personal" ]; then
-    git config --global user.name "Your Personal Name"
-    git config --global user.email "your_personal_email@example.com"
-    git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519_personal -F /dev/null "
+    git config user.name "Your Personal Name"
+    git config user.email "your_personal_email@example.com"
+    git config core.sshCommand "ssh -i ~/.ssh/id_ed25519_personal -F ~/.ssh/config_personal"
     echo "Switched to PERSONAL GitHub account."
 elif [ "$1" == "work" ]; then
-    git config --global user.name "Your Work Name"
-    git config --global user.email "your_work_email@example.com"
-    git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519_work -F /dev/null"
+    git config user.name "Your Work Name"
+    git config user.email "your_work_email@example.com"
+    git config core.sshCommand "ssh -i ~/.ssh/id_ed25519_work -F ~/.ssh/config"
     echo "Switched to WORK GitHub account."
 else
     echo "Usage: switch-github [personal|work]"
@@ -122,13 +136,15 @@ Move it to `/usr/local/bin` for convenience:
 sudo mv ~/.ssh/switch-github.sh /usr/local/bin/switch-github
 ```
 
-Now you can switch accounts globally:
+Now you can switch accounts per repo:
 
 ```bash
 switch-github personal
 switch-github work
 ```
 
+> Note: You need to run the switch command for one time in each repository where you want to change the account.
+> Because we did not use --global value.
 ---
 
 ## 6. Testing the Setup
@@ -137,7 +153,7 @@ Check which account SSH is using:
 
 ```bash
 ssh -T git@github.com
-ssh -T git@github-personal
+ssh -T git@github-personal # if using alias
 ```
 
 - If successful, GitHub will greet you by your username:  
@@ -149,7 +165,7 @@ Check your current Git identity:
 ```bash
 git config user.name
 git config user.email
-git config --global core.sshCommand
+git config core.sshCommand
 ```
 
 List loaded keys:
