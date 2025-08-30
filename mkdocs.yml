@@ -7,8 +7,6 @@ site_author: Özgür Yazılımcı
 site_description: >-
   Personal development notes on various topics including Shell, Git, Docker, Kubernetes, Terraform, Java, Node.js, Databases, Networking, Cloud, Mobile Development, Slack, and more.
 
-cname: notes.ozguryazilimci.com
-
 # Configuration
 theme:
   name: material
