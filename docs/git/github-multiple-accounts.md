@@ -98,7 +98,7 @@ Create `~/.ssh/switch-github.sh`:
 if [ "$1" == "personal" ]; then
     git config --global user.name "Your Personal Name"
     git config --global user.email "your_personal_email@example.com"
-    git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519_personal -F /dev/null"
+    git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519_personal -F /dev/null "
     echo "Switched to PERSONAL GitHub account."
 elif [ "$1" == "work" ]; then
     git config --global user.name "Your Work Name"
