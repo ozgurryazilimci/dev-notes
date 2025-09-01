@@ -85,6 +85,7 @@ nav:
   - Kubernetes:
       - Kubernetes Introduction: kubernetes/kubernetes-introduction.md
       - Kubernetes Installation: kubernetes/kubernetes-installation.md
+      - Kubernetes Presentation: kubernetes/kubernetes-presentation.md
       - Kubernetes Objects:
           - Pod: kubernetes/kubernetes-objects/pod.md
           - Namespace: kubernetes/kubernetes-objects/namespace.md
