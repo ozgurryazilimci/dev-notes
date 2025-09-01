@@ -136,14 +136,15 @@ nav:
   - Cloud:
       - AWS:
           - AWS Introduction: cloud/aws/aws-introduction.md
-          - AWS Services Overview: cloud/aws/aws-services-overview.md
           - AWS CLI: cloud/aws/aws-cli.md
+          - AWS Services Overview: cloud/aws/aws-services-overview.md
           - AWS Services:
               - Billing & Cost Management: cloud/aws/aws-services/aws-billing-and-cost-management.md
               - IAM: cloud/aws/aws-services/aws-iam.md
               - IAM Demo: cloud/aws/aws-services/aws-iam-demo.md
               - S3: cloud/aws/aws-services/aws-s3.md
-          - Athena: cloud/aws/athena.md
+              - Glacier: cloud/aws/aws-services/aws-glacier.md
+              - Athena Examples: cloud/aws/aws-athena-examples.md
   - Mobile:
       - Android:
           - Android Firebase Integration: mobile/android/android-firebase-integration.md
