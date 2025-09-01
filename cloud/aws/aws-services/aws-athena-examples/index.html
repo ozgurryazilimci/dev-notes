@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://notes.ozguryazilimci.com/cloud/aws/aws-services/aws-athena-examples/">
       
       
+        <link rel="prev" href="../aws-glacier/">
+      
+      
+        <link rel="next" href="../../../../mobile/android/android-firebase-integration/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>AWS Athena - My Dev Notes</title>
+        <title>Athena Examples - My Dev Notes</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-athena" class="md-skip">
+        <a href="#aws-services-athena-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS Athena
+              Athena Examples
             
           </span>
         </div>
@@ -461,6 +465,8 @@
   
   
   
+    
+  
   
     
     
@@ -468,10 +474,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../aws-introduction/" class="md-tabs__link">
           
   
@@ -2883,8 +2891,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2894,17 +2904,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
             
   
   
@@ -2917,7 +2930,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Cloud
@@ -2928,8 +2941,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2948,11 +2963,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
@@ -2968,7 +2983,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -3048,8 +3063,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -3072,11 +3089,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1_4" id="__nav_12_1_4_label" tabindex="0">
@@ -3092,7 +3109,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1_4">
             <span class="md-nav__icon md-icon"></span>
             AWS Services
@@ -3218,10 +3235,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aws-athena-examples.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Athena Examples
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3232,6 +3271,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-missing-partitions-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Missing Partitions Automatically
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aws-glue-crawler" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Glue Crawler
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-specific-partition-manually" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Specific Partition Manually
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-athena-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Athena Queries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-athena-tables-from-csv-in-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Athena Tables from CSV in S3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#querying-athena-from-intellijdatagrip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Querying Athena from IntelliJ/DataGrip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4214,7 +4354,7 @@
 
 
 
-<h1 id="aws-athena">AWS Athena</h1>
+<h1 id="aws-services-athena-examples">AWS Services - Athena Examples</h1>
 <h2 id="introduction">Introduction</h2>
 <p>Amazon Athena is an interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. It is
 serverless, so there is no infrastructure to manage, and you only pay for the queries you run.</p>
