@@ -1,4 +1,4 @@
-# AWS Athena
+# AWS Services - Athena Examples
 
 ## Introduction
 

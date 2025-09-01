@@ -1,4 +1,4 @@
-# AWS Glacier
+# AWS Services - Glacier
 
 ## What is Amazon S3 Glacier?
 
