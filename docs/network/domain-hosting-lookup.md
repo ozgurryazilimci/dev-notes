@@ -8,11 +8,12 @@ This guide lists useful free tools to check domain ownership, hosting provider, 
 
 You can see who registered a domain, their contact details, registrar, and registration dates.
 
-- [who.is](https://who.is)
 - [whois.com](https://www.whois.com/whois)
 - [whois.domaintools.com](https://whois.domaintools.com)
 - [lookup.icann.org](https://lookup.icann.org)
-- [namecheap.com/domains/whois](https://www.namecheap.com/domains/whois)
+- [iplocation.net](https://www.iplocation.net/)
+- [viewdns.info](https://viewdns.info/)
+- [namecheap.com](https://www.namecheap.com/domains/whois)
 - [trabis.gov.tr](https://trabis.gov.tr) (for `.tr` domains)
 
 Example domain: `example.com`
