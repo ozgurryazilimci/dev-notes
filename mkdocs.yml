@@ -140,6 +140,7 @@ nav:
               - Billing & Cost Management: cloud/aws/aws-services/aws-billing-and-cost-management.md
               - IAM: cloud/aws/aws-services/aws-iam.md
               - IAM Demo: cloud/aws/aws-services/aws-iam-demo.md
+              - S3: cloud/aws/aws-services/aws-s3.md
           - Athena: cloud/aws/athena.md
   - Mobile:
       - Android:

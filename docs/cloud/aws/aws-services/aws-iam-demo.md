@@ -1,4 +1,4 @@
-# AWS Services - IAM Hands-On Example
+# AWS Services - IAM Demo
 
 ## Scenario: Create a Developer User with Limited Permissions
 

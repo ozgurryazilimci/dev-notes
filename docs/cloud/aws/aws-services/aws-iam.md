@@ -144,3 +144,9 @@ Each role is attached to a **policy** that defines permissions.
 IAM is the backbone of AWS security.  
 By managing **users, groups, roles, and policies**, enforcing **password/MFA requirements**, and monitoring with *
 *reports and analyzers**, you can ensure secure and controlled access to AWS resources.
+
+---
+
+## Demo
+
+You can follow along with the [AWS IAM Demo](aws-iam-demo.md) to see these concepts in action.
