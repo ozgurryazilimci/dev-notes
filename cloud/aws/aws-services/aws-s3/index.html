@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/tools/multipass/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/cloud/aws/aws-services/aws-s3/">
       
       
-        <link rel="prev" href="../multi-gitter/">
+        <link rel="prev" href="../aws-iam-demo/">
       
       
-        <link rel="next" href="../bloomrpc/">
+        <link rel="next" href="../../athena/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Multipass - My Dev Notes</title>
+        <title>S3 - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#multipass" class="md-skip">
+        <a href="#aws-services-s3" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Multipass
+              S3
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../../maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -305,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../java/jenv/" class="md-tabs__link">
+        <a href="../../../../java/jenv/" class="md-tabs__link">
           
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../../../docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -349,7 +349,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
+        <a href="../../../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
           
   
   
@@ -371,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../terraform/terraform-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../terraform/terraform-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -393,7 +393,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../../nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -422,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -447,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../network/dns-nameservers/" class="md-tabs__link">
+        <a href="../../../../network/dns-nameservers/" class="md-tabs__link">
           
   
   
@@ -465,6 +465,8 @@
   
   
   
+    
+  
   
     
     
@@ -472,11 +474,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../cloud/aws/aws-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../aws-introduction/" class="md-tabs__link">
           
   
   
@@ -508,7 +512,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -533,7 +537,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../../../slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -551,13 +555,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../apicurio-via-docker/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../tools/apicurio-via-docker/" class="md-tabs__link">
           
   
   
@@ -579,7 +581,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -615,7 +617,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -633,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -702,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -725,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -810,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -833,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-actions/" class="md-nav__link">
+      <a href="../../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -856,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/tmate/" class="md-nav__link">
+      <a href="../../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -879,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -902,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -925,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -1000,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../../maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1077,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../java/jenv/" class="md-nav__link">
+      <a href="../../../../java/jenv/" class="md-nav__link">
         
   
   
@@ -1100,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../java/sdkman/" class="md-nav__link">
+      <a href="../../../../java/sdkman/" class="md-nav__link">
         
   
   
@@ -1189,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../../docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -1212,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../../../docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -1235,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../../docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1258,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../../../docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -1281,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../../docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -1304,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../../../docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -1327,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../../../docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -1350,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../../docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -1431,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -1454,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -1560,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -1583,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -1606,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -1629,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -1652,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -1675,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -1698,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -1721,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -1744,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -1767,7 +1769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -1790,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -1813,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -1836,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -1859,7 +1861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -1882,7 +1884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -1905,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -1928,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -1951,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -1974,7 +1976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -1997,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2085,7 +2087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -2108,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -2131,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -2154,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -2177,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -2200,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -2223,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -2308,7 +2310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../../terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2331,7 +2333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../../../terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -2406,7 +2408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../../nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -2528,7 +2530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2606,7 +2608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2629,7 +2631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -2722,7 +2724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -2745,7 +2747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-records/" class="md-nav__link">
+      <a href="../../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -2768,7 +2770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -2791,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -2814,7 +2816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -2837,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -2864,8 +2866,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2875,17 +2879,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
             
   
   
@@ -2898,7 +2905,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Cloud
@@ -2909,8 +2916,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2929,11 +2938,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
@@ -2949,7 +2958,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -2963,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../aws-introduction/" class="md-nav__link">
         
   
   
@@ -2986,7 +2995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3006,8 +3015,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -3026,11 +3037,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1_3" id="__nav_12_1_3_label" tabindex="0">
@@ -3046,7 +3057,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1_3">
             <span class="md-nav__icon md-icon"></span>
             AWS Services
@@ -3060,7 +3071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3083,7 +3094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../aws-iam/" class="md-nav__link">
         
   
   
@@ -3106,7 +3117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3126,10 +3137,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    S3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3140,6 +3173,365 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buckets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buckets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Buckets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucket-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bucket Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uploading-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uploading Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Versioning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Access Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bucket-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bucket Policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM Policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-lists-acls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access Control Lists (ACLs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-public-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Public Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-object-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Object Lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-and-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging and Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lifecycle Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-and-data-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance and Data Transfer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance and Data Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multipart-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multipart Uploads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Acceleration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Notifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requester-pays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requester Pays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inventory-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inventory Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3160,7 +3552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/athena/" class="md-nav__link">
+      <a href="../../athena/" class="md-nav__link">
         
   
   
@@ -3296,7 +3688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3319,7 +3711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -3342,7 +3734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3365,7 +3757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3447,7 +3839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3470,7 +3862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3493,7 +3885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -3516,7 +3908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3605,7 +3997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../../slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -3628,7 +4020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-message/" class="md-nav__link">
+      <a href="../../../../slack/slack-message/" class="md-nav__link">
         
   
   
@@ -3651,7 +4043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../../slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -3674,7 +4066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../../slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -3701,10 +4093,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -3726,20 +4116,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
             
   
   
@@ -3752,7 +4139,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -3766,7 +4153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -3789,7 +4176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -3812,7 +4199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../multi-gitter/" class="md-nav__link">
+      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -3832,32 +4219,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Multipass
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -3868,173 +4233,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-multipass" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Multipass?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-multipass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why Use Multipass?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-multipass-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Multipass Works
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mac" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mac
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Basic Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#help" class="md-nav__link">
-    <span class="md-ellipsis">
-      Help
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#launch-a-new-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Launch a New VM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-running-vms" class="md-nav__link">
-    <span class="md-ellipsis">
-      List Running VMs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-a-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access a VM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-a-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stop a VM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-a-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Delete a VM
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4047,7 +4245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bloomrpc/" class="md-nav__link">
+      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -4070,7 +4268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -4093,7 +4291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../android-file-transfer/" class="md-nav__link">
+      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -4170,7 +4368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -4193,7 +4391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/website-setup/" class="md-nav__link">
+      <a href="../../../../miscellaneous/website-setup/" class="md-nav__link">
         
   
   
@@ -4243,55 +4441,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-multipass" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Multipass?
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-multipass" class="md-nav__link">
+  <a href="#buckets" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Use Multipass?
+      Buckets
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-multipass-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Multipass Works
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="Buckets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mac" class="md-nav__link">
+  <a href="#creating-buckets" class="md-nav__link">
     <span class="md-ellipsis">
-      Mac
+      Creating Buckets
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#naming-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      Naming Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucket-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bucket Properties
     </span>
   </a>
   
@@ -4303,64 +4492,205 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-usage" class="md-nav__link">
+  <a href="#objects" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Usage
+      Objects
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Basic Usage">
+    <nav class="md-nav" aria-label="Objects">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#help" class="md-nav__link">
+  <a href="#uploading-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Help
+      Uploading Files
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#launch-a-new-vm" class="md-nav__link">
+  <a href="#object-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Launch a New VM
+      Object Properties
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#list-running-vms" class="md-nav__link">
+  <a href="#object-versioning" class="md-nav__link">
     <span class="md-ellipsis">
-      List Running VMs
+      Object Versioning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Access Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bucket-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bucket Policies
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#access-a-vm" class="md-nav__link">
+  <a href="#iam-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Access a VM
+      IAM Policies
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#stop-a-vm" class="md-nav__link">
+  <a href="#access-control-lists-acls" class="md-nav__link">
     <span class="md-ellipsis">
-      Stop a VM
+      Access Control Lists (ACLs)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-a-vm" class="md-nav__link">
+  <a href="#block-public-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete a VM
+      Block Public Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-object-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Object Lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-and-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging and Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lifecycle Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-and-data-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance and Data Transfer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance and Data Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multipart-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multipart Uploads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Acceleration
     </span>
   </a>
   
@@ -4375,6 +4705,66 @@
   <a href="#advanced-features" class="md-nav__link">
     <span class="md-ellipsis">
       Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Notifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requester-pays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requester Pays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inventory-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inventory Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
     </span>
   </a>
   
@@ -4405,112 +4795,376 @@
 
 
 
-<h1 id="multipass">Multipass</h1>
-<p>Multipass is a lightweight VM manager developed by Canonical that allows you to run Ubuntu virtual machines quickly and
-easily on macOS, Linux, and Windows. It is ideal for developers who want a clean Ubuntu environment for testing or
-development.</p>
+<h1 id="aws-services-s3">AWS Services - S3</h1>
+<p>Amazon Simple Storage Service (Amazon S3) is a scalable object storage service designed to store and retrieve any amount
+of data from anywhere on the web. This document provides an overview of the <strong>AWS Management Console</strong> for S3, including
+bucket configuration, properties, features, and usage scenarios.</p>
 <hr />
-<h2 id="what-is-multipass">What is Multipass?</h2>
-<p>Multipass is a tool for launching and managing lightweight Ubuntu virtual machines. It provides:</p>
+<h2 id="overview">Overview</h2>
+<p>Amazon S3 stores data as objects inside <strong>buckets</strong>. Each object consists of:</p>
 <ul>
-<li>Quick VM provisioning</li>
-<li>Minimal setup</li>
-<li>Cross-platform support (Mac, Linux, Windows)</li>
-<li>CLI commands for VM management</li>
+<li>A <strong>key</strong> (unique identifier, similar to a filename/path)</li>
+<li>The object’s <strong>data</strong> (actual file content)</li>
+<li><strong>Metadata</strong> (system-defined and user-defined key-value pairs)</li>
+<li><strong>Optional access permissions</strong></li>
 </ul>
-<p>It is perfect for testing, development, and experimenting without affecting your host system.</p>
+<p>The S3 console provides a graphical way to manage buckets, objects, security, and advanced configurations.</p>
 <hr />
-<h2 id="why-use-multipass">Why Use Multipass?</h2>
+<h2 id="buckets">Buckets</h2>
+<h3 id="creating-buckets">Creating Buckets</h3>
+<p>Steps to create a bucket in the AWS console:</p>
+<ol>
+<li>Go to <strong>Amazon S3</strong> in the AWS Management Console.</li>
+<li>Click <strong>Create bucket</strong>.</li>
+<li>Provide:<ul>
+<li><strong>Bucket name</strong></li>
+<li><strong>AWS Region</strong></li>
+<li><strong>Bucket settings</strong> (options like versioning, encryption, etc.)</li>
+</ul>
+</li>
+<li>Configure <strong>Block Public Access</strong>.</li>
+<li>Create the bucket.</li>
+</ol>
+<h3 id="naming-rules">Naming Rules</h3>
 <ul>
-<li>Quickly spin up Ubuntu environments</li>
-<li>Isolate development environments</li>
-<li>Test applications in a clean OS</li>
-<li>Easily create, delete, and manage multiple VMs</li>
+<li>Must be globally unique.</li>
+<li>Must be DNS-compliant (lowercase letters, numbers, and hyphens).</li>
+<li>Must not contain uppercase letters or underscores.</li>
+<li>Cannot be changed after creation.</li>
 </ul>
-<hr />
-<h2 id="how-multipass-works">How Multipass Works</h2>
-<p>Multipass does <strong>not</strong> use Docker containers. Instead, it launches full Ubuntu virtual machines using the host system's
-hypervisor:</p>
+<h3 id="bucket-properties">Bucket Properties</h3>
 <ul>
-<li><strong>macOS:</strong> HyperKit</li>
-<li><strong>Linux:</strong> KVM (Kernel-based Virtual Machine)</li>
-<li><strong>Windows:</strong> Hyper-V</li>
+<li><strong>Versioning</strong>: Keeps multiple versions of an object, useful for rollback or accidental deletion recovery.</li>
+<li><strong>Encryption</strong>: Ensures that all data is encrypted at rest (SSE-S3, SSE-KMS, etc.).</li>
+<li><strong>Logging</strong>: Records access requests made to the bucket for auditing/security.</li>
+<li><strong>Tags</strong>: Key-value pairs used for cost allocation and organization.</li>
+<li><strong>Events</strong>: Configure notifications (to Lambda, SNS, SQS) on object-level events.</li>
+<li><strong>Replication</strong>: Automatically copy objects to another bucket (in the same or different region).</li>
 </ul>
-<p>This provides a fully isolated operating system, unlike Docker, which uses container-based virtualization.</p>
 <hr />
-<h2 id="installation">Installation</h2>
-<h3 id="mac">Mac</h3>
-<p>The recommended way to install Multipass on macOS is via <strong>Homebrew</strong>:</p>
-<pre><code class="language-bash">brew install --cask multipass
+<h2 id="objects">Objects</h2>
+<h3 id="uploading-files">Uploading Files</h3>
+<p>Options in the console:</p>
+<ul>
+<li>Drag and drop files/folders.</li>
+<li>Define object-level permissions during upload.</li>
+<li>Select <strong>Storage Class</strong> (affects cost and retrieval performance).</li>
+<li>Choose <strong>Server-Side Encryption</strong>.</li>
+</ul>
+<h3 id="object-properties">Object Properties</h3>
+<ul>
+<li><strong>Key (Name)</strong>: Identifier of the object.</li>
+<li><strong>Size</strong>: File size in bytes.</li>
+<li><strong>Last modified</strong>: Timestamp of the latest update.</li>
+<li><strong>Storage class</strong>: Defines cost, availability, and retrieval times.</li>
+<li><strong>ETag</strong>: A hash of the object (useful for validation).</li>
+</ul>
+<h3 id="object-versioning">Object Versioning</h3>
+<ul>
+<li>Once enabled, every change creates a new version of the object.</li>
+<li>Deleted objects are marked with a <strong>delete marker</strong> instead of being removed permanently.</li>
+<li>Helps with recovery from accidental deletions/overwrites.</li>
+</ul>
+<hr />
+<h2 id="access-management">Access Management</h2>
+<h3 id="bucket-policies">Bucket Policies</h3>
+<ul>
+<li>JSON-based rules attached directly to a bucket.</li>
+<li>Bucket policies define access permissions in JSON.</li>
+<li>Allow fine-grained access control, including cross-account permissions.</li>
+</ul>
+<p>Example: Allow only a specific IAM user to read objects in the bucket:</p>
+<pre><code class="language-json">{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [
+    {
+      &quot;Sid&quot;: &quot;AllowUserReadOnly&quot;,
+      &quot;Effect&quot;: &quot;Allow&quot;,
+      &quot;Principal&quot;: {
+        &quot;AWS&quot;: &quot;arn:aws:iam::111122223333:user/DeveloperUser&quot;
+      },
+      &quot;Action&quot;: [
+        &quot;s3:GetObject&quot;
+      ],
+      &quot;Resource&quot;: &quot;arn:aws:s3:::example-bucket/*&quot;
+    }
+  ]
+}
 </code></pre>
-<p>After installation, verify it with:</p>
-<pre><code class="language-bash">multipass version
+<p>Example: Allow public read-only access (⚠️ not recommended for sensitive data):</p>
+<pre><code class="language-json">{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [
+    {
+      &quot;Sid&quot;: &quot;PublicReadGetObject&quot;,
+      &quot;Effect&quot;: &quot;Allow&quot;,
+      &quot;Principal&quot;: &quot;*&quot;,
+      &quot;Action&quot;: &quot;s3:GetObject&quot;,
+      &quot;Resource&quot;: &quot;arn:aws:s3:::example-bucket/*&quot;
+    }
+  ]
+}
 </code></pre>
-<p>You can also download the official <code>.dmg</code> file from the <a href="https://multipass.run/">Multipass website</a>.</p>
-<p>And you can use the Multipass GUI app for managing your VMs visually:</p>
-<p><img alt="Multipass App" src="../images/multipass_home.png" /></p>
-<h3 id="linux">Linux</h3>
-<p>Multipass is available for Linux distributions like Ubuntu, Debian, Fedora, and CentOS. The easiest way is to use the
-official snap package:</p>
-<pre><code class="language-bash">sudo snap install multipass
+<h3 id="iam-policies">IAM Policies</h3>
+<ul>
+<li>Define permissions at the <strong>user/role/group</strong> level.</li>
+<li>Work across all AWS services (not just S3).</li>
+<li>Recommended for managing permissions at scale.</li>
+</ul>
+<h3 id="access-control-lists-acls">Access Control Lists (ACLs)</h3>
+<ul>
+<li>Legacy mechanism for granting access.</li>
+<li>Should be avoided when possible; use bucket policies or IAM instead.</li>
+</ul>
+<h3 id="block-public-access">Block Public Access</h3>
+<ul>
+<li>Global setting at both <strong>account</strong> and <strong>bucket</strong> level.</li>
+<li>Prevents accidental exposure of data to the internet.</li>
+<li>Recommended to keep enabled for all production buckets.</li>
+</ul>
+<hr />
+<h2 id="security">Security</h2>
+<h3 id="encryption">Encryption</h3>
+<ul>
+<li><strong>SSE-S3</strong>: Server-side encryption using S3-managed keys (AES-256).</li>
+<li><strong>SSE-KMS</strong>: Server-side encryption using AWS Key Management Service (supports key rotation, fine-grained access
+  control).</li>
+<li><strong>SSE-C</strong>: Customer-provided keys.</li>
+<li><strong>Client-Side Encryption</strong>: Data is encrypted before upload.</li>
+</ul>
+<h3 id="s3-object-lock">S3 Object Lock</h3>
+<ul>
+<li>Prevents objects from being deleted or modified for a specified retention period.</li>
+<li>Useful for compliance (WORM: Write Once, Read Many).</li>
+</ul>
+<h3 id="logging-and-monitoring">Logging and Monitoring</h3>
+<ul>
+<li><strong>Server Access Logging</strong>: Tracks requests made to your bucket, stored as logs in another bucket.</li>
+<li><strong>AWS CloudTrail Data Events</strong>: Logs API calls for S3, useful for security audits.</li>
+<li><strong>Amazon CloudWatch Metrics</strong>: Provides performance metrics (e.g., request counts, latency, errors).</li>
+</ul>
+<hr />
+<h2 id="storage-management">Storage Management</h2>
+<h3 id="storage-classes">Storage Classes</h3>
+<p>Each object can be assigned a storage class:</p>
+<ul>
+<li><strong>S3 Standard</strong>: High durability, high availability, low latency. Default for frequently accessed data.</li>
+<li><strong>S3 Intelligent-Tiering</strong>: Automatically moves objects between frequent and infrequent access tiers based on usage.</li>
+<li><strong>S3 Standard-IA (Infrequent Access)</strong>: Lower cost for infrequently accessed data, but with retrieval fees.</li>
+<li><strong>S3 One Zone-IA</strong>: Cheaper but stores data in a single AZ (less resilient).</li>
+<li><strong>S3 Glacier</strong>: Low-cost archival storage; retrieval times range from minutes to hours.</li>
+<li><strong>S3 Glacier Deep Archive</strong>: Lowest-cost archival; retrieval can take up to 12–48 hours.</li>
+</ul>
+<h3 id="lifecycle-rules">Lifecycle Rules</h3>
+<ul>
+<li>Automate storage class transitions (e.g., move to Glacier after 90 days).</li>
+<li>Define object expiration (permanently delete objects after a set time).</li>
+<li>Help optimize storage costs.</li>
+</ul>
+<p>Example: Move objects to <strong>S3 Standard-IA</strong> after 30 days, then to <strong>Glacier Deep Archive</strong> after 180 days, and finally
+delete after 365 days:</p>
+<pre><code class="language-json">{
+  &quot;Rules&quot;: [
+    {
+      &quot;ID&quot;: &quot;TransitionAndExpire&quot;,
+      &quot;Status&quot;: &quot;Enabled&quot;,
+      &quot;Filter&quot;: {
+        &quot;Prefix&quot;: &quot;&quot;
+      },
+      &quot;Transitions&quot;: [
+        {
+          &quot;Days&quot;: 30,
+          &quot;StorageClass&quot;: &quot;STANDARD_IA&quot;
+        },
+        {
+          &quot;Days&quot;: 180,
+          &quot;StorageClass&quot;: &quot;DEEP_ARCHIVE&quot;
+        }
+      ],
+      &quot;Expiration&quot;: {
+        &quot;Days&quot;: 365
+      }
+    }
+  ]
+}
 </code></pre>
-<p>Verify installation:</p>
-<pre><code class="language-bash">multipass version
+<p>Example: Expire all objects with prefix <code>logs/</code> after 90 days:</p>
+<pre><code class="language-json">{
+  &quot;Rules&quot;: [
+    {
+      &quot;ID&quot;: &quot;ExpireLogs&quot;,
+      &quot;Status&quot;: &quot;Enabled&quot;,
+      &quot;Filter&quot;: {
+        &quot;Prefix&quot;: &quot;logs/&quot;
+      },
+      &quot;Expiration&quot;: {
+        &quot;Days&quot;: 90
+      }
+    }
+  ]
+}
+</code></pre>
+<h3 id="replication">Replication</h3>
+<ul>
+<li><strong>Same-Region Replication (SRR)</strong>: Copy objects to another bucket in the same region.</li>
+<li><strong>Cross-Region Replication (CRR)</strong>: Copy objects across regions for disaster recovery.</li>
+<li>Requires enabling <strong>versioning</strong> on source and destination buckets.</li>
+<li>Can replicate metadata, ACLs, and tags.</li>
+</ul>
+<p>Example: <strong>Cross-Region Replication (CRR)</strong> configuration:</p>
+<pre><code class="language-json">{
+  &quot;Role&quot;: &quot;arn:aws:iam::111122223333:role/ReplicationRole&quot;,
+  &quot;Rules&quot;: [
+    {
+      &quot;Status&quot;: &quot;Enabled&quot;,
+      &quot;Priority&quot;: 1,
+      &quot;DeleteMarkerReplication&quot;: {
+        &quot;Status&quot;: &quot;Disabled&quot;
+      },
+      &quot;Filter&quot;: {
+        &quot;Prefix&quot;: &quot;&quot;
+      },
+      &quot;Destination&quot;: {
+        &quot;Bucket&quot;: &quot;arn:aws:s3:::destination-bucket&quot;,
+        &quot;StorageClass&quot;: &quot;STANDARD_IA&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Example: Replicate only objects with prefix <code>images/</code>:</p>
+<pre><code class="language-json">{
+  &quot;Role&quot;: &quot;arn:aws:iam::111122223333:role/ReplicationRole&quot;,
+  &quot;Rules&quot;: [
+    {
+      &quot;Status&quot;: &quot;Enabled&quot;,
+      &quot;Priority&quot;: 1,
+      &quot;Filter&quot;: {
+        &quot;Prefix&quot;: &quot;images/&quot;
+      },
+      &quot;Destination&quot;: {
+        &quot;Bucket&quot;: &quot;arn:aws:s3:::image-backup-bucket&quot;
+      }
+    }
+  ]
+}
+
 </code></pre>
 <hr />
-<h2 id="basic-usage">Basic Usage</h2>
-<h3 id="help">Help</h3>
-<pre><code class="language-bash">multipass help
-</code></pre>
-<h3 id="launch-a-new-vm">Launch a New VM</h3>
-<pre><code class="language-bash">multipass launch --name my-ubuntu-vm
-</code></pre>
-<p>This will download the latest Ubuntu image and start a VM named <code>my-ubuntu-vm</code>.</p>
-<h3 id="list-running-vms">List Running VMs</h3>
-<pre><code class="language-bash">multipass list
-</code></pre>
-<h3 id="access-a-vm">Access a VM</h3>
-<pre><code class="language-bash">multipass shell my-ubuntu-vm
-</code></pre>
-<h3 id="stop-a-vm">Stop a VM</h3>
-<pre><code class="language-bash">multipass stop my-ubuntu-vm
-multipass stop --all
-</code></pre>
-<h3 id="delete-a-vm">Delete a VM</h3>
-<pre><code class="language-bash">multipass delete my-ubuntu-vm
-multipass purge
-</code></pre>
+<h2 id="performance-and-data-transfer">Performance and Data Transfer</h2>
+<h3 id="multipart-uploads">Multipart Uploads</h3>
+<ul>
+<li>Splits large files (over 100 MB) into smaller parts.</li>
+<li>Parallel uploads improve speed and reliability.</li>
+<li>Required for objects larger than 5 GB.</li>
+</ul>
+<h3 id="transfer-acceleration">Transfer Acceleration</h3>
+<ul>
+<li>Uses Amazon CloudFront’s edge locations to accelerate uploads/downloads.</li>
+<li>Best for cross-continent data transfer.</li>
+</ul>
 <hr />
 <h2 id="advanced-features">Advanced Features</h2>
+<h3 id="event-notifications">Event Notifications</h3>
 <ul>
-<li><strong>Mount Local Folders</strong>: Access local files from your VM:</li>
+<li>Trigger actions when objects are created, deleted, or updated.</li>
+<li>Targets:<ul>
+<li><strong>Amazon SNS</strong> (notifications)</li>
+<li><strong>Amazon SQS</strong> (messaging queues)</li>
+<li><strong>AWS Lambda</strong> (serverless processing)</li>
 </ul>
-<pre><code class="language-bash">multipass mount /path/to/local my-ubuntu-vm:/home/ubuntu/mounted
+</li>
+</ul>
+<p>Example: Send an event to <strong>SNS</strong> when a new object is created:</p>
+<pre><code class="language-json">{
+  &quot;LambdaFunctionConfigurations&quot;: [],
+  &quot;QueueConfigurations&quot;: [],
+  &quot;TopicConfigurations&quot;: [
+    {
+      &quot;Id&quot;: &quot;NewObjectCreated&quot;,
+      &quot;TopicArn&quot;: &quot;arn:aws:sns:us-east-1:111122223333:MySNSTopic&quot;,
+      &quot;Events&quot;: [
+        &quot;s3:ObjectCreated:*&quot;
+      ]
+    }
+  ]
+}
 </code></pre>
+<p>Example: Trigger a <strong>Lambda function</strong> when an object with prefix <code>uploads/</code> is uploaded:</p>
+<pre><code class="language-json">{
+  &quot;LambdaFunctionConfigurations&quot;: [
+    {
+      &quot;Id&quot;: &quot;ProcessUploads&quot;,
+      &quot;LambdaFunctionArn&quot;: &quot;arn:aws:lambda:us-east-1:111122223333:function:ProcessUpload&quot;,
+      &quot;Events&quot;: [
+        &quot;s3:ObjectCreated:*&quot;
+      ],
+      &quot;Filter&quot;: {
+        &quot;Key&quot;: {
+          &quot;FilterRules&quot;: [
+            {
+              &quot;Name&quot;: &quot;prefix&quot;,
+              &quot;Value&quot;: &quot;uploads/&quot;
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+
+</code></pre>
+<h3 id="requester-pays">Requester Pays</h3>
 <ul>
-<li><strong>Execute Commands</strong>:</li>
+<li>Shifts the cost of <strong>data transfer</strong> and <strong>requests</strong> to the requester, not the bucket owner.</li>
+<li>Useful for public datasets.</li>
 </ul>
-<pre><code class="language-bash">multipass exec my-ubuntu-vm -- ls /home/ubuntu
-</code></pre>
+<h3 id="inventory-reports">Inventory Reports</h3>
 <ul>
-<li><strong>Specify Ubuntu Version</strong>:</li>
+<li>Generate CSV/ORC/Parquet files listing objects and metadata.</li>
+<li>Useful for auditing, compliance, and large-scale reporting.</li>
 </ul>
-<pre><code class="language-bash">multipass launch 22.04 --name ubuntu22
-</code></pre>
+<h3 id="batch-operations">Batch Operations</h3>
+<p>Amazon S3 <strong>Batch Operations</strong> allows you to perform large-scale operations on many objects at once. This is especially
+useful for tasks like copying objects, replacing tags, invoking Lambda functions, or modifying object ACLs across
+thousands or millions of objects.</p>
+<p><strong>Key points:</strong></p>
 <ul>
-<li><strong>Set Resources</strong> (CPU, RAM, Disk):</li>
+<li>Works on objects listed in a manifest (CSV or S3 Inventory report).</li>
+<li>Supports operations like <code>Copy</code>, <code>PutObjectAcl</code>, <code>InitiateRestore</code>, <code>LambdaInvoke</code>.</li>
+<li>Allows monitoring progress and retries for failed operations.</li>
+<li>Can be scheduled or run on-demand via the console.</li>
 </ul>
-<pre><code class="language-bash">multipass launch --name big-vm --cpus 4 --mem 4G --disk 20G
-</code></pre>
+<p><strong>Example Use Case:</strong></p>
+<ul>
+<li>Add a new tag to all objects in a bucket.</li>
+<li>Trigger a Lambda function on all archived objects to generate thumbnails or process data.</li>
+<li>Restore multiple Glacier objects simultaneously.</li>
+</ul>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Enforce <strong>least-privilege access</strong> with IAM.</li>
+<li>Keep <strong>Block Public Access</strong> enabled.</li>
+<li>Use <strong>bucket versioning</strong> with <strong>MFA delete</strong> for critical data.</li>
+<li>Encrypt all data (SSE-KMS or SSE-S3).</li>
+<li>Implement <strong>lifecycle policies</strong> to optimize costs.</li>
+<li>Monitor using <strong>CloudTrail</strong> and <strong>CloudWatch</strong>.</li>
+</ul>
+<hr />
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Static website hosting</strong> (without server-side logic).</li>
+<li><strong>Backup and archival</strong> (long-term retention with Glacier).</li>
+<li><strong>Data lakes</strong> for analytics (integration with Athena, Redshift, EMR).</li>
+<li><strong>Content distribution</strong> (images, videos, software packages).</li>
+<li><strong>Machine learning pipelines</strong> (store datasets and training models).</li>
+</ul>
 <hr />
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://canonical.com/multipass">Official Multipass Documentation</a></li>
-<li><a href="https://documentation.ubuntu.com/multipass">Ubuntu Multipass Documentation</a></li>
-<li><a href="https://github.com/canonical/multipass">Multipass GitHub Repository</a></li>
-<li><a href="https://ubuntu.com">Ubuntu Official Site</a></li>
-<li><a href="https://snapcraft.io/multipass">Snap Package Info</a></li>
-<li><a href="https://www.docker.com/resources/what-container">Docker vs Virtual Machines</a>  </li>
+<li><a href="https://docs.aws.amazon.com/s3/">AWS S3 Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/best-practices.html">AWS S3 Best Practices</a></li>
 </ul>
 
 
@@ -4590,10 +5244,10 @@ multipass purge
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
