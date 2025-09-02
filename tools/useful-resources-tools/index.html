@@ -6,34 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Kubernetes StorageClass - Core Concepts, Commands, YAML Configuration, and Practical Examples">
+        <meta name="description" content="Personal development notes on various topics including Shell, Git, Docker, Kubernetes, Terraform, Java, Node.js, Databases, Networking, Cloud, Mobile Development, Slack, and more.">
       
       
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/kubernetes/kubernetes-objects/storage-class/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/tools/useful-resources-tools/">
       
       
-        <link rel="prev" href="../persistent-volume-claim/">
+        <link rel="prev" href="../android-file-transfer/">
       
       
-        <link rel="next" href="../authentication/">
+        <link rel="next" href="../../miscellaneous/modem-admin-wifi-passwords/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Storage Class - My Dev Notes</title>
+        <title>Useful Resources & Tools - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubernetes-objects-storage-class" class="md-skip">
+        <a href="#useful-resources-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Storage Class
+              Useful Resources & Tools
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -305,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../java/jenv/" class="md-tabs__link">
+        <a href="../../java/jenv/" class="md-tabs__link">
           
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -345,13 +345,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../kubernetes-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
           
   
   
@@ -373,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../terraform/terraform-cheatsheet/" class="md-tabs__link">
+        <a href="../../terraform/terraform-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -395,7 +393,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -424,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -449,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../network/dns-nameservers/" class="md-tabs__link">
+        <a href="../../network/dns-nameservers/" class="md-tabs__link">
           
   
   
@@ -478,7 +476,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cloud/aws/aws-introduction/" class="md-tabs__link">
+        <a href="../../cloud/aws/aws-introduction/" class="md-tabs__link">
           
   
   
@@ -510,7 +508,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../mobile/android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -535,7 +533,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -553,11 +551,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../tools/apicurio-via-docker/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../apicurio-via-docker/" class="md-tabs__link">
           
   
   
@@ -579,7 +579,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -615,7 +615,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -633,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -702,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -725,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -833,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-actions/" class="md-nav__link">
+      <a href="../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -856,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/tmate/" class="md-nav__link">
+      <a href="../../git/tmate/" class="md-nav__link">
         
   
   
@@ -879,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -902,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -925,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -1000,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1077,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../java/jenv/" class="md-nav__link">
+      <a href="../../java/jenv/" class="md-nav__link">
         
   
   
@@ -1100,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../java/sdkman/" class="md-nav__link">
+      <a href="../../java/sdkman/" class="md-nav__link">
         
   
   
@@ -1189,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -1212,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -1235,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1258,7 +1258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -1281,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -1304,7 +1304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -1327,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -1350,7 +1350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -1377,10 +1377,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1398,20 +1396,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1424,7 +1419,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes
@@ -1438,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-introduction/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -1461,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-installation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -1484,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-presentation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -1504,10 +1499,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1558,11 +1551,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
         
           
           <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
@@ -1578,7 +1571,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_4">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes Objects
@@ -1592,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pod/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -1615,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../namespace/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -1638,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../label-selector-annotation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -1661,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment-replicaset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -1684,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rollout-rollback/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -1707,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../statefulset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -1730,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../daemonset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -1753,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-cronjob/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -1776,7 +1769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-structure-service/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -1799,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingress/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -1822,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-policy/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -1845,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../volume-secret-configmap/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -1868,7 +1861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../image-secret/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -1891,7 +1884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -1914,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -1937,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../persistent-volume-claim/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -1957,32 +1950,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Storage Class
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -1993,245 +1964,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic StorageClass
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-provider-storageclasses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cloud Provider StorageClasses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Provider StorageClasses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#azure-disk-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Azure Disk StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aws-ebs-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      AWS EBS StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gcp-persistent-disk-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      GCP Persistent Disk StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#on-premises-storageclasses" class="md-nav__link">
-    <span class="md-ellipsis">
-      On-Premises StorageClasses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="On-Premises StorageClasses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nfs-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      NFS StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-storage-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Storage StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volume-binding-modes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Volume Binding Modes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Volume Binding Modes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#immediate-binding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Immediate Binding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#waitforfirstconsumer-binding" class="md-nav__link">
-    <span class="md-ellipsis">
-      WaitForFirstConsumer Binding
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-storageclasses-with-pvcs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using StorageClasses with PVCs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using StorageClasses with PVCs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pvc-with-specific-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      PVC with Specific StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pvc-with-default-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      PVC with Default StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Use Cases
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Use Cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#multi-tier-storage-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multi-tier Storage Strategy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#database-deployment-with-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Deployment with StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2244,7 +1976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2267,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rbac/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2290,7 +2022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../service-account/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2378,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -2401,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -2424,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -2447,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -2470,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -2493,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -2516,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -2601,7 +2333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2624,7 +2356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -2703,7 +2435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -2726,7 +2458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/yarn/" class="md-nav__link">
+      <a href="../../nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -2749,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2871,7 +2603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2949,7 +2681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2972,7 +2704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -3065,7 +2797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -3088,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-records/" class="md-nav__link">
+      <a href="../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -3111,7 +2843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -3134,7 +2866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -3157,7 +2889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -3180,7 +2912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -3306,7 +3038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -3329,7 +3061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -3352,7 +3084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3430,7 +3162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3453,7 +3185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -3476,7 +3208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3499,7 +3231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -3522,7 +3254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -3545,7 +3277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -3689,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3712,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../mobile/android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -3735,7 +3467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3758,7 +3490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3840,7 +3572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3863,7 +3595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3886,7 +3618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -3909,7 +3641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3998,7 +3730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../slack/slack-reminder/" class="md-nav__link">
+      <a href="../../slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -4021,7 +3753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../slack/slack-message/" class="md-nav__link">
+      <a href="../../slack/slack-message/" class="md-nav__link">
         
   
   
@@ -4044,7 +3776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -4067,7 +3799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -4094,8 +3826,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -4119,17 +3853,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
             
   
   
@@ -4142,7 +3879,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -4156,7 +3893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -4179,7 +3916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -4202,7 +3939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../multi-gitter/" class="md-nav__link">
         
   
   
@@ -4225,7 +3962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multipass/" class="md-nav__link">
+      <a href="../multipass/" class="md-nav__link">
         
   
   
@@ -4248,7 +3985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../bloomrpc/" class="md-nav__link">
         
   
   
@@ -4271,7 +4008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -4294,7 +4031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../android-file-transfer/" class="md-nav__link">
         
   
   
@@ -4314,10 +4051,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Useful Resources & Tools
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4328,6 +4087,206 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text-json-markdown-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text, JSON &amp; Markdown Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-icon-conversion-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image &amp; Icon &amp; Conversion Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-ui-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design &amp; UI Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-utilities-snippets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Utilities &amp; Snippets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-testing-performance-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load Testing &amp; Performance Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-builders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Website Builders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#news-tech-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      News &amp; Tech Updates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-bootcamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Bootcamp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-answer-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question &amp; Answer Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live-sessions-community-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live Sessions &amp; Community Events
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-ides-tools-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development IDEs &amp; Tools &amp; Extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-chat-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI &amp; Chat Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-cloud-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Devops &amp; Cloud Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-practice-interview-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Practice &amp; Interview Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-literature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books &amp; Literature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-dictionary-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language &amp; Dictionary Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polling-survey-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polling &amp; Survey Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous Tools
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4396,7 +4355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -4419,7 +4378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/website-setup/" class="md-nav__link">
+      <a href="../../miscellaneous/website-setup/" class="md-nav__link">
         
   
   
@@ -4442,7 +4401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/freelancing-guide/" class="md-nav__link">
+      <a href="../../miscellaneous/freelancing-guide/" class="md-nav__link">
         
   
   
@@ -4492,219 +4451,180 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#text-json-markdown-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Text, JSON &amp; Markdown Tools
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#image-icon-conversion-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose
+      Image &amp; Icon &amp; Conversion Tools
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-storageclass" class="md-nav__link">
+  <a href="#design-ui-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic StorageClass
+      Design &amp; UI Tools
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloud-provider-storageclasses" class="md-nav__link">
+  <a href="#coding-utilities-snippets" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloud Provider StorageClasses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Provider StorageClasses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#azure-disk-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Azure Disk StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aws-ebs-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      AWS EBS StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gcp-persistent-disk-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      GCP Persistent Disk StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#on-premises-storageclasses" class="md-nav__link">
-    <span class="md-ellipsis">
-      On-Premises StorageClasses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="On-Premises StorageClasses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nfs-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      NFS StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-storage-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Storage StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volume-binding-modes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Volume Binding Modes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Volume Binding Modes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#immediate-binding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Immediate Binding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#waitforfirstconsumer-binding" class="md-nav__link">
-    <span class="md-ellipsis">
-      WaitForFirstConsumer Binding
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-storageclasses-with-pvcs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using StorageClasses with PVCs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using StorageClasses with PVCs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pvc-with-specific-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      PVC with Specific StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pvc-with-default-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      PVC with Default StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
+      Coding Utilities &amp; Snippets
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-use-cases" class="md-nav__link">
+  <a href="#load-testing-performance-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Use Cases
+      Load Testing &amp; Performance Tools
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Common Use Cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#multi-tier-storage-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multi-tier Storage Strategy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#database-deployment-with-storageclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Deployment with StorageClass
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
+  <a href="#website-builders" class="md-nav__link">
     <span class="md-ellipsis">
-      References
+      Website Builders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#news-tech-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      News &amp; Tech Updates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-bootcamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Bootcamp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-answer-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question &amp; Answer Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live-sessions-community-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live Sessions &amp; Community Events
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-ides-tools-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development IDEs &amp; Tools &amp; Extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-chat-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI &amp; Chat Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-cloud-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Devops &amp; Cloud Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-practice-interview-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Practice &amp; Interview Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-literature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books &amp; Literature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-dictionary-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language &amp; Dictionary Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polling-survey-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polling &amp; Survey Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous Tools
     </span>
   </a>
   
@@ -4726,263 +4646,222 @@
 
 
 
-<h1 id="kubernetes-objects-storage-class">Kubernetes Objects - Storage Class</h1>
-<h2 id="overview">Overview</h2>
-<p>StorageClass provides a way for administrators to describe the "classes" of storage they offer. Different classes might
-map to quality-of-service levels, or to backup policies, or to arbitrary policies determined by the cluster
-administrators.</p>
-<h2 id="purpose">Purpose</h2>
-<p>StorageClasses are used for:</p>
+<h1 id="useful-resources-tools">Useful Resources &amp; Tools</h1>
+<p>A curated list of tools, platforms, and resources useful for developers and tech enthusiasts.</p>
+<h2 id="text-json-markdown-tools">Text, JSON &amp; Markdown Tools</h2>
 <ul>
-<li><strong>Storage Provisioning</strong>: Automatically provision storage when PVCs are created</li>
-<li><strong>Storage Policies</strong>: Define different storage types with specific characteristics</li>
-<li><strong>Quality of Service</strong>: Provide different performance and reliability levels</li>
-<li><strong>Cost Optimization</strong>: Offer various storage options at different price points</li>
+<li><a href="https://quicktype.io/">Quicktype</a> – Convert JSON to multiple programming languages.</li>
+<li><a href="https://jsoneditoronline.org/">JSON Editor Online</a> – Edit and visualize JSON data.</li>
+<li><a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> – Fake REST API for testing and prototyping.</li>
+<li><a href="https://www.toolsvoid.com/append-string/">String Append Online</a> – Quickly append or manipulate text strings.</li>
+<li><a href="https://www.diffchecker.com/">Diffchecker</a> – Compare files or text to find differences.</li>
+<li><a href="https://dillinger.io/">Dillinger</a> – Online Markdown editor with preview.</li>
+<li><a href="https://tabletomarkdown.com/generate-markdown-table/">Table to Markdown</a> – Convert tables into Markdown.</li>
+<li><a href="http://www.lipsum.com/">Lorem Ipsum</a> - Generate placeholder text for design and development.</li>
+<li><a href="http://bullshitipsum.com">Bullshit Ipsum</a> - Generate placeholder text for design and development.</li>
 </ul>
-<h2 id="basic-storageclass">Basic StorageClass</h2>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: standarddisk
-parameters:
-  cachingmode: ReadOnly
-  kind: Managed
-  storageaccounttype: StandardSSD_LRS
-provisioner: kubernetes.io/azure-disk
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-</code></pre>
-<h2 id="cloud-provider-storageclasses">Cloud Provider StorageClasses</h2>
-<h3 id="azure-disk-storageclass">Azure Disk StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: azure-ssd
-  annotations:
-    storageclass.kubernetes.io/is-default-class: &quot;true&quot;
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Premium_LRS
-  kind: Managed
-  cachingmode: ReadWrite
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
-</code></pre>
-<h3 id="aws-ebs-storageclass">AWS EBS StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: aws-gp3
-provisioner: ebs.csi.aws.com
-parameters:
-  type: gp3
-  iops: &quot;3000&quot;
-  throughput: &quot;125&quot;
-  encrypted: &quot;true&quot;
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
-</code></pre>
-<h3 id="gcp-persistent-disk-storageclass">GCP Persistent Disk StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: gcp-ssd
-provisioner: pd.csi.storage.gke.io
-parameters:
-  type: pd-ssd
-  replication-type: regional-pd
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
-</code></pre>
-<h2 id="on-premises-storageclasses">On-Premises StorageClasses</h2>
-<h3 id="nfs-storageclass">NFS StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: nfs-storage
-provisioner: example.com/nfs
-parameters:
-  server: nfs-server.example.com
-  path: /exports
-  mountOptions: &quot;nfsvers=4&quot;
-reclaimPolicy: Retain
-volumeBindingMode: Immediate
-allowVolumeExpansion: false
-</code></pre>
-<h3 id="local-storage-storageclass">Local Storage StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: local-storage
-provisioner: kubernetes.io/no-provisioner
-volumeBindingMode: WaitForFirstConsumer
-reclaimPolicy: Retain
-allowVolumeExpansion: false
-</code></pre>
-<h2 id="volume-binding-modes">Volume Binding Modes</h2>
-<h3 id="immediate-binding">Immediate Binding</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: immediate-binding
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Standard_LRS
-reclaimPolicy: Delete
-volumeBindingMode: Immediate  # Volume is bound immediately when PVC is created
-allowVolumeExpansion: false
-</code></pre>
-<h3 id="waitforfirstconsumer-binding">WaitForFirstConsumer Binding</h3>
-<pre><code class="language-yaml">apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: wait-for-consumer
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Standard_LRS
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer  # Volume is bound when Pod is scheduled
-allowVolumeExpansion: false
-</code></pre>
-<h2 id="using-storageclasses-with-pvcs">Using StorageClasses with PVCs</h2>
-<h3 id="pvc-with-specific-storageclass">PVC with Specific StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysqlclaim
-spec:
-  accessModes:
-    - ReadWriteOnce
-  volumeMode: Filesystem
-  resources:
-    requests:
-      storage: 5Gi
-  storageClassName: &quot;standarddisk&quot;  # Use specific StorageClass
-</code></pre>
-<h3 id="pvc-with-default-storageclass">PVC with Default StorageClass</h3>
-<pre><code class="language-yaml">apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: default-storage-claim
-spec:
-  accessModes:
-    - ReadWriteOnce
-  volumeMode: Filesystem
-  resources:
-    requests:
-      storage: 10Gi
-  # No storageClassName specified - uses default StorageClass
-</code></pre>
-<h2 id="basic-commands">Basic Commands</h2>
-<pre><code class="language-shell"># List StorageClasses
-kubectl get storageclass
-kubectl get sc
-
-# Check StorageClass details
-kubectl describe storageclass &lt;storageclass-name&gt;
-
-# Get StorageClass YAML
-kubectl get storageclass &lt;storageclass-name&gt; -o yaml
-
-# Delete StorageClass
-kubectl delete storageclass &lt;storageclass-name&gt;
-
-# Set default StorageClass
-kubectl patch storageclass &lt;storageclass-name&gt; -p '{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}'
-</code></pre>
-<h2 id="common-use-cases">Common Use Cases</h2>
-<h3 id="multi-tier-storage-strategy">Multi-tier Storage Strategy</h3>
-<pre><code class="language-yaml"># Fast SSD StorageClass for databases
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: fast-ssd
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Premium_LRS
-  kind: Managed
-  cachingmode: ReadWrite
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
----
-# Standard HDD StorageClass for logs
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: standard-hdd
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Standard_LRS
-  kind: Managed
-  cachingmode: ReadOnly
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
-</code></pre>
-<h3 id="database-deployment-with-storageclass">Database Deployment with StorageClass</h3>
-<pre><code class="language-yaml"># StorageClass for database
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: db-storage
-provisioner: kubernetes.io/azure-disk
-parameters:
-  storageaccounttype: Premium_LRS
-  kind: Managed
-  cachingmode: ReadWrite
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
----
-# PVC using the StorageClass
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysql-storage
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 100Gi
-  storageClassName: db-storage
----
-# Deployment using the PVC
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: mysql-deployment
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: mysql
-  template:
-    metadata:
-      labels:
-        app: mysql
-    spec:
-      containers:
-        - name: mysql
-          image: mysql:8.0
-          ports:
-            - containerPort: 3306
-          volumeMounts:
-            - mountPath: &quot;/var/lib/mysql&quot;
-              name: mysql-storage
-      volumes:
-        - name: mysql-storage
-          persistentVolumeClaim:
-            claimName: mysql-storage
-</code></pre>
-<h2 id="references">References</h2>
+<h2 id="image-icon-conversion-tools">Image &amp; Icon &amp; Conversion Tools</h2>
 <ul>
-<li><a href="https://kubernetes.io/docs/concepts/storage/storage-classes/">Kubernetes StorageClasses</a></li>
-<li><a href="https://github.com/aytitech/k8sfundamentals/tree/main/storageclass">GitHub - Aytitech K8sFundamentals - StorageClass</a></li>
+<li><a href="https://www.iconfinder.com/">IconFinder</a> – High-quality icons for projects.</li>
+<li><a href="https://appiconmaker.co/">App Icon Generator</a> – Generate iOS &amp; Android app icons in all sizes.</li>
+<li><a href="https://icon.kitchen/">Icon Kitchen</a> – App icon launcher generator.</li>
+<li><a href="https://www.iloveimg.com/resize-image#resize-options,percentage">ILoveIMG</a> – Resize multiple images simultaneously.</li>
+<li><a href="https://www.sketchappsources.com/">Sketch App Sources</a> – Free icons and UI resources.</li>
+<li><a href="https://onlinetexttools.com/convert-text-to-image">Convert Text to Image</a> – Convert text to an image online.</li>
+<li><a href="https://tabletomarkdown.com/generate-markdown-table/">Markdown Table Generator</a> – Convert tables to markdown.</li>
+<li><a href="https://www.binaryhexconverter.com/decimal-to-hex-converter">Binary-Hex Converter</a> – Convert between decimal, binary,
+  and hex numbers.</li>
+<li><a href="https://crontab.cronhub.io/">Cronhub</a> – Cron expression generator.</li>
+</ul>
+<h2 id="design-ui-tools">Design &amp; UI Tools</h2>
+<ul>
+<li><a href="https://www.figma.com/">Figma</a> – Collaborative design and prototyping tool.</li>
+<li><a href="https://www.canva.com/">Canva Templates</a> – Ready-to-use templates for invitations and visuals.</li>
+<li><a href="https://excalidraw.com/">Excalidraw</a> – Collaborative whiteboard for sketches and diagrams.</li>
+<li><a href="https://app.diagrams.net/">App Diagrams</a> – Free diagramming tool (formerly draw.io).</li>
+<li><a href="https://lucid.app/">Lucid Visual Collaboration</a> – Diagramming and flowchart tool.</li>
+<li><a href="https://mermaid.js.org/intro/">Mermaid Live Editor</a> – Tool to create flowcharts and diagrams using Mermaid syntax.</li>
+<li><a href="https://ant.design/docs/react/introduce">Ant Design for React</a> – React UI library with components and design
+  guidelines.</li>
+<li><a href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a> - Industry-standard image editing software.</li>
+<li><a href="https://x.photoscape.org/">PhotoScape X</a> - Free photo editing software with various tools.</li>
+<li><a href="https://photoscissors.com/editor/410618682/f-k_Jv7GQ">PhotoScissors</a> – Remove image backgrounds.</li>
+</ul>
+<h2 id="coding-utilities-snippets">Coding Utilities &amp; Snippets</h2>
+<ul>
+<li><a href="http://pastebin.com/">Pastebin</a> – Share and store code snippets.</li>
+<li><a href="https://try.freemarker.apache.org/">Try FreeMarker</a> – Test FreeMarker templates online.</li>
+<li><a href="https://devhints.io/">Devhints</a> – Quick reference cheatsheets for developers.</li>
+<li><a href="https://devdocs.io/">DevDocs</a> – API documentation aggregator.</li>
+<li><a href="https://codeshare.io/">CodeShare</a> – Real-time collaborative code editor.</li>
+<li><a href="https://www.teamviewer.com/">TeamViewer</a> – Remote desktop and pair programming.</li>
+<li><a href="https://github.com/topics/first-contributions">GitHub First Contributor Projects</a> - Projects suitable for first-time
+  contributors.</li>
+</ul>
+<h2 id="load-testing-performance-tools">Load Testing &amp; Performance Tools</h2>
+<ul>
+<li><a href="https://fast.com/tr/">Fast.com</a> – Quick internet speed testing.</li>
+<li><a href="https://www.speedtest.net/">Speedtest</a> – Detailed internet performance testing.</li>
+<li><a href="https://loader.io/">Loader.io</a> – Cloud-based load testing tool.</li>
+<li><a href="https://loadium.com/">Loadium</a> – High-performing load testing tool.</li>
+<li><a href="https://k6.io/">k6</a> – Scriptable load testing tool.</li>
+<li><a href="https://locust.io/">Locust</a> – Python-based load testing framework.</li>
+<li><a href="https://www.loadview-testing.com/blog/load-testing-tools-gatling-vs-jmeter-vs-loadview/">Loadview</a> – Resource for
+  comparing load testing tools like JMeter and Gatling.</li>
+</ul>
+<h2 id="website-builders">Website Builders</h2>
+<ul>
+<li><a href="https://pages.github.com/">GitHub Pages</a> – Free hosting for static websites, integrated with GitHub.</li>
+<li><a href="https://www.gitbook.com/">GitBook</a> – Documentation-style portfolios and guides.</li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">MkDocs + Material theme</a> – Static site generator for project
+  documentation with modern themes.</li>
+<li><a href="https://designmodo.com/slides/">Designmodo Slides</a> – Create stylish presentation slides and portfolios online.</li>
+</ul>
+<h2 id="learning-platforms">Learning Platforms</h2>
+<ul>
+<li><a href="https://roadmap.sh">Roadmap.sh</a> – Visual roadmap for learning web development.</li>
+<li><a href="https://www.udemy.com/">Udemy</a> – Affordable courses on various tech topics.</li>
+<li><a href="https://www.coursera.org/">Coursera</a> – Online courses from top universities and companies.</li>
+<li><a href="https://www.pluralsight.com/">Pluralsight</a> – Tech skill development platform.</li>
+<li><a href="https://www.linkedin.com/learning/">LinkedIn Learning</a> – Professional development courses.</li>
+<li><a href="https://www.w3schools.com/">W3Schools</a> – Web development tutorials and references.</li>
+<li><a href="https://www.codecademy.com/">Codecademy</a> – Interactive coding lessons and projects.</li>
+<li><a href="https://www.edx.org/">edX</a> – Online courses from universities and institutions.</li>
+<li><a href="https://www.ted.com/">Ted Talks</a> – Inspiring talks on technology and innovation.</li>
+<li><a href="https://www.theodinproject.com/">The Odin Project</a> – Free full-stack web development curriculum.</li>
+<li><a href="https://www.frontendmentor.io/">Frontend Mentor</a> – Real-world front-end coding challenges.</li>
+<li><a href="https://scrimba.com/">Scrimba</a> – Interactive coding screencasts and tutorials.</li>
+<li><a href="https://developer.mozilla.org/">MDN Web Docs</a> – Comprehensive web development documentation.</li>
+<li><a href="https://javascript.info/">JavaScript.info</a> – In-depth JavaScript tutorials and guides.</li>
+<li><a href="https://cs50.harvard.edu/x/2023/">CS50 by Harvard</a> – Free introduction to computer science course.</li>
+<li><a href="https://exercism.org/">Exercism</a> – Practice coding exercises in various programming languages.</li>
+<li><a href="https://www.codewars.com/">Codewars</a> – Coding challenges and kata for skill improvement.</li>
+<li><a href="https://codesignal.com/">CodeSignal</a> – Coding assessments and practice.</li>
+<li><a href="https://www.topcoder.com/">TopCoder</a> – Competitive programming platform.</li>
+<li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a> – Computer science and programming tutorials.</li>
+<li><a href="https://www.youtube.com/user/thenewboston/videos">Youtube - The New Boston</a> – Programming tutorials and courses.</li>
+<li><a href="https://www.wikihow.com/">Wikihow</a> - How-to guides on various topics.</li>
+<li><a href="https://learnxinyminutes.com/docs/javascript/">Learn JavaScript in Y Minutes</a> – Concise JavaScript tutorials.</li>
+<li><a href="https://jen4web.substack.com/archive">Jen Kramer Archive</a> – HTML, CSS, No-Code, Teaching Tips.</li>
+<li><a href="https://robotdreams.com.tr/course/">Robot Dreams Courses</a> - Web development courses in Turkish.</li>
+</ul>
+<h2 id="news-tech-updates">News &amp; Tech Updates</h2>
+<ul>
+<li><a href="https://builtin.com">Built In</a> – Tech news and company updates.</li>
+<li><a href="https://aws.amazon.com/tr/new/">AWS What's New</a> – AWS product news.</li>
+<li><a href="https://aws.amazon.com/tr/blogs/aws/">AWS News Blog</a> – Updates on AWS services.</li>
+<li><a href="https://daily.dev/">Daily.dev</a> – Curated developer news and articles.</li>
+<li><a href="https://news.ycombinator.com/">Hacker News</a> – Popular developer and startup news aggregator.</li>
+<li><a href="https://techcrunch.com/">TechCrunch</a> – Tech industry news, startups, and product launches.</li>
+<li><a href="https://www.reddit.com/r/programming/">Reddit /r/programming</a> – Developer news and discussions.</li>
+</ul>
+<h2 id="coding-bootcamp">Coding Bootcamp</h2>
+<ul>
+<li><a href="https://kodluyoruz.org/">Kodluyoruz</a> - Coding bootcamp and community.</li>
+<li><a href="https://kodkonvoy.com/">Codkonvoy</a> – Bootcamp / learning resources.</li>
+<li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> – Free coding bootcamp and curriculum.</li>
+<li><a href="https://www.lewagon.com/">Le Wagon</a> – Coding bootcamp with full-stack web development courses.</li>
+</ul>
+<h2 id="question-answer-platforms">Question &amp; Answer Platforms</h2>
+<ul>
+<li><a href="https://stackoverflow.com/">Stack Overflow</a> – Community Q&amp;A for programming issues.</li>
+<li><a href="https://coderanch.com/">Coderanch</a> - Community forum for programming help.</li>
+<li><a href="https://stackexchange.com/">Stack Exchange</a> – Network of Q&amp;A communities on various topics.</li>
+</ul>
+<h2 id="live-sessions-community-events">Live Sessions &amp; Community Events</h2>
+<ul>
+<li><a href="https://www.kommunity.com/">Kommunity</a> – Live coding sessions and community events.</li>
+<li><a href="https://www.twitch.tv/directory/game/Science%20%26%20Technology">Live Coding on Twitch</a> – Watch developers code live.</li>
+<li><a href="https://www.youtube.com/results?search_query=live+coding">YouTube Live Coding</a> – Live coding streams on YouTube.</li>
+<li><a href="https://discord.com/invite/programming">Discord Coding Communities</a> – Join coding-related Discord servers.</li>
+<li><a href="https://jchampionsconf.com/schedule.html">JChampions Conf</a> - Java conference with talks and resources.</li>
+</ul>
+<h2 id="blog">Blog</h2>
+<ul>
+<li><a href="https://dev.to/">Dev.to</a> – Community of developers sharing articles and discussions.</li>
+<li><a href="https://medium.com/">Medium</a> - Blogging platform with tech articles.</li>
+<li><a href="https://hashnode.com/">Hashnode</a> – Developer blogging platform and community.</li>
+</ul>
+<h2 id="development-ides-tools-extensions">Development IDEs &amp; Tools &amp; Extensions</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/">VSCode</a> - Widely-used code editor with extensions.</li>
+<li><a href="https://www.cursor.com/">Cursor</a> - AI-powered code completion tool.</li>
+<li><a href="https://github.com/features/copilot">GitHub Copilot</a> - AI-powered code completion tool.</li>
+<li><a href="https://www.postman.com/">Postman</a> – API testing and collaboration tool.</li>
+<li><a href="https://www.jetbrains.com/go/">GoLand</a> – Jetbrains IDE for Go development.</li>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> – Jetbrains IDE for Python development.</li>
+<li><a href="https://developer.apple.com/xcode/">XCode</a> - IDE for iOS and macOS development.</li>
+<li><a href="https://github.com/ChuckerTeam/chucker">Chucker</a> - HTTP inspector for Android.</li>
+<li><a href="../bloomrpc/">BloomRPC</a> - GUI client for gRPC services.</li>
+</ul>
+<h2 id="ai-chat-tools">AI &amp; Chat Tools</h2>
+<ul>
+<li><a href="https://chatgpt.com/">ChatGPT</a> – Conversational AI assistant for coding help, general queries, and learning.</li>
+<li><a href="https://pi.ai/discover">Pi AI</a> – Personal AI assistant for casual and informative conversations.</li>
+</ul>
+<h2 id="devops-cloud-tools">Devops &amp; Cloud Tools</h2>
+<ul>
+<li><a href="https://split.io/">Split.io</a> – Feature flagging and experimentation platform.</li>
+<li><a href="https://keybase.io/">Keybase</a> – Secure messaging and file-sharing platform.</li>
+<li><a href="https://nektosact.com/usage/runners.html">act</a> – Run GitHub Actions workflows locally.</li>
+<li><a href="../multi-gitter/">Multi Gitter</a> – Tool to apply changes across multiple GitHub repositories.</li>
+<li><a href="../apicurio-via-docker/">Apicurio</a> - API design and documentation tool.</li>
+<li><a href="../kafkaui-via-docker/">KafkaUI</a> - Web-based UI for managing Apache Kafka clusters.</li>
+<li><a href="../multipass/">Multipass</a> - Lightweight Ubuntu VMs for development and testing.</li>
+<li><a href="../windows-on-mac-via-utm/">UTM</a> - Run Windows on Mac using UTM virtualization.</li>
+<li><a href="../android-file-transfer/">Android File Transfer</a> - Transfer files between Android and Mac.</li>
+</ul>
+<h2 id="coding-practice-interview-preparation">Coding Practice &amp; Interview Preparation</h2>
+<ul>
+<li><a href="https://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a> – Book and resources for tech interview
+  preparation.</li>
+<li><a href="https://www.interviewbit.com/practice/">InterviewBit</a> – Practice coding problems with structured learning paths.</li>
+<li><a href="https://leetcode.com/problems">LeetCode</a> – Solve coding problems and compete in coding challenges.</li>
+<li><a href="https://www.techinterviewhandbook.org/grind75">Tech Interview Handbook - Grind75</a> – Curated list of 75 essential
+  coding interview questions.</li>
+<li><a href="http://projecteuler.net/problems">Project Euler</a> – Math- and logic-based programming problems for practice.</li>
+<li><a href="https://www.hackerrank.com/">HackerRank / Coding Interviews</a> – Coding challenges for interview preparation.</li>
+<li><a href="https://www.interviewbit.com/problems/">Longest Consecutive Sequence | InterviewBit</a> - Practice problems including
+  Longest Consecutive Sequence.</li>
+<li><a href="https://www.interviewbit.com/facebook-interview-questions/">Facebook Interview Questions | InterviewBit</a> -
+  Facebook-specific interview questions.</li>
+<li><a href="https://pramp.com/#/">PairAI Interview</a> – Platform for practicing technical interviews with peers.</li>
+</ul>
+<h2 id="books-literature">Books &amp; Literature</h2>
+<ul>
+<li><a href="https://americanliterature.com/author/l-frank-baum/short-story/the-man-in-the-moon">American Literature</a> – Classic
+  English short stories.</li>
+<li><a href="https://may.alleng.org/english/txb1.htm">TXB English Book</a> – Online English book resources.</li>
+<li><a href="https://ebooksz.net/">Ebooksz</a> – Free ebooks for learning and reading.</li>
+<li><a href="https://tr1lib.org/">Tr1lib</a> – Free digital library for books and academic resources.</li>
+<li><a href="https://languagelearning.site/">Language Learning Site</a> - Resources for learning languages.</li>
+<li><a href="https://tr.z-library.se/">Z Library</a> - Free ebooks and academic articles.</li>
+</ul>
+<h2 id="language-dictionary-tools">Language &amp; Dictionary Tools</h2>
+<ul>
+<li><a href="https://translate.google.com/">Google Translate</a> – Translate text between languages.</li>
+<li><a href="https://tureng.com/tr/turkce-ingilizce">Tureng</a> – Turkish-English dictionary.</li>
+<li><a href="https://dictionary.cambridge.org/">Cambridge Dictionary</a> - English dictionary and thesaurus.</li>
+<li><a href="https://www.oxfordlearnersdictionaries.com/">Oxford Thesaurus</a> - English synonyms and antonyms.</li>
+<li><a href="https://www.merriam-webster.com/dictionary/thesaurus">Merriam-Webster Thesaurus</a> - English synonyms and antonyms.</li>
+<li><a href="https://www.thesaurus.com/">Thesaurus.com</a> - English synonyms and antonyms.</li>
+<li><a href="https://www.deepl.com/translator">DeepL</a> – High-quality machine translation.</li>
+<li><a href="https://www.seslisozluk.net/">Sesli Sözlük</a> – Turkish-English dictionary.</li>
+</ul>
+<h2 id="polling-survey-tools">Polling &amp; Survey Tools</h2>
+<ul>
+<li><a href="https://kahoot.it/">Kahoot</a> - Create and play learning games and quizzes.</li>
+<li><a href="https://www.mentimeter.com/">Menti Meter</a> - Interactive presentations and polls for organizers.</li>
+<li><a href="https://www.menti.com/">Menti</a> - Interactive presentations and polls for users.</li>
+<li><a href="https://www.poll-maker.com/">Poll Maker</a> - Create online polls and surveys.</li>
+<li><a href="https://freeonlinedice.com/">Rice Dice</a> - Online dice roller for games and decision making.</li>
+</ul>
+<h2 id="miscellaneous-tools">Miscellaneous Tools</h2>
+<ul>
+<li><a href="https://iptvstreamsplayer.com/">IPTV Stream Player</a> - IPTV streaming service.</li>
+<li><a href="https://canlialtinfiyatlari.com/">Canlı Altın</a> - Live gold prices in Turkey.</li>
+<li><a href="https://www.selcuksportshd.is/">Selcuksport</a> - Live sports scores and updates.</li>
+<li><a href="https://taraftariumspor.com/">taraftarium24</a> - Live sports scores and updates.</li>
 </ul>
 
 
@@ -4990,9 +4869,6 @@ spec:
 
 
 
-
-  
-  
 
 
 
@@ -5065,10 +4941,10 @@ spec:
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
