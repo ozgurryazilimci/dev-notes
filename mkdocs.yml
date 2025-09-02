@@ -120,6 +120,8 @@ nav:
       - Tfenv: terraform/tfenv.md
   - Node.js:
       - Nvm & Npm: nodejs/nvm-npm.md
+      - Yarn: nodejs/yarn.md
+      - Npm To Yarn Cheatsheet: nodejs/npm-to-yarn-cheatsheet.md
   - Database:
       - MySQL:
           - MySQL Cheatsheet: database/mysql/mysql-cheatsheet.md

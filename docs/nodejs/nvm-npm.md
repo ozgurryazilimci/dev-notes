@@ -5,7 +5,7 @@
 
 ---
 
-## 1. Installation
+## Installation
 
 ```bash
 brew install nvm
@@ -13,7 +13,7 @@ brew install nvm
 
 ---
 
-## 2. Configure NVM
+## Configure NVM
 
 Create a directory for NVM:
 
@@ -38,7 +38,7 @@ source ~/.bash_profile
 
 ---
 
-## 3. Basic Commands
+## Basic Commands
 
 Check nvm version:
 
@@ -78,7 +78,7 @@ nvm alias default 16.20.2
 
 ---
 
-## 4. Node & NPM Versions
+## Node & NPM Versions
 
 Check versions:
 
@@ -89,9 +89,9 @@ npm -v # npm --version
 
 ---
 
-## 5. Using `.nvmrc` and `.npmrc`
+## Using `.nvmrc` and `.npmrc`
 
-### 5.1 `.nvmrc`
+### .nvmrc
 
 If your project contains a `.nvmrc` file:
 
@@ -107,7 +107,7 @@ nvm use
 
 to automatically switch to that version.
 
-### 5.2 `.npmrc`
+### .npmrc
 
 `.npmrc` is a configuration file that customizes npm behavior, such as registry URLs and authentication tokens.
 
@@ -120,7 +120,7 @@ Example `.npmrc` for private GitHub packages:
 
 ---
 
-## 6. Makefile Commands for Easy Setup
+## Makefile Commands for Easy Setup
 
 Generate `.npmrc`:
 
@@ -159,7 +159,7 @@ make react-run
 
 ---
 
-## 7. Useful Commands
+## Useful Commands
 
 Kill a process on port 3000:
 
@@ -178,7 +178,7 @@ npm run dev
 
 ---
 
-## 8. Directory Structure
+## Directory Structure
 
 ```text
 ~/.nvm
