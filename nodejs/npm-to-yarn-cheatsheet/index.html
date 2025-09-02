@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/cloud/aws/aws-services/aws-glacier/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/nodejs/npm-to-yarn-cheatsheet/">
       
       
-        <link rel="prev" href="../aws-s3/">
+        <link rel="prev" href="../yarn/">
       
       
-        <link rel="next" href="../aws-athena-examples/">
+        <link rel="next" href="../../database/mysql/mysql-cheatsheet/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Glacier - My Dev Notes</title>
+        <title>Npm To Yarn Cheatsheet - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-services-glacier" class="md-skip">
+        <a href="#npm-yarn-migration-cheatsheet" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Glacier
+              Npm To Yarn Cheatsheet
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -305,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../java/jenv/" class="md-tabs__link">
+        <a href="../../java/jenv/" class="md-tabs__link">
           
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -349,7 +349,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
+        <a href="../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
           
   
   
@@ -371,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../terraform/terraform-cheatsheet/" class="md-tabs__link">
+        <a href="../../terraform/terraform-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -389,11 +389,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../nodejs/nvm-npm/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../nvm-npm/" class="md-tabs__link">
           
   
   
@@ -422,7 +424,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -447,7 +449,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../network/dns-nameservers/" class="md-tabs__link">
+        <a href="../../network/dns-nameservers/" class="md-tabs__link">
           
   
   
@@ -465,8 +467,6 @@
   
   
   
-    
-  
   
     
     
@@ -474,13 +474,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../aws-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../cloud/aws/aws-introduction/" class="md-tabs__link">
           
   
   
@@ -512,7 +510,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../mobile/android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -537,7 +535,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -559,7 +557,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../tools/apicurio-via-docker/" class="md-tabs__link">
+        <a href="../../tools/apicurio-via-docker/" class="md-tabs__link">
           
   
   
@@ -581,7 +579,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -617,7 +615,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -635,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -704,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -727,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -812,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -835,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-actions/" class="md-nav__link">
+      <a href="../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -858,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/tmate/" class="md-nav__link">
+      <a href="../../git/tmate/" class="md-nav__link">
         
   
   
@@ -881,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -904,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -927,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -1002,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1079,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../java/jenv/" class="md-nav__link">
+      <a href="../../java/jenv/" class="md-nav__link">
         
   
   
@@ -1102,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../java/sdkman/" class="md-nav__link">
+      <a href="../../java/sdkman/" class="md-nav__link">
         
   
   
@@ -1191,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -1214,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -1237,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1260,7 +1258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -1283,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -1306,7 +1304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -1329,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -1352,7 +1350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -1435,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -1458,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -1481,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -1587,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -1610,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -1633,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -1656,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -1679,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -1702,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -1725,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -1748,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -1771,7 +1769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -1794,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -1817,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -1840,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -1863,7 +1861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -1886,7 +1884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -1909,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -1932,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -1955,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -1978,7 +1976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2001,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2024,7 +2022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2112,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -2135,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -2158,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -2181,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -2204,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -2227,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -2250,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -2335,7 +2333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2358,7 +2356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -2385,8 +2383,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2400,17 +2400,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -2423,7 +2426,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Node.js
@@ -2437,7 +2440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../nvm-npm/" class="md-nav__link">
         
   
   
@@ -2460,7 +2463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../nodejs/yarn/" class="md-nav__link">
+      <a href="../yarn/" class="md-nav__link">
         
   
   
@@ -2480,10 +2483,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Npm To Yarn Cheatsheet
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2494,6 +2519,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Versions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-outdated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audit &amp; Outdated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2605,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2683,7 +2809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2706,7 +2832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -2799,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -2822,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-records/" class="md-nav__link">
+      <a href="../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -2845,7 +2971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -2868,7 +2994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -2891,7 +3017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -2914,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -2941,10 +3067,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -2954,20 +3078,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   
@@ -2980,7 +3101,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Cloud
@@ -2991,10 +3112,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3013,11 +3132,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
         
           
           <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
@@ -3033,7 +3152,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_1">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -3047,7 +3166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-introduction/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -3070,7 +3189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-cli/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -3093,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-services-overview/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3113,10 +3232,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3139,11 +3256,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" >
         
           
           <label class="md-nav__link" for="__nav_12_1_4" id="__nav_12_1_4_label" tabindex="0">
@@ -3159,7 +3276,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_1_4">
             <span class="md-nav__icon md-icon"></span>
             AWS Services
@@ -3173,7 +3290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3196,7 +3313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-iam/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -3219,7 +3336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-iam-demo/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3242,7 +3359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-s3/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -3262,32 +3379,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Glacier
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -3298,191 +3393,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-amazon-s3-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Amazon S3 Glacier?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-glacier-vault" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a Glacier Vault
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating a Glacier Vault">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-aws-console-gui" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using AWS Console (GUI)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-aws-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using AWS CLI
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uploading-data-to-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uploading Data to Glacier
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-multipart-upload-with-aws-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Multipart Upload with AWS CLI
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example: Multipart Upload with AWS CLI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-create-a-large-file-3-mb" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Create a Large File (3 MB)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-split-file-into-1-mb-chunks" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Split File into 1 MB Chunks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-initiate-multipart-upload" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Initiate Multipart Upload
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-assign-upload-id-and-upload-parts" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Assign Upload ID and Upload Parts
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-generate-checksums-for-each-part" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Generate Checksums for Each Part
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-combine-hashes" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Combine Hashes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-complete-multipart-upload" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Complete Multipart Upload
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieving-data-from-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieving Data from Glacier
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lifecycle-policies-with-s3-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lifecycle Policies with S3 + Glacier
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3495,7 +3405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-athena-examples/" class="md-nav__link">
+      <a href="../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -3639,7 +3549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3662,7 +3572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../mobile/android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -3685,7 +3595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3708,7 +3618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../mobile/android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3790,7 +3700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3813,7 +3723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3836,7 +3746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -3859,7 +3769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3948,7 +3858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../slack/slack-reminder/" class="md-nav__link">
+      <a href="../../slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -3971,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../slack/slack-message/" class="md-nav__link">
+      <a href="../../slack/slack-message/" class="md-nav__link">
         
   
   
@@ -3994,7 +3904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -4017,7 +3927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -4104,7 +4014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -4127,7 +4037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -4150,7 +4060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -4173,7 +4083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multipass/" class="md-nav__link">
+      <a href="../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -4196,7 +4106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -4219,7 +4129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -4242,7 +4152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -4321,7 +4231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -4344,7 +4254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../miscellaneous/website-setup/" class="md-nav__link">
+      <a href="../../miscellaneous/website-setup/" class="md-nav__link">
         
   
   
@@ -4367,7 +4277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../miscellaneous/freelancing-guide/" class="md-nav__link">
+      <a href="../../miscellaneous/freelancing-guide/" class="md-nav__link">
         
   
   
@@ -4417,156 +4327,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-amazon-s3-glacier" class="md-nav__link">
+  <a href="#install-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Amazon S3 Glacier?
+      Install Dependencies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-glacier-vault" class="md-nav__link">
+  <a href="#add-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a Glacier Vault
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating a Glacier Vault">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-aws-console-gui" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using AWS Console (GUI)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-aws-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using AWS CLI
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uploading-data-to-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uploading Data to Glacier
+      Add Dependencies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-multipart-upload-with-aws-cli" class="md-nav__link">
+  <a href="#remove-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Example: Multipart Upload with AWS CLI
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example: Multipart Upload with AWS CLI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-create-a-large-file-3-mb" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Create a Large File (3 MB)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-split-file-into-1-mb-chunks" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Split File into 1 MB Chunks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-initiate-multipart-upload" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Initiate Multipart Upload
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-assign-upload-id-and-upload-parts" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Assign Upload ID and Upload Parts
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-generate-checksums-for-each-part" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Generate Checksums for Each Part
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-combine-hashes" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Combine Hashes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-complete-multipart-upload" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Complete Multipart Upload
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieving-data-from-glacier" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieving Data from Glacier
+      Remove Dependencies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lifecycle-policies-with-s3-glacier" class="md-nav__link">
+  <a href="#update-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Lifecycle Policies with S3 + Glacier
+      Update Dependencies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-notes" class="md-nav__link">
+  <a href="#run-scripts" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional Notes
+      Run Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Versions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-outdated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audit &amp; Outdated
     </span>
   </a>
   
@@ -4597,141 +4423,78 @@
 
 
 
-<h1 id="aws-services-glacier">AWS Services - Glacier</h1>
-<h2 id="what-is-amazon-s3-glacier">What is Amazon S3 Glacier?</h2>
-<p>Amazon S3 Glacier is a low-cost cloud storage service for data archiving and long-term backup. It is optimized for data
-that is infrequently accessed and for which retrieval times of minutes to hours are acceptable.</p>
-<p>Key features:</p>
-<ul>
-<li>Extremely low storage cost compared to S3 Standard</li>
-<li>Designed for long-term retention (years/decades)</li>
-<li>Retrieval options:<ul>
-<li><strong>Expedited</strong> (1–5 minutes, higher cost)</li>
-<li><strong>Standard</strong> (3–5 hours)</li>
-<li><strong>Bulk</strong> (5–12 hours, lowest cost)</li>
-</ul>
-</li>
-<li>Use cases:<ul>
-<li>Compliance and regulatory archives</li>
-<li>Backups</li>
-<li>Digital preservation</li>
-</ul>
-</li>
-</ul>
+<h1 id="npm-yarn-migration-cheatsheet">npm ↔ Yarn Migration Cheatsheet</h1>
+<p>This cheatsheet shows the most common <strong>npm</strong> commands and their <strong>Yarn</strong> equivalents.<br />
+Use it when migrating projects or switching between the two package managers.</p>
 <hr />
-<h2 id="creating-a-glacier-vault">Creating a Glacier Vault</h2>
-<h3 id="using-aws-console-gui">Using AWS Console (GUI)</h3>
-<ol>
-<li>Go to <strong>AWS Management Console → S3 Glacier</strong>.</li>
-<li>Click <strong>Create Vault</strong>.</li>
-<li>Choose a region.</li>
-<li>Enter a vault name (e.g., <code>myvault</code>).</li>
-<li>Optionally configure notifications or tags.</li>
-<li>Click <strong>Create Vault</strong>.</li>
-</ol>
-<h3 id="using-aws-cli">Using AWS CLI</h3>
-<pre><code class="language-bash">aws glacier create-vault --account-id - --vault-name myvault
+<h2 id="install-dependencies">Install Dependencies</h2>
+<pre><code>npm install
+yarn install
 </code></pre>
 <hr />
-<h2 id="uploading-data-to-glacier">Uploading Data to Glacier</h2>
-<p>Unlike S3 Standard storage, Glacier does not allow direct object upload from the console. You must use:</p>
-<ul>
-<li><strong>AWS CLI</strong></li>
-<li><strong>AWS SDKs</strong></li>
-<li><strong>Lifecycle policies</strong> (transitioning S3 objects into Glacier)</li>
-</ul>
+<h2 id="add-dependencies">Add Dependencies</h2>
+<p>Install a package:</p>
+<pre><code>npm install react
+yarn add react
+</code></pre>
+<p>Install as a dev dependency:</p>
+<pre><code>npm install --save-dev webpack
+yarn add --dev webpack
+</code></pre>
+<p>Install globally:</p>
+<pre><code>npm install -g typescript
+yarn global add typescript
+</code></pre>
 <hr />
-<h2 id="example-multipart-upload-with-aws-cli">Example: Multipart Upload with AWS CLI</h2>
-<h3 id="1-create-a-large-file-3-mb">1. Create a Large File (3 MB)</h3>
-<pre><code class="language-bash">dd if=/dev/urandom of=largefile bs=3145728 count=1
+<h2 id="remove-dependencies">Remove Dependencies</h2>
+<pre><code>npm uninstall react
+yarn remove react
 </code></pre>
-<h3 id="2-split-file-into-1-mb-chunks">2. Split File into 1 MB Chunks</h3>
-<pre><code class="language-bash">split --bytes=1048576 --verbose largefile chunk
+<hr />
+<h2 id="update-dependencies">Update Dependencies</h2>
+<p>Update a single package:</p>
+<pre><code>npm update react
+yarn upgrade react
 </code></pre>
-<p>Produces: <code>chunkaa</code>, <code>chunkab</code>, <code>chunkac</code>.</p>
-<h3 id="3-initiate-multipart-upload">3. Initiate Multipart Upload</h3>
-<pre><code class="language-bash">aws glacier initiate-multipart-upload --account-id - --archive-description &quot;multipart upload test&quot; --part-size 1048576
---vault-name myvault
+<p>Update to latest version:</p>
+<pre><code>npm install react@latest
+yarn upgrade react@latest
 </code></pre>
-<p>Response:</p>
-<pre><code class="language-json">{
-  &quot;location&quot;: &quot;...&quot;,
-  &quot;uploadId&quot;: &quot;ssW0Kx...&quot;
-}
-</code></pre>
-<h3 id="4-assign-upload-id-and-upload-parts">4. Assign Upload ID and Upload Parts</h3>
-<pre><code class="language-bash">UPLOADID=&quot;ssW0Kx...&quot;
-</code></pre>
-<pre><code class="language-bash">aws glacier upload-multipart-part
---upload-id $UPLOADID --body chunkaa --range 'bytes 0-1048575/*' --account-id - --vault-name myvault  
+<hr />
+<h2 id="run-scripts">Run Scripts</h2>
+<pre><code>npm run start
+yarn start
 
-aws glacier upload-multipart-part --upload-id $UPLOADID --body chunkab --range 'bytes 1048576-2097151/*' --account-id -
---vault-name myvault  
+npm run build
+yarn build
+</code></pre>
+<hr />
+<h2 id="check-versions">Check Versions</h2>
+<pre><code>npm -v
+yarn -v
 
-aws glacier upload-multipart-part --upload-id $UPLOADID --body chunkac --range 'bytes 2097152-3145727/*' --account-id -
---vault-name myvault
-</code></pre>
-<h3 id="5-generate-checksums-for-each-part">5. Generate Checksums for Each Part</h3>
-<pre><code class="language-bash">openssl dgst -sha256 -binary chunkaa &gt; hash1  
-openssl dgst -sha256 -binary chunkab &gt; hash2  
-openssl dgst -sha256 -binary chunkac &gt; hash3
-</code></pre>
-<h3 id="6-combine-hashes">6. Combine Hashes</h3>
-<pre><code class="language-bash">cat hash1 hash2 &gt; hash12  
-openssl dgst -sha256 -binary hash12 &gt; hash12hash
-</code></pre>
-<pre><code class="language-bash">cat hash12hash hash3 &gt; hash123  
-openssl dgst -sha256 hash123
-</code></pre>
-<p>Result:</p>
-<pre><code class="language-plaintext">SHA256(hash123)= 9628195f...
-</code></pre>
-<p>Assign to variable:</p>
-<pre><code class="language-bash">TREEHASH=9628195f...
-</code></pre>
-<h3 id="7-complete-multipart-upload">7. Complete Multipart Upload</h3>
-<pre><code class="language-bash">aws glacier complete-multipart-upload --checksum $TREEHASH --archive-size 3145728 --upload-id $UPLOADID --account-id -
---vault-name myvault
+node -v   (same for both)
 </code></pre>
 <hr />
-<h2 id="retrieving-data-from-glacier">Retrieving Data from Glacier</h2>
-<p>Data in Glacier cannot be instantly retrieved. You must initiate a retrieval job.</p>
-<p>Example:</p>
-<pre><code class="language-bash">aws glacier initiate-job --account-id - --vault-name myvault --job-parameters '{&quot;Type&quot;: &quot;archive-retrieval&quot;, &quot;
-ArchiveId&quot;: &quot;ARCHIVE_ID&quot;}'
-</code></pre>
-<p>Then check job status:</p>
-<pre><code class="language-bash">aws glacier describe-job --account-id - --vault-name myvault --job-id JOB_ID
-</code></pre>
-<p>Once completed, download the archive:</p>
-<pre><code class="language-bash">aws glacier get-job-output --account-id - --vault-name myvault --job-id JOB_ID output_file.txt
+<h2 id="cache">Cache</h2>
+<pre><code>npm cache clean --force
+yarn cache clean
 </code></pre>
 <hr />
-<h2 id="lifecycle-policies-with-s3-glacier">Lifecycle Policies with S3 + Glacier</h2>
-<p>Often, instead of directly uploading to Glacier, organizations:</p>
-<ul>
-<li>Store objects in <strong>S3 Standard</strong> first</li>
-<li>Define a <strong>lifecycle policy</strong> to transition them into <strong>S3 Glacier</strong> or <strong>S3 Glacier Deep Archive</strong> after a number of
-  days</li>
-</ul>
-<p>Example use case:</p>
-<ul>
-<li>Keep logs in S3 Standard for 30 days</li>
-<li>Move them to Glacier for 1 year</li>
-<li>Finally, move them to Glacier Deep Archive for long-term retention</li>
-</ul>
-<hr />
-<h2 id="additional-notes">Additional Notes</h2>
-<ul>
-<li><strong>Glacier Vault Lock</strong>: Provides compliance controls (e.g., write-once-read-many, WORM).</li>
-<li><strong>Pricing</strong>: Very cheap storage, but retrieval and early deletion (less than 90 days) have additional costs.</li>
-<li><strong>Alternatives</strong>: For infrequently accessed but still “hot” data, consider <strong>S3 Glacier Instant Retrieval</strong> or <strong>S3
-  Glacier Flexible Retrieval</strong> storage classes instead of pure Glacier vaults.</li>
-</ul>
+<h2 id="audit-outdated">Audit &amp; Outdated</h2>
+<p>Check for outdated packages:</p>
+<pre><code>npm outdated
+yarn outdated
+</code></pre>
+<p>Audit for vulnerabilities:</p>
+<pre><code>npm audit
+yarn audit
+</code></pre>
 <hr />
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-glacier.html">Using Amazon S3 Glacier in the AWS CLI</a></li>
+<li><a href="https://docs.npmjs.com/">npm Docs</a></li>
+<li><a href="https://yarnpkg.com/getting-started/migration">Yarn Docs</a>  </li>
 </ul>
 
 
@@ -4811,10 +4574,10 @@ ArchiveId&quot;: &quot;ARCHIVE_ID&quot;}'
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
