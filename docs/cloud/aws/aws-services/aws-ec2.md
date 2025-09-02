@@ -287,7 +287,7 @@ ssh -i mykey.pem ec2-user@<PUBLIC_IP>
 To validate that Auto Scaling responds correctly to load, you can generate artificial CPU stress on an EC2 instance and
 observe how the Auto Scaling Group launches new instances.
 
-#### Steps
+**Steps:**
 
 - **Create an Auto Scaling Group**
     - Launch Template or Launch Configuration with your EC2 setup.
