@@ -171,6 +171,7 @@ nav:
       - BloomRPC: tools/bloomrpc.md
       - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
       - Android File Transfer: tools/android-file-transfer.md
+      - Useful Resources & Tools: tools/useful-resources-tools.md
   - Miscellaneous:
       - Modem Admin & Wi-Fi Passwords: miscellaneous/modem-admin-wifi-passwords.md
       - Website Setup: miscellaneous/website-setup.md

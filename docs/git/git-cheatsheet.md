@@ -277,3 +277,7 @@ git pull
 
   Add `[skip ci]` anywhere in your git commit message to skip CI workflows.
 
+## References
+
+- **[Git](https://git-scm.com/)** – Version control system.
+- **[GitHub](https://github.com/)** – Code hosting and collaboration.

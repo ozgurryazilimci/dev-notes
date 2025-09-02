@@ -54,8 +54,7 @@ brew uninstall --cask bloomrpc
 BloomRPC simplifies testing gRPC services, allowing you to load `.proto` files, send requests, and view responses with a
 simple GUI. It is especially useful for developers working with multiple gRPC endpoints on macOS.
 
-For more details, refer to the official GitHub
-repository: [https://github.com/bloomrpc/bloomrpc](https://github.com/bloomrpc/bloomrpc).
+For more details, refer to the official GitHub repository: [https://github.com/bloomrpc/bloomrpc](https://github.com/bloomrpc/bloomrpc).
 
 ## ⚠️ Note on BloomRPC
 

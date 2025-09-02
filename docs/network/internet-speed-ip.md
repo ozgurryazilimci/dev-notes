@@ -103,6 +103,7 @@ Your public IP is visible to the internet and can be found using online tools:
 - [https://whatismyipaddress.com](https://whatismyipaddress.com)
 - [https://ipchicken.com](https://ipchicken.com)
 - [https://ifconfig.me](https://ifconfig.me) in a browser or terminal: `curl ifconfig.me`
+- [https://ifconfig.co](https://ifconfig.co) in a browser or terminal: `curl ifconfig.co`
 - Open the website; your public IP will be displayed.
 - Example output: `203.0.113.17` (example IP)
 
