@@ -146,6 +146,7 @@ nav:
               - IAM Demo: cloud/aws/aws-services/aws-iam-demo.md
               - S3: cloud/aws/aws-services/aws-s3.md
               - Glacier: cloud/aws/aws-services/aws-glacier.md
+              - EC2: cloud/aws/aws-services/aws-ec2.md
               - Athena Examples: cloud/aws/aws-services/aws-athena-examples.md
   - Mobile:
       - Android:
