@@ -108,5 +108,3 @@ Displays network connections, routing tables, interface statistics, etc.
 Usage:
 `netstat -tuln`
 
----
-
