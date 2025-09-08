@@ -149,6 +149,7 @@ nav:
               - Glacier: cloud/aws/aws-services/aws-glacier.md
               - EC2: cloud/aws/aws-services/aws-ec2.md
               - EFS: cloud/aws/aws-services/aws-efs.md
+              - VPC: cloud/aws/aws-services/aws-vpc.md
               - Athena Examples: cloud/aws/aws-services/aws-athena-examples.md
   - Mobile:
       - Android:
