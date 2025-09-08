@@ -54,7 +54,7 @@ jobs:
 
 ## 2. Notify Slack to Remind Session
 
-This workflow is triggered manually and sends a reminder about an upcoming Engineering Session.
+This workflow is triggered manually and sends a reminder about an upcoming Tech Session.
 
 <details>
 <summary>session-reminder-notify.yml</summary>
@@ -130,7 +130,7 @@ jobs:
                     "type": "header",
                     "text": {
                         "type": "plain_text",
-                        "text": "🌟 Friendly Reminder: Upcoming Engineering Session :coffee:",
+                        "text": "🌟 Friendly Reminder: Upcoming Tech Session :rocket:",
                         "emoji": true
                     }
                 },
@@ -138,7 +138,7 @@ jobs:
                     "type": "section",
                     "text": {
                         "type": "mrkdwn",
-                        "text": "Hi Friends,\n\nJust a quick reminder about our upcoming *Engineering Session*:\n\n*📌 Topic:* ${{ inputs.topic }}\n*🗓️ Date:* ${{ steps.set-date.outputs.date }}\n*⏰ Time:* ${{ inputs.time }}\n*📍 Link:* <${{ inputs.meet-link }}|Click here to join the meeting>\n\n${{ steps.set-details.outputs.details_text }}\n\nLooking forward to seeing you all there! 😊"
+                        "text": "Hi Friends,\n\nJust a quick reminder about our upcoming *Tech Session*:\n\n*📌 Topic:* ${{ inputs.topic }}\n*🗓️ Date:* ${{ steps.set-date.outputs.date }}\n*⏰ Time:* ${{ inputs.time }}\n*📍 Link:* <${{ inputs.meet-link }}|Click here to join the meeting>\n\n${{ steps.set-details.outputs.details_text }}\n\nLooking forward to seeing you all there! 😊"
                     }
                 }
             ]
@@ -227,7 +227,7 @@ jobs:
               "type": "section",
               "text": {
                 "type": "mrkdwn",
-                "text": "A huge thank you to everyone for your time and contributions in today’s Engineering Session :coffee:! Special shoutout to the amazing presenter(s) who did an outstanding job:\n${{ steps.parse-speakers.outputs.formatted_speakers }}\n\n for the *${{ inputs.topic }}* presentation 👏"
+                "text": "A huge thank you to everyone for your time and contributions in today’s Tech Session :rocket:! Special shoutout to the amazing presenter(s) who did an outstanding job:\n${{ steps.parse-speakers.outputs.formatted_speakers }}\n\n for the *${{ inputs.topic }}* presentation 👏"
               }
             },
             {
@@ -252,7 +252,7 @@ jobs:
               "elements": [
                 {
                   "type": "plain_text",
-                  "text": "Thanks again, everyone! This was our ${{ inputs.session-number }}. :coffee: session—keep up the fantastic work! 💪",
+                  "text": "Thanks again, everyone! This was our ${{ inputs.session-number }}. :rocket: session—keep up the fantastic work! 💪",
                   "emoji": true
                 }
               ]

@@ -67,10 +67,10 @@ They are useful for meeting reminders, daily check-ins, and recurring tasks.
 /remind @username every weekday at 6:00am "Good morning! Let's start the day with a positive mindset."
 
 -- Pre-event technical check
-/remind @username every Friday at 10:15am "Check audio and video permissions before the engineering session."
+/remind @username every Friday at 10:15am "Check audio and video permissions before the tech session."
 
 -- Event reminder
-/remind @username every Friday at 2:45pm "Friendly reminder: send Slack notification for the engineering session."
+/remind @username every Friday at 2:45pm "Friendly reminder: send Slack notification for the tech session."
 ```
 
 ---

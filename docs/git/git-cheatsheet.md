@@ -2,7 +2,7 @@
 
 ## Setup and Configuration
 
-**List user name, user email and ssh command:**
+**List user name, user email and ssh command (Do not use `--global` option for repo based):**
 
 ```bash
 git config --global user.name
@@ -10,22 +10,20 @@ git config --global user.email
 git config --global core.sshCommand
 ```
 
-**Set user name:**
+**Set user name, user email and ssh command (Do not use `--global` option for repo based):**
 
 ```bash
 git config --global user.name "yourusername"
-```
-
-**Set user email:**
-
-```bash
 git config --global user.email "youremail@mail.com"
+git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -F /dev/null"
 ```
 
-**Set core ssh command:**
+**Unset user name, user email and ssh command (Do not use `--global` option for repo based):**
 
 ```bash
-git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -F /dev/null"
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset core.sshCommand
 ```
 
 **Manage Personal Access Token info:**

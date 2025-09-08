@@ -129,6 +129,7 @@ nav:
           - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
           - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
   - Network:
+      - IP Addresses, IP Ranges, CIDR: network/ip-addresses-ip-ranges-cidr.md
       - DNS & Nameservers: network/dns-nameservers.md
       - DNS Records: network/dns-records.md
       - Domain & Hosting Lookup: network/domain-hosting-lookup.md
