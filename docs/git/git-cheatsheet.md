@@ -265,6 +265,12 @@ git pull --rebase origin master
 git branch --set-upstream-to=origin/master
 ```
 
+**Show which upstream branch is currently set (It should show `[origin/master]` for master branch):**
+
+```bash
+git branch -vv
+```
+
 **Pull after the upstream set:**
 
 ```bash
