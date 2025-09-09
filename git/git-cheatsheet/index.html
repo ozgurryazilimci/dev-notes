@@ -449,7 +449,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../network/dns-nameservers/" class="md-tabs__link">
+        <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -2884,6 +2884,8 @@
       
         
       
+        
+      
     
     
     
@@ -2917,6 +2919,29 @@
             Network
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IP Addresses, IP Ranges, CIDR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3251,6 +3276,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3413,6 +3442,52 @@
   
   <span class="md-ellipsis">
     EC2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EFS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VPC
     
   </span>
   
@@ -4240,6 +4315,8 @@
       
         
       
+        
+      
     
     
     
@@ -4333,6 +4410,29 @@
   
   <span class="md-ellipsis">
     Freelancing Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miscellaneous/recommended-reading-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recommended Reading List
     
   </span>
   
@@ -4475,19 +4575,20 @@
 
 <h1 id="git-cheatsheet">Git Cheatsheet</h1>
 <h2 id="setup-and-configuration">Setup and Configuration</h2>
-<p><strong>List user name, user email and ssh command:</strong></p>
+<p><strong>List user name, user email and ssh command (Do not use <code>--global</code> option for repo based):</strong></p>
 <pre><code class="language-bash">git config --global user.name
 git config --global user.email
 git config --global core.sshCommand
 </code></pre>
-<p><strong>Set user name:</strong></p>
+<p><strong>Set user name, user email and ssh command (Do not use <code>--global</code> option for repo based):</strong></p>
 <pre><code class="language-bash">git config --global user.name &quot;yourusername&quot;
+git config --global user.email &quot;youremail@mail.com&quot;
+git config --global core.sshCommand &quot;ssh -i ~/.ssh/id_ed25519 -F /dev/null&quot;
 </code></pre>
-<p><strong>Set user email:</strong></p>
-<pre><code class="language-bash">git config --global user.email &quot;youremail@mail.com&quot;
-</code></pre>
-<p><strong>Set core ssh command:</strong></p>
-<pre><code class="language-bash">git config --global core.sshCommand &quot;ssh -i ~/.ssh/id_ed25519 -F /dev/null&quot;
+<p><strong>Unset user name, user email and ssh command (Do not use <code>--global</code> option for repo based):</strong></p>
+<pre><code class="language-bash">git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset core.sshCommand
 </code></pre>
 <p><strong>Manage Personal Access Token info:</strong>
 <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">GitHub PAT Docs</a></p>
@@ -4613,6 +4714,9 @@ git remote -v
 </code></pre>
 <p><strong>Set upstream branch for current branch:</strong></p>
 <pre><code class="language-bash">git branch --set-upstream-to=origin/master
+</code></pre>
+<p><strong>Show which upstream branch is currently set (It should show <code>[origin/master]</code> for master branch):</strong></p>
+<pre><code class="language-bash">git branch -vv
 </code></pre>
 <p><strong>Pull after the upstream set:</strong></p>
 <pre><code class="language-bash">git pull
