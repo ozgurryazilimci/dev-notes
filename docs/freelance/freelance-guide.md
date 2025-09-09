@@ -59,7 +59,7 @@ A professional online presence makes you stand out.
     - [Designmodo Slides](https://designmodo.com/slides/)
 
 - **Domain & Hosting**:
-    - Follow [Website Setup](website-setup.md) document for detailed steps.
+    - Follow [Website Setup](website/website-setup.md) document for detailed steps.
     - Payment: usually yearly, with discounts for multi-year.
     - Always register the domain under your client’s name if the site is for them.
 
