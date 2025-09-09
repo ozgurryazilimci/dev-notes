@@ -68,66 +68,88 @@ nav:
       - List GitHub Actions: git/list-github-actions.md
       - GitHub Pages Custom Domain: git/github-pages-custom-domain.md
       - GitHub Multiple Account: git/github-multiple-accounts.md
-  - Maven:
-      - Maven Wrapper: maven/maven-wrapper.md
-  - Java:
-      - Jenv: java/jenv.md
-      - Sdkman: java/sdkman.md
-  - Docker:
-      - Docker Introduction: docker/docker-introduction.md
-      - Docker Installation: docker/docker-installation.md
-      - Docker Cheatsheet: docker/docker-cheatsheet.md
-      - Docker Examples: docker/docker-examples.md
-      - Docker Useful Scripts: docker/docker-useful-scripts.md
-      - Dockerfile: docker/dockerfile.md
-      - Docker Compose: docker/docker-compose.md
-      - Docker Swarm: docker/docker-swarm.md
-  - Kubernetes:
-      - Kubernetes Introduction: kubernetes/kubernetes-introduction.md
-      - Kubernetes Installation: kubernetes/kubernetes-installation.md
-      - Kubernetes Presentation: kubernetes/kubernetes-presentation.md
-      - Kubernetes Objects:
-          - Pod: kubernetes/kubernetes-objects/pod.md
-          - Namespace: kubernetes/kubernetes-objects/namespace.md
-          - Label, Selector, Annotation: kubernetes/kubernetes-objects/label-selector-annotation.md
-          - Deployment, ReplicaSet: kubernetes/kubernetes-objects/deployment-replicaset.md
-          - Rollout, Rollback: kubernetes/kubernetes-objects/rollout-rollback.md
-          - StatefulSet: kubernetes/kubernetes-objects/statefulset.md
-          - DaemonSet: kubernetes/kubernetes-objects/daemonset.md
-          - Job, CronJob: kubernetes/kubernetes-objects/job-cronjob.md
-          - Network Structure, Service: kubernetes/kubernetes-objects/network-structure-service.md
-          - Ingress: kubernetes/kubernetes-objects/ingress.md
-          - Network Policy: kubernetes/kubernetes-objects/network-policy.md
-          - ConfigMap: kubernetes/kubernetes-objects/volume-secret-configmap.md
-          - Secret, Image Secret: kubernetes/kubernetes-objects/image-secret.md
-          - Probes, Resource Limits, Environment Variables: kubernetes/kubernetes-objects/probes-resource-limits-env-variables.md
-          - Affinity, Taint, Toleration: kubernetes/kubernetes-objects/affinity-taint-toleration.md
-          - Persistent Volume Claim: kubernetes/kubernetes-objects/persistent-volume-claim.md
-          - Storage Class: kubernetes/kubernetes-objects/storage-class.md
-          - Authentication: kubernetes/kubernetes-objects/authentication.md
-          - RBAC: kubernetes/kubernetes-objects/rbac.md
-          - Service Account: kubernetes/kubernetes-objects/service-account.md
-      - Kubernetes Tools:
-          - Kubectl: kubernetes/kubernetes-tools/kubectl.md
-          - Kubeadm: kubernetes/kubernetes-tools/kubeadm.md
-          - Minikube: kubernetes/kubernetes-tools/minikube.md
-          - Dashboards: kubernetes/kubernetes-tools/dashboards.md
-          - Helm: kubernetes/kubernetes-tools/helm.md
-          - Monitoring (Prometheus, EFK Stack): kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack.md
-          - Service Mesh: kubernetes/kubernetes-tools/service-mesh.md
-  - Terraform:
-      - Terraform Cheatsheet: terraform/terraform-cheatsheet.md
-      - Tfenv: terraform/tfenv.md
-  - Node.js:
-      - Nvm & Npm: nodejs/nvm-npm.md
-      - Yarn: nodejs/yarn.md
-      - Npm To Yarn Cheatsheet: nodejs/npm-to-yarn-cheatsheet.md
   - Database:
       - MySQL:
           - MySQL Cheatsheet: database/mysql/mysql-cheatsheet.md
       - PostgreSQL:
           - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
           - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
+  - Backend:
+      - Maven:
+          - Maven Wrapper: backend/maven/maven-wrapper.md
+      - Java:
+          - Jenv: backend/java/jenv.md
+          - Sdkman: backend/java/sdkman.md
+  - Frontend:
+      - Node.js:
+          - Nvm & Npm: frontend/nodejs/nvm-npm.md
+          - Yarn: frontend/nodejs/yarn.md
+          - Npm To Yarn Cheatsheet: frontend/nodejs/npm-to-yarn-cheatsheet.md
+  - Devops:
+      - Docker:
+          - Docker Introduction: devops/docker/docker-introduction.md
+          - Docker Installation: devops/docker/docker-installation.md
+          - Docker Cheatsheet: devops/docker/docker-cheatsheet.md
+          - Docker Examples: devops/docker/docker-examples.md
+          - Docker Useful Scripts: devops/docker/docker-useful-scripts.md
+          - Dockerfile: devops/docker/dockerfile.md
+          - Docker Compose: devops/docker/docker-compose.md
+          - Docker Swarm: devops/docker/docker-swarm.md
+      - Kubernetes:
+          - Kubernetes Introduction: devops/kubernetes/kubernetes-introduction.md
+          - Kubernetes Installation: devops/kubernetes/kubernetes-installation.md
+          - Kubernetes Presentation: devops/kubernetes/kubernetes-presentation.md
+          - Kubernetes Objects:
+              - Pod: devops/kubernetes/kubernetes-objects/pod.md
+              - Namespace: devops/kubernetes/kubernetes-objects/namespace.md
+              - Label, Selector, Annotation: devops/kubernetes/kubernetes-objects/label-selector-annotation.md
+              - Deployment, ReplicaSet: devops/kubernetes/kubernetes-objects/deployment-replicaset.md
+              - Rollout, Rollback: devops/kubernetes/kubernetes-objects/rollout-rollback.md
+              - StatefulSet: devops/kubernetes/kubernetes-objects/statefulset.md
+              - DaemonSet: devops/kubernetes/kubernetes-objects/daemonset.md
+              - Job, CronJob: devops/kubernetes/kubernetes-objects/job-cronjob.md
+              - Network Structure, Service: devops/kubernetes/kubernetes-objects/network-structure-service.md
+              - Ingress: devops/kubernetes/kubernetes-objects/ingress.md
+              - Network Policy: devops/kubernetes/kubernetes-objects/network-policy.md
+              - ConfigMap: devops/kubernetes/kubernetes-objects/volume-secret-configmap.md
+              - Secret, Image Secret: devops/kubernetes/kubernetes-objects/image-secret.md
+              - Probes, Resource Limits, Environment Variables: devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables.md
+              - Affinity, Taint, Toleration: devops/kubernetes/kubernetes-objects/affinity-taint-toleration.md
+              - Persistent Volume Claim: devops/kubernetes/kubernetes-objects/persistent-volume-claim.md
+              - Storage Class: devops/kubernetes/kubernetes-objects/storage-class.md
+              - Authentication: devops/kubernetes/kubernetes-objects/authentication.md
+              - RBAC: devops/kubernetes/kubernetes-objects/rbac.md
+              - Service Account: devops/kubernetes/kubernetes-objects/service-account.md
+          - Kubernetes Tools:
+              - Kubectl: devops/kubernetes/kubernetes-tools/kubectl.md
+              - Kubeadm: devops/kubernetes/kubernetes-tools/kubeadm.md
+              - Minikube: devops/kubernetes/kubernetes-tools/minikube.md
+              - Dashboards: devops/kubernetes/kubernetes-tools/dashboards.md
+              - Helm: devops/kubernetes/kubernetes-tools/helm.md
+              - Monitoring (Prometheus, EFK Stack): devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack.md
+              - Service Mesh: devops/kubernetes/kubernetes-tools/service-mesh.md
+      - Cloud:
+          - AWS:
+              - AWS Introduction: devops/cloud/aws/aws-introduction.md
+              - AWS CLI: devops/cloud/aws/aws-cli.md
+              - AWS Services Overview: devops/cloud/aws/aws-services-overview.md
+              - AWS Services:
+                  - Billing & Cost Management: devops/cloud/aws/aws-services/aws-billing-and-cost-management.md
+                  - IAM: devops/cloud/aws/aws-services/aws-iam.md
+                  - IAM Demo: devops/cloud/aws/aws-services/aws-iam-demo.md
+                  - S3: devops/cloud/aws/aws-services/aws-s3.md
+                  - Glacier: devops/cloud/aws/aws-services/aws-glacier.md
+                  - EC2: devops/cloud/aws/aws-services/aws-ec2.md
+                  - EFS: devops/cloud/aws/aws-services/aws-efs.md
+                  - VPC: devops/cloud/aws/aws-services/aws-vpc.md
+                  - CloudFront: devops/cloud/aws/aws-services/aws-cloudfront.md
+                  - Route53: devops/cloud/aws/aws-services/aws-route53.md
+                  - Athena Examples: devops/cloud/aws/aws-services/aws-athena-examples.md
+      - Terraform:
+          - Terraform Cheatsheet: devops/terraform/terraform-cheatsheet.md
+          - Tfenv: devops/terraform/tfenv.md
+  - Data:
+      - Data Tools: data/data-tools.md
   - Network:
       - IP Addresses, IP Ranges, CIDR: network/ip-addresses-ip-ranges-cidr.md
       - DNS & Nameservers: network/dns-nameservers.md
@@ -136,25 +158,6 @@ nav:
       - Shell Network Commands: network/shell-network-commands.md
       - Overriding Hostnames: network/overriding-hostnames.md
       - Internet Speed & IP: network/internet-speed-ip.md
-  - Cloud:
-      - AWS:
-          - AWS Introduction: cloud/aws/aws-introduction.md
-          - AWS CLI: cloud/aws/aws-cli.md
-          - AWS Services Overview: cloud/aws/aws-services-overview.md
-          - AWS Services:
-              - Billing & Cost Management: cloud/aws/aws-services/aws-billing-and-cost-management.md
-              - IAM: cloud/aws/aws-services/aws-iam.md
-              - IAM Demo: cloud/aws/aws-services/aws-iam-demo.md
-              - S3: cloud/aws/aws-services/aws-s3.md
-              - Glacier: cloud/aws/aws-services/aws-glacier.md
-              - EC2: cloud/aws/aws-services/aws-ec2.md
-              - EFS: cloud/aws/aws-services/aws-efs.md
-              - VPC: cloud/aws/aws-services/aws-vpc.md
-              - CloudFront: cloud/aws/aws-services/aws-cloudfront.md
-              - Route53: cloud/aws/aws-services/aws-route53.md
-              - Athena Examples: cloud/aws/aws-services/aws-athena-examples.md
-  - Data:
-      - Data Tools: data/data-tools.md
   - Mobile:
       - Android:
           - Android Firebase Integration: mobile/android/android-firebase-integration.md
@@ -166,12 +169,12 @@ nav:
           - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
           - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
           - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
-  - Slack:
-      - Slack Reminder: slack/slack-reminder.md
-      - Slack Message: slack/slack-message.md
-      - Slack User Group Creation: slack/slack-user-group-creation.md
-      - Slack GitHub Workflows: slack/slack-github-workflows.md
   - Tools:
+      - Slack:
+          - Slack Reminder: tools/slack/slack-reminder.md
+          - Slack Message: tools/slack/slack-message.md
+          - Slack User Group Creation: tools/slack/slack-user-group-creation.md
+          - Slack GitHub Workflows: tools/slack/slack-github-workflows.md
       - Apicurio via Docker: tools/apicurio-via-docker.md
       - KafkaUI via Docker: tools/kafkaui-via-docker.md
       - Multi-Gitter: tools/multi-gitter.md
@@ -189,6 +192,6 @@ nav:
           - WordPress Studio: freelance/website/wordpress-studio.md
           - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
           - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
-  - Misc:
-      - Modem Admin & Wi-Fi Passwords: misc/modem-admin-wifi-passwords.md
-      - Recommended Reading List: misc/recommended-reading-list.md
+  - Other:
+      - Modem Admin & Wi-Fi Passwords: other/modem-admin-wifi-passwords.md
+      - Recommended Reading List: other/recommended-reading-list.md
