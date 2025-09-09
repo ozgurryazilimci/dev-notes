@@ -24,7 +24,7 @@ hosting, WordPress installation, plugins, pages, and email configuration.
     - Update the **Nameservers** to point to your hosting provider (your host will provide these, e.g., `ns1.host.com`,
       `ns2.host.com`).
     - Optionally, configure **A Records** or **CNAME** if using custom setups. For more details about DNS records,
-      please follow [DNS Records](../network/dns-records.md) page.
+      please follow [DNS Records](../../network/dns-records.md) page.
 
 > Note: For .tr domains, [trabis.gov.tr](https://www.trabis.gov.tr/page/2) is the official registry site.
 
