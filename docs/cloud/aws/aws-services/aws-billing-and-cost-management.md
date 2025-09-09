@@ -1,12 +1,12 @@
 # AWS Services - Billing & Cost Management
 
-## Introduction
-
 The **Billing & Cost Management Dashboard** in AWS provides a centralized place to manage your account’s usage,
 payments, and costs.  
 It allows you to view invoices, set budgets, analyze costs, and monitor your **Free Tier** usage.  
 This section is accessible from the **top right corner** of the AWS Management Console under **Billing and Cost
 Management**.
+
+![](<images/aws_billing_and_cost_management.png>)
 
 ---
 

@@ -4,6 +4,8 @@ Amazon Elastic Compute Cloud (EC2) is a core AWS service that provides scalable 
 covers the AWS Management Console interface for EC2, explaining key features, configuration options, and usage scenarios
 for developers.
 
+![](<images/aws_ec2.png>)
+
 ---
 
 ## EC2 Dashboard Overview

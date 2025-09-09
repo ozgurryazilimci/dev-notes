@@ -1,10 +1,10 @@
 # AWS Services - Identity and Access Management (IAM)
 
-## Introduction
-
 **AWS Identity and Access Management (IAM)** is a global service that allows you to securely manage access to AWS
 services and resources.  
 With IAM, you can create and manage **users**, **groups**, and **roles**, and use **policies** to define permissions.
+
+![](<images/aws_iam.png>)
 
 ---
 

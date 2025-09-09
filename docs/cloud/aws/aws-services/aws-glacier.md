@@ -1,5 +1,7 @@
 # AWS Services - Glacier
 
+![](<images/aws_glacier.webp>)
+
 ## What is Amazon S3 Glacier?
 
 Amazon S3 Glacier is a low-cost cloud storage service for data archiving and long-term backup. It is optimized for data

@@ -4,6 +4,8 @@ Amazon Simple Storage Service (Amazon S3) is a scalable object storage service d
 of data from anywhere on the web. This document provides an overview of the **AWS Management Console** for S3, including
 bucket configuration, properties, features, and usage scenarios.
 
+![](<images/aws_s3.png>)
+
 ---
 
 ## Overview

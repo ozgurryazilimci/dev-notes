@@ -4,6 +4,8 @@ Amazon Elastic File System (EFS) is a fully managed, serverless, elastic file st
 concurrently on multiple EC2 instances, containers, and AWS services. It is highly available and scales automatically as
 files are added or removed.
 
+![](<images/aws_efs.png>)
+
 ---
 
 ## Overview of EFS
