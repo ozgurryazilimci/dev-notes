@@ -169,6 +169,15 @@ nav:
           - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
           - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
           - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
+  - Freelance:
+      - Freelance Guide: freelance/freelance-guide.md
+      - Website:
+          - Website Setup: freelance/website/website-setup.md
+          - SSL Setup In cPanel: freelance/website/ssl-setup-cpanel.md
+          - WordPress Installation: freelance/website/wordpress-installation.md
+          - WordPress Studio: freelance/website/wordpress-studio.md
+          - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
+          - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
   - Tools:
       - Slack:
           - Slack Reminder: tools/slack/slack-reminder.md
@@ -183,15 +192,6 @@ nav:
       - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
       - Android File Transfer: tools/android-file-transfer.md
       - Useful Resources & Tools: tools/useful-resources-tools.md
-  - Freelance:
-      - Freelance Guide: freelance/freelance-guide.md
-      - Website:
-          - Website Setup: freelance/website/website-setup.md
-          - SSL Setup In cPanel: freelance/website/ssl-setup-cpanel.md
-          - WordPress Installation: freelance/website/wordpress-installation.md
-          - WordPress Studio: freelance/website/wordpress-studio.md
-          - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
-          - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
   - Other:
       - Modem Admin & Wi-Fi Passwords: other/modem-admin-wifi-passwords.md
       - Recommended Reading List: other/recommended-reading-list.md
