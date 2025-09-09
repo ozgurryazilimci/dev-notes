@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/docker/docker-swarm/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/cloud/aws/aws-services/aws-cloudfront/">
       
       
-        <link rel="prev" href="../docker-compose/">
+        <link rel="prev" href="../aws-vpc/">
       
       
-        <link rel="next" href="../../kubernetes/kubernetes-introduction/">
+        <link rel="next" href="../aws-route53/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Docker Swarm - My Dev Notes</title>
+        <title>CloudFront - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-swarm" class="md-skip">
+        <a href="#aws-services-cloudfront" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Swarm
+              CloudFront
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../../maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -305,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../java/jenv/" class="md-tabs__link">
+        <a href="../../../../java/jenv/" class="md-tabs__link">
           
   
   
@@ -323,13 +323,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../docker-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -351,7 +349,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
+        <a href="../../../../kubernetes/kubernetes-introduction/" class="md-tabs__link">
           
   
   
@@ -373,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../terraform/terraform-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../terraform/terraform-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -395,7 +393,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../../nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -424,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -449,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -467,6 +465,8 @@
   
   
   
+    
+  
   
     
     
@@ -474,11 +474,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../cloud/aws/aws-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../aws-introduction/" class="md-tabs__link">
           
   
   
@@ -510,7 +512,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -535,7 +537,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../../../slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -557,7 +559,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/apicurio-via-docker/" class="md-tabs__link">
+        <a href="../../../../tools/apicurio-via-docker/" class="md-tabs__link">
           
   
   
@@ -579,7 +581,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -615,7 +617,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -633,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -702,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -725,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -810,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -833,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-actions/" class="md-nav__link">
+      <a href="../../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -856,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/tmate/" class="md-nav__link">
+      <a href="../../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -879,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -902,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -925,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -1000,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../../maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1077,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../java/jenv/" class="md-nav__link">
+      <a href="../../../../java/jenv/" class="md-nav__link">
         
   
   
@@ -1100,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../java/sdkman/" class="md-nav__link">
+      <a href="../../../../java/sdkman/" class="md-nav__link">
         
   
   
@@ -1127,10 +1129,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1154,20 +1154,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1180,7 +1177,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Docker
@@ -1194,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-introduction/" class="md-nav__link">
+      <a href="../../../../docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -1217,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-installation/" class="md-nav__link">
+      <a href="../../../../docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -1240,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../../docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1263,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-examples/" class="md-nav__link">
+      <a href="../../../../docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -1286,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../../docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -1309,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dockerfile/" class="md-nav__link">
+      <a href="../../../../docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -1332,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-compose/" class="md-nav__link">
+      <a href="../../../../docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -1352,32 +1349,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Docker Swarm
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -1388,194 +1363,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-docker-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Docker Swarm?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-docker-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why Use Docker Swarm?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swarm-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      Swarm Architecture
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initializing-a-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Initializing a Swarm
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a Service
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Stack
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#networking-in-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Networking in Swarm
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#secrets-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secrets Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swarm-node-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Swarm Node Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Swarm Node Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#list-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      List Nodes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#inspect-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Inspect Node
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#promote-a-node-to-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      Promote a Node to Manager
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#demote-a-manager-to-worker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demote a Manager to Worker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-a-new-manager-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a New Manager Node
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#node-availability" class="md-nav__link">
-    <span class="md-ellipsis">
-      Node Availability
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring and Logging
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limitations-of-docker-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Limitations of Docker Swarm
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1648,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -1671,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -1694,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -1800,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -1823,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -1846,7 +1633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -1869,7 +1656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -1892,7 +1679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -1915,7 +1702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -1938,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -1961,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -1984,7 +1771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -2007,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -2030,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -2053,7 +1840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -2076,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -2099,7 +1886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -2122,7 +1909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -2145,7 +1932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -2168,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -2191,7 +1978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2214,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2237,7 +2024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2325,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -2348,7 +2135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -2371,7 +2158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -2394,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -2417,7 +2204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -2440,7 +2227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -2463,7 +2250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -2548,7 +2335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../../terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2571,7 +2358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../../../terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -2650,7 +2437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../../nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -2673,7 +2460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/yarn/" class="md-nav__link">
+      <a href="../../../../nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -2696,7 +2483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../../nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2818,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2896,7 +2683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2919,7 +2706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -3014,7 +2801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -3037,7 +2824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -3060,7 +2847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-records/" class="md-nav__link">
+      <a href="../../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -3083,7 +2870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -3106,7 +2893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -3129,7 +2916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -3152,7 +2939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -3179,8 +2966,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -3190,17 +2979,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
             
   
   
@@ -3213,7 +3005,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Cloud
@@ -3224,8 +3016,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -3244,11 +3038,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
@@ -3264,7 +3058,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -3278,7 +3072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../aws-introduction/" class="md-nav__link">
         
   
   
@@ -3301,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../aws-cli/" class="md-nav__link">
         
   
   
@@ -3324,7 +3118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3344,8 +3138,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -3378,11 +3174,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1_4" checked>
         
           
           <label class="md-nav__link" for="__nav_12_1_4" id="__nav_12_1_4_label" tabindex="0">
@@ -3398,7 +3194,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12_1_4">
             <span class="md-nav__icon md-icon"></span>
             AWS Services
@@ -3412,7 +3208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3435,7 +3231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../aws-iam/" class="md-nav__link">
         
   
   
@@ -3458,7 +3254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3481,7 +3277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../aws-s3/" class="md-nav__link">
         
   
   
@@ -3504,7 +3300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../aws-glacier/" class="md-nav__link">
         
   
   
@@ -3527,7 +3323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../aws-ec2/" class="md-nav__link">
         
   
   
@@ -3550,7 +3346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../aws-efs/" class="md-nav__link">
         
   
   
@@ -3573,7 +3369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../aws-vpc/" class="md-nav__link">
         
   
   
@@ -3593,10 +3389,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CloudFront
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3607,6 +3425,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloudfront-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      CloudFront Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origin-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origin Groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cache Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geo-restriction-geoblocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geo Restriction (Geoblocking)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-and-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring and Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalidations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invalidations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3619,7 +3589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../aws-route53/" class="md-nav__link">
         
   
   
@@ -3642,7 +3612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -3786,7 +3756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3809,7 +3779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -3832,7 +3802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3855,7 +3825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -3937,7 +3907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -3960,7 +3930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -3983,7 +3953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -4006,7 +3976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4095,7 +4065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../../slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -4118,7 +4088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-message/" class="md-nav__link">
+      <a href="../../../../slack/slack-message/" class="md-nav__link">
         
   
   
@@ -4141,7 +4111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../../slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -4164,7 +4134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../../slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -4253,7 +4223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -4276,7 +4246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -4299,7 +4269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -4322,7 +4292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/multipass/" class="md-nav__link">
+      <a href="../../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -4345,7 +4315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -4368,7 +4338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -4391,7 +4361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -4414,7 +4384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -4495,7 +4465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../../miscellaneous/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -4518,7 +4488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/website-setup/" class="md-nav__link">
+      <a href="../../../../miscellaneous/website-setup/" class="md-nav__link">
         
   
   
@@ -4541,7 +4511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/freelancing-guide/" class="md-nav__link">
+      <a href="../../../../miscellaneous/freelancing-guide/" class="md-nav__link">
         
   
   
@@ -4564,7 +4534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../../miscellaneous/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -4614,136 +4584,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-docker-swarm" class="md-nav__link">
+  <a href="#cloudfront-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Docker Swarm?
+      CloudFront Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-docker-swarm" class="md-nav__link">
+  <a href="#key-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Use Docker Swarm?
+      Key Components
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swarm-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      Swarm Architecture
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initializing-a-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Initializing a Swarm
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a Service
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Stack
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#networking-in-swarm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Networking in Swarm
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#secrets-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secrets Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swarm-node-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Swarm Node Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Swarm Node Management">
+    <nav class="md-nav" aria-label="Key Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-nodes" class="md-nav__link">
+  <a href="#distribution" class="md-nav__link">
     <span class="md-ellipsis">
-      List Nodes
+      Distribution
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#inspect-node" class="md-nav__link">
+  <a href="#origins" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspect Node
+      Origins
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#promote-a-node-to-manager" class="md-nav__link">
+  <a href="#origin-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      Promote a Node to Manager
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#demote-a-manager-to-worker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demote a Manager to Worker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-a-new-manager-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a New Manager Node
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#node-availability" class="md-nav__link">
-    <span class="md-ellipsis">
-      Node Availability
+      Origin Groups
     </span>
   </a>
   
@@ -4755,27 +4635,81 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
+  <a href="#cache-behavior" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring and Logging
+      Cache Behavior
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#limitations-of-docker-swarm" class="md-nav__link">
+  <a href="#distribution-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Limitations of Docker Swarm
+      Distribution Settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
+  <a href="#security-features" class="md-nav__link">
     <span class="md-ellipsis">
-      References
+      Security Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geo-restriction-geoblocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geo Restriction (Geoblocking)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-and-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring and Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalidations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invalidations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
     </span>
   </a>
   
@@ -4797,155 +4731,160 @@
 
 
 
-<h1 id="docker-swarm">Docker Swarm</h1>
-<h2 id="what-is-docker-swarm">What is Docker Swarm?</h2>
-<p>Docker Swarm is Docker’s <strong>native container orchestration tool</strong>.<br />
-It allows you to manage multiple Docker hosts (nodes) as a single virtual system.</p>
-<p>With Swarm, you can deploy and scale applications across a cluster, ensuring high availability and load balancing.</p>
+<h1 id="aws-services-cloudfront">AWS Services - CloudFront</h1>
+<p>Amazon CloudFront is a Content Delivery Network (CDN) service that securely delivers content (websites, APIs, video,
+data) to users with low latency and high transfer speeds. It uses a global network of edge locations to cache and serve
+content closer to users.</p>
+<p><img alt="" src="../images/aws_cloudfront.png" /></p>
 <hr />
-<h2 id="why-use-docker-swarm">Why Use Docker Swarm?</h2>
+<h2 id="cloudfront-overview">CloudFront Overview</h2>
 <ul>
-<li>Native integration with Docker CLI and Docker Compose.</li>
-<li>Easy setup compared to Kubernetes.</li>
-<li>Built-in service discovery and load balancing.</li>
-<li>Scaling and self-healing of services.</li>
-<li>Secure cluster communication using TLS.</li>
+<li><strong>Global CDN</strong>: Distributes content through AWS Edge Locations worldwide.</li>
+<li><strong>Low Latency &amp; High Speed</strong>: Requests are served from the nearest edge location.</li>
+<li><strong>Integrated with AWS Services</strong>: Works seamlessly with S3, EC2, Elastic Load Balancing, and API Gateway.</li>
+<li><strong>Security</strong>: Supports HTTPS, AWS Shield, WAF, and signed URLs/cookies for access control.</li>
 </ul>
 <hr />
-<h2 id="swarm-architecture">Swarm Architecture</h2>
+<h2 id="key-components">Key Components</h2>
+<h3 id="distribution">Distribution</h3>
 <ul>
-<li><strong>Manager Nodes</strong>: Responsible for managing the cluster and scheduling tasks.</li>
-<li><strong>Worker Nodes</strong>: Run containers assigned by the managers.</li>
-<li><strong>Services</strong>: High-level definition of containers in Swarm.</li>
-<li><strong>Tasks</strong>: The actual running containers.</li>
+<li>A distribution is the main CloudFront resource.</li>
+<li>Two types:<ul>
+<li><strong>Web Distribution</strong>: For websites, HTTP/HTTPS content.</li>
+<li><strong>RTMP (Deprecated)</strong>: Previously for media streaming; no longer recommended.</li>
+</ul>
+</li>
+</ul>
+<h3 id="origins">Origins</h3>
+<ul>
+<li>The source of content served through CloudFront.</li>
+<li>Examples:<ul>
+<li><strong>Amazon S3 Bucket</strong>: Static assets, media files.</li>
+<li><strong>EC2 Instance / Load Balancer</strong>: Dynamic content.</li>
+<li><strong>Custom Origin</strong>: Any web server (e.g., on-premises).</li>
+</ul>
+</li>
+</ul>
+<h3 id="origin-groups">Origin Groups</h3>
+<ul>
+<li>Allows failover between multiple origins (e.g., primary S3 bucket and backup).</li>
 </ul>
 <hr />
-<h2 id="initializing-a-swarm">Initializing a Swarm</h2>
-<p>To create a new Swarm cluster:</p>
-<pre><code>docker swarm init
-</code></pre>
-<p>This command outputs a <strong>join token</strong> for adding worker or manager nodes:</p>
-<pre><code>docker swarm join --token &lt;token&gt; &lt;manager-ip&gt;:2377
-</code></pre>
-<hr />
-<h2 id="creating-a-service">Creating a Service</h2>
-<p>Example: Run an Nginx service with 3 replicas.</p>
-<pre><code>docker service create --name web --replicas 3 -p 8080:80 nginx
-</code></pre>
-<p>Check running services:</p>
-<pre><code>docker service ls
-</code></pre>
-<p>Inspect tasks of a service:</p>
-<pre><code>docker service ps web
-</code></pre>
-<p>Scale a service:</p>
-<pre><code>docker service scale web=5
-</code></pre>
-<hr />
-<h2 id="docker-stack">Docker Stack</h2>
-<p>Stacks let you deploy a full application defined in a <code>docker-compose.yml</code>.</p>
-<p>Deploy a stack:</p>
-<pre><code>docker stack deploy -c docker-compose.yml mystack
-</code></pre>
-<p>Check stacks:</p>
-<pre><code>docker stack ls
-</code></pre>
-<p>Remove a stack:</p>
-<pre><code>docker stack rm mystack
-</code></pre>
-<hr />
-<h2 id="networking-in-swarm">Networking in Swarm</h2>
-<p>Swarm supports an <strong>Overlay Network</strong> to enable communication between services across nodes.</p>
-<p>Create an overlay network:</p>
-<pre><code>docker network create --driver overlay mynet
-</code></pre>
-<p>Use it in a stack or service:</p>
-<pre><code>docker service create --name api --network mynet myimage
-</code></pre>
-<hr />
-<h2 id="secrets-management">Secrets Management</h2>
-<p>Swarm provides a way to securely store sensitive data.</p>
-<p>Create a secret:</p>
-<pre><code>echo "mydbpassword" | docker secret create db_pass -
-</code></pre>
-<p>Use secret in a service:</p>
-<pre><code>docker service create --name app --secret db_pass myimage
-</code></pre>
-<p>List secrets:</p>
-<pre><code>docker secret ls
-</code></pre>
-<hr />
-<h2 id="swarm-node-management">Swarm Node Management</h2>
-<h3 id="list-nodes">List Nodes</h3>
-<p>List all nodes in the Swarm:</p>
-<pre><code>docker node ls
-</code></pre>
-<p>Example output:</p>
-<pre><code>ID                            HOSTNAME  STATUS  AVAILABILITY  MANAGER STATUS
-abcd1234efgh *                manager1  Ready   Active        Leader
-ijkl5678mnop                  worker1   Ready   Active        
-qrst9012uvwx                  worker2   Ready   Active
-</code></pre>
-<hr />
-<h3 id="inspect-node">Inspect Node</h3>
-<p>Inspect a node:</p>
-<pre><code>docker node inspect &lt;node-id&gt;
-</code></pre>
-<hr />
-<h3 id="promote-a-node-to-manager">Promote a Node to Manager</h3>
-<p>Promote an existing worker to a manager:</p>
-<pre><code>docker node promote &lt;node-id&gt;
-</code></pre>
-<p>Example:</p>
-<pre><code>docker node promote ijkl5678mnop
-</code></pre>
-<p>Now <code>worker1</code> becomes a manager.</p>
-<hr />
-<h3 id="demote-a-manager-to-worker">Demote a Manager to Worker</h3>
-<p>Demote a manager back to a worker:</p>
-<pre><code>docker node demote &lt;node-id&gt;
-</code></pre>
-<hr />
-<h3 id="add-a-new-manager-node">Add a New Manager Node</h3>
-<p>From an existing manager, get the join command for a new manager:</p>
-<pre><code>docker swarm join-token manager
-</code></pre>
-<p>Output example:</p>
-<pre><code>docker swarm join --token SWMTKN-1-xyz &lt;manager-ip&gt;:2377
-</code></pre>
-<p>Run this on the new node to join the Swarm as a manager.</p>
-<hr />
-<h3 id="node-availability">Node Availability</h3>
+<h2 id="cache-behavior">Cache Behavior</h2>
 <ul>
-<li><strong>Active</strong>: Node can accept tasks.</li>
-<li><strong>Drain</strong>: Node won’t accept new tasks (used for maintenance). Draining a node prevents new tasks from running on it.</li>
-<li><strong>Pause</strong>: Node temporarily stops tasks.</li>
+<li>Defines how CloudFront handles requests for specific content.</li>
+<li>Configurable options:<ul>
+<li><strong>Path Pattern</strong>: Match specific URLs (e.g., <code>/images/*</code>).</li>
+<li><strong>Viewer Protocol Policy</strong>: HTTP only, HTTPS only, or redirect HTTP to HTTPS.</li>
+<li><strong>Allowed HTTP Methods</strong>: GET/HEAD only, or GET/HEAD/POST/PUT/PATCH/OPTIONS/DELETE.</li>
+<li><strong>Cached HTTP Methods</strong>: Typically GET/HEAD; dynamic methods are not cached.</li>
+<li><strong>Cache Based on Headers/Query Strings/Cookies</strong>: Customize cache keys for personalized content.</li>
 </ul>
-<p>Set node availability:</p>
-<pre><code>docker node update --availability drain &lt;node-id&gt;
-docker node update --availability active &lt;node-id&gt;
-</code></pre>
-<hr />
-<h2 id="monitoring-and-logging">Monitoring and Logging</h2>
-<p>Get real-time stats:</p>
-<pre><code>docker stats
-</code></pre>
-<p>Check service logs:</p>
-<pre><code>docker service logs web
-</code></pre>
-<hr />
-<h2 id="limitations-of-docker-swarm">Limitations of Docker Swarm</h2>
-<ul>
-<li>Not as feature-rich as Kubernetes.</li>
-<li>Less adoption in large-scale production systems.</li>
-<li>Limited ecosystem support.</li>
+</li>
 </ul>
 <hr />
-<h2 id="references">References</h2>
+<h2 id="distribution-settings">Distribution Settings</h2>
 <ul>
-<li><a href="https://docs.docker.com/engine/swarm/">Docker Swarm Overview</a></li>
-<li><a href="https://docs.docker.com/engine/reference/commandline/service/">Docker Service CLI</a></li>
-<li><a href="https://docs.docker.com/compose/compose-file/">Docker Stacks and Compose</a>  </li>
+<li><strong>Price Class</strong>: Choose edge locations to reduce cost:<ul>
+<li>Use All Edge Locations (best performance).</li>
+<li>Use only selected regions (lower cost).</li>
+</ul>
+</li>
+<li><strong>Default Root Object</strong>: File returned when a user accesses the root URL (e.g., <code>index.html</code>).</li>
+<li><strong>Alternate Domain Names (CNAMEs)</strong>: Map custom domains (e.g., <code>cdn.example.com</code>).</li>
+<li><strong>SSL/TLS Certificate</strong>: Secure content delivery with HTTPS. Options:<ul>
+<li>Default CloudFront certificate.</li>
+<li>Custom certificate from AWS Certificate Manager (ACM).</li>
+</ul>
+</li>
+<li><strong>Logging</strong>: Enable logs for each request (stored in an S3 bucket).</li>
+<li><strong>IPv6 Support</strong>: Enable if your users require IPv6 connectivity.</li>
+</ul>
+<hr />
+<h2 id="security-features">Security Features</h2>
+<ul>
+<li><strong>HTTPS</strong>: Encrypt communication between viewers and CloudFront.</li>
+<li><strong>Origin Access Identity (OAI)</strong>: Restrict S3 bucket access only through CloudFront.</li>
+<li><strong>Field-Level Encryption</strong>: Protect sensitive data in requests (e.g., credit card details).</li>
+<li><strong>Signed URLs and Signed Cookies</strong>: Restrict content access to specific users or time ranges.</li>
+<li><strong>AWS WAF Integration</strong>: Protect against common web attacks (SQL injection, XSS).</li>
+<li><strong>AWS Shield</strong>: Provides DDoS protection.</li>
+</ul>
+<hr />
+<h2 id="geo-restriction-geoblocking">Geo Restriction (Geoblocking)</h2>
+<ul>
+<li>Restrict or allow content delivery based on the viewer’s geographic location.</li>
+<li>Two modes:<ul>
+<li><strong>Whitelist</strong>: Only selected countries can access content.</li>
+<li><strong>Blacklist</strong>: Block selected countries from accessing content.</li>
+</ul>
+</li>
+<li>Use cases:<ul>
+<li>Comply with licensing restrictions (e.g., video streaming in specific countries).</li>
+<li>Block malicious traffic from high-risk regions.</li>
+</ul>
+</li>
+<li>Note: Geo restriction applies at the viewer request level, before reaching the origin.</li>
+</ul>
+<hr />
+<h2 id="performance-settings">Performance Settings</h2>
+<ul>
+<li><strong>TTL (Time-to-Live)</strong>: Control how long objects are cached at edge locations.<ul>
+<li><strong>Minimum TTL</strong>: Shortest cache time (default 0).</li>
+<li><strong>Default TTL</strong>: Default cache duration (e.g., 24 hours).</li>
+<li><strong>Maximum TTL</strong>: Longest cache time (e.g., 1 year).</li>
+</ul>
+</li>
+<li><strong>Compression</strong>: Automatically compress files (gzip, Brotli) to reduce latency.</li>
+<li><strong>Lambda@Edge</strong>: Run custom code at edge locations to personalize content delivery.</li>
+</ul>
+<hr />
+<h2 id="monitoring-and-logs">Monitoring and Logs</h2>
+<ul>
+<li><strong>CloudWatch Metrics</strong>:<ul>
+<li>Requests, bytes transferred, cache hit/miss ratio, 4xx/5xx error rates.</li>
+</ul>
+</li>
+<li><strong>CloudFront Logs</strong>:<ul>
+<li>Detailed request logs stored in an S3 bucket.</li>
+</ul>
+</li>
+<li><strong>Real-Time Metrics</strong>:<ul>
+<li>Provides near real-time data on traffic patterns.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="invalidations">Invalidations</h2>
+<ul>
+<li><strong>Purpose</strong>: Remove cached content from all edge locations before TTL expires.</li>
+<li>Common use case: After deploying a new version of a website, invalidate <code>/index.html</code> or <code>/images/*</code>.</li>
+<li>Each invalidation request can target one or multiple file paths.</li>
+<li>Example paths:<ul>
+<li><code>/index.html</code></li>
+<li><code>/images/*</code></li>
+<li><code>/*</code> (invalidate everything, more costly).</li>
+</ul>
+</li>
+<li>Costs: First 1,000 paths per month are free; additional invalidations incur charges.</li>
+</ul>
+<hr />
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Static Website Hosting</strong>: Serve S3-hosted websites globally with caching.</li>
+<li><strong>Media Streaming</strong>: Deliver video-on-demand or live streaming with low latency.</li>
+<li><strong>API Acceleration</strong>: Reduce latency for APIs hosted on API Gateway or EC2.</li>
+<li><strong>Security and Compliance</strong>: Enforce HTTPS, signed URLs, and WAF for secure content delivery.</li>
+</ul>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Use <strong>Origin Access Identity (OAI)</strong> for private S3 content.</li>
+<li>Enable <strong>HTTPS (TLS 1.2 or higher)</strong> for security.</li>
+<li>Configure <strong>cache behaviors per path</strong> for better performance.</li>
+<li>Optimize <strong>TTL values</strong> depending on content freshness.</li>
+<li>Use <strong>Lambda@Edge</strong> for dynamic content modifications.</li>
+<li>Enable <strong>logging</strong> and monitor CloudWatch for performance and errors.</li>
 </ul>
 
 
@@ -5025,10 +4964,10 @@ docker node update --availability active &lt;node-id&gt;
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
