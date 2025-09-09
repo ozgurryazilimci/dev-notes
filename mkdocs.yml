@@ -178,8 +178,15 @@ nav:
       - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
       - Android File Transfer: tools/android-file-transfer.md
       - Useful Resources & Tools: tools/useful-resources-tools.md
+  - Freelance:
+      - Freelance Guide: freelance/freelance-guide.md
+      - Website:
+          - Website Setup: freelance/website/website-setup.md
+          - SSL Setup In cPanel: freelance/website/ssl-setup-cpanel.md
+          - WordPress Installation: freelance/website/wordpress-installation.md
+          - WordPress Studio: freelance/website/wordpress-studio.md
+          - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
+          - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
   - Miscellaneous:
       - Modem Admin & Wi-Fi Passwords: miscellaneous/modem-admin-wifi-passwords.md
-      - Website Setup: miscellaneous/website-setup.md
-      - Freelancing Guide: miscellaneous/freelancing-guide.md
       - Recommended Reading List: miscellaneous/recommended-reading-list.md

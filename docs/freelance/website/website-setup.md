@@ -26,6 +26,8 @@ hosting, WordPress installation, plugins, pages, and email configuration.
     - Optionally, configure **A Records** or **CNAME** if using custom setups. For more details about DNS records,
       please follow [DNS Records](../network/dns-records.md) page.
 
+> Note: For .tr domains, [trabis.gov.tr](https://www.trabis.gov.tr/page/2) is the official registry site.
+
 ---
 
 ## 2. Hosting Setup
@@ -39,6 +41,7 @@ hosting, WordPress installation, plugins, pages, and email configuration.
     - [Bluehost](https://bluehost.com)
     - [SiteGround](https://world.siteground.com)
     - [HostGator](https://hostgator.com)
+    - [Hostinger](https://hostinger.web.tr)
 2. **Select a hosting plan**:
     - Shared hosting (for small websites)
     - VPS hosting (for medium to large websites)
@@ -162,7 +165,7 @@ Most hosts provide cPanel for managing your website:
 4. For external email services (Google Workspace, Microsoft 365):
     - Update **MX Records** in your domain DNS settings.
 
-> Note: For temporary emails, use services like `tempail.com`.
+> Note: For temporary/temp/fake emails, use services like `tempail.com`.
 
 ---
 

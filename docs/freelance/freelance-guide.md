@@ -1,4 +1,4 @@
-# Freelancing Guide
+# Freelance Guide
 
 This document is a practical guide for developers who want to start freelancing or grow their freelance business. It
 covers platforms, tools, workflows, client communication, pricing, and long-term strategies.

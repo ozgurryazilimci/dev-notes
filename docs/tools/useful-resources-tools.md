@@ -74,6 +74,7 @@ A curated list of tools, platforms, and resources useful for developers and tech
 ## Learning Platforms
 
 - [Roadmap.sh](https://roadmap.sh) – Visual roadmap for learning web development.
+- [Refactoring.guru](https://refactoring.guru) - Design patterns and refactoring techniques.
 - [Udemy](https://www.udemy.com/) – Affordable courses on various tech topics.
 - [Coursera](https://www.coursera.org/) – Online courses from top universities and companies.
 - [Pluralsight](https://www.pluralsight.com/) – Tech skill development platform.
@@ -216,3 +217,4 @@ A curated list of tools, platforms, and resources useful for developers and tech
 - [Canlı Altın](https://canlialtinfiyatlari.com/) - Live gold prices in Turkey.
 - [Selcuksport](https://www.selcuksportshd.is/) - Live sports scores and updates.
 - [taraftarium24](https://taraftariumspor.com/) - Live sports scores and updates.
+- [tempail](https://tempail.com/) - Temporary/temp/fake email service.
