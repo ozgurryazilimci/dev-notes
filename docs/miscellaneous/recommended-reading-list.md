@@ -1,5 +1,8 @@
 # Recommended Reading List
 
+This is a curated list of recommended books for software engineers, categorized by topics. Each book entry includes the
+author(s), subtitle (if any), Amazon URL, edition, tags, readability level, and target audience.
+
 ## Engineering
 
 1. **Clean Code**
