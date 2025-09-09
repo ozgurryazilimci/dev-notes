@@ -202,6 +202,7 @@ A curated list of tools, platforms, and resources useful for developers and tech
 - [Thesaurus.com](https://www.thesaurus.com/) - English synonyms and antonyms.
 - [DeepL](https://www.deepl.com/translator) – High-quality machine translation.
 - [Sesli Sözlük](https://www.seslisozluk.net/) – Turkish-English dictionary.
+- [Anki](https://ankiweb.net/) – Spaced repetition flashcard app for learning languages and concepts.
 
 ## Polling & Survey Tools
 

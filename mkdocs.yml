@@ -153,6 +153,8 @@ nav:
               - CloudFront: cloud/aws/aws-services/aws-cloudfront.md
               - Route53: cloud/aws/aws-services/aws-route53.md
               - Athena Examples: cloud/aws/aws-services/aws-athena-examples.md
+  - Data:
+      - Data Tools: data/data-tools.md
   - Mobile:
       - Android:
           - Android Firebase Integration: mobile/android/android-firebase-integration.md
@@ -187,6 +189,6 @@ nav:
           - WordPress Studio: freelance/website/wordpress-studio.md
           - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
           - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
-  - Miscellaneous:
-      - Modem Admin & Wi-Fi Passwords: miscellaneous/modem-admin-wifi-passwords.md
-      - Recommended Reading List: miscellaneous/recommended-reading-list.md
+  - Misc:
+      - Modem Admin & Wi-Fi Passwords: misc/modem-admin-wifi-passwords.md
+      - Recommended Reading List: misc/recommended-reading-list.md
