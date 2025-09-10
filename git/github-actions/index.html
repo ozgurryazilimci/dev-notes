@@ -735,6 +735,8 @@
       
         
       
+        
+      
     
     
     
@@ -975,6 +977,29 @@
   
   <span class="md-ellipsis">
     GitHub Multiple Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github-commit-hash-copy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub Commit Hash Copy
     
   </span>
   
@@ -5061,48 +5086,54 @@
 <p>In this section, we explain how to create and share custom Actions stored in separate repositories, instead of keeping
 them inside the same repository as your workflows.</p>
 <h3 id="how-to-create-and-share-a-custom-action-in-its-own-repository">How to create and share a custom Action in its own repository:</h3>
-<ol>
+<ul>
 <li>
 <p>Create a new local project folder<br />
-   This folder should contain your action.yml file and all the code needed for your Action.<br />
+  This folder should contain your action.yml file and all the code needed for your Action.<br />
 <strong>Important:</strong> Do not put your action.yml or code inside a .github/actions folder or similar. Keep everything at the
-   root level of your new project folder.</p>
+  root level of your new project folder.</p>
 </li>
 <li>
 <p>Initialize a Git repository<br />
-   Run the following command inside your project folder:</p>
+  Run the following command inside your project folder:</p>
 </li>
-</ol>
-<p><code>git init</code></p>
-<ol>
+</ul>
+<pre><code class="language-bash">git init
+</code></pre>
+<ul>
 <li>Add and commit your files</li>
-</ol>
-<p><code>git add .</code></p>
-<p><code>git commit -m "Initial commit for my custom Action"</code></p>
-<ol>
+</ul>
+<pre><code class="language-bash">git add .
+git commit -m &quot;Initial commit for my custom Action&quot;
+</code></pre>
+<ul>
 <li>
 <p>Create a GitHub repository<br />
-   Create a new repository on GitHub to host your Action.</p>
+  Create a new repository on GitHub to host your Action.</p>
 </li>
 <li>
 <p>Connect your local repo to GitHub remote</p>
 </li>
-</ol>
-<p><code>git remote add origin https://github.com/my-account/my-action.git</code></p>
-<ol>
+</ul>
+<pre><code class="language-bash">git remote add origin https://github.com/my-account/my-action.git
+</code></pre>
+<ul>
 <li>Tag a release version<br />
-   It's a good practice to tag your Action versions for reuse:</li>
-</ol>
-<p><code>git tag -a -m "My action release" v1</code></p>
-<ol>
+  It's a good practice to tag your Action versions for reuse:</li>
+</ul>
+<pre><code class="language-bash">git tag -a -m &quot;My action release&quot; v1
+</code></pre>
+<ul>
 <li>Push your code and tags to GitHub</li>
-</ol>
-<p><code>git push --follow-tags origin main</code></p>
-<ol>
+</ul>
+<pre><code class="language-bash">git push --follow-tags origin main
+</code></pre>
+<ul>
 <li>Use your custom Action in workflows<br />
-   Reference your custom Action in any other workflow by specifying the repository and tag, like this:</li>
-</ol>
-<p><code>uses: my-account/my-action@v1</code></p>
+  Reference your custom Action in any other workflow by specifying the repository and tag, like this:</li>
+</ul>
+<pre><code class="language-plaintext">uses: my-account/my-action@v1
+</code></pre>
 
 
 
