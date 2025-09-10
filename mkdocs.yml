@@ -68,6 +68,7 @@ nav:
       - List GitHub Actions: git/list-github-actions.md
       - GitHub Pages Custom Domain: git/github-pages-custom-domain.md
       - GitHub Multiple Account: git/github-multiple-accounts.md
+      - GitHub Commit Hash Copy: git/github-commit-hash-copy.md
   - Database:
       - MySQL:
           - MySQL Cheatsheet: database/mysql/mysql-cheatsheet.md

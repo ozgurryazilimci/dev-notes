@@ -21,39 +21,50 @@ them inside the same repository as your workflows.
 
 ### How to create and share a custom Action in its own repository:
 
-1. Create a new local project folder  
-   This folder should contain your action.yml file and all the code needed for your Action.  
-   **Important:** Do not put your action.yml or code inside a .github/actions folder or similar. Keep everything at the
-   root level of your new project folder.
+- Create a new local project folder  
+  This folder should contain your action.yml file and all the code needed for your Action.  
+  **Important:** Do not put your action.yml or code inside a .github/actions folder or similar. Keep everything at the
+  root level of your new project folder.
 
-2. Initialize a Git repository  
-   Run the following command inside your project folder:
+- Initialize a Git repository  
+  Run the following command inside your project folder:
 
-`git init`
+```bash
+git init
+```
 
-3. Add and commit your files
+- Add and commit your files
 
-`git add .`
+```bash
+git add .
+git commit -m "Initial commit for my custom Action"
+```
 
-`git commit -m "Initial commit for my custom Action"`
+- Create a GitHub repository  
+  Create a new repository on GitHub to host your Action.
 
-4. Create a GitHub repository  
-   Create a new repository on GitHub to host your Action.
+- Connect your local repo to GitHub remote
 
-5. Connect your local repo to GitHub remote
+```bash
+git remote add origin https://github.com/my-account/my-action.git
+```
 
-`git remote add origin https://github.com/my-account/my-action.git`
+- Tag a release version  
+  It's a good practice to tag your Action versions for reuse:
 
-6. Tag a release version  
-   It's a good practice to tag your Action versions for reuse:
+```bash
+git tag -a -m "My action release" v1
+```
 
-`git tag -a -m "My action release" v1`
+- Push your code and tags to GitHub
 
-7. Push your code and tags to GitHub
+```bash
+git push --follow-tags origin main
+```
 
-`git push --follow-tags origin main`
+- Use your custom Action in workflows  
+  Reference your custom Action in any other workflow by specifying the repository and tag, like this:
 
-8. Use your custom Action in workflows  
-   Reference your custom Action in any other workflow by specifying the repository and tag, like this:
-
-`uses: my-account/my-action@v1`
+```plaintext
+uses: my-account/my-action@v1
+```
