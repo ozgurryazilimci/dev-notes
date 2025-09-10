@@ -145,6 +145,8 @@ nav:
                   - CloudFront: devops/cloud/aws/aws-services/aws-cloudfront.md
                   - Route53: devops/cloud/aws/aws-services/aws-route53.md
                   - RDS: devops/cloud/aws/aws-services/aws-rds.md
+                  - Redshift: devops/cloud/aws/aws-services/aws-redshift.md
+                  - DynamoDB: devops/cloud/aws/aws-services/aws-dynamodb.md
                   - Athena Examples: devops/cloud/aws/aws-services/aws-athena-examples.md
       - Terraform:
           - Terraform Cheatsheet: devops/terraform/terraform-cheatsheet.md

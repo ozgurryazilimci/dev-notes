@@ -6,16 +6,32 @@ monitoring, and scaling.
 
 ---
 
+## SQL vs NoSQL Databases
+
+- **SQL (Relational Databases)**
+    - Structured, table-based, predefined schema.
+    - Strong ACID compliance (Atomicity, Consistency, Isolation, Durability).
+    - Suitable for transactional systems, financial apps, traditional enterprise workloads.
+    - Examples in AWS: **Amazon RDS** (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server), **Amazon Aurora**.
+
+- **NoSQL (Non-Relational Databases)**
+    - Flexible schema, key-value, document, graph, or column-oriented.
+    - Focus on scalability and high availability.
+    - Eventual consistency models.
+    - Example in AWS: **Amazon DynamoDB**.
+
+---
+
 ## Supported Database Engines
 
 RDS supports multiple relational database engines:
 
-- **Amazon Aurora** (MySQL- and PostgreSQL-compatible, AWS-optimized, high performance).
-- **MySQL**.
-- **PostgreSQL**.
-- **MariaDB**.
-- **Oracle Database**.
-- **Microsoft SQL Server**.
+- **Amazon Aurora** (MySQL- and PostgreSQL-compatible, AWS-optimized, high performance)
+- **MySQL**
+- **PostgreSQL**
+- **MariaDB**
+- **Oracle Database**
+- **Microsoft SQL Server**
 
 Each engine has specific versions and licensing options available.
 
@@ -45,6 +61,65 @@ Each engine has specific versions and licensing options available.
     - **m5/m6g**: General-purpose workloads.
     - **r5/r6g**: Memory-optimized workloads.
 - Always size instances according to workload needs and monitor with CloudWatch.
+
+---
+
+## Creating a New RDS Instance
+
+When creating a new RDS database via the AWS Console:
+
+1. **Choose Engine**: Select Aurora, MySQL, PostgreSQL, etc.
+2. **Templates**: Development/Test, Production, or Free Tier.
+3. **Settings**: DB identifier, master username, and password.
+4. **Instance Configuration**: Select instance class (vCPU and memory).
+5. **Storage**: Choose type (General Purpose SSD, Provisioned IOPS).
+6. **Connectivity**:
+    - VPC and subnet group
+    - Public access or private only
+    - Security groups for inbound rules
+    - IAM role for S3 import/export
+
+7. **Additional Configurations**:
+    - Initial database name
+    - DB parameter groups
+    - Option groups
+    - Encryption settings
+
+8. **Monitoring**: Enable Enhanced Monitoring or Performance Insights.
+9. **Backup**: Automated backup retention period, backup window.
+10. **Maintenance**: Automatic minor version upgrades, maintenance window.
+
+---
+
+## RDS Dashboard
+
+In the AWS Management Console, the **RDS Dashboard** provides access to:
+
+- **Databases**: Active instances and clusters.
+- **Performance Insights**: Visualize query performance.
+- **Snapshots**: Automated and manual snapshots.
+- **Automated Backups**: Recovery points available for PITR.
+- **Reserved Instances**: Purchase long-term capacity at discounted rates.
+- **Subnet Groups**: Control which subnets RDS can use.
+- **Parameter Groups**: Define engine configuration settings.
+- **Option Groups**: Enable advanced features like Oracle TDE or SQL Server Audit.
+- **Events and Subscriptions**: Notifications about changes or issues.
+- **Recommendations**: Suggestions for optimizing performance, scaling, or updates.
+
+---
+
+## RDS Actions in the Console
+
+When you select a database in the AWS RDS console, the **Actions menu** provides several options:
+
+- **Modify**: Change instance size, storage, networking, or engine version. Often results in creating a new instance
+  behind the scenes.
+- **Reboot**: Restart the database engine without changing configuration.
+- **Promote Read Replica**: Convert a read replica into a standalone, writable DB.
+- **Take Snapshot**: Create a manual snapshot at any point in time.
+- **Restore to Point in Time**: Recover the database using automated backups and transaction logs.
+- **Delete DB Instance**: Permanently remove the DB instance. Automated backups are deleted, but manual snapshots
+  remain.
 
 ---
 
@@ -83,6 +158,17 @@ Each engine has specific versions and licensing options available.
 - **Enhanced Monitoring**: Real-time OS-level metrics.
 - **Performance Insights**: Advanced query performance monitoring.
 - **Maintenance Window**: Define when RDS applies patches and updates.
+
+### Logs
+
+Depending on the database engine, RDS supports:
+
+- **Error Logs**: Engine-specific error messages.
+- **General Logs**: Records of client connections and queries.
+- **Slow Query Logs**: Queries that exceed a performance threshold.
+- **Audit Logs**: Security-relevant events.
+
+These logs can be viewed in the console or exported to **Amazon CloudWatch Logs** for analysis and retention.
 
 ---
 
