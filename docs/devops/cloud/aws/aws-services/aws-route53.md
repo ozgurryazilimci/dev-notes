@@ -18,6 +18,8 @@ intelligent traffic routing.
 - **ccTLD (Country Code Top-Level Domain)**: Country-specific, e.g., `.us`, `.uk`, `.de`.
 - **Authoritative Name Servers**: Provide the definitive DNS records for a domain.
 
+> You can find root servers [here](https://www.iana.org/domains/root/servers).
+
 ### How DNS Works?
 
 The Domain Name System (DNS) is a hierarchical and distributed naming system. When a user types `www.example.com` into a

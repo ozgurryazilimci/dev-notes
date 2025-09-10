@@ -35,6 +35,11 @@ RDS supports multiple relational database engines:
 
 Each engine has specific versions and licensing options available.
 
+> You can download MySQL Workbench from [here](https://www.mysql.com/products/workbench/).
+
+> You can see some SQL cheatsheets
+> from [here](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf).
+
 ---
 
 ## Key Concepts
