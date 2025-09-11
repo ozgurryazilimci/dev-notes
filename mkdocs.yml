@@ -81,6 +81,14 @@ nav:
       - Java:
           - Jenv: backend/java/jenv.md
           - Sdkman: backend/java/sdkman.md
+          - Coding Standards:
+              - Checkstyle:
+                  - Checkstyle Introduction: backend/java/coding-standards/checkstyle/checkstyle-introduction.md
+                  - Maven Checkstyle Plugin: backend/java/coding-standards/checkstyle/maven-checkstyle-plugin.md
+                  - Editor Support IntelliJ Idea Checkstyle Plugin: backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin.md
+              - Codestyle:
+                  - Codestyle Introduction: backend/java/coding-standards/codestyle/codestyle-introduction.md
+                  - Codestyle IntelliJ IDEA Installation: backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation.md
   - Frontend:
       - Node.js:
           - Nvm & Npm: frontend/nodejs/nvm-npm.md
