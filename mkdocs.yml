@@ -151,6 +151,7 @@ nav:
                   - ElastiCache: devops/cloud/aws/aws-services/aws-elasticache.md
                   - CloudWatch: devops/cloud/aws/aws-services/aws-cloudwatch.md
                   - CloudTrial: devops/cloud/aws/aws-services/aws-cloudtrial.md
+                  - CloudFormation: devops/cloud/aws/aws-services/aws-cloudformation.md
                   - Athena Examples: devops/cloud/aws/aws-services/aws-athena-examples.md
       - Terraform:
           - Terraform Cheatsheet: devops/terraform/terraform-cheatsheet.md
