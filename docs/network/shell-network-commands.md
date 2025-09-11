@@ -50,6 +50,7 @@ Usage:
 ## telnet
 
 Tests if a specific hostname and port are reachable.
+If the command is not found, install it by using `brew install telnet`.
 
 Usage:
 `telnet example.com 8080`
