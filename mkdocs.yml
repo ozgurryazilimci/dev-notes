@@ -185,6 +185,9 @@ nav:
           - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
           - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
           - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
+      - Expo:
+          - Expo Project Setup: mobile/expo/expo-project-setup.md
+          - Expo Supabase Integration: mobile/expo/expo-supabase-integration.md
   - Freelance:
       - Freelance Guide: freelance/freelance-guide.md
       - Website:
