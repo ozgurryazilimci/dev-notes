@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-cloudwatch/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/expo/expo-supabase-integration/">
       
       
-        <link rel="prev" href="../aws-elasticache/">
+        <link rel="prev" href="../expo-project-setup/">
       
       
-        <link rel="next" href="../aws-cloudtrial/">
+        <link rel="next" href="../../../freelance/freelance-guide/">
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>CloudWatch - My Dev Notes</title>
+        <title>Expo Supabase Integration - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-services-cloudwatch" class="md-skip">
+        <a href="#expo-supabase-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CloudWatch
+              Expo Supabase Integration
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -375,8 +375,6 @@
   
   
   
-    
-  
   
     
     
@@ -384,13 +382,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../docker/docker-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -415,7 +411,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -437,7 +433,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -455,6 +451,8 @@
   
   
   
+    
+  
   
     
     
@@ -462,11 +460,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -491,7 +491,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../freelance/freelance-guide/" class="md-tabs__link">
+        <a href="../../../freelance/freelance-guide/" class="md-tabs__link">
           
   
   
@@ -520,7 +520,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../tools/slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../../tools/slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -545,7 +545,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +581,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/github-actions/" class="md-nav__link">
+      <a href="../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/tmate/" class="md-nav__link">
+      <a href="../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1038,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1116,7 +1116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1139,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1269,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1349,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1372,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1491,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1514,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1537,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1615,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1638,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1786,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1809,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1832,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1867,10 +1867,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1886,20 +1884,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1912,7 +1907,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Devops
@@ -1985,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -2008,7 +2003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -2031,7 +2026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2054,7 +2049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -2077,7 +2072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -2100,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -2123,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -2146,7 +2141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -2230,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -2253,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -2276,7 +2271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -2382,7 +2377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -2405,7 +2400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -2428,7 +2423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -2451,7 +2446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -2474,7 +2469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -2497,7 +2492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -2520,7 +2515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -2543,7 +2538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -2566,7 +2561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -2589,7 +2584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -2612,7 +2607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -2635,7 +2630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -2658,7 +2653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -2681,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -2704,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -2727,7 +2722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -2750,7 +2745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -2773,7 +2768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2796,7 +2791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2819,7 +2814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2907,7 +2902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -2930,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -2953,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -2976,7 +2971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -2999,7 +2994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -3022,7 +3017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -3045,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -3081,8 +3076,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3097,11 +3090,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
           
           <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
@@ -3117,7 +3110,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             Cloud
@@ -3128,10 +3121,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3150,11 +3141,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1" >
         
           
           <label class="md-nav__link" for="__nav_7_3_1" id="__nav_7_3_1_label" tabindex="0">
@@ -3170,7 +3161,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_3_1">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -3184,7 +3175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-introduction/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -3207,7 +3198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-cli/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -3230,7 +3221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aws-services-overview/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3250,10 +3241,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3300,11 +3289,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_4" >
         
           
           <label class="md-nav__link" for="__nav_7_3_1_4" id="__nav_7_3_1_4_label" tabindex="0">
@@ -3320,7 +3309,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_1_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_1_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_3_1_4">
             <span class="md-nav__icon md-icon"></span>
             AWS Services
@@ -3334,7 +3323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3357,7 +3346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-iam/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -3380,7 +3369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-iam-demo/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3403,7 +3392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-s3/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -3426,7 +3415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-glacier/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -3449,7 +3438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-ec2/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -3472,7 +3461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-efs/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -3495,7 +3484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-vpc/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -3518,7 +3507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-cloudfront/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -3541,7 +3530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-route53/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -3564,7 +3553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-rds/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -3587,7 +3576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-redshift/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -3610,7 +3599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-dynamodb/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -3633,7 +3622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-elasticache/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -3653,32 +3642,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    CloudWatch
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -3689,185 +3656,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Concepts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Metrics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Logs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-agent-installation-on-ec2-or-on-prem" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Agent Installation (on EC2 or On-Prem)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-alarms" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Alarms
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-dashboards" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Dashboards
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-events-amazon-eventbridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Events (Amazon EventBridge)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-logs-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Logs Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-contributor-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Contributor Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-synthetics" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Synthetics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-application-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Application Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-instance-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      EC2 Instance Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rds-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      RDS Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3880,7 +3668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -3903,7 +3691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-cloudformation/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -3926,7 +3714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-athena-examples/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -4020,7 +3808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -4043,7 +3831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -4126,7 +3914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../data/data-tools/" class="md-nav__link">
+      <a href="../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -4213,7 +4001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -4236,7 +4024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -4259,7 +4047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/dns-records/" class="md-nav__link">
+      <a href="../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -4282,7 +4070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -4305,7 +4093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -4328,7 +4116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -4351,7 +4139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -4378,8 +4166,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -4393,17 +4183,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
             
   
   
@@ -4416,7 +4209,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Mobile
@@ -4481,7 +4274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4504,7 +4297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -4527,7 +4320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4550,7 +4343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4632,7 +4425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4655,7 +4448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4678,7 +4471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -4701,7 +4494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4729,8 +4522,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -4745,11 +4540,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" checked>
         
           
           <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
@@ -4765,7 +4560,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10_3">
             <span class="md-nav__icon md-icon"></span>
             Expo
@@ -4779,7 +4574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../mobile/expo/expo-project-setup/" class="md-nav__link">
+      <a href="../expo-project-setup/" class="md-nav__link">
         
   
   
@@ -4799,10 +4594,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../mobile/expo/expo-supabase-integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Expo Supabase Integration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4813,6 +4630,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configure-supabase-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configure Supabase Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-install-supabase-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Install Supabase SDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-supabase-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Setup Supabase Client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-database-setup-supabase-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Database Setup (Supabase SQL)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Database Setup (Supabase SQL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-signup-screen-example-appindextsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Signup Screen Example (app/index.tsx)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-add-company-screen-appadd-companytsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Add Company Screen (app/add-company.tsx)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-login-and-dashboard-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login and Dashboard Routing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-testing-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Testing Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4887,7 +4829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../../freelance/freelance-guide/" class="md-nav__link">
         
   
   
@@ -4967,7 +4909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../../../freelance/website/website-setup/" class="md-nav__link">
         
   
   
@@ -4990,7 +4932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5013,7 +4955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/wordpress-installation/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5036,7 +4978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/wordpress-studio/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5059,7 +5001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5082,7 +5024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -5105,7 +5047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../freelance/website/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -5255,7 +5197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -5278,7 +5220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/slack/slack-message/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -5301,7 +5243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -5324,7 +5266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -5355,7 +5297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -5378,7 +5320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -5401,7 +5343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -5424,7 +5366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/multipass/" class="md-nav__link">
+      <a href="../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -5447,7 +5389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -5470,7 +5412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -5493,7 +5435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -5516,7 +5458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -5593,7 +5535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -5616,7 +5558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -5666,136 +5608,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#1-prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      1. Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-concepts" class="md-nav__link">
+  <a href="#2-configure-supabase-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Concepts
+      2. Configure Supabase Project
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloudwatch-metrics" class="md-nav__link">
+  <a href="#3-install-supabase-sdk" class="md-nav__link">
     <span class="md-ellipsis">
-      CloudWatch Metrics
+      3. Install Supabase SDK
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloudwatch-logs" class="md-nav__link">
+  <a href="#4-setup-supabase-client" class="md-nav__link">
     <span class="md-ellipsis">
-      CloudWatch Logs
+      4. Setup Supabase Client
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloudwatch-agent-installation-on-ec2-or-on-prem" class="md-nav__link">
+  <a href="#5-database-setup-supabase-sql" class="md-nav__link">
     <span class="md-ellipsis">
-      CloudWatch Agent Installation (on EC2 or On-Prem)
+      5. Database Setup (Supabase SQL)
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-alarms" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Alarms
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-dashboards" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Dashboards
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-events-amazon-eventbridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Events (Amazon EventBridge)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-logs-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Logs Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-contributor-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Contributor Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-synthetics" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Synthetics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloudwatch-application-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      CloudWatch Application Insights
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring Examples">
+    <nav class="md-nav" aria-label="5. Database Setup (Supabase SQL)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ec2-instance-monitoring" class="md-nav__link">
+  <a href="#tables" class="md-nav__link">
     <span class="md-ellipsis">
-      EC2 Instance Monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rds-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      RDS Monitoring
+      Tables
     </span>
   </a>
   
@@ -5807,18 +5668,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
+  <a href="#6-signup-screen-example-appindextsx" class="md-nav__link">
     <span class="md-ellipsis">
-      Best Practices
+      6. Signup Screen Example (app/index.tsx)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#7-add-company-screen-appadd-companytsx" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      7. Add Company Screen (app/add-company.tsx)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-login-and-dashboard-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login and Dashboard Routing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-testing-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Testing Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Notes
     </span>
   </a>
   
@@ -5840,167 +5728,190 @@
 
 
 
-<h1 id="aws-services-cloudwatch">AWS Services - CloudWatch</h1>
-<h2 id="overview">Overview</h2>
-<p><strong>Amazon CloudWatch</strong> is a monitoring and observability service built into AWS.<br />
-It provides metrics, logs, and alarms to help developers, DevOps engineers, and system administrators monitor resources,
-applications, and services in real-time.</p>
-<p>Use cases:</p>
+<h1 id="expo-supabase-integration">Expo Supabase Integration</h1>
+<h2 id="1-prerequisites">1. Prerequisites</h2>
 <ul>
-<li>Collecting and analyzing metrics from AWS services (EC2, RDS, Lambda, etc.).</li>
-<li>Centralized log collection with CloudWatch Logs.</li>
-<li>Setting up alarms and automated actions.</li>
-<li>Creating dashboards for visualization.</li>
-<li>Detecting anomalies and performance issues.</li>
+<li>Node.js installed (v18+ recommended)</li>
+<li>npm updated</li>
+<li>Expo project already created (see Hello World guide)</li>
+<li>Supabase account and project setup → <a href="https://supabase.com">https://supabase.com</a></li>
 </ul>
 <hr />
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li><strong>Metrics</strong>: Time-ordered data points (e.g., CPU utilization, network traffic).</li>
-<li><strong>Logs</strong>: Application and system logs collected and stored.</li>
-<li><strong>Alarms</strong>: Rules to trigger actions based on metric thresholds.</li>
-<li><strong>Events (EventBridge)</strong>: React to AWS resource changes in near real-time.</li>
-<li><strong>Dashboards</strong>: Visual representation of metrics and logs.</li>
-<li><strong>Namespaces</strong>: Categories for metrics (e.g., <code>AWS/EC2</code>, <code>AWS/RDS</code>).</li>
-<li><strong>Dimensions</strong>: Key-value pairs to filter and identify metrics.</li>
-</ul>
-<hr />
-<h2 id="cloudwatch-metrics">CloudWatch Metrics</h2>
-<p>Metrics are collected from:</p>
-<ul>
-<li><strong>AWS services</strong> (default, no setup required).</li>
-<li><strong>Custom metrics</strong> (via API or CloudWatch Agent).</li>
-<li><strong>Applications/On-premises servers</strong> (via CloudWatch Agent).</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li>EC2: <code>CPUUtilization</code>, <code>DiskReadOps</code></li>
-<li>RDS: <code>DatabaseConnections</code>, <code>FreeStorageSpace</code></li>
-<li>Lambda: <code>Invocations</code>, <code>Duration</code>, <code>Errors</code></li>
-</ul>
-<hr />
-<h2 id="cloudwatch-logs">CloudWatch Logs</h2>
-<p>CloudWatch Logs allows you to:</p>
-<ul>
-<li>Collect logs from EC2, Lambda, or custom applications.</li>
-<li>Search, filter, and analyze logs.</li>
-<li>Set log retention policies.</li>
-<li>Export logs to S3 or stream to Lambda for further processing.</li>
-</ul>
-<p><strong>Common use cases:</strong></p>
-<ul>
-<li>Application logs for debugging.</li>
-<li>System logs for security auditing.</li>
-<li>Custom logs for business metrics.</li>
-</ul>
-<hr />
-<h2 id="cloudwatch-agent-installation-on-ec2-or-on-prem">CloudWatch Agent Installation (on EC2 or On-Prem)</h2>
-<p>To collect system-level metrics and logs, you install the <strong>CloudWatch Agent</strong>:</p>
-<pre><code class="language-bash">wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
-sudo rpm -U ./amazon-cloudwatch-agent.rpm
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
-</code></pre>
-<ul>
-<li>The <strong>config wizard</strong> helps create a JSON config for which metrics/logs to collect.</li>
-<li>Once configured, start the agent:</li>
-</ul>
-<pre><code class="language-bash">sudo systemctl start amazon-cloudwatch-agent
-sudo systemctl enable amazon-cloudwatch-agent
-</code></pre>
-<hr />
-<h2 id="cloudwatch-alarms">CloudWatch Alarms</h2>
-<ul>
-<li>Alarms are created for specific metrics.</li>
-<li>Actions:<ul>
-<li>Send an <strong>SNS notification</strong> (email, SMS, webhook).</li>
-<li>Trigger <strong>Auto Scaling</strong> policies.</li>
-<li>Execute <strong>EC2 recovery</strong> or <strong>stop/terminate actions</strong>.</li>
+<h2 id="2-configure-supabase-project">2. Configure Supabase Project</h2>
+<ol>
+<li>Go to <a href="https://app.supabase.com/">Supabase Dashboard</a>.</li>
+<li>Create a new project (choose organization, project name, database password).</li>
+<li>In the project <strong>Settings → API</strong>:<ul>
+<li>Copy your <strong>Project URL</strong> (supabaseUrl)</li>
+<li>Copy your <strong>anon public key</strong> (supabaseKey)</li>
 </ul>
 </li>
+<li>Enable <strong>Authentication</strong>:<ul>
+<li>Navigate to <strong>Authentication → Providers</strong></li>
+<li>Enable <strong>Email</strong> provider (so users can sign up with email &amp; password)</li>
+<li>Configure SMTP if you want to send real emails. For testing, Supabase provides a <strong>magic link preview</strong> in the
+  dashboard.</li>
 </ul>
-<p>Example:<br />
-Alarm on <code>CPUUtilization &gt; 80% for 5 minutes</code> → send email via SNS.</p>
+</li>
+</ol>
 <hr />
-<h2 id="cloudwatch-dashboards">CloudWatch Dashboards</h2>
-<ul>
-<li>Create custom dashboards in the console.</li>
-<li>Add widgets (line charts, bar charts, numbers).</li>
-<li>Combine multiple service metrics into one view.</li>
-<li>Useful for <strong>NOC screens</strong> or <strong>real-time monitoring</strong>.</li>
-</ul>
-<hr />
-<h2 id="cloudwatch-events-amazon-eventbridge">CloudWatch Events (Amazon EventBridge)</h2>
-<ul>
-<li>Rules that match incoming events and route them to targets.</li>
-<li>Example targets: Lambda, Step Functions, SNS, SQS, EC2 actions.</li>
-<li>Example: On <strong>RDS failover event</strong>, trigger a Lambda function to send Slack notification.</li>
-</ul>
-<hr />
-<h2 id="cloudwatch-logs-insights">CloudWatch Logs Insights</h2>
-<ul>
-<li>Interactive query capability for logs.</li>
-<li>SQL-like query language.</li>
-<li>Example:</li>
-</ul>
-<pre><code class="language-plaintext">  fields @timestamp, @message
-  | filter @message like /ERROR/
-  | sort @timestamp desc
-  | limit 20
+<h2 id="3-install-supabase-sdk">3. Install Supabase SDK</h2>
+<pre><code class="language-bash">npm install @supabase/supabase-js
 </code></pre>
 <hr />
-<h2 id="cloudwatch-contributor-insights">CloudWatch Contributor Insights</h2>
+<h2 id="4-setup-supabase-client">4. Setup Supabase Client</h2>
+<p>Create <code>supabaseClient.js</code> in the root of the project:</p>
+<pre><code class="language-js">import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'YOUR_SUPABASE_URL'
+const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'
+export const supabase = createClient(supabaseUrl, supabaseKey)
+</code></pre>
+<p>Replace placeholders with your credentials from <strong>Settings → API</strong>.</p>
+<hr />
+<h2 id="5-database-setup-supabase-sql">5. Database Setup (Supabase SQL)</h2>
+<h3 id="tables">Tables</h3>
+<pre><code class="language-sql">-- Companies table
+create table companies (
+    id uuid primary key default gen_random_uuid(),
+    name text not null,
+    created_at timestamp default now()
+);
+
+-- Users table (custom profile info)
+create table users (
+    id uuid primary key,
+    email text unique not null,
+    company_id uuid references companies(id),
+    role text check (role in ('admin', 'employee')) default 'employee',
+    created_at timestamp default now()
+);
+</code></pre>
+<blockquote>
+<p>Note: <code>auth.users</code> table is automatically managed by Supabase for authentication. The <code>users</code> table here is for extra
+profile/company information.</p>
+</blockquote>
+<hr />
+<h2 id="6-signup-screen-example-appindextsx">6. Signup Screen Example (<code>app/index.tsx</code>)</h2>
+<pre><code class="language-tsx">import React, { useState } from 'react'
+import { View, StyleSheet, Text } from 'react-native'
+import { TextInput, Button } from 'react-native-paper'
+import { supabase } from '../supabaseClient'
+import { useRouter } from 'expo-router'
+
+export default function SignupScreen() {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [message, setMessage] = useState('')
+    const router = useRouter()
+
+    const signUp = async () =&gt; {
+        const {data, error} = await supabase.auth.signUp({email, password})
+        if (error) {
+            setMessage(error.message)
+            return
+        }
+
+        // Insert into custom users table
+        await supabase.from('users').insert([{id: data.user.id, email: data.user.email}])
+
+        setMessage('Check your email for confirmation!')
+    }
+
+    return (
+        &lt;View style={styles.container}&gt;
+            &lt;TextInput label=&quot;Email&quot; value={email} onChangeText={setEmail} style={styles.input}/&gt;
+            &lt;TextInput label=&quot;Password&quot; value={password} onChangeText={setPassword} secureTextEntry
+                       style={styles.input}/&gt;
+            &lt;Button mode=&quot;contained&quot; onPress={signUp}&gt;Sign Up&lt;/Button&gt;
+            {message ? &lt;Text&gt;{message}&lt;/Text&gt; : null}
+        &lt;/View&gt;
+    )
+}
+
+const styles = StyleSheet.create(
+    {container: {flex: 1, justifyContent: 'center', padding: 20}, input: {marginBottom: 10}})
+</code></pre>
+<hr />
+<h2 id="7-add-company-screen-appadd-companytsx">7. Add Company Screen (<code>app/add-company.tsx</code>)</h2>
+<pre><code class="language-tsx">import React, { useState } from 'react'
+import { View, StyleSheet, Text } from 'react-native'
+import { TextInput, Button } from 'react-native-paper'
+import { supabase } from '../supabaseClient'
+import { useRouter } from 'expo-router'
+
+export default function AddCompany() {
+    const [companyName, setCompanyName] = useState('')
+    const [message, setMessage] = useState('')
+    const router = useRouter()
+
+    const handleAddCompany = async () =&gt; {
+        const {data: {user}, error: userError} = await supabase.auth.getUser()
+        if (userError || !user) {
+            setMessage('User not found')
+            return
+        }
+
+        const {data: company, error: companyError} = await supabase.from('companies')
+            .insert([{name: companyName}]).select().single()
+
+        if (companyError || !company) {
+            setMessage(companyError?.message || 'Company not created')
+            return
+        }
+
+        const {error: updateError} = await supabase.from('users')
+            .update({company_id: company.id}).eq('id', user.id)
+
+        if (updateError) {
+            setMessage(updateError.message)
+            return
+        }
+
+        router.replace('/(tabs)/explore')
+    }
+
+    return (
+        &lt;View style={styles.container}&gt;
+            &lt;TextInput label=&quot;Company Name&quot; value={companyName} onChangeText={setCompanyName} style={styles.input}/&gt;
+            &lt;Button mode=&quot;contained&quot; onPress={handleAddCompany}&gt;Add Company&lt;/Button&gt;
+            {message ? &lt;Text&gt;{message}&lt;/Text&gt; : null}
+        &lt;/View&gt;
+    )
+}
+
+const styles = StyleSheet.create(
+    {container: {flex: 1, justifyContent: 'center', padding: 20}, input: {marginBottom: 10}})
+</code></pre>
+<hr />
+<h2 id="8-login-and-dashboard-routing">8. Login and Dashboard Routing</h2>
 <ul>
-<li>Analyze <strong>who or what</strong> is contributing the most to a metric.</li>
-<li>Example: Identify which IP is causing high API Gateway 5xx errors.</li>
+<li>On login, fetch <code>users.company_id</code>.</li>
+<li>If <code>company_id</code> is <strong>null</strong> → navigate to <code>/add-company</code>.</li>
+<li>If <code>company_id</code> exists → navigate to <code>/(tabs)/explore</code>.</li>
+<li>Use <code>useRouter()</code> from Expo Router.</li>
 </ul>
 <hr />
-<h2 id="cloudwatch-synthetics">CloudWatch Synthetics</h2>
+<h2 id="9-testing-authentication">9. Testing Authentication</h2>
 <ul>
-<li>Canaries: scripted tests to simulate user actions.</li>
-<li>Monitor endpoints and APIs proactively.</li>
-<li>Detect issues before customers are impacted.</li>
+<li>Run app: <code>npx expo start</code></li>
+<li>In Supabase Dashboard → <strong>Authentication → Users</strong>, you can see registered accounts.</li>
+<li>When you sign up, an email confirmation is sent:<ul>
+<li>If SMTP configured → check your real inbox.</li>
+<li>If SMTP not configured → check <strong>Supabase Dashboard → Authentication → Users → Click user → Confirm account</strong>
+  manually.</li>
+</ul>
+</li>
+<li>After confirmation, login works normally.</li>
 </ul>
 <hr />
-<h2 id="cloudwatch-application-insights">CloudWatch Application Insights</h2>
+<h2 id="10-notes">10. Notes</h2>
 <ul>
-<li>Automatically sets up monitoring for common application stacks (e.g., Java, .NET, databases).</li>
-<li>Detects and alerts on common problems.</li>
+<li>Always use <code>supabase.auth.getUser()</code> for v2 SDK.</li>
+<li>Keep <code>auth.users</code> (system table) and <code>users</code> (custom table) in sync.</li>
+<li>Email confirmations require SMTP settings for production apps.</li>
+<li>You can test login/signup flow directly in <strong>Supabase Dashboard</strong> before wiring UI.</li>
 </ul>
-<hr />
-<h2 id="monitoring-examples">Monitoring Examples</h2>
-<h3 id="ec2-instance-monitoring">EC2 Instance Monitoring</h3>
-<ul>
-<li>By default, CloudWatch provides metrics every <strong>5 minutes</strong>.</li>
-<li>With detailed monitoring enabled: <strong>1-minute granularity</strong>.</li>
-<li>Metrics: <code>CPUUtilization</code>, <code>NetworkIn</code>, <code>DiskReadOps</code>.</li>
-</ul>
-<h3 id="rds-monitoring">RDS Monitoring</h3>
-<ul>
-<li>Metrics: <code>CPUUtilization</code>, <code>FreeableMemory</code>, <code>DatabaseConnections</code>.</li>
-<li>Performance Insights integration for query-level analysis.</li>
-</ul>
-<hr />
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li>Use <strong>tags</strong> to organize metrics and logs per environment (dev, test, prod).</li>
-<li>Aggregate logs from multiple sources into CloudWatch Logs.</li>
-<li>Enable <strong>detailed monitoring</strong> for critical workloads.</li>
-<li>Set alarms with <strong>multiple actions</strong> (e.g., SNS + Auto Scaling).</li>
-<li>Use <strong>dashboards</strong> for real-time visualization.</li>
-<li>Optimize costs by setting <strong>log retention policies</strong>.</li>
-</ul>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li><strong>CloudWatch Metrics</strong> → monitor system and application performance.</li>
-<li><strong>CloudWatch Logs</strong> → centralize log management.</li>
-<li><strong>Alarms</strong> → automated responses to performance thresholds.</li>
-<li><strong>Dashboards</strong> → visualize performance data.</li>
-<li><strong>Events/EventBridge</strong> → automate workflows.</li>
-<li><strong>CloudWatch Agent</strong> → extend monitoring to OS-level metrics and custom logs.</li>
-</ul>
-<p>CloudWatch is the central monitoring service for AWS, enabling observability across infrastructure, applications, and
-business KPIs.  </p>
 
 
 
@@ -6079,10 +5990,10 @@ business KPIs.  </p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
