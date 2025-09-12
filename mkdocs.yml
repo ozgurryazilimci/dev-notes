@@ -160,6 +160,10 @@ nav:
                   - CloudWatch: devops/cloud/aws/aws-services/aws-cloudwatch.md
                   - CloudTrial: devops/cloud/aws/aws-services/aws-cloudtrial.md
                   - CloudFormation: devops/cloud/aws/aws-services/aws-cloudformation.md
+                  - SNS: devops/cloud/aws/aws-services/aws-sns.md
+                  - SQS: devops/cloud/aws/aws-services/aws-sqs.md
+                  - SWF: devops/cloud/aws/aws-services/aws-swf.md
+                  - SES: devops/cloud/aws/aws-services/aws-ses.md
                   - Athena Examples: devops/cloud/aws/aws-services/aws-athena-examples.md
       - Terraform:
           - Terraform Cheatsheet: devops/terraform/terraform-cheatsheet.md
