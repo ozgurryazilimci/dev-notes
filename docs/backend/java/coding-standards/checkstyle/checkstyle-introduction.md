@@ -23,7 +23,6 @@ the [Checks page](https://checkstyle.sourceforge.io/checks.html).
 
 ## Pages
 
-- Current rules are listed in the page **Current Checkstyle Checks**.
 - To set up **Maven Checkstyle plugin**, please read **[Maven Checkstyle Plugin](maven-checkstyle-plugin.md)**.
 - To set up **IDE support**, please follow
   **[Editor Support IntelliJ IDEA Checkstyle Plugin](editor-support-intellij-idea-checkstyle-plugin.md)**.
