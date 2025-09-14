@@ -144,7 +144,7 @@ Most hosts provide cPanel for managing your website:
     - [Elementor](https://elementor.com/), WPBakery for page editing
 - **Notes**:
     - Prefer plugins over editing theme code to preserve changes during updates
-    - Free themes: Storefront (simple setup)
+    - Free themes: Storefront, Astra, Cenote (simple setup)
 
 ---
 
