@@ -102,39 +102,10 @@ RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
 ---
 
----
+## 7. Using Really Simple Security Plugin (WordPress Plugin)
 
-## 7. Using Really Simple SSL (WordPress Plugin)
-
-If your website runs on **WordPress**, you can use the **Really Simple SSL** plugin to make the process easier.
-
-### 🔎 What the Plugin Does
-
-- Detects if an SSL certificate is active on your server.
-- Updates WordPress settings (`siteurl` and `homeurl`) to use `https://`.
-- Automatically redirects all traffic from **HTTP → HTTPS**.
-- Fixes **mixed content issues** (when some resources still load via HTTP).
-
-### ✅ How to Install
-
-1. Log in to your WordPress Admin Dashboard.
-2. Go to **Plugins → Add New**.
-3. Search for **Really Simple SSL**.
-4. Click **Install Now** → then **Activate**.
-
-### ⚡ Activate SSL
-
-- After activation, a notice will appear:  
-  **“Go ahead, activate SSL!”**
-- Click the button → your site will switch to HTTPS automatically.
-
-### ⚠️ Notes
-
-- You **must already have an SSL certificate installed** via cPanel (e.g., Let’s Encrypt).
-- Some hosting providers already handle HTTPS redirects. In that case, the plugin mainly helps clean up mixed content
-  issues.
-- The free version is enough for most users. The Pro version adds extra security features like **HSTS and advanced
-  headers**.
+If your website runs on **WordPress**, you can use the **Really Simple Security** plugin to make the process easier.
+For more details, see the [Really Simple Security Plugin Guide](wordpress/plugins/really-simple-security-plugin.md).
 
 ---
 
@@ -142,5 +113,5 @@ If your website runs on **WordPress**, you can use the **Really Simple SSL** plu
 
 - Use **AutoSSL (Let’s Encrypt)** in cPanel to install a free SSL certificate.
 - Verify that your domain is secured with a padlock.
-- Force HTTPS either via the **Domains** section, `.htaccess`, or **Really Simple SSL** (WordPress).
+- Force HTTPS either via the **Domains** section, `.htaccess`, or **Really Simple Security** (WordPress).
 - Optionally redirect to **www** or **non-www** for consistency.  
