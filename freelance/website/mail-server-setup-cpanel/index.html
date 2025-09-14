@@ -6,34 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Kubernetes ServiceAccount - Core Concepts, Commands, YAML Configuration, and Practical Examples">
+        <meta name="description" content="Personal development notes on various topics including Shell, Git, Docker, Kubernetes, Terraform, Java, Node.js, Databases, Networking, Cloud, Mobile Development, Slack, and more.">
       
       
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/devops/kubernetes/kubernetes-objects/service-account/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/freelance/website/mail-server-setup-cpanel/">
       
       
-        <link rel="prev" href="../rbac/">
+        <link rel="prev" href="../ssl-setup-cpanel/">
       
       
-        <link rel="next" href="../../kubernetes-tools/kubectl/">
+        <link rel="next" href="../wordpress/wordpress-installation/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Service Account - My Dev Notes</title>
+        <title>Mail Server Setup In cPanel - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubernetes-objects-service-account" class="md-skip">
+        <a href="#mail-server-setup-in-cpanel" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Service Account
+              Mail Server Setup In cPanel
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -375,8 +375,6 @@
   
   
   
-    
-  
   
     
     
@@ -384,13 +382,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../docker/docker-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -415,7 +411,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -437,7 +433,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -466,7 +462,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -487,11 +483,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../freelance/freelance-guide/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../freelance-guide/" class="md-tabs__link">
           
   
   
@@ -520,7 +518,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../tools/slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../../tools/slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -545,7 +543,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +579,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -668,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-actions/" class="md-nav__link">
+      <a href="../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/tmate/" class="md-nav__link">
+      <a href="../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1038,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1116,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1139,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1269,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1349,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1372,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1491,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1514,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1537,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1615,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1638,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1786,7 +1784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1809,7 +1807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1832,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1867,10 +1865,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1886,20 +1882,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1912,7 +1905,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Devops
@@ -1985,7 +1978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -2008,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -2031,7 +2024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2054,7 +2047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -2077,7 +2070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -2100,7 +2093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -2123,7 +2116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -2146,7 +2139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -2174,10 +2167,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2198,11 +2189,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
           <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
@@ -2218,7 +2209,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes
@@ -2232,7 +2223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -2255,7 +2246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-installation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -2278,7 +2269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -2298,10 +2289,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2352,11 +2341,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4" >
         
           
           <label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
@@ -2372,7 +2361,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2_4">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes Objects
@@ -2386,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pod/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -2409,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../namespace/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -2432,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../label-selector-annotation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -2455,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment-replicaset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -2478,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rollout-rollback/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -2501,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../statefulset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -2524,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../daemonset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -2547,7 +2536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-cronjob/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -2570,7 +2559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-structure-service/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -2593,7 +2582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingress/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -2616,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-policy/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -2639,7 +2628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -2662,7 +2651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../image-secret/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -2685,7 +2674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -2708,7 +2697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -2731,7 +2720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -2754,7 +2743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage-class/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -2777,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2800,7 +2789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rbac/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2820,32 +2809,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Service Account
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2856,149 +2823,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Service Account
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service-account-with-image-pull-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Service Account with Image Pull Secrets
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-service-account-in-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Service Account in Pod
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-service-account-in-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Service Account in Deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service-account-with-rbac" class="md-nav__link">
-    <span class="md-ellipsis">
-      Service Account with RBAC
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default Service Account
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Use Cases
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Use Cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#application-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application Service Account
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Service Account
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3076,7 +2900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -3099,7 +2923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -3122,7 +2946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -3145,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -3168,7 +2992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -3191,7 +3015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -3214,7 +3038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -3349,7 +3173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -3372,7 +3196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -3395,7 +3219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3505,7 +3329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3528,7 +3352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -3551,7 +3375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3574,7 +3398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -3597,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -3620,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -3643,7 +3467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -3666,7 +3490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -3689,7 +3513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -3712,7 +3536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -3735,7 +3559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-rds/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -3758,7 +3582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -3781,7 +3605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -3804,7 +3628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -3827,7 +3651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -3850,7 +3674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -3873,7 +3697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -3896,7 +3720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-sns/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
         
   
   
@@ -3919,7 +3743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
         
   
   
@@ -3942,7 +3766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-swf/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
         
   
   
@@ -3965,7 +3789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-ses/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
         
   
   
@@ -3988,7 +3812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -4082,7 +3906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -4105,7 +3929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -4188,7 +4012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data/data-tools/" class="md-nav__link">
+      <a href="../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -4275,7 +4099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -4298,7 +4122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -4321,7 +4145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-records/" class="md-nav__link">
+      <a href="../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -4344,7 +4168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -4367,7 +4191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -4390,7 +4214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -4413,7 +4237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -4543,7 +4367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../mobile/android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4566,7 +4390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../mobile/android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -4589,7 +4413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4612,7 +4436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4694,7 +4518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4717,7 +4541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4740,7 +4564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -4763,7 +4587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4841,7 +4665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/expo/expo-project-setup/" class="md-nav__link">
+      <a href="../../../mobile/expo/expo-project-setup/" class="md-nav__link">
         
   
   
@@ -4864,7 +4688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/expo/expo-supabase-integration/" class="md-nav__link">
+      <a href="../../../mobile/expo/expo-supabase-integration/" class="md-nav__link">
         
   
   
@@ -4899,8 +4723,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -4912,17 +4738,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
             
   
   
@@ -4935,7 +4764,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Freelance
@@ -4949,7 +4778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../freelance-guide/" class="md-nav__link">
         
   
   
@@ -4969,8 +4798,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -4989,11 +4820,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" checked>
         
           
           <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
@@ -5009,7 +4840,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_2">
             <span class="md-nav__icon md-icon"></span>
             Website
@@ -5023,7 +4854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../website-setup/" class="md-nav__link">
         
   
   
@@ -5046,7 +4877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5066,10 +4897,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Mail Server Setup In cPanel
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -5080,6 +4933,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-email-accounts-in-fastcomet-cpanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Email Accounts in FastComet cPanel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-deliverability-spf-dkim-dmarc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Deliverability (SPF, DKIM, DMARC)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-dns-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required DNS Records
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-a-and-mx-records-are-both-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why A and MX Records Are Both Needed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webmail-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webmail Access
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mail-clients-imappop3smtp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mail Clients (IMAP/POP3/SMTP)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-spf-dkim-dmarc-are-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why SPF, DKIM, DMARC Are Needed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5151,7 +5105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
+      <a href="../wordpress/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5174,7 +5128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
+      <a href="../wordpress/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5197,7 +5151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../wordpress/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5220,7 +5174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../wordpress/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -5243,7 +5197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../wordpress/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -5266,7 +5220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
+      <a href="../wordpress/wordpress-monetization/" class="md-nav__link">
         
   
   
@@ -5340,7 +5294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
+      <a href="../wordpress/themes/astra-theme/" class="md-nav__link">
         
   
   
@@ -5363,7 +5317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
+      <a href="../wordpress/themes/cenote-theme/" class="md-nav__link">
         
   
   
@@ -5386,7 +5340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
+      <a href="../wordpress/themes/tyche-theme/" class="md-nav__link">
         
   
   
@@ -5409,7 +5363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
+      <a href="../wordpress/themes/storefront-theme/" class="md-nav__link">
         
   
   
@@ -5491,7 +5445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
+      <a href="../wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
         
   
   
@@ -5514,7 +5468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
+      <a href="../wordpress/plugins/joinchat-plugin/" class="md-nav__link">
         
   
   
@@ -5537,7 +5491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
+      <a href="../wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
         
   
   
@@ -5560,7 +5514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
+      <a href="../wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
         
   
   
@@ -5726,7 +5680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -5749,7 +5703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-message/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -5772,7 +5726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -5795,7 +5749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -5826,7 +5780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -5849,7 +5803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -5872,7 +5826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -5895,7 +5849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multipass/" class="md-nav__link">
+      <a href="../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -5918,7 +5872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -5941,7 +5895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -5964,7 +5918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -5987,7 +5941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -6064,7 +6018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -6087,7 +6041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -6137,123 +6091,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#creating-email-accounts-in-fastcomet-cpanel" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Creating Email Accounts in FastComet cPanel
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#email-deliverability-spf-dkim-dmarc" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose
+      Email Deliverability (SPF, DKIM, DMARC)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-service-account" class="md-nav__link">
+  <a href="#required-dns-records" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Service Account
+      Required DNS Records
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#service-account-with-image-pull-secrets" class="md-nav__link">
+  <a href="#why-a-and-mx-records-are-both-needed" class="md-nav__link">
     <span class="md-ellipsis">
-      Service Account with Image Pull Secrets
+      Why A and MX Records Are Both Needed
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-service-account-in-pod" class="md-nav__link">
+  <a href="#webmail-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Service Account in Pod
+      Webmail Access
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-service-account-in-deployment" class="md-nav__link">
+  <a href="#mail-clients-imappop3smtp" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Service Account in Deployment
+      Mail Clients (IMAP/POP3/SMTP)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#service-account-with-rbac" class="md-nav__link">
+  <a href="#why-spf-dkim-dmarc-are-needed" class="md-nav__link">
     <span class="md-ellipsis">
-      Service Account with RBAC
+      Why SPF, DKIM, DMARC Are Needed
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#default-service-account" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Default Service Account
+      Notes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
+  <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Use Cases
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Use Cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#application-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application Service Account
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-service-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Service Account
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
+      Troubleshooting
     </span>
   </a>
   
@@ -6275,195 +6187,173 @@
 
 
 
-<h1 id="kubernetes-objects-service-account">Kubernetes Objects - Service Account</h1>
-<h2 id="overview">Overview</h2>
-<p>Service Accounts in Kubernetes provide an identity for Pods and other workloads to authenticate with the Kubernetes API.
-They are used to control what resources and operations a Pod can access.</p>
-<h2 id="purpose">Purpose</h2>
-<p>Service Accounts are used for:</p>
+<h1 id="mail-server-setup-in-cpanel">Mail Server Setup in cPanel</h1>
+<p>This document explains how to properly set up email accounts such as <code>info@yourdomain.com</code> or <code>contact@yourdomain.com</code>
+when:</p>
 <ul>
-<li><strong>Pod Identity</strong>: Give Pods an identity for API access</li>
-<li><strong>RBAC Integration</strong>: Control Pod permissions through RBAC</li>
-<li><strong>Security</strong>: Implement least privilege access for applications</li>
-<li><strong>Automation</strong>: Enable automated operations by Pods</li>
+<li>The <strong>domain</strong> is registered at <strong>Guzel.net</strong></li>
+<li><strong>DNS</strong> is managed through <strong>Guzel.net DirectAdmin panel</strong></li>
+<li><strong>Hosting and Mail server</strong> are on <strong>FastComet (cPanel)</strong></li>
 </ul>
-<h2 id="basic-service-account">Basic Service Account</h2>
-<pre><code class="language-yaml">apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: app-service-account
-  namespace: default
-</code></pre>
-<h2 id="service-account-with-image-pull-secrets">Service Account with Image Pull Secrets</h2>
-<pre><code class="language-yaml">apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: app-service-account
-  namespace: production
-imagePullSecrets:
-- name: production-registry-secret
-</code></pre>
-<h2 id="using-service-account-in-pod">Using Service Account in Pod</h2>
-<pre><code class="language-yaml">apiVersion: v1
-kind: Pod
-metadata:
-  name: app-pod
-spec:
-  serviceAccountName: app-service-account
-  containers:
-  - name: app
-    image: nginx
-</code></pre>
-<h2 id="using-service-account-in-deployment">Using Service Account in Deployment</h2>
-<pre><code class="language-yaml">apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: app-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: my-app
-  template:
-    metadata:
-      labels:
-        app: my-app
-    spec:
-      serviceAccountName: app-service-account
-      containers:
-      - name: app
-        image: nginx:latest
-        ports:
-        - containerPort: 80
-</code></pre>
-<h2 id="service-account-with-rbac">Service Account with RBAC</h2>
-<pre><code class="language-yaml"># Service Account
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: monitoring-sa
-  namespace: monitoring
----
-# Role for monitoring
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  namespace: monitoring
-  name: monitoring-role
-rules:
-- apiGroups: [&quot;&quot;]
-  resources: [&quot;pods&quot;, &quot;services&quot;]
-  verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;]
----
-# RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: monitoring-binding
-  namespace: monitoring
-subjects:
-- kind: ServiceAccount
-  name: monitoring-sa
-  namespace: monitoring
-roleRef:
-  kind: Role
-  name: monitoring-role
-  apiGroup: rbac.authorization.k8s.io
-</code></pre>
-<h2 id="default-service-account">Default Service Account</h2>
-<p>Every namespace has a default service account:</p>
-<pre><code class="language-yaml">apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: default
-  namespace: default
-</code></pre>
-<h2 id="basic-commands">Basic Commands</h2>
-<pre><code class="language-shell"># Create Service Account
-kubectl create serviceaccount &lt;serviceaccount-name&gt;
-
-# List Service Accounts
-kubectl get serviceaccount
-kubectl get sa
-
-# Check Service Account details
-kubectl describe serviceaccount &lt;serviceaccount-name&gt;
-
-# Delete Service Account
-kubectl delete serviceaccount &lt;serviceaccount-name&gt;
-
-# Create token for Service Account
-kubectl create token &lt;serviceaccount-name&gt;
-</code></pre>
-<h2 id="common-use-cases">Common Use Cases</h2>
-<h3 id="application-service-account">Application Service Account</h3>
-<pre><code class="language-yaml">apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: web-app-sa
-  namespace: web
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: web-app
-  namespace: web
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: web-app
-  template:
-    metadata:
-      labels:
-        app: web-app
-    spec:
-      serviceAccountName: web-app-sa
-      containers:
-      - name: web-app
-        image: nginx:latest
-</code></pre>
-<h3 id="monitoring-service-account">Monitoring Service Account</h3>
-<pre><code class="language-yaml">apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: prometheus-sa
-  namespace: monitoring
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: prometheus
-  namespace: monitoring
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: prometheus
-  template:
-    metadata:
-      labels:
-        app: prometheus
-    spec:
-      serviceAccountName: prometheus-sa
-      containers:
-      - name: prometheus
-        image: prom/prometheus:latest
-</code></pre>
-<h2 id="references">References</h2>
+<hr />
+<h2 id="creating-email-accounts-in-fastcomet-cpanel">Creating Email Accounts in FastComet cPanel</h2>
+<ol>
+<li>Log in to FastComet cPanel.</li>
+<li>Go to <strong>Email Accounts</strong>.</li>
+<li>Create a new account (e.g., <code>info@yourdomain.com</code>) with a secure password.</li>
+<li>You can access this inbox from cPanel directly (<strong>Check Email → Open</strong>) or from webmail (
+   <code>https://webmail.yourdomain.com</code>).</li>
+</ol>
+<hr />
+<h2 id="email-deliverability-spf-dkim-dmarc">Email Deliverability (SPF, DKIM, DMARC)</h2>
 <ul>
-<li><a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Kubernetes Service Accounts</a></li>
-<li><a href="https://github.com/aytitech/k8sfundamentals/tree/main/serviceaccount">GitHub - Aytitech K8sFundamentals - ServiceAccount</a></li>
+<li>In cPanel, go to <strong>Email Deliverability</strong>.</li>
+<li>Here you will see recommendations for <strong>SPF, DKIM, and DMARC</strong>.</li>
+<li>Copy the suggested DNS records and add them in <strong>Guzel.net DirectAdmin DNS panel</strong>.</li>
+<li>Once correctly added, cPanel will show a green “Valid” status.</li>
 </ul>
+<hr />
+<h2 id="required-dns-records">Required DNS Records</h2>
+<table>
+<thead>
+<tr>
+<th>Host / Name</th>
+<th>Type</th>
+<th>Value / Example</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@</code> (yourdomain.com)</td>
+<td>A</td>
+<td><code>203.0.113.10</code> (FastComet IP)</td>
+<td>Points the root domain to FastComet server</td>
+</tr>
+<tr>
+<td><code>www</code></td>
+<td>CNAME</td>
+<td><code>yourdomain.com</code></td>
+<td>Redirects www → root domain</td>
+</tr>
+<tr>
+<td><code>mail</code></td>
+<td>A</td>
+<td><code>203.0.113.10</code> (FastComet IP)</td>
+<td>Mail server hostname</td>
+</tr>
+<tr>
+<td><code>webmail</code></td>
+<td>A</td>
+<td><code>203.0.113.10</code> (FastComet IP)</td>
+<td>Webmail access (https://webmail.yourdomain.com)</td>
+</tr>
+<tr>
+<td><code>@</code></td>
+<td>MX</td>
+<td><code>mail.yourdomain.com</code> (priority 10)</td>
+<td>Mail routing record</td>
+</tr>
+<tr>
+<td><code>@</code></td>
+<td>TXT</td>
+<td><code>v=spf1 a mx ip4:203.0.113.10 ~all</code></td>
+<td>SPF record for sender validation</td>
+</tr>
+<tr>
+<td><code>default._domainkey</code></td>
+<td>TXT</td>
+<td><code>v=DKIM1; k=rsa; p=MIGfMA0GCSq...</code></td>
+<td>DKIM record from FastComet cPanel</td>
+</tr>
+<tr>
+<td><code>_dmarc</code></td>
+<td>TXT</td>
+<td><code>v=DMARC1; p=none; rua=mailto:postmaster@yourdomain.com</code></td>
+<td>DMARC policy</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="why-a-and-mx-records-are-both-needed">Why A and MX Records Are Both Needed</h2>
+<ul>
+<li><strong>A Record (mail.yourdomain.com → IP):</strong><br />
+  Tells the internet what IP address your mail server lives on.</li>
+<li><strong>MX Record (points to mail.yourdomain.com):</strong><br />
+  Tells other mail servers <em>where to deliver emails</em> for your domain.</li>
+</ul>
+<p>⚠️ Without an <strong>A record</strong>, the MX record has no IP to resolve to. That’s why both must exist.</p>
+<hr />
+<h2 id="webmail-access">Webmail Access</h2>
+<p>There are two ways to access your mailbox:</p>
+<ol>
+<li>
+<p><strong>Direct cPanel Webmail URL:</strong><br />
+<code>https://yourdomain.com:2096</code>
+   or<br />
+<code>https://server123.fcomet.com:2096</code></p>
+</li>
+<li>
+<p><strong>Custom Webmail Subdomain (recommended):</strong><br />
+<code>https://webmail.yourdomain.com</code></p>
+<ul>
+<li>Requires the <code>webmail</code> A record pointing to FastComet IP + SSL certificate enabled in cPanel.</li>
+<li>Run AutoSSL for webmail on SSL/TLS Status page in cPanel.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="mail-clients-imappop3smtp">Mail Clients (IMAP/POP3/SMTP)</h2>
+<p>When setting up mail in Outlook, Thunderbird, or a mobile device:</p>
+<ul>
+<li><strong>Incoming Server (IMAP):</strong> <code>mail.yourdomain.com</code><ul>
+<li>Port 993 (IMAPS, SSL)</li>
+</ul>
+</li>
+<li><strong>Incoming Server (POP3):</strong> <code>mail.yourdomain.com</code><ul>
+<li>Port 995 (POP3S, SSL)</li>
+</ul>
+</li>
+<li><strong>Outgoing Server (SMTP):</strong> <code>mail.yourdomain.com</code><ul>
+<li>Port 465 (SMTPS, SSL) or 587 (STARTTLS)</li>
+</ul>
+</li>
+<li><strong>Username:</strong> Full email address (e.g., <code>info@yourdomain.com</code>)</li>
+<li><strong>Password:</strong> The one you set in FastComet cPanel</li>
+</ul>
+<hr />
+<h2 id="why-spf-dkim-dmarc-are-needed">Why SPF, DKIM, DMARC Are Needed</h2>
+<ul>
+<li><strong>SPF:</strong> Authorizes FastComet servers to send mail for your domain (reduces spoofing).</li>
+<li><strong>DKIM:</strong> Adds a cryptographic signature so recipients can verify authenticity.</li>
+<li><strong>DMARC:</strong> Defines policy for handling failed SPF/DKIM checks (e.g., monitor, quarantine, or reject).</li>
+</ul>
+<p>Without these, your emails may land in <strong>spam</strong> or be rejected by services like Gmail/Outlook.</p>
+<hr />
+<h2 id="notes">Notes</h2>
+<ul>
+<li>DNS propagation can take <strong>1–24 hours</strong> after changes.</li>
+<li>Always verify records with <a href="https://dnschecker.org">dnschecker.org</a>.</li>
+<li>SSL must be enabled for <code>mail.yourdomain.com</code> and <code>webmail.yourdomain.com</code> in cPanel → AutoSSL.</li>
+<li>FTP access is unrelated to mail. It is only used to upload website files into <code>public_html</code> on FastComet.</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>If mail isn’t delivering → check MX and SPF records.</li>
+<li>If webmail doesn’t load → verify the <code>webmail</code> A record and SSL certificate.</li>
+<li>If Outlook/phone mail doesn’t connect → make sure you’re using the correct ports and <code>mail.yourdomain.com</code> as the
+  server.</li>
+</ul>
+<hr />
+<p>✅ With this setup, your mailboxes like <code>info@yourdomain.com</code> or <code>contact@yourdomain.com</code> will be fully functional with
+FastComet hosting and DNS managed on Guzel.net DirectAdmin.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -6536,10 +6426,10 @@ spec:
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
