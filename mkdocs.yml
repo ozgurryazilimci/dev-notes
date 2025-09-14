@@ -197,6 +197,7 @@ nav:
       - Website:
           - Website Setup: freelance/website/website-setup.md
           - SSL Setup In cPanel: freelance/website/ssl-setup-cpanel.md
+          - Mail Server Setup In cPanel: freelance/website/mail-server-setup-cpanel.md
           - WordPress:
               - WordPress Installation: freelance/website/wordpress/wordpress-installation.md
               - WordPress Studio: freelance/website/wordpress/wordpress-studio.md
