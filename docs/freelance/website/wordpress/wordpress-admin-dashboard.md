@@ -2,7 +2,7 @@
 
 This document provides a general overview of the WordPress Admin Dashboard, covering key sections and settings.
 
-![](<images/wordpress-admin-dashboard.webp>)
+![](<images/wordpress_admin_dashboard.webp>)
 
 ---
 

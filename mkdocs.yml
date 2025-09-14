@@ -197,12 +197,22 @@ nav:
       - Website:
           - Website Setup: freelance/website/website-setup.md
           - SSL Setup In cPanel: freelance/website/ssl-setup-cpanel.md
-          - WordPress Installation: freelance/website/wordpress-installation.md
-          - WordPress Studio: freelance/website/wordpress-studio.md
-          - WordPress Admin Dashboard: freelance/website/wordpress-admin-dashboard.md
-          - WordPress Theme Installation: freelance/website/wordpress-theme-installation.md
-          - WordPress Theme Customization: freelance/website/wordpress-theme-customization.md
-          - WordPress Whatsapp Plugin: freelance/website/wordpress-whatsapp-plugin.md
+          - WordPress:
+              - WordPress Installation: freelance/website/wordpress/wordpress-installation.md
+              - WordPress Studio: freelance/website/wordpress/wordpress-studio.md
+              - WordPress Admin Dashboard: freelance/website/wordpress/wordpress-admin-dashboard.md
+              - WordPress Theme Installation: freelance/website/wordpress/wordpress-theme-installation.md
+              - WordPress Theme Customization: freelance/website/wordpress/wordpress-theme-customization.md
+              - WordPress Monetization: freelance/website/wordpress/wordpress-monetization.md
+              - Themes:
+                  - Astra Theme: freelance/website/wordpress/themes/astra-theme.md
+                  - Cenote Theme: freelance/website/wordpress/themes/cenote-theme.md
+                  - Tyche Theme: freelance/website/wordpress/themes/tyche-theme.md
+                  - Storefront Theme: freelance/website/wordpress/themes/storefront-theme.md
+              - Plugins:
+                  - Join.chat Plugin: freelance/website/wordpress/plugins/joinchat-plugin.md
+                  - Loco Translate Plugin: freelance/website/wordpress/plugins/loco-translate-plugin.md
+                  - WooCommerce Plugin: freelance/website/wordpress/plugins/woocommerce-plugin.md
   - Tools:
       - Slack:
           - Slack Reminder: tools/slack/slack-reminder.md

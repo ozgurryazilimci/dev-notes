@@ -1,4 +1,4 @@
-# WordPress WhatsApp Integration with Join.chat Plugin
+# WordPress Plugin: Join.chat (WhatsApp Integration)
 
 This guide explains how to install, configure, and use the **Join.chat – WhatsApp plugin** to add a WhatsApp chat button
 to your WordPress site.

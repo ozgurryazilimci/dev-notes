@@ -41,7 +41,7 @@ hosting, WordPress installation, plugins, pages, and email configuration.
     - [Bluehost](https://bluehost.com)
     - [SiteGround](https://world.siteground.com)
     - [HostGator](https://hostgator.com)
-    - [Hostinger](https://hostinger.web.tr)
+    - [Hostinger](https://www.hostinger.com/tr)
 2. **Select a hosting plan**:
     - Shared hosting (for small websites)
     - VPS hosting (for medium to large websites)
