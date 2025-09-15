@@ -75,6 +75,8 @@ nav:
       - PostgreSQL:
           - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
           - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
+      - Tools:
+          - Sequel Ace: database/tools/sequel-ace.md
   - Backend:
       - Maven:
           - Maven Wrapper: backend/maven/maven-wrapper.md
