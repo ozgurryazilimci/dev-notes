@@ -6327,11 +6327,15 @@
 <p>Create a directory for NVM:</p>
 <pre><code class="language-bash">mkdir ~/.nvm
 </code></pre>
-<p>Update your shell configuration (<code>~/.bash_profile</code> or <code>~/.zshrc</code>):</p>
+<p>Update your shell configuration (<code>~/.bash_profile</code> or <code>~/.zshrc</code>) to load NVM:</p>
 <pre><code class="language-bash"># NVM
 export NVM_DIR=&quot;$HOME/.nvm&quot;
   [ -s &quot;$(brew --prefix)/opt/nvm/nvm.sh&quot; ] &amp;&amp; . &quot;$(brew --prefix)/opt/nvm/nvm.sh&quot; # This loads nvm
   [ -s &quot;$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm&quot; ] &amp;&amp; . &quot;$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm&quot; # This loads nvm
+</code></pre>
+<p>Update your shell configuration (<code>~/.bash_profile</code> or <code>~/.zshrc</code>) to auto-use <code>.nvmrc</code> files:</p>
+<pre><code class="language-bash">add_nvm_auto_use() { [ -f .nvmrc ] &amp;&amp; nvm use --silent &gt;/dev/null 2&gt;&amp;1 || nvm use default --silent &gt;/dev/null 2&gt;&amp;1; }
+PROMPT_COMMAND=&quot;add_nvm_auto_use; $PROMPT_COMMAND&quot;
 </code></pre>
 <p>Reload your shell:</p>
 <pre><code class="language-bash">source ~/.bash_profile
