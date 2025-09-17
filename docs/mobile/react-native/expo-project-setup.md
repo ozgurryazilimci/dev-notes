@@ -1,6 +1,6 @@
 # Expo React Native Project Setup Guide (Hello World)
 
-## 1. Prerequisites
+## Prerequisites
 
 - **Node.js** (v18+ recommended) → [Download Node.js](https://nodejs.org/)
 - **npm** (comes with Node.js) → Update if needed:
@@ -20,7 +20,7 @@ npm -v
 
 ---
 
-## 2. Create a new Expo Project
+## Create a new Expo Project
 
 - Open terminal / command prompt.
 - Run the following command to create a new project:
@@ -45,7 +45,7 @@ cd my-hello-world-app
 
 ---
 
-## 3. Project Structure
+## Project Structure
 
 After creation, your project will look like:
 
@@ -64,7 +64,7 @@ my-hello-world-app/
 
 ---
 
-## 4. Install Dependencies
+## Install Dependencies
 
 (Optional, for UI components and navigation)
 
@@ -76,7 +76,7 @@ npm install expo-router
 
 ---
 
-## 5. Create a Simple Hello World Screen
+## Create a Simple Hello World Screen
 
 Edit `app/index.tsx`:
 
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
 
 ---
 
-## 6. Run the Project
+## Run the Project
 
 - Start the development server:
 
@@ -118,9 +118,15 @@ npx expo start
 
 - Terminal will show a QR code.
 
+- Start the development server for Android (Android Studio Emulator or connected device):
+
+```bash
+npx expo start --android
+```
+
 ---
 
-## 7. Mobile Device Testing
+## Mobile Device Testing
 
 ### Android / iOS
 
@@ -137,7 +143,7 @@ npx expo start
 
 ---
 
-## 8. Notes
+## Notes
 
 - Any changes in `app/index.tsx` or components will **hot reload** automatically in Expo Go.
 - For TypeScript, `.tsx` files are used.
@@ -145,7 +151,7 @@ npx expo start
 
 ---
 
-## 9. Next Steps
+## Next Steps
 
 - Add additional screens (e.g., About, Settings)
 - Add navigation (Stack or Tabs)

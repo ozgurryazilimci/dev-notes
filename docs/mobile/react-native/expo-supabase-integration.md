@@ -1,6 +1,6 @@
 # Expo Supabase Integration
 
-## 1. Prerequisites
+## Prerequisites
 
 - Node.js installed (v18+ recommended)
 - npm updated
@@ -9,7 +9,7 @@
 
 ---
 
-## 2. Configure Supabase Project
+## Configure Supabase Project
 
 1. Go to [Supabase Dashboard](https://app.supabase.com/).
 2. Create a new project (choose organization, project name, database password).
@@ -24,7 +24,7 @@
 
 ---
 
-## 3. Install Supabase SDK
+## Install Supabase SDK
 
 ```bash
 npm install @supabase/supabase-js
@@ -32,7 +32,7 @@ npm install @supabase/supabase-js
 
 ---
 
-## 4. Setup Supabase Client
+## Setup Supabase Client
 
 Create `supabaseClient.js` in the root of the project:
 
@@ -48,9 +48,9 @@ Replace placeholders with your credentials from **Settings → API**.
 
 ---
 
-## 5. Database Setup (Supabase SQL)
+## Database Setup (Supabase SQL)
 
-### Tables
+**Tables:**
 
 ```sql
 -- Companies table
@@ -75,7 +75,7 @@ create table users (
 
 ---
 
-## 6. Signup Screen Example (`app/index.tsx`)
+## Signup Screen Example (`app/index.tsx`)
 
 ```tsx
 import React, { useState } from 'react'
@@ -120,7 +120,7 @@ const styles = StyleSheet.create(
 
 ---
 
-## 7. Add Company Screen (`app/add-company.tsx`)
+## Add Company Screen (`app/add-company.tsx`)
 
 ```tsx
 import React, { useState } from 'react'
@@ -175,7 +175,7 @@ const styles = StyleSheet.create(
 
 ---
 
-## 8. Login and Dashboard Routing
+## Login and Dashboard Routing
 
 - On login, fetch `users.company_id`.
 - If `company_id` is **null** → navigate to `/add-company`.
@@ -184,7 +184,7 @@ const styles = StyleSheet.create(
 
 ---
 
-## 9. Testing Authentication
+## Testing Authentication
 
 - Run app: `npx expo start`
 - In Supabase Dashboard → **Authentication → Users**, you can see registered accounts.
@@ -196,7 +196,7 @@ const styles = StyleSheet.create(
 
 ---
 
-## 10. Notes
+## Notes
 
 - Always use `supabase.auth.getUser()` for v2 SDK.
 - Keep `auth.users` (system table) and `users` (custom table) in sync.
