@@ -21,13 +21,20 @@ Create a directory for NVM:
 mkdir ~/.nvm
 ```
 
-Update your shell configuration (`~/.bash_profile` or `~/.zshrc`):
+Update your shell configuration (`~/.bash_profile` or `~/.zshrc`) to load NVM:
 
 ```bash
 # NVM
 export NVM_DIR="$HOME/.nvm"
   [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
   [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm
+```
+
+Update your shell configuration (`~/.bash_profile` or `~/.zshrc`) to auto-use `.nvmrc` files:
+
+```bash
+add_nvm_auto_use() { [ -f .nvmrc ] && nvm use --silent >/dev/null 2>&1 || nvm use default --silent >/dev/null 2>&1; }
+PROMPT_COMMAND="add_nvm_auto_use; $PROMPT_COMMAND"
 ```
 
 Reload your shell:
