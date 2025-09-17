@@ -445,14 +445,6 @@
          <lastmod>2025-09-17</lastmod>
     </url>
     <url>
-         <loc>https://notes.ozguryazilimci.com/mobile/expo/expo-project-setup/</loc>
-         <lastmod>2025-09-17</lastmod>
-    </url>
-    <url>
-         <loc>https://notes.ozguryazilimci.com/mobile/expo/expo-supabase-integration/</loc>
-         <lastmod>2025-09-17</lastmod>
-    </url>
-    <url>
          <loc>https://notes.ozguryazilimci.com/mobile/ios/ios-firebase-integration/</loc>
          <lastmod>2025-09-17</lastmod>
     </url>
@@ -466,6 +458,18 @@
     </url>
     <url>
          <loc>https://notes.ozguryazilimci.com/mobile/ios/ios-test-flight-integration/</loc>
+         <lastmod>2025-09-17</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/mobile/react-native/expo-project-setup/</loc>
+         <lastmod>2025-09-17</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/mobile/react-native/expo-supabase-integration/</loc>
+         <lastmod>2025-09-17</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/mobile/react-native/nativewind-tailwind/</loc>
          <lastmod>2025-09-17</lastmod>
     </url>
     <url>

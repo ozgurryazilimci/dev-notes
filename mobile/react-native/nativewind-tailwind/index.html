@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/devops/kubernetes/kubernetes-tools/kubectl/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/nativewind-tailwind/">
       
       
-        <link rel="prev" href="../../kubernetes-objects/service-account/">
+        <link rel="prev" href="../expo-supabase-integration/">
       
       
-        <link rel="next" href="../kubeadm/">
+        <link rel="next" href="../../../freelance/freelance-guide/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Kubectl - My Dev Notes</title>
+        <title>Tailwind & NativeWind - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubectl" class="md-skip">
+        <a href="#tailwind-nativewind-in-react-native" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Kubectl
+              Tailwind & NativeWind
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -375,8 +375,6 @@
   
   
   
-    
-  
   
     
     
@@ -384,13 +382,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../docker/docker-introduction/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -415,7 +411,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -437,7 +433,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -455,6 +451,8 @@
   
   
   
+    
+  
   
     
     
@@ -462,11 +460,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -491,7 +491,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../freelance/freelance-guide/" class="md-tabs__link">
+        <a href="../../../freelance/freelance-guide/" class="md-tabs__link">
           
   
   
@@ -520,7 +520,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../tools/slack/slack-reminder/" class="md-tabs__link">
+        <a href="../../../tools/slack/slack-reminder/" class="md-tabs__link">
           
   
   
@@ -545,7 +545,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +581,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-actions/" class="md-nav__link">
+      <a href="../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/tmate/" class="md-nav__link">
+      <a href="../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1040,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1118,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1141,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1217,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../database/tools/sequel-ace/" class="md-nav__link">
+      <a href="../../../database/tools/sequel-ace/" class="md-nav__link">
         
   
   
@@ -1347,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1427,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1450,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1569,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1592,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1615,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1693,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1716,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1864,7 +1864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1887,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1910,7 +1910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1945,10 +1945,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1964,20 +1962,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1990,7 +1985,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Devops
@@ -2063,7 +2058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -2086,7 +2081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-installation/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -2109,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2132,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-examples/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -2155,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -2178,7 +2173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/dockerfile/" class="md-nav__link">
+      <a href="../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -2201,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-compose/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -2224,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -2252,10 +2247,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2276,11 +2269,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
           <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
@@ -2296,7 +2289,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes
@@ -2310,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -2333,7 +2326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-installation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -2356,7 +2349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -2462,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -2485,7 +2478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -2508,7 +2501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -2531,7 +2524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -2554,7 +2547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -2577,7 +2570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -2600,7 +2593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -2623,7 +2616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -2646,7 +2639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -2669,7 +2662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -2692,7 +2685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -2715,7 +2708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -2738,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -2761,7 +2754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -2784,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -2807,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -2830,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -2853,7 +2846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -2876,7 +2869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -2899,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -2927,10 +2920,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2955,11 +2946,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_5" >
         
           
           <label class="md-nav__link" for="__nav_7_2_5" id="__nav_7_2_5_label" tabindex="0">
@@ -2975,7 +2966,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2_5">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes Tools
@@ -2986,32 +2977,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Kubectl
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -3022,170 +2991,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubeconfig-and-contexts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubeconfig and Contexts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command-structure-and-namespaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Structure and Namespaces
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cluster-and-resource-discovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cluster and Resource Discovery
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-formatting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output Formatting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explaining-api-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explaining API Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#help-and-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Help and Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#watching-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Watching Changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#describe-logs-and-exec" class="md-nav__link">
-    <span class="md-ellipsis">
-      Describe, Logs, and Exec
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#apply-delete-scale-and-rollouts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Apply, Delete, Scale, and Rollouts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#port-forward-local-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      Port-Forward (Local -&gt; Pod)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metrics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-kubeconfig-context-switch-script-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick kubeconfig Context Switch Script (optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#makefile-commands-for-aws-eks-setup-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Makefile Commands for AWS EKS Setup (optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3198,7 +3003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kubeadm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -3221,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../minikube/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -3244,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboards/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -3267,7 +3072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../helm/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -3290,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -3313,7 +3118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../service-mesh/" class="md-nav__link">
+      <a href="../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -3448,7 +3253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -3471,7 +3276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -3494,7 +3299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -3604,7 +3409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -3627,7 +3432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -3650,7 +3455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -3673,7 +3478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -3696,7 +3501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -3719,7 +3524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -3742,7 +3547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -3765,7 +3570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -3788,7 +3593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -3811,7 +3616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -3834,7 +3639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-rds/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -3857,7 +3662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -3880,7 +3685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -3903,7 +3708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -3926,7 +3731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -3949,7 +3754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -3972,7 +3777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -3995,7 +3800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-sns/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
         
   
   
@@ -4018,7 +3823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
         
   
   
@@ -4041,7 +3846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-swf/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
         
   
   
@@ -4064,7 +3869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-ses/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
         
   
   
@@ -4087,7 +3892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -4181,7 +3986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -4204,7 +4009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../terraform/tfenv/" class="md-nav__link">
+      <a href="../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -4287,7 +4092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data/data-tools/" class="md-nav__link">
+      <a href="../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -4374,7 +4179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -4397,7 +4202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -4420,7 +4225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/dns-records/" class="md-nav__link">
+      <a href="../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -4443,7 +4248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -4466,7 +4271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -4489,7 +4294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -4512,7 +4317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -4539,8 +4344,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -4554,17 +4361,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
             
   
   
@@ -4577,7 +4387,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Mobile
@@ -4642,7 +4452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4665,7 +4475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -4688,7 +4498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4711,7 +4521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4793,7 +4603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -4816,7 +4626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -4839,7 +4649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -4862,7 +4672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -4890,8 +4700,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -4908,11 +4720,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" checked>
         
           
           <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
@@ -4928,7 +4740,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10_3">
             <span class="md-nav__icon md-icon"></span>
             React Native
@@ -4942,7 +4754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/react-native/expo-project-setup/" class="md-nav__link">
+      <a href="../expo-project-setup/" class="md-nav__link">
         
   
   
@@ -4965,7 +4777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mobile/react-native/expo-supabase-integration/" class="md-nav__link">
+      <a href="../expo-supabase-integration/" class="md-nav__link">
         
   
   
@@ -4985,10 +4797,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../mobile/react-native/nativewind-tailwind/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tailwind & NativeWind
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4999,6 +4833,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-they" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are They?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-expo-react-native" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation (Expo + React Native)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-example-tsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Example (TSX)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5073,7 +4981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../../freelance/freelance-guide/" class="md-nav__link">
         
   
   
@@ -5147,7 +5055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../../../freelance/website/website-setup/" class="md-nav__link">
         
   
   
@@ -5170,7 +5078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5193,7 +5101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
+      <a href="../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5275,7 +5183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5298,7 +5206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5321,7 +5229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5344,7 +5252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -5367,7 +5275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -5390,7 +5298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
         
   
   
@@ -5464,7 +5372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
         
   
   
@@ -5487,7 +5395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
         
   
   
@@ -5510,7 +5418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
         
   
   
@@ -5533,7 +5441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
         
   
   
@@ -5615,7 +5523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
         
   
   
@@ -5638,7 +5546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
         
   
   
@@ -5661,7 +5569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
         
   
   
@@ -5684,7 +5592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
+      <a href="../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
         
   
   
@@ -5850,7 +5758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -5873,7 +5781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-message/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -5896,7 +5804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -5919,7 +5827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -5950,7 +5858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -5973,7 +5881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -5996,7 +5904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -6019,7 +5927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/multipass/" class="md-nav__link">
+      <a href="../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -6042,7 +5950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -6065,7 +5973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -6088,7 +5996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -6111,7 +6019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -6188,7 +6096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -6211,7 +6119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -6261,144 +6169,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#what-are-they" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      What Are They?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#installation-expo-react-native" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Installation (Expo + React Native)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubeconfig-and-contexts" class="md-nav__link">
+  <a href="#basic-example-tsx" class="md-nav__link">
     <span class="md-ellipsis">
-      Kubeconfig and Contexts
+      Basic Example (TSX)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-structure-and-namespaces" class="md-nav__link">
+  <a href="#common-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Command Structure and Namespaces
+      Common Classes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cluster-and-resource-discovery" class="md-nav__link">
+  <a href="#useful-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Cluster and Resource Discovery
+      Useful Resources
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#output-formatting" class="md-nav__link">
+  <a href="#usage-scenarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Output Formatting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explaining-api-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explaining API Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#help-and-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Help and Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#watching-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Watching Changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#describe-logs-and-exec" class="md-nav__link">
-    <span class="md-ellipsis">
-      Describe, Logs, and Exec
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#apply-delete-scale-and-rollouts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Apply, Delete, Scale, and Rollouts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#port-forward-local-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      Port-Forward (Local -&gt; Pod)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metrics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-kubeconfig-context-switch-script-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick kubeconfig Context Switch Script (optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#makefile-commands-for-aws-eks-setup-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Makefile Commands for AWS EKS Setup (optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
+      Usage Scenarios
     </span>
   </a>
   
@@ -6420,416 +6238,131 @@
 
 
 
-<h1 id="kubectl">Kubectl</h1>
-<h2 id="overview">Overview</h2>
+<h1 id="tailwind-nativewind-in-react-native">Tailwind &amp; NativeWind in React Native</h1>
+<h2 id="what-are-they">What Are They?</h2>
 <ul>
-<li><strong>kubectl</strong> is the command-line interface for interacting with a Kubernetes cluster.</li>
-<li>kubectl reads connection details from a kubeconfig file. By default, this is <code>~/.kube/config</code>. You can override the
-  path with the <code>KUBECONFIG</code> environment variable.</li>
-<li>A kubeconfig contains definitions for clusters, users, and contexts. A <strong>context</strong> combines a cluster, a user, and
-  optionally a namespace, and represents “connect to this cluster as this user (and namespace).”</li>
-<li>Tools like Minikube or managed Kubernetes providers typically generate kubeconfig entries automatically.</li>
+<li><strong>Tailwind CSS:</strong> A utility-first CSS framework originally for web development. It allows you to style elements
+  directly using class names like <code>bg-blue-500</code>, <code>p-4</code>, <code>flex</code>, etc., without writing custom CSS.</li>
+<li><strong>NativeWind:</strong> A React Native adaptation of Tailwind. It brings Tailwind’s utility classes to React Native, allowing
+  you to style components using <code>className</code> instead of <code>StyleSheet</code>.</li>
 </ul>
-<h2 id="installation">Installation</h2>
-<ul>
-<li>On Linux/macOS with Homebrew:</li>
-</ul>
-<pre><code class="language-bash">brew install kubectl
-</code></pre>
-<ul>
-<li>Verify the client (and server, if reachable):</li>
-</ul>
-<pre><code class="language-bash">kubectl version
-</code></pre>
-<h2 id="kubeconfig-and-contexts">Kubeconfig and Contexts</h2>
-<ul>
-<li>View the current kubeconfig:</li>
-</ul>
-<pre><code class="language-bash">kubectl config view
-</code></pre>
-<ul>
-<li>Show contexts defined in the current kubeconfig:</li>
-</ul>
-<pre><code class="language-bash">kubectl config get-contexts
-</code></pre>
-<ul>
-<li>Show the current context:</li>
-</ul>
-<pre><code class="language-bash">kubectl config current-context
-</code></pre>
-<ul>
-<li>Switch the current context:</li>
-</ul>
-<pre><code class="language-bash">kubectl config use-context &lt;context-name&gt;
-</code></pre>
-<p>Notes:</p>
-<ul>
-<li>In <code>kubectl config get-contexts</code>, a star (*) marks the currently active context.</li>
-<li>You can open and inspect your kubeconfig directly, for example with an editor: <code>subl ~/.kube/config</code>.</li>
-</ul>
-<h2 id="command-structure-and-namespaces">Command Structure and Namespaces</h2>
-<p>kubectl commands generally follow:</p>
-<pre><code class="language-bash">kubectl &lt;verb&gt; &lt;resource&gt; [name] [flags]
-# &lt;verb&gt; examples: get, describe, logs, exec, apply, delete, scale, rollout
-# &lt;resource&gt; examples: pods, services, deployments, nodes, namespaces
-</code></pre>
-<ul>
-<li>Unless overridden with <code>-n/--namespace</code>, commands operate in the namespace from the current context. If none is
-  specified, the <code>default</code> namespace is used.</li>
-</ul>
-<h2 id="cluster-and-resource-discovery">Cluster and Resource Discovery</h2>
-<ul>
-<li>Cluster information:</li>
-</ul>
-<pre><code class="language-bash">kubectl cluster-info
-</code></pre>
-<ul>
-<li>To filter out the debug message:</li>
-</ul>
-<pre><code class="language-bash"> kubectl cluster-info | grep -v &quot;To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.&quot;
-</code></pre>
-<ul>
-<li>List common resources:</li>
-</ul>
-<pre><code class="language-bash">kubectl get &lt;object-type&gt;
+<p><strong>Benefits:</strong></p>
+<ol>
+<li>Rapid UI prototyping.</li>
+<li>Consistent styling across the app.</li>
+<li>No need for StyleSheet or CSS-in-JS.</li>
+</ol>
+<hr />
+<h2 id="installation-expo-react-native">Installation (Expo + React Native)</h2>
+<pre><code class="language-bash">npx create-expo-app MyNativeWindApp --template
+cd MyNativeWindApp
 
-kubectl get pods
-kubectl get services
-kubectl get deployments
-kubectl get nodes
-kubectl get namespaces
+# Install NativeWind
+npm install nativewind
+# Initialize Tailwind config
+npx tailwindcss init
 </code></pre>
-<ul>
-<li>List a single object in the current namespace:</li>
-</ul>
-<pre><code class="language-bash">kubectl get &lt;object-type&gt; &lt;object-name&gt;
+<p><code>tailwind.config.js</code>:</p>
+<pre><code class="language-js">/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [&quot;./App.{js,jsx,ts,tsx}&quot;, &quot;./src/**/*.{js,ts,jsx,tsx}&quot;], theme: {
+    extend: {},
+  }, plugins: [],
+};
+</code></pre>
+<hr />
+<h2 id="basic-example-tsx">Basic Example (TSX)</h2>
+<pre><code class="language-tsx">import React from &quot;react&quot;;
+import { View, Text, Pressable } from &quot;react-native&quot;;
+import { styled } from &quot;nativewind&quot;;
 
-kubectl get pods testpod
-</code></pre>
-<ul>
-<li>List resources in another namespace:</li>
-</ul>
-<pre><code class="language-bash">kubectl get &lt;object-type&gt; -n &lt;namespace-name&gt;
+const StyledView = styled(View);
+const StyledText = styled(Text);
+const StyledButton = styled(Pressable);
 
-kubectl get pods -n testnamespace
-</code></pre>
-<ul>
-<li>List across all namespaces:</li>
-</ul>
-<pre><code class="language-bash">kubectl get &lt;object-type&gt; --all-namespaces
-kubectl get all -A               # status of many core objects cluster-wide
+export default function App() {
+    return (
+        &lt;StyledView className=&quot;flex-1 items-center justify-center bg-gray-100&quot;&gt;
+            &lt;StyledText className=&quot;text-2xl font-bold text-blue-600 mb-4&quot;&gt;
+                Hello NativeWind!
+            &lt;/StyledText&gt;
 
-kubectl get pods --all-namespaces
-kubectl get pods -A
+            &lt;StyledButton
+                className=&quot;bg-blue-500 px-6 py-3 rounded-full&quot;
+                onPress={() =&gt; alert(&quot;Button pressed!&quot;)}
+            &gt;
+                &lt;StyledText className=&quot;text-white font-semibold text-lg&quot;&gt;
+                    Press Me
+                &lt;/StyledText&gt;
+            &lt;/StyledButton&gt;
+        &lt;/StyledView&gt;
+    );
+}
 </code></pre>
-<h2 id="output-formatting">Output Formatting</h2>
-<p>kubectl defaults to a concise, plain-text output. Use <code>-o</code> to change the output format:</p>
+<hr />
+<h2 id="common-classes">Common Classes</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flex-1</code></td>
+<td>Takes all available space (<code>flex: 1</code>)</td>
+</tr>
+<tr>
+<td><code>items-center</code></td>
+<td>Align items vertically in the center (<code>align-items: center</code>)</td>
+</tr>
+<tr>
+<td><code>justify-center</code></td>
+<td>Align items horizontally in the center (<code>justify-content: center</code>)</td>
+</tr>
+<tr>
+<td><code>bg-gray-100</code></td>
+<td>Light gray background</td>
+</tr>
+<tr>
+<td><code>text-xl</code></td>
+<td>Large text</td>
+</tr>
+<tr>
+<td><code>font-bold</code></td>
+<td>Bold font</td>
+</tr>
+<tr>
+<td><code>p-4</code></td>
+<td>Padding 16px (depends on Tailwind scale)</td>
+</tr>
+<tr>
+<td><code>m-2</code></td>
+<td>Margin 8px</td>
+</tr>
+<tr>
+<td><code>rounded-full</code></td>
+<td>Fully rounded corners</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="useful-resources">Useful Resources</h2>
 <ul>
-<li><code>-o yaml</code> — output as YAML</li>
-<li><code>-o json</code> — output as JSON</li>
-<li><code>-o wide</code> — plain text with additional columns</li>
-<li><code>-o name</code> — print only resource names</li>
-<li><code>-o jsonpath=&lt;template&gt;</code> — select fields using a JSONPath template</li>
-<li><code>-o custom-columns=&lt;spec&gt;</code> — comma-separated column definitions for tabular output</li>
+<li><strong>Tailwind CSS docs:</strong> <a href="https://tailwindcss.com/docs">https://tailwindcss.com/docs</a></li>
+<li><strong>NativeWind docs:</strong> <a href="https://www.nativewind.dev">https://www.nativewind.dev</a></li>
 </ul>
-<p>Examples:</p>
-<pre><code class="language-bash">kubectl get &lt;object-type&gt; -o &lt;wide|yaml|json&gt;
-
-kubectl get pods -o wide
-kubectl get pods -A -o json | jq -r '.items[].spec.containers[].name'
-</code></pre>
 <blockquote>
-<p>Note: If using <code>-o json</code> with <code>jq</code>, you may need to install <code>jq</code> first:</p>
+<p>Tip: Most Tailwind classes are available in NativeWind, but pseudo-classes like <code>hover:</code> or <code>focus:</code> do not work in
+React Native.</p>
 </blockquote>
-<pre><code class="language-bash"># jq -&gt; install json query plugin.
-# brew install jq
-</code></pre>
-<h2 id="explaining-api-resources">Explaining API Resources</h2>
-<p>Use <code>explain</code> to view schema and documentation for resources and fields:</p>
-<pre><code class="language-bash">kubectl explain &lt;object-type&gt;
-
-kubectl explain pod
-kubectl explain deployment.spec.template.spec.containers
-</code></pre>
-<p>In the output, we can understand which namespace it belongs to with <strong>Version</strong>.</p>
-<h2 id="help-and-documentation">Help and Documentation</h2>
-<p>Use <code>-h/--help</code> to get help on any command:</p>
-<pre><code class="language-bash">kubectl &lt;verb&gt; --help # or -h
-
-kubectl --help
-kubectl apply --help
-</code></pre>
-<details>
-<summary>kubectl --help</summary>
-
-
-<pre><code class="language-bash">kubectl controls the Kubernetes cluster manager.
-
- Find more information at: https://kubernetes.io/docs/reference/kubectl/
-
-Basic Commands (Beginner):
-  create          Create a resource from a file or from stdin
-  expose          Take a replication controller, service, deployment or pod and
-expose it as a new Kubernetes service
-  run             Run a particular image on the cluster
-  set             Set specific features on objects
-
-Basic Commands (Intermediate):
-  explain         Get documentation for a resource
-  get             Display one or many resources
-  edit            Edit a resource on the server
-  delete          Delete resources by file names, stdin, resources and names, or
-by resources and label selector
-
-Deploy Commands:
-  rollout         Manage the rollout of a resource
-  scale           Set a new size for a deployment, replica set, or replication
-controller
-  autoscale       Auto-scale a deployment, replica set, stateful set, or
-replication controller
-
-Cluster Management Commands:
-  certificate     Modify certificate resources
-  cluster-info    Display cluster information
-  top             Display resource (CPU/memory) usage
-  cordon          Mark node as unschedulable
-  uncordon        Mark node as schedulable
-  drain           Drain node in preparation for maintenance
-  taint           Update the taints on one or more nodes
-
-Troubleshooting and Debugging Commands:
-  describe        Show details of a specific resource or group of resources
-  logs            Print the logs for a container in a pod
-  attach          Attach to a running container
-  exec            Execute a command in a container
-  port-forward    Forward one or more local ports to a pod
-  proxy           Run a proxy to the Kubernetes API server
-  cp              Copy files and directories to and from containers
-  auth            Inspect authorization
-  debug           Create debugging sessions for troubleshooting workloads and
-nodes
-  events          List events
-
-Advanced Commands:
-  diff            Diff the live version against a would-be applied version
-  apply           Apply a configuration to a resource by file name or stdin
-  patch           Update fields of a resource
-  replace         Replace a resource by file name or stdin
-  wait            Experimental: Wait for a specific condition on one or many
-resources
-  kustomize       Build a kustomization target from a directory or URL
-
-Settings Commands:
-  label           Update the labels on a resource
-  annotate        Update the annotations on a resource
-  completion      Output shell completion code for the specified shell (bash,
-zsh, fish, or powershell)
-
-Subcommands provided by plugins:
-
-Other Commands:
-  api-resources   Print the supported API resources on the server
-  api-versions    Print the supported API versions on the server, in the form of
-&quot;group/version&quot;
-  config          Modify kubeconfig files
-  plugin          Provides utilities for interacting with plugins
-  version         Print the client and server version information
-
-Usage:
-  kubectl [flags] [options]
-
-Use &quot;kubectl &lt;command&gt; --help&quot; for more information about a given command.
-Use &quot;kubectl options&quot; for a list of global command-line options (applies to all
-commands).
-</code></pre>
-
-
-</details>
-
-<h2 id="watching-changes">Watching Changes</h2>
-<p>Stream updates to resources with <code>-w/--watch</code>:</p>
-<pre><code class="language-bash">kubectl get pods -w # or --watch
-watch kubectl get pods
-</code></pre>
-<h2 id="describe-logs-and-exec">Describe, Logs, and Exec</h2>
-<pre><code class="language-bash">kubectl describe pod &lt;pod-name&gt;
-kubectl describe node &lt;node-name&gt;
-kubectl describe deployment &lt;deployment-name&gt;
-
-kubectl logs &lt;pod-name&gt;
-kubectl exec -it &lt;pod-name&gt; -- /bin/bash
-kubectl exec -it &lt;pod-name&gt; -c &lt;container-name&gt; -- /bin/bash
-</code></pre>
-<h2 id="apply-delete-scale-and-rollouts">Apply, Delete, Scale, and Rollouts</h2>
-<pre><code class="language-bash">kubectl apply -f &lt;file.yaml&gt;
-kubectl delete -f &lt;file.yaml&gt;
-
-kubectl scale deployment &lt;name&gt; --replicas=&lt;num&gt;
-kubectl rollout status deployment/&lt;name&gt;
-kubectl rollout undo deployment/&lt;name&gt;
-</code></pre>
-<h2 id="port-forward-local-pod">Port-Forward (Local -&gt; Pod)</h2>
-<p>–&gt; We can open <strong>port-forward</strong> to directly reach objects within the k8s cluster we want from our own local servers.
-This is one of the best methods to test this object.</p>
-<pre><code class="language-shell">kubectl port-forward &lt;objectType&gt;/&lt;podName&gt; &lt;localMachinePort&gt;:&lt;podPort&gt;
-
-kubectl port-forward pod/testpod 8080:80
-# Send all requests coming to port 8080 on my device to port 80 of this pod.
-
-curl 127.0.0.1:8080
-# You can write for testing.
-</code></pre>
-<p>Then open <code>localhost:8080</code> in the browser.
-<em>Port-forwarding ends when CMD + C is done.</em></p>
-<h2 id="metrics">Metrics</h2>
-<p>Requires Metrics Server installed in the cluster:</p>
-<pre><code class="language-bash">kubectl top pod
-kubectl top node
-</code></pre>
-<h2 id="quick-kubeconfig-context-switch-script-optional">Quick kubeconfig Context Switch Script (optional)</h2>
-<p>If you keep multiple kubeconfig files like <code>~/.kube/config-minikube</code>, you can use a helper script to copy one into place
-as the active <code>~/.kube/config</code>:</p>
-<details>
-<summary>change-kube-config.sh</summary>
-
-
-<pre><code class="language-bash">#! /bin/bash
-
-CLUSTER=$1
-
-if [ -z &quot;$1&quot; ]
-  then
-    echo -e &quot;\n##### No argument supplied. Please select one of these configs. #####&quot;
-    ls  ~/.kube |grep config- | cut -d &quot;-&quot; -f 2
-    echo -e &quot;######################################################################\n&quot;
-    #array=($(ls -d * |grep config_))
-    read -p 'Please set config file: ' config
-    cp -r ~/.kube/config_$config ~/.kube/config
-    echo -e '\n'
-    kubectl cluster-info |grep -v &quot;To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.&quot;
-    kubectl config get-contexts
-    kubectl get node -o wide |head -n 4
-else
-  cp -r ~/.kube/config-$CLUSTER ~/.kube/config
-  if [ $? -ne 0 ];
-  then
-  exit 1
-  fi
-  echo -e '\n'
-#  kubectl cluster-info | grep -v &quot;To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.&quot;
-  kubectl config get-contexts
-  echo -e '\n'
-  kubectl get node -o wide |head -n 4
-  echo -e '\n'
-fi
-</code></pre>
-
-
-</details>
-
-<p>Usage:</p>
-<pre><code class="language-bash">./change-kube-config.sh &lt;config-name&gt;
-# e.g.
-./change-kube-config.sh minikube
-</code></pre>
-<h2 id="makefile-commands-for-aws-eks-setup-optional">Makefile Commands for AWS EKS Setup (optional)</h2>
-<p>Make Command:</p>
-<pre><code class="language-make">aws-config-set: ## AWS configs for to up Preview env on your local machine
-    @source &quot;.make/scripts/aws-config-set.sh&quot;
-</code></pre>
-<details>
-<summary>aws-config-set.sh</summary>
-
-
-<pre><code class="language-bash">#!/bin/bash
-
-# ======================================================================================================================
-# This script performs the following tasks:
-# 1. Asks to the user to select aws profile.
-# 2. Removes ~/.aws/sso/cache, ~/.aws/cli/cache and ~/.kube/cache folders.
-# 3. Configures aws sso start url, sso region, sso account id, sso role name, region and output.
-# 4. Runs aws eks command.
-# ======================================================================================================================
-
-AWS_PROFILE_1=&quot;default&quot;
-AWS_PROFILE_2=&quot;test-dev&quot;
-
-echo &quot;Which AWS profile would you like to log in to?&quot;
-echo &quot;1) $AWS_PROFILE_1&quot;
-echo &quot;2) $AWS_PROFILE_2&quot;
-read -p &quot;Make your choice (1 or 2): &quot; profile_choice
-
-if [[ $profile_choice -eq 1 ]]; then
-  SSO_ACCOUNT_ID=&quot;123456789123&quot;
-  ROLE_ARN=&quot;arn:aws:iam::123456789123:role/EKSDevV1TesterRole&quot;
-elif [[ $profile_choice -eq 2 ]]; then
-  SSO_ACCOUNT_ID=&quot;987654321123&quot;
-  ROLE_ARN=&quot;arn:aws:iam::987654321123:role/EKSDevV1TesterRole&quot;
-else
-  echo &quot;Invalid choice. Exiting.&quot;
-  exit 1
-fi
-
-# PARAMETERS
-AWS_SSO_SESSION_NAME=&quot;&quot;
-SSO_START_URL=&quot;https://d-123407a8b9.awsapps.com/start#/&quot;
-SSO_REGION=&quot;eu-west-1&quot;
-SSO_ACCOUNT_ID=&quot;$SSO_ACCOUNT_ID&quot;
-SSO_ROLE_NAME=&quot;aws_developer&quot;
-CLI_PROFILE_NAME=&quot;default&quot;
-CLI_DEFAULT_REGION=&quot;eu-west-1&quot;
-CLI_DEFAULT_OUTPUT_FORMAT=&quot;json&quot;
-ROLE_ARN=&quot;$ROLE_ARN&quot;
-
-# Delete SSO cache
-rm -rf ~/.aws/sso/cache
-
-# Delete AWS CLI cache
-rm -rf ~/.aws/cli/cache
-
-# Delete kube cache
-rm -rf ~/.kube/cache
-
-# Run AWS configure sso command
-{
-  echo &quot;$AWS_SSO_SESSION_NAME&quot;
-  echo &quot;$SSO_START_URL&quot;
-  echo &quot;$SSO_REGION&quot;
-  echo &quot;$SSO_ACCOUNT_ID&quot;
-  echo &quot;$SSO_ROLE_NAME&quot;
-  echo &quot;$CLI_DEFAULT_REGION&quot;
-  echo &quot;$CLI_DEFAULT_OUTPUT_FORMAT&quot;
-  echo &quot;$CLI_PROFILE_NAME&quot;
-} | aws configure sso --profile &quot;$CLI_PROFILE_NAME&quot;
-
-# Set the default CLI profile
-aws configure set default.sso_start_url &quot;$SSO_START_URL&quot;
-aws configure set default.sso_region &quot;$SSO_REGION&quot;
-aws configure set default.sso_account_id &quot;$SSO_ACCOUNT_ID&quot;
-aws configure set default.sso_role_name &quot;$SSO_ROLE_NAME&quot;
-
-# Set default region
-aws configure set default.region &quot;$CLI_DEFAULT_REGION&quot;
-
-# Set default output format
-aws configure set default.output &quot;$CLI_DEFAULT_OUTPUT_FORMAT&quot;
-
-# Run AWS EKS command to update kubeconfig
-if [[ $profile_choice -eq 2 ]]; then
-  aws eks --region &quot;$CLI_DEFAULT_REGION&quot; update-kubeconfig --name dev-cluster --role-arn &quot;$ROLE_ARN&quot;
-fi
-</code></pre>
-
-
-</details>
-
-<p>Usage:</p>
-<pre><code class="language-bash">make aws-config-set
-</code></pre>
-<h2 id="references">References</h2>
+<hr />
+<h2 id="usage-scenarios">Usage Scenarios</h2>
 <ul>
-<li><a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/">Kubernetes Official Kubectl Cheatsheet</a></li>
-<li><a href="https://github.com/aytitech/k8sfundamentals/blob/main/kubectl/README.md">GitHub - Aytitech K8sFundamentals</a></li>
+<li>Rapid prototyping</li>
+<li>Small-to-medium projects needing consistent design</li>
+<li>Cross-platform (iOS &amp; Android) layouts</li>
 </ul>
 
 
@@ -6909,10 +6442,10 @@ fi
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
