@@ -192,6 +192,7 @@ nav:
           - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
           - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
       - React Native:
+          - React Native Basics: mobile/react-native/react-native-basics.md
           - Expo Project Setup: mobile/react-native/expo-project-setup.md
           - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
           - Tailwind & NativeWind: mobile/react-native/nativewind-tailwind.md
