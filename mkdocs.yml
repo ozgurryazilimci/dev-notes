@@ -195,6 +195,7 @@ nav:
           - React Native Basics: mobile/react-native/react-native-basics.md
           - Expo Project Setup: mobile/react-native/expo-project-setup.md
           - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
+          - Tailwind CSS: mobile/react-native/tailwind-css.md
           - Tailwind & NativeWind: mobile/react-native/nativewind-tailwind.md
   - Freelance:
       - Freelance Guide: freelance/freelance-guide.md
