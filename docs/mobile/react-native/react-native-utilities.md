@@ -1,4 +1,4 @@
-# JavaScript & TypeScript Utilities Reference
+# React Native Utilities
 
 This document contains frequently used utility functions and helpers for **React Native / TypeScript** projects.
 Includes arrays, objects, strings, dates, math, and TS utility types.
