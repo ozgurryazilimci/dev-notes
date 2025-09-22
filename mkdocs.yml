@@ -193,6 +193,8 @@ nav:
           - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
       - React Native:
           - React Native Basics: mobile/react-native/react-native-basics.md
+          - React Native With Typescript: mobile/react-native/react-native-with-typescript.md
+          - React Native Utilities: mobile/react-native/react-native-utilities.md
           - Expo Project Setup: mobile/react-native/expo-project-setup.md
           - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
           - Tailwind CSS: mobile/react-native/tailwind-css.md

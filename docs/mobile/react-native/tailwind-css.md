@@ -335,7 +335,7 @@ Use `container` class and `@container` rules for more granular responsive design
 - [Tailwind CSS Official Docs](https://tailwindcss.com)
 - [Tailwind From Scratch](https://tailwindfromscratch.com/)
 - [Bootstrap vs Tailwind](https://getbootstrap.com)
-- [Sadik Turan Tailwind Lessons (Turkish)](https://github.com/sadikturan/tailwind-css-dersleri)
 - [Flowbite Components](https://flowbite.com)
 - [Vite](https://vite.dev/)
 - [Google Fonts](https://fonts.google.com/selection/embed)
+- [GitHub Tailwind Lessons](https://github.com/sadikturan/tailwind-css-dersleri)
