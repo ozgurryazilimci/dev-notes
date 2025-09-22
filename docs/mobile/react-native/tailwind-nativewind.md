@@ -97,6 +97,8 @@ export default function App() {
 > Tip: Most Tailwind classes are available in NativeWind, but pseudo-classes like `hover:` or `focus:` do not work in
 > React Native.
 
+- For more info about Tailwind CSS, visit the [Tailwind CSS](tailwind-css.md).
+
 ---
 
 ## Usage Scenarios
