@@ -114,8 +114,8 @@ nav:
           - React Native Form Handling: mobile/react-native/react-native-form-handling.md
           - Expo Project Setup: mobile/react-native/expo-project-setup.md
           - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
-          - Tailwind & NativeWind: mobile/react-native/tailwind-nativewind.md
           - Tailwind CSS: mobile/react-native/tailwind-css.md
+          - Nativewind: mobile/react-native/nativewind.md
   - Devops:
       - Docker:
           - Docker Introduction: devops/docker/docker-introduction.md

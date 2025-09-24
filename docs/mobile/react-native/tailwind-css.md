@@ -323,9 +323,25 @@ Use `container` class and `@container` rules for more granular responsive design
 
 ---
 
+## Common Classes
+
+| Class            | Meaning                                                            |
+|------------------|--------------------------------------------------------------------|
+| `flex-1`         | Takes all available space (`flex: 1`)                              |
+| `items-center`   | Align items vertically in the center (`align-items: center`)       |
+| `justify-center` | Align items horizontally in the center (`justify-content: center`) |
+| `bg-gray-100`    | Light gray background                                              |
+| `text-xl`        | Large text                                                         |
+| `font-bold`      | Bold font                                                          |
+| `p-4`            | Padding 16px (depends on Tailwind scale)                           |
+| `m-2`            | Margin 8px                                                         |
+| `rounded-full`   | Fully rounded corners                                              |
+
+---
+
 ## References
 
-- [Tailwind CSS Official Docs](https://tailwindcss.com)
+- [Tailwind CSS Official Docs](https://tailwindcss.com/docs)
 - [Tailwind From Scratch](https://tailwindfromscratch.com/)
 - [Bootstrap vs Tailwind](https://getbootstrap.com)
 - [Flowbite Components](https://flowbite.com)
