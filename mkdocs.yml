@@ -111,6 +111,7 @@ nav:
           - React Native Basics: mobile/react-native/react-native-basics.md
           - React Native With Typescript: mobile/react-native/react-native-with-typescript.md
           - React Native Utilities: mobile/react-native/react-native-utilities.md
+          - React Native Form Handling: mobile/react-native/react-native-form-handling.md
           - Expo Project Setup: mobile/react-native/expo-project-setup.md
           - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
           - Tailwind & NativeWind: mobile/react-native/tailwind-nativewind.md

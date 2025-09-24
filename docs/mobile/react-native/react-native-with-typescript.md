@@ -481,24 +481,6 @@ const styles = StyleSheet.create({
 
 ---
 
-## Formik & Yup
-
-```tsx
-<Formik
-    initialValues={{email: ""}}
-    validationSchema={Yup.object({
-        email: Yup.string().email().required(),
-    })}
-    onSubmit={values => console.log(values)}
->
-    {({handleChange, handleSubmit, values}) => (
-        <TextInput value={values.email} onChangeText={handleChange("email")}/>
-    )}
-</Formik>
-```
-
----
-
 ## Redux Toolkit Example
 
 ### Slice (counterSlice.ts)
@@ -639,8 +621,6 @@ await AsyncStorage.removeItem("token");
 - [React](https://react.dev)
 - [Expo](https://docs.expo.dev)
 - [Redux Toolkit](https://redux-toolkit.js.org)
-- [Formik](https://formik.org)
-- [Yup](https://github.com/jquense/yup)
 - [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/usage/)
 - [React Navigation](https://reactnavigation.org/docs/getting-started)
 - [Dummy Json](https://dummyjson.com/docs/)
