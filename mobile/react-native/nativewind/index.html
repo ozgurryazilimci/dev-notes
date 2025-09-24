@@ -12,13 +12,13 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/tailwind-nativewind/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/nativewind/">
       
       
-        <link rel="prev" href="../expo-supabase-integration/">
+        <link rel="prev" href="../tailwind-css/">
       
       
-        <link rel="next" href="../tailwind-css/">
+        <link rel="next" href="../../../devops/docker/docker-introduction/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Tailwind & NativeWind - My Dev Notes</title>
+        <title>Nativewind - My Dev Notes</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tailwind-nativewind-in-react-native" class="md-skip">
+        <a href="#nativewind" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tailwind & NativeWind
+              Nativewind
             
           </span>
         </div>
@@ -2500,6 +2500,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../tailwind-css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tailwind CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2517,7 +2540,7 @@
   
   
   <span class="md-ellipsis">
-    Tailwind & NativeWind
+    Nativewind
     
   </span>
   
@@ -2530,7 +2553,7 @@
   
   
   <span class="md-ellipsis">
-    Tailwind & NativeWind
+    Nativewind
     
   </span>
   
@@ -2553,54 +2576,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-are-they" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      What Are They?
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-expo-project-with-typescript-and-expo-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create a New Expo Project with TypeScript and Expo Router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-install-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Install Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-initialize-tailwind-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Initialize Tailwind CSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-global-css-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Create Global CSS File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-configure-babel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Configure Babel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-configure-metro-bundler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Configure Metro Bundler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-import-global-css-in-your-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Import Global CSS in Your App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-modify-your-appjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Modify your app.json
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-typescript-setup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: TypeScript Setup (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-verify-the-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Verify the Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-expo-react-native" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation (Expo + React Native)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-example-tsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Example (TSX)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#useful-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Useful Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage Scenarios
+      References
     </span>
   </a>
   
@@ -2610,29 +2702,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tailwind-css/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tailwind CSS
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -6422,54 +6491,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-are-they" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      What Are They?
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-expo-project-with-typescript-and-expo-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create a New Expo Project with TypeScript and Expo Router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-install-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Install Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-initialize-tailwind-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Initialize Tailwind CSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-global-css-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Create Global CSS File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-configure-babel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Configure Babel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-configure-metro-bundler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Configure Metro Bundler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-import-global-css-in-your-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Import Global CSS in Your App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-modify-your-appjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Modify your app.json
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-typescript-setup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: TypeScript Setup (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-verify-the-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Verify the Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-expo-react-native" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation (Expo + React Native)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-example-tsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Example (TSX)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#useful-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Useful Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage Scenarios
+      References
     </span>
   </a>
   
@@ -6491,134 +6629,152 @@
 
 
 
-<h1 id="tailwind-nativewind-in-react-native">Tailwind &amp; NativeWind in React Native</h1>
-<h2 id="what-are-they">What Are They?</h2>
-<ul>
-<li><strong>Tailwind CSS:</strong> A utility-first CSS framework originally for web development. It allows you to style elements
-  directly using class names like <code>bg-blue-500</code>, <code>p-4</code>, <code>flex</code>, etc., without writing custom CSS.</li>
-<li><strong>NativeWind:</strong> A React Native adaptation of Tailwind. It brings Tailwind’s utility classes to React Native, allowing
-  you to style components using <code>className</code> instead of <code>StyleSheet</code>.</li>
-</ul>
-<p><strong>Benefits:</strong></p>
-<ol>
-<li>Rapid UI prototyping.</li>
-<li>Consistent styling across the app.</li>
-<li>No need for StyleSheet or CSS-in-JS.</li>
-</ol>
+<h1 id="nativewind">Nativewind</h1>
+<p>This guide walks you through integrating Nativewind (Tailwind CSS for React Native) into an Expo Router project using
+TypeScript.</p>
 <hr />
-<h2 id="installation-expo-react-native">Installation (Expo + React Native)</h2>
-<pre><code class="language-bash">npx create-expo-app MyNativeWindApp --template
-cd MyNativeWindApp
-
-# Install NativeWind
-npm install nativewind
-# Initialize Tailwind config
-npx tailwindcss init
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Node.js</strong>: Ensure you're using Node.js version 20. If you're using <a href="https://github.com/nvm-sh/nvm">nvm</a>, you can
+  switch to Node.js 20 with:</li>
+</ul>
+<pre><code class="language-bash">nvm use 20
 </code></pre>
-<p><code>tailwind.config.js</code>:</p>
+<hr />
+<h3 id="step-1-create-a-new-expo-project-with-typescript-and-expo-router">Step 1: Create a New Expo Project with TypeScript and Expo Router</h3>
+<pre><code class="language-bash">npx create-expo-app@latest my-app --template expo-router --typescript
+cd my-app
+</code></pre>
+<p>This command sets up a new Expo project with Expo Router and TypeScript.</p>
+<hr />
+<h3 id="step-2-install-dependencies">Step 2: Install Dependencies</h3>
+<p>Install Nativewind and its peer dependencies:</p>
+<ul>
+<li>npm install:</li>
+</ul>
+<pre><code class="language-bash">npm install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
+</code></pre>
+<ul>
+<li>expo install:</li>
+</ul>
+<pre><code class="language-bash">npx expo install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
+</code></pre>
+<p>Install development dependencies:</p>
+<ul>
+<li>npm install:</li>
+</ul>
+<pre><code class="language-bash">npm install --save-dev tailwindcss@^3.4.17 prettier-plugin-tailwindcss@^0.5.11
+</code></pre>
+<ul>
+<li>expo install:</li>
+</ul>
+<pre><code class="language-bash">npx expo install --dev tailwindcss@^3.4.17 prettier-plugin-tailwindcss@^0.5.11
+</code></pre>
+<hr />
+<h3 id="step-3-initialize-tailwind-css">Step 3: Initialize Tailwind CSS</h3>
+<p>Generate the Tailwind configuration file:</p>
+<pre><code class="language-bash">npx tailwindcss init
+</code></pre>
+<p>Update <code>tailwind.config.js</code> to include the paths to your component files:</p>
 <pre><code class="language-js">/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [&quot;./App.{js,jsx,ts,tsx}&quot;, &quot;./src/**/*.{js,ts,jsx,tsx}&quot;], theme: {
+  // NOTE: Update this to include the paths to all files that contain Nativewind classes.
+  content: [&quot;./app/**/*.{js,jsx,ts,tsx}&quot;], presets: [require(&quot;nativewind/preset&quot;)], theme: {
     extend: {},
   }, plugins: [],
-};
-</code></pre>
-<hr />
-<h2 id="basic-example-tsx">Basic Example (TSX)</h2>
-<pre><code class="language-tsx">import React from &quot;react&quot;;
-import { View, Text, Pressable } from &quot;react-native&quot;;
-import { styled } from &quot;nativewind&quot;;
-
-const StyledView = styled(View);
-const StyledText = styled(Text);
-const StyledButton = styled(Pressable);
-
-export default function App() {
-    return (
-        &lt;StyledView className=&quot;flex-1 items-center justify-center bg-gray-100&quot;&gt;
-            &lt;StyledText className=&quot;text-2xl font-bold text-blue-600 mb-4&quot;&gt;
-                Hello NativeWind!
-            &lt;/StyledText&gt;
-
-            &lt;StyledButton
-                className=&quot;bg-blue-500 px-6 py-3 rounded-full&quot;
-                onPress={() =&gt; alert(&quot;Button pressed!&quot;)}
-            &gt;
-                &lt;StyledText className=&quot;text-white font-semibold text-lg&quot;&gt;
-                    Press Me
-                &lt;/StyledText&gt;
-            &lt;/StyledButton&gt;
-        &lt;/StyledView&gt;
-    );
 }
 </code></pre>
 <hr />
-<h2 id="common-classes">Common Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>flex-1</code></td>
-<td>Takes all available space (<code>flex: 1</code>)</td>
-</tr>
-<tr>
-<td><code>items-center</code></td>
-<td>Align items vertically in the center (<code>align-items: center</code>)</td>
-</tr>
-<tr>
-<td><code>justify-center</code></td>
-<td>Align items horizontally in the center (<code>justify-content: center</code>)</td>
-</tr>
-<tr>
-<td><code>bg-gray-100</code></td>
-<td>Light gray background</td>
-</tr>
-<tr>
-<td><code>text-xl</code></td>
-<td>Large text</td>
-</tr>
-<tr>
-<td><code>font-bold</code></td>
-<td>Bold font</td>
-</tr>
-<tr>
-<td><code>p-4</code></td>
-<td>Padding 16px (depends on Tailwind scale)</td>
-</tr>
-<tr>
-<td><code>m-2</code></td>
-<td>Margin 8px</td>
-</tr>
-<tr>
-<td><code>rounded-full</code></td>
-<td>Fully rounded corners</td>
-</tr>
-</tbody>
-</table>
+<h3 id="step-4-create-global-css-file">Step 4: Create Global CSS File</h3>
+<p>Create a <code>global.css</code> file inside the <code>app</code> folder:</p>
+<pre><code class="language-css">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</code></pre>
+<p>This file ensures Tailwind utilities and styles are available throughout your app.</p>
 <hr />
-<h2 id="useful-resources">Useful Resources</h2>
+<h3 id="step-5-configure-babel">Step 5: Configure Babel</h3>
+<p>Create or update the <code>babel.config.js</code> file in the root of your project:</p>
+<pre><code class="language-js">module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: [[&quot;babel-preset-expo&quot;, { jsxImportSource: &quot;nativewind&quot; }], &quot;nativewind/babel&quot;,],
+  };
+};
+</code></pre>
+<p>This configuration ensures Expo's Babel setup works seamlessly with Nativewind.</p>
+<hr />
+<h3 id="step-6-configure-metro-bundler">Step 6: Configure Metro Bundler</h3>
+<p>Create or update the <code>metro.config.js</code> file in the root of your project:</p>
+<pre><code class="language-js">const { getDefaultConfig } = require(&quot;expo/metro-config&quot;);
+const { withNativeWind } = require('nativewind/metro');
+
+const config = getDefaultConfig(__dirname)
+
+module.exports = withNativeWind(config, { input: './app/global.css' })
+</code></pre>
+<p>This configuration integrates Nativewind with Expo's Metro bundler.</p>
+<hr />
+<h3 id="step-7-import-global-css-in-your-app">Step 7: Import Global CSS in Your App</h3>
+<p>In your <code>app/_layout.tsx</code> file, import the global CSS file:</p>
+<pre><code class="language-tsx">import { Stack } from 'expo-router';
+import './global.css';
+
+export default function RootLayout() {
+    return &lt;Stack screenOptions={{headerShown: false}}/&gt;;
+}
+</code></pre>
+<p>This ensures that Tailwind's styles are applied globally across your app.</p>
+<hr />
+<h3 id="step-8-modify-your-appjson">Step 8: Modify your <code>app.json</code></h3>
+<p>Switch the bundler to use the Metro bundler:</p>
+<pre><code class="language-json">{
+  &quot;expo&quot;: {
+    &quot;web&quot;: {
+      &quot;bundler&quot;: &quot;metro&quot;
+    }
+  }
+}
+</code></pre>
+<hr />
+<h3 id="step-9-typescript-setup-optional">Step 9: TypeScript Setup (Optional)</h3>
+<p>If you're using TypeScript, create a <code>nativewind-env.d.ts</code> file in the root of your project with the following content:</p>
+<pre><code class="language-ts">/// &lt;reference types=&quot;nativewind/types&quot; /&gt;
+</code></pre>
+<p>This step enables TypeScript support for Nativewind's utility types.</p>
+<hr />
+<h3 id="step-10-verify-the-setup">Step 10: Verify the Setup</h3>
+<p>To verify that Nativewind is working correctly, modify your <code>app/index.tsx</code> file as follows:</p>
+<pre><code class="language-tsx">import { Text, View } from 'react-native';
+
+export default function App() {
+    return (
+        &lt;View className=&quot;flex-1 items-center justify-center bg-white&quot;&gt;
+            &lt;Text className=&quot;text-xl font-bold text-blue-500&quot;&gt;
+                Welcome to Nativewind!
+            &lt;/Text&gt;
+        &lt;/View&gt;
+    );
+}
+</code></pre>
+<p>Run your project:</p>
+<pre><code class="language-bash">npx expo start
+</code></pre>
+<p>If you see the styled text centered on a white background, Nativewind is working correctly.</p>
+<hr />
+<h2 id="additional-notes">Additional Notes</h2>
 <ul>
-<li><strong>Tailwind CSS docs:</strong> <a href="https://tailwindcss.com/docs">https://tailwindcss.com/docs</a></li>
-<li><strong>NativeWind docs:</strong> <a href="https://www.nativewind.dev">https://www.nativewind.dev</a></li>
-</ul>
-<blockquote>
-<p>Tip: Most Tailwind classes are available in NativeWind, but pseudo-classes like <code>hover:</code> or <code>focus:</code> do not work in
-React Native.</p>
-</blockquote>
-<ul>
-<li>For more info about Tailwind CSS, visit the <a href="../tailwind-css/">Tailwind CSS</a>.</li>
+<li><strong>Editor Setup</strong>: To enhance your development experience, consider setting up your editor to support Nativewind's
+  IntelliSense and linting features.</li>
+<li><strong>Troubleshooting</strong>: If you encounter issues, ensure that all paths in your <code>tailwind.config.js</code> are correct and that
+  all necessary files are properly configured.</li>
 </ul>
 <hr />
-<h2 id="usage-scenarios">Usage Scenarios</h2>
+<h2 id="references">References</h2>
 <ul>
-<li>Rapid prototyping</li>
-<li>Small-to-medium projects needing consistent design</li>
-<li>Cross-platform (iOS &amp; Android) layouts</li>
+<li><a href="https://www.nativewind.dev/docs">Nativewind Official Docs</a></li>
+<li><a href="https://www.nativewind.dev/docs/getting-started/installation">Nativewind Installation</a></li>
+<li><a href="https://youtu.be/WcumWxicmao?si=f7xr0nz_tFv9T8sJ">Youtube Installation Tutorial</a></li>
 </ul>
 
 
