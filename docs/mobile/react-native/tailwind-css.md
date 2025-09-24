@@ -22,14 +22,7 @@ gives you building blocks to create custom designs.
 
 - [Node.js](https://nodejs.org/) installed (`brew install node` on macOS)
 - Git installed
-- A code editor like VS Code with extensions:
-    - **Live Server**
-    - **PostCSS Language Support**
-    - **Prettier**
-    - **Tailwind CSS IntelliSense**
-- Shortcuts in VS Code:
-    - `lorem3` → generate placeholder text
-    - `nfn` → shortcut for creating a new function
+- A code editor like [VS Code](../../tools/editor/vscode.md)
 
 ### Installation Steps
 

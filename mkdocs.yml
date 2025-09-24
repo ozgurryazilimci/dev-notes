@@ -96,6 +96,25 @@ nav:
           - Nvm & Npm: frontend/nodejs/nvm-npm.md
           - Yarn: frontend/nodejs/yarn.md
           - Npm To Yarn Cheatsheet: frontend/nodejs/npm-to-yarn-cheatsheet.md
+  - Mobile:
+      - Android:
+          - Android Firebase Integration: mobile/android/android-firebase-integration.md
+          - Android Keystore Settings: mobile/android/android-keystore-settings.md
+          - Android Google Maps Integration: mobile/android/android-google-maps-integration.md
+          - Android Push Notification Integration: mobile/android/android-push-notification-integration.md
+      - iOS:
+          - iOS Firebase Integration: mobile/ios/ios-firebase-integration.md
+          - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
+          - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
+          - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
+      - React Native:
+          - React Native Basics: mobile/react-native/react-native-basics.md
+          - React Native With Typescript: mobile/react-native/react-native-with-typescript.md
+          - React Native Utilities: mobile/react-native/react-native-utilities.md
+          - Expo Project Setup: mobile/react-native/expo-project-setup.md
+          - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
+          - Tailwind & NativeWind: mobile/react-native/tailwind-nativewind.md
+          - Tailwind CSS: mobile/react-native/tailwind-css.md
   - Devops:
       - Docker:
           - Docker Introduction: devops/docker/docker-introduction.md
@@ -180,25 +199,6 @@ nav:
       - Shell Network Commands: network/shell-network-commands.md
       - Overriding Hostnames: network/overriding-hostnames.md
       - Internet Speed & IP: network/internet-speed-ip.md
-  - Mobile:
-      - Android:
-          - Android Firebase Integration: mobile/android/android-firebase-integration.md
-          - Android Keystore Settings: mobile/android/android-keystore-settings.md
-          - Android Google Maps Integration: mobile/android/android-google-maps-integration.md
-          - Android Push Notification Integration: mobile/android/android-push-notification-integration.md
-      - iOS:
-          - iOS Firebase Integration: mobile/ios/ios-firebase-integration.md
-          - iOS Google Maps Integration: mobile/ios/ios-google-maps-integration.md
-          - iOS Test Flight Integration: mobile/ios/ios-test-flight-integration.md
-          - iOS Push Notification Integration: mobile/ios/ios-push-notification-integration.md
-      - React Native:
-          - React Native Basics: mobile/react-native/react-native-basics.md
-          - React Native With Typescript: mobile/react-native/react-native-with-typescript.md
-          - React Native Utilities: mobile/react-native/react-native-utilities.md
-          - Expo Project Setup: mobile/react-native/expo-project-setup.md
-          - Expo Supabase Integration: mobile/react-native/expo-supabase-integration.md
-          - Tailwind & NativeWind: mobile/react-native/tailwind-nativewind.md
-          - Tailwind CSS: mobile/react-native/tailwind-css.md
   - Freelance:
       - Freelance Guide: freelance/freelance-guide.md
       - Website:
@@ -223,11 +223,15 @@ nav:
                   - Loco Translate Plugin: freelance/website/wordpress/plugins/loco-translate-plugin.md
                   - WooCommerce Plugin: freelance/website/wordpress/plugins/woocommerce-plugin.md
   - Tools:
+      - Editor:
+          - IntelliJ IDEA: tools/editor/intellij.md
+          - Visual Studio Code: tools/editor/vscode.md
       - Slack:
           - Slack Reminder: tools/slack/slack-reminder.md
           - Slack Message: tools/slack/slack-message.md
           - Slack User Group Creation: tools/slack/slack-user-group-creation.md
           - Slack GitHub Workflows: tools/slack/slack-github-workflows.md
+      - Chrome Extensions: tools/chrome-extensions.md
       - Apicurio via Docker: tools/apicurio-via-docker.md
       - KafkaUI via Docker: tools/kafkaui-via-docker.md
       - Multi-Gitter: tools/multi-gitter.md

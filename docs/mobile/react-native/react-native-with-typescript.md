@@ -633,15 +633,6 @@ await AsyncStorage.removeItem("token");
 
 ---
 
-# Developer Tips
-
-- `.prettierrc.js` for consistent formatting
-- Use
-  **[React Dev Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)**
-  extension to inspect component tree
-
----
-
 # References
 
 - [React Native](https://reactnative.dev)
