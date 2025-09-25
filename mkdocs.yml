@@ -72,6 +72,7 @@ nav:
   - Database:
       - MySQL:
           - MySQL Cheatsheet: database/mysql/mysql-cheatsheet.md
+          - MySQL Pid File Error: database/mysql/mysql-pid-file-error.md
       - PostgreSQL:
           - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
           - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
