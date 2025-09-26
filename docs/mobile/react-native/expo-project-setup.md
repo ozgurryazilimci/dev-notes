@@ -1,4 +1,4 @@
-# Expo React Native Project Setup Guide (Hello World)
+# Expo React Native Project Setup
 
 ## Prerequisites
 
@@ -140,19 +140,3 @@ npx expo start --android
 
 - **Android Studio Emulator** → Run the project directly from `npx expo start` → Click "Run on Android device/emulator"
 - **iOS Simulator** (Mac only) → Run directly if Xcode installed
-
----
-
-## Notes
-
-- Any changes in `app/index.tsx` or components will **hot reload** automatically in Expo Go.
-- For TypeScript, `.tsx` files are used.
-- You can later add navigation, state management, API calls, and other features as your app grows.
-
----
-
-## Next Steps
-
-- Add additional screens (e.g., About, Settings)
-- Add navigation (Stack or Tabs)
-- Connect to backend (e.g., Supabase or Firebase)

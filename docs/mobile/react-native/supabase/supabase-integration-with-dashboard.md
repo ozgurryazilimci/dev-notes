@@ -1,4 +1,4 @@
-# Expo Supabase Integration
+# Supabase Integration With Dashboard
 
 ## Prerequisites
 
