@@ -154,6 +154,20 @@ Debugging is straightforward in VS Code with the built-in debugger.
 npm run dev
 ```
 
+## 🖥️ Open in VS Code
+
+If you have a project locally, you can open it in VS Code with:
+
+```bash
+code .
+```
+
+Make sure the code command is available in your PATH.
+
+To install it, in VS Code press **Cmd+Shift+P** (Mac) or **Ctrl+Shift+P** (Windows/Linux),
+
+search for **"Shell Command: Install 'code' command in PATH"**, and enable it.
+
 ---
 
 ## ✅ Summary
