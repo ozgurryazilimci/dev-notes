@@ -38,9 +38,13 @@ RLS is **enforced automatically for anon keys**; `service_role` keys bypass it.
 
 ## Example Todos Table with Policies
 
+Create a new migration:
+
 ```bash
 supabase migration new create_todos_policies
 ```
+
+`create_todos_policies.sql`:
 
 ```postgresql
 -- Create todos table
