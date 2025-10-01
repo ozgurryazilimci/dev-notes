@@ -119,8 +119,10 @@ nav:
           - Tailwind CSS: mobile/react-native/tailwind-css.md
           - Nativewind: mobile/react-native/nativewind.md
           - Supabase:
-              - Supabase Integration With CLI: mobile/react-native/supabase/supabase-integration-with-cli.md
-              - Supabase Integration With Dashboard: mobile/react-native/supabase/supabase-integration-with-dashboard.md
+              - Supabase Dashboard Integration: mobile/react-native/supabase/supabase-dashboard-integration.md
+              - Supabase CLI Integration: mobile/react-native/supabase/supabase-cli-integration.md
+              - Supabase CLI Database Setup: mobile/react-native/supabase/supabase-cli-database-setup.md
+              - Supabase CLI RLS Policy: mobile/react-native/supabase/supabase-cli-rls-policies.md
   - Devops:
       - Docker:
           - Docker Introduction: devops/docker/docker-introduction.md

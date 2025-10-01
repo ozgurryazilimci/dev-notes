@@ -1,4 +1,4 @@
-# Supabase Integration With Dashboard
+# Supabase Dashboard Integration
 
 ## Prerequisites
 
