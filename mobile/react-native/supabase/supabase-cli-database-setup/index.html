@@ -12,13 +12,13 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/supabase/supabase-integration-with-dashboard/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/supabase/supabase-cli-database-setup/">
       
       
-        <link rel="prev" href="../supabase-integration-with-cli/">
+        <link rel="prev" href="../supabase-cli-integration/">
       
       
-        <link rel="next" href="../../../../devops/docker/docker-introduction/">
+        <link rel="next" href="../supabase-cli-rls-policies/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Supabase Integration With Dashboard - My Dev Notes</title>
+        <title>Supabase CLI Database Setup - My Dev Notes</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supabase-integration-with-dashboard" class="md-skip">
+        <a href="#supabase-cli-database-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supabase Integration With Dashboard
+              Supabase CLI Database Setup
             
           </span>
         </div>
@@ -2637,6 +2637,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -2678,12 +2682,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase-integration-with-cli/" class="md-nav__link">
+      <a href="../supabase-dashboard-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Supabase Integration With CLI
+    Supabase Dashboard Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-cli-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase CLI Integration
     
   </span>
   
@@ -2715,7 +2742,7 @@
   
   
   <span class="md-ellipsis">
-    Supabase Integration With Dashboard
+    Supabase CLI Database Setup
     
   </span>
   
@@ -2728,7 +2755,7 @@
   
   
   <span class="md-ellipsis">
-    Supabase Integration With Dashboard
+    Supabase CLI Database Setup
     
   </span>
   
@@ -2751,90 +2778,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#apply-migrations" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Apply Migrations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-supabase-project" class="md-nav__link">
+  <a href="#viewing-your-database-with-sql-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Supabase Project
+      Viewing Your Database with SQL Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing Your Database with SQL Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-database-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Database (Docker)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-supabase-sdk" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-database-production" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Supabase SDK
+      Cloud Database (Production)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-supabase-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Supabase Client
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#database-setup-supabase-sql" class="md-nav__link">
+  <a href="#seed-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Database Setup (Supabase SQL)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#signup-screen-example-appindextsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Signup Screen Example (app/index.tsx)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-company-screen-appadd-companytsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Company Screen (app/add-company.tsx)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#login-and-dashboard-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Login and Dashboard Routing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing Authentication
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
+      Seed Data
     </span>
   </a>
   
@@ -2844,6 +2832,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-cli-rls-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase CLI RLS Policy
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6641,90 +6652,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#apply-migrations" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Apply Migrations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-supabase-project" class="md-nav__link">
+  <a href="#viewing-your-database-with-sql-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Supabase Project
+      Viewing Your Database with SQL Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing Your Database with SQL Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-database-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Database (Docker)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-supabase-sdk" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-database-production" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Supabase SDK
+      Cloud Database (Production)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-supabase-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Supabase Client
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#database-setup-supabase-sql" class="md-nav__link">
+  <a href="#seed-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Database Setup (Supabase SQL)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#signup-screen-example-appindextsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Signup Screen Example (app/index.tsx)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-company-screen-appadd-companytsx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Company Screen (app/add-company.tsx)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#login-and-dashboard-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Login and Dashboard Routing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing Authentication
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
+      Seed Data
     </span>
   </a>
   
@@ -6746,190 +6718,180 @@
 
 
 
-<h1 id="supabase-integration-with-dashboard">Supabase Integration With Dashboard</h1>
-<h2 id="prerequisites">Prerequisites</h2>
+<h1 id="supabase-cli-database-setup">Supabase CLI Database Setup</h1>
 <ul>
-<li>Node.js installed (v18+ recommended)</li>
-<li>npm updated</li>
-<li>Expo project already created (see Hello World guide)</li>
-<li>Supabase account and project setup → <a href="https://supabase.com">https://supabase.com</a></li>
+<li>Run this command to create a migration file for the <code>todos</code> table:</li>
 </ul>
-<hr />
-<h2 id="configure-supabase-project">Configure Supabase Project</h2>
-<ol>
-<li>Go to <a href="https://app.supabase.com/">Supabase Dashboard</a>.</li>
-<li>Create a new project (choose organization, project name, database password).</li>
-<li>In the project <strong>Settings → API</strong>:<ul>
-<li>Copy your <strong>Project URL</strong> (supabaseUrl)</li>
-<li>Copy your <strong>anon public key</strong> (supabaseKey)</li>
-</ul>
-</li>
-<li>Enable <strong>Authentication</strong>:<ul>
-<li>Navigate to <strong>Authentication → Providers</strong></li>
-<li>Enable <strong>Email</strong> provider (so users can sign up with email &amp; password)</li>
-<li>Configure SMTP if you want to send real emails. For testing, Supabase provides a <strong>magic link preview</strong> in the
-  dashboard.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="install-supabase-sdk">Install Supabase SDK</h2>
-<pre><code class="language-bash">npm install @supabase/supabase-js
-</code></pre>
-<hr />
-<h2 id="setup-supabase-client">Setup Supabase Client</h2>
-<p>Create <code>supabaseClient.js</code> in the root of the project:</p>
-<pre><code class="language-js">import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'YOUR_SUPABASE_URL'
-const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'
-export const supabase = createClient(supabaseUrl, supabaseKey)
-</code></pre>
-<p>Replace placeholders with your credentials from <strong>Settings → API</strong>.</p>
-<hr />
-<h2 id="database-setup-supabase-sql">Database Setup (Supabase SQL)</h2>
-<p><strong>Tables:</strong></p>
-<pre><code class="language-sql">-- Companies table
-create table companies (
-    id uuid primary key default gen_random_uuid(),
-    name text not null,
-    created_at timestamp default now()
-);
-
--- Users table (custom profile info)
-create table users (
-    id uuid primary key,
-    email text unique not null,
-    company_id uuid references companies(id),
-    role text check (role in ('admin', 'employee')) default 'employee',
-    created_at timestamp default now()
-);
+<pre><code class="language-bash">supabase migration new create_todo_table
 </code></pre>
 <blockquote>
-<p>Note: <code>auth.users</code> table is automatically managed by Supabase for authentication. The <code>users</code> table here is for extra
-profile/company information.</p>
+<p>This will create a new file in <code>supabase/migrations/</code> with a timestamp and the name like<br />
+<code>20250925125133_create_todo_table.sql</code>.</p>
+</blockquote>
+<ul>
+<li>Put this SQL migration inside <code>20250925125133_create_todo_table.sql</code> file to create a <code>todos</code> table:</li>
+</ul>
+<pre><code class="language-postgresql">CREATE TABLE todos
+(
+    id          bigint generated by default as identity primary key,
+    title       text                                                          not null,
+    is_complete boolean                  default false,
+    inserted_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+</code></pre>
+<hr />
+<h2 id="apply-migrations">Apply Migrations</h2>
+<p>There are multiple ways to apply migrations under <code>supabase/migrations/</code>:</p>
+<ul>
+<li>Apply all unapplied migrations in order (local or remote):</li>
+</ul>
+<pre><code class="language-bash">supabase migration up
+</code></pre>
+<ul>
+<li>Push migrations to the <strong>local database</strong> (from the migrations folder):</li>
+</ul>
+<pre><code class="language-bash">supabase db push --local
+</code></pre>
+<ul>
+<li>Reset the local database (drop everything and re-apply all migrations + optional seed):</li>
+</ul>
+<pre><code class="language-bash">supabase db reset
+</code></pre>
+<blockquote>
+<p><code>migration up</code> and <code>db push --local</code> only apply missing migrations,<br />
+while <code>db reset</code> destroys and rebuilds the whole database.<br />
+These commands apply migrations only to your <strong>local database</strong> created via <code>supabase start</code>.</p>
 </blockquote>
 <hr />
-<h2 id="signup-screen-example-appindextsx">Signup Screen Example (<code>app/index.tsx</code>)</h2>
-<pre><code class="language-tsx">import React, { useState } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
-import { TextInput, Button } from 'react-native-paper'
-import { supabase } from '../supabaseClient'
-import { useRouter } from 'expo-router'
-
-export default function SignupScreen() {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [message, setMessage] = useState('')
-    const router = useRouter()
-
-    const signUp = async () =&gt; {
-        const {data, error} = await supabase.auth.signUp({email, password})
-        if (error) {
-            setMessage(error.message)
-            return
-        }
-
-        // Insert into custom users table
-        await supabase.from('users').insert([{id: data.user.id, email: data.user.email}])
-
-        setMessage('Check your email for confirmation!')
-    }
-
-    return (
-        &lt;View style={styles.container}&gt;
-            &lt;TextInput label=&quot;Email&quot; value={email} onChangeText={setEmail} style={styles.input}/&gt;
-            &lt;TextInput label=&quot;Password&quot; value={password} onChangeText={setPassword} secureTextEntry
-                       style={styles.input}/&gt;
-            &lt;Button mode=&quot;contained&quot; onPress={signUp}&gt;Sign Up&lt;/Button&gt;
-            {message ? &lt;Text&gt;{message}&lt;/Text&gt; : null}
-        &lt;/View&gt;
-    )
-}
-
-const styles = StyleSheet.create(
-    {container: {flex: 1, justifyContent: 'center', padding: 20}, input: {marginBottom: 10}})
+<h2 id="viewing-your-database-with-sql-tools">Viewing Your Database with SQL Tools</h2>
+<p>You can inspect your local or cloud Supabase database using any SQL client, like <strong>DBeaver</strong>, <strong>TablePlus</strong>,
+or <strong>DataGrip</strong>.</p>
+<h3 id="local-database-docker">Local Database (Docker)</h3>
+<p>After <code>supabase start</code>, check your status:</p>
+<pre><code class="language-bash">supabase status
 </code></pre>
-<hr />
-<h2 id="add-company-screen-appadd-companytsx">Add Company Screen (<code>app/add-company.tsx</code>)</h2>
-<pre><code class="language-tsx">import React, { useState } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
-import { TextInput, Button } from 'react-native-paper'
-import { supabase } from '../supabaseClient'
-import { useRouter } from 'expo-router'
-
-export default function AddCompany() {
-    const [companyName, setCompanyName] = useState('')
-    const [message, setMessage] = useState('')
-    const router = useRouter()
-
-    const handleAddCompany = async () =&gt; {
-        const {data: {user}, error: userError} = await supabase.auth.getUser()
-        if (userError || !user) {
-            setMessage('User not found')
-            return
-        }
-
-        const {data: company, error: companyError} = await supabase.from('companies')
-            .insert([{name: companyName}]).select().single()
-
-        if (companyError || !company) {
-            setMessage(companyError?.message || 'Company not created')
-            return
-        }
-
-        const {error: updateError} = await supabase.from('users')
-            .update({company_id: company.id}).eq('id', user.id)
-
-        if (updateError) {
-            setMessage(updateError.message)
-            return
-        }
-
-        router.replace('/(tabs)/explore')
-    }
-
-    return (
-        &lt;View style={styles.container}&gt;
-            &lt;TextInput label=&quot;Company Name&quot; value={companyName} onChangeText={setCompanyName} style={styles.input}/&gt;
-            &lt;Button mode=&quot;contained&quot; onPress={handleAddCompany}&gt;Add Company&lt;/Button&gt;
-            {message ? &lt;Text&gt;{message}&lt;/Text&gt; : null}
-        &lt;/View&gt;
-    )
-}
-
-const styles = StyleSheet.create(
-    {container: {flex: 1, justifyContent: 'center', padding: 20}, input: {marginBottom: 10}})
+<p>You will see something like:</p>
+<ul>
+<li>Database URL: <code>postgresql://postgres:postgres@127.0.0.1:54322/postgres</code></li>
+</ul>
+<p><strong>Connection Details for SQL Client:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>127.0.0.1</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>54322</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>postgres</td>
+</tr>
+<tr>
+<td>User</td>
+<td>postgres</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>postgres</td>
+</tr>
+<tr>
+<td>SSL</td>
+<td>disable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JDBC URL Example:</strong></p>
+<pre><code class="language-plaintext">jdbc:postgresql://127.0.0.1:54322/postgres?user=postgres&amp;password=postgres&amp;ssl=false
 </code></pre>
-<hr />
-<h2 id="login-and-dashboard-routing">Login and Dashboard Routing</h2>
+<blockquote>
+<p>You can now open your SQL client, connect using these credentials, and see tables, rows, policies, etc.</p>
+</blockquote>
+<h3 id="cloud-database-production">Cloud Database (Production)</h3>
+<p>From your Supabase Dashboard → Settings → Database → Connection Pooling, copy the <strong>connection string</strong>:</p>
 <ul>
-<li>On login, fetch <code>users.company_id</code>.</li>
-<li>If <code>company_id</code> is <strong>null</strong> → navigate to <code>/add-company</code>.</li>
-<li>If <code>company_id</code> exists → navigate to <code>/(tabs)/explore</code>.</li>
-<li>Use <code>useRouter()</code> from Expo Router.</li>
+<li>Format:</li>
+</ul>
+<pre><code class="language-plaintext">postgresql://&lt;db_user&gt;:&lt;db_pass&gt;@&lt;host&gt;:&lt;port&gt;/&lt;database&gt;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-plaintext">postgresql://postgres:secretpassword@db.abcdefg.supabase.co:5432/postgres
+</code></pre>
+<p><strong>Connection Details for SQL Client:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>db.abcdefg.supabase.co</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>5432</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>postgres</td>
+</tr>
+<tr>
+<td>User</td>
+<td>postgres</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>your-secret-password</td>
+</tr>
+<tr>
+<td>SSL</td>
+<td>require</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Use <code>SSL = true</code> for cloud connections.</li>
+<li>You can now visualize tables, rows, and run queries safely.</li>
 </ul>
 <hr />
-<h2 id="testing-authentication">Testing Authentication</h2>
+<p>💡 <strong>Tips:</strong></p>
 <ul>
-<li>Run app: <code>npx expo start</code></li>
-<li>In Supabase Dashboard → <strong>Authentication → Users</strong>, you can see registered accounts.</li>
-<li>When you sign up, an email confirmation is sent:<ul>
-<li>If SMTP configured → check your real inbox.</li>
-<li>If SMTP not configured → check <strong>Supabase Dashboard → Authentication → Users → Click user → Confirm account</strong>
-  manually.</li>
-</ul>
-</li>
-<li>After confirmation, login works normally.</li>
+<li>For local development, most clients can import the <strong>Database URL</strong> directly.</li>
+<li>For cloud, always use SSL and your <strong>anon / service_role</strong> credentials carefully.</li>
+<li>You can combine this with migration and seed files to populate the local DB exactly like production.</li>
 </ul>
 <hr />
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Always use <code>supabase.auth.getUser()</code> for v2 SDK.</li>
-<li>Keep <code>auth.users</code> (system table) and <code>users</code> (custom table) in sync.</li>
-<li>Email confirmations require SMTP settings for production apps.</li>
-<li>You can test login/signup flow directly in <strong>Supabase Dashboard</strong> before wiring UI.</li>
-</ul>
+<h2 id="seed-data">Seed Data</h2>
+<p>You can change seed sql path on <code>config.toml</code> file like this:</p>
+<pre><code class="language-toml">sql_paths = ['./seeds/*.sql']
+</code></pre>
+<blockquote>
+<p>This may be efficient to keep multiple seed file for each different data applying.
+For example, <code>000_insert_todos.sql</code>, <code>001_update_todos.sql</code>, etc.</p>
+</blockquote>
+<p>In <code>supabase/seeds/000_insert_todos.sql</code> file, add some initial data:</p>
+<pre><code class="language-postgresql">INSERT INTO todos (title, is_complete)
+VALUES ('Buy groceries', false),
+       ('Finish project report', false),
+       ('Call Alice', true);
+</code></pre>
+<p>Run manually:</p>
+<pre><code class="language-bash">psql &quot;postgresql://postgres:postgres@127.0.0.1:54322/postgres&quot; -f supabase/seed.sql
+</code></pre>
+<p>Or you can use reset command to drop all tables and re-apply all migrations and seeds:</p>
+<pre><code class="language-bash">supabase db reset
+</code></pre>
 
 
 

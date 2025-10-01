@@ -12,13 +12,13 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/supabase/supabase-integration-with-cli/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/supabase/supabase-cli-rls-policies/">
       
       
-        <link rel="prev" href="../../nativewind/">
+        <link rel="prev" href="../supabase-cli-database-setup/">
       
       
-        <link rel="next" href="../supabase-integration-with-dashboard/">
+        <link rel="next" href="../../../../devops/docker/docker-introduction/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Supabase Integration With CLI - My Dev Notes</title>
+        <title>Supabase CLI RLS Policy - My Dev Notes</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supabase-integration-with-cli" class="md-skip">
+        <a href="#supabase-cli-row-level-security-rls-policies" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supabase Integration With CLI
+              Supabase CLI RLS Policy
             
           </span>
         </div>
@@ -2637,6 +2637,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -2675,6 +2679,75 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-dashboard-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase Dashboard Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-cli-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase CLI Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-cli-database-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase CLI Database Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2692,7 +2765,7 @@
   
   
   <span class="md-ellipsis">
-    Supabase Integration With CLI
+    Supabase CLI RLS Policy
     
   </span>
   
@@ -2705,7 +2778,7 @@
   
   
   <span class="md-ellipsis">
-    Supabase Integration With CLI
+    Supabase CLI RLS Policy
     
   </span>
   
@@ -2728,312 +2801,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-supabase-cli" class="md-nav__link">
+  <a href="#what-is-rls" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Supabase CLI
+      What is RLS?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#initialize-supabase-project" class="md-nav__link">
+  <a href="#supabase-keys-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Initialize Supabase Project
+      Supabase Keys Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#start-local-supabase-docker" class="md-nav__link">
+  <a href="#cli-commands-for-rls-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Start Local Supabase (Docker)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Start Local Supabase (Docker)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-supabase-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Supabase Status
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-local-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stop Local Database
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apply-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Apply Migrations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-your-database-with-sql-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing Your Database with SQL Tools
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Viewing Your Database with SQL Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#local-database-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Database (Docker)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-database-production" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cloud Database (Production)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seed-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seed Data
+      CLI Commands for RLS &amp; Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment-variables-expo" class="md-nav__link">
+  <a href="#example-todos-table-with-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Environment Variables (Expo)
+      Example Todos Table with Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#supabase-client-typescript" class="md-nav__link">
+  <a href="#migrations-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Supabase Client (TypeScript)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supabase Client (TypeScript)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-supabase-sdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Supabase SDK
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup-supabase-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Supabase Client
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#react-native-example-todos-screen" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Native Example (Todos Screen)
+      Migrations &amp; Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloud-project-setup-prod" class="md-nav__link">
+  <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloud Project Setup (Prod)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Project Setup (Prod)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-for-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication for CLI
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linking-local-project-to-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linking Local Project to Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#push-local-migrations-to-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Push Local Migrations to Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unlink-from-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unlink from Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cicd-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      CI/CD Deployment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CI/CD Deployment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generate-a-personal-access-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate a Personal Access Token
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-github-actions-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example GitHub Actions Workflow
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-sync-cloud-local" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Sync (Cloud ↔ Local)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Sync (Cloud ↔ Local)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pull-cloud-schema-to-local" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull Cloud Schema to Local
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-migration-from-differences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate Migration from Differences
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pull-cloud-data-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull Cloud Data (Optional)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-cli-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common CLI Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommended Workflow
+      Best Practices
     </span>
   </a>
   
@@ -3052,29 +2867,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../supabase-integration-with-dashboard/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Supabase Integration With Dashboard
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -6872,312 +6664,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-supabase-cli" class="md-nav__link">
+  <a href="#what-is-rls" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Supabase CLI
+      What is RLS?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#initialize-supabase-project" class="md-nav__link">
+  <a href="#supabase-keys-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Initialize Supabase Project
+      Supabase Keys Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#start-local-supabase-docker" class="md-nav__link">
+  <a href="#cli-commands-for-rls-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Start Local Supabase (Docker)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Start Local Supabase (Docker)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-supabase-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Supabase Status
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-local-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stop Local Database
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apply-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Apply Migrations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-your-database-with-sql-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing Your Database with SQL Tools
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Viewing Your Database with SQL Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#local-database-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Database (Docker)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-database-production" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cloud Database (Production)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seed-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seed Data
+      CLI Commands for RLS &amp; Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment-variables-expo" class="md-nav__link">
+  <a href="#example-todos-table-with-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Environment Variables (Expo)
+      Example Todos Table with Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#supabase-client-typescript" class="md-nav__link">
+  <a href="#migrations-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Supabase Client (TypeScript)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supabase Client (TypeScript)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-supabase-sdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Supabase SDK
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup-supabase-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Supabase Client
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#react-native-example-todos-screen" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Native Example (Todos Screen)
+      Migrations &amp; Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloud-project-setup-prod" class="md-nav__link">
+  <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloud Project Setup (Prod)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Project Setup (Prod)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-for-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication for CLI
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linking-local-project-to-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linking Local Project to Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#push-local-migrations-to-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Push Local Migrations to Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unlink-from-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unlink from Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cicd-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      CI/CD Deployment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CI/CD Deployment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generate-a-personal-access-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate a Personal Access Token
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-github-actions-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example GitHub Actions Workflow
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-sync-cloud-local" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Sync (Cloud ↔ Local)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Sync (Cloud ↔ Local)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pull-cloud-schema-to-local" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull Cloud Schema to Local
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-migration-from-differences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate Migration from Differences
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pull-cloud-data-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull Cloud Data (Optional)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-cli-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common CLI Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommended Workflow
+      Best Practices
     </span>
   </a>
   
@@ -7208,492 +6742,127 @@
 
 
 
-<h1 id="supabase-integration-with-cli">Supabase Integration With CLI</h1>
-<p>This guide shows how to integrate <strong>Supabase</strong> with a <strong>React Native (Expo, TypeScript)</strong> project using the official
-<code>todos</code> example.</p>
+<h1 id="supabase-cli-row-level-security-rls-policies">Supabase CLI Row Level Security (RLS) &amp; Policies</h1>
+<p>This document covers best practices for <strong>Supabase RLS, policies, and usage patterns</strong>, using <code>todos</code> as example data.</p>
 <hr />
-<h2 id="install-supabase-cli">Install Supabase CLI</h2>
-<p>Install globally:</p>
-<pre><code class="language-bash">brew install supabase/tap/supabase
-# or
-npm install -g supabase
-</code></pre>
-<p>Check version:</p>
-<pre><code class="language-bash">supabase --version
-</code></pre>
+<h2 id="what-is-rls">What is RLS?</h2>
+<p>Row Level Security (RLS) allows you to enforce rules on <strong>which rows a user can access</strong>. When RLS is enabled, all
+<code>select</code>, <code>insert</code>, <code>update</code>, and <code>delete</code> commands are filtered according to policies.</p>
+<ul>
+<li><strong>Enabled table</strong>: <code>ALTER TABLE your_table ENABLE ROW LEVEL SECURITY;</code></li>
+<li><strong>Policies</strong>: define <code>using</code> (for select/update/delete) and <code>with check</code> (for insert/update) conditions.</li>
+</ul>
+<p>RLS is <strong>enforced automatically for anon keys</strong>; <code>service_role</code> keys bypass it.</p>
 <hr />
-<h2 id="initialize-supabase-project">Initialize Supabase Project</h2>
-<pre><code class="language-bash">supabase init
-# or
-npx supabase init
-</code></pre>
-<p>This creates a <code>supabase/</code> folder with:</p>
-<ul>
-<li><code>migrations/</code>: This is where your SQL migration files for table and column changes will go.</li>
-<li><code>seed.sql</code>: This is where you can put SQL commands to seed initial data into your database.</li>
-<li><code>config.toml</code>: This is the configuration file for your Supabase project.</li>
-</ul>
-<hr />
-<h2 id="start-local-supabase-docker">Start Local Supabase (Docker)</h2>
-<p>Pre-requisite: <a href="https://docs.docker.com/get-docker/">Docker installed</a>.</p>
-<pre><code class="language-bash">supabase start
-</code></pre>
-<p>This runs PostgreSQL, Studio, Auth, Realtime, and Storage locally by using Docker.</p>
-<h3 id="check-supabase-status">Check Supabase Status</h3>
-<p>You can inspect the local services with:</p>
-<pre><code class="language-bash">supabase status
-</code></pre>
-<p>This shows useful connection details:</p>
-<ul>
-<li><strong>API URL</strong> → REST API base endpoint for client requests</li>
-<li><strong>GraphQL URL</strong> → GraphQL endpoint</li>
-<li><strong>S3 Storage URL</strong> → Storage service endpoint</li>
-<li><strong>Database URL</strong> → PostgreSQL connection string (use in psql/clients)</li>
-<li><strong>Studio URL</strong> → Local Supabase Studio (browser UI)</li>
-<li><strong>Mailpit URL</strong> → Local email testing server (see passwordless links)</li>
-<li><strong>Publishable key</strong> → Public (client-side) key for local dev (not a real JWT)</li>
-<li><strong>Secret key</strong> → Private (server-side) key for admin operations</li>
-<li><strong>S3 Access Key / Secret Key</strong> → Credentials for accessing storage</li>
-<li><strong>S3 Region</strong> → Dummy region for local S3 storage</li>
-</ul>
-<h3 id="stop-local-database">Stop Local Database</h3>
-<p>To stop:</p>
-<pre><code class="language-bash">supabase stop
-</code></pre>
-<p>Stop the local Supabase Docker containers without taking a backup:</p>
-<pre><code class="language-bash">supabase stop --no-backup
-</code></pre>
-<ul>
-<li>Use this if you want to cleanly shut down local services.</li>
-<li>The <code>--no-backup</code> flag prevents creating a dump before stopping.</li>
-</ul>
-<hr />
-<h2 id="database-setup">Database Setup</h2>
-<ul>
-<li>Run this command to create a migration file for the <code>todos</code> table:</li>
-</ul>
-<p>supabase migration new create_todo_table</p>
-<blockquote>
-<p>This will create a new file in <code>supabase/migrations/</code> with a timestamp and the name like<br />
-<code>20250925125133_create_todo_table.sql</code>.</p>
-</blockquote>
-<ul>
-<li>Put this SQL migration inside <code>20250925125133_create_todo_table.sql</code> file to create a <code>todos</code> table:</li>
-</ul>
-<pre><code class="language-postgresql">CREATE TABLE todos (
-    id bigint generated by default as identity primary key,
-    title text not null,
-    is_complete boolean default false,
-    inserted_at timestamp with time zone default timezone('utc'::text, now()) not null
-);
-</code></pre>
-<h3 id="apply-migrations">Apply Migrations</h3>
-<p>There are multiple ways to apply migrations under <code>supabase/migrations/</code>:</p>
-<ul>
-<li>Apply all unapplied migrations in order (local or remote):</li>
-</ul>
-<pre><code class="language-bash">supabase migration up
-</code></pre>
-<ul>
-<li>Push migrations to the <strong>local database</strong> (from the migrations folder):</li>
-</ul>
-<pre><code class="language-bash">supabase db push --local
-</code></pre>
-<ul>
-<li>Reset the local database (drop everything and re-apply all migrations + optional seed):</li>
-</ul>
-<pre><code class="language-bash">supabase db reset
-</code></pre>
-<blockquote>
-<p><code>migration up</code> and <code>db push --local</code> only apply missing migrations,<br />
-while <code>db reset</code> destroys and rebuilds the whole database.<br />
-These commands apply migrations only to your <strong>local database</strong> created via <code>supabase start</code>.</p>
-</blockquote>
-<h3 id="viewing-your-database-with-sql-tools">Viewing Your Database with SQL Tools</h3>
-<p>You can inspect your local or cloud Supabase database using any SQL client, like <strong>DBeaver</strong>, <strong>TablePlus</strong>,
-or <strong>DataGrip</strong>.</p>
-<h4 id="local-database-docker">Local Database (Docker)</h4>
-<p>After <code>supabase start</code>, check your status:</p>
-<pre><code class="language-bash">supabase status
-</code></pre>
-<p>You will see something like:</p>
-<ul>
-<li>Database URL: <code>postgresql://postgres:postgres@127.0.0.1:54322/postgres</code></li>
-</ul>
-<p><strong>Connection Details for SQL Client:</strong></p>
+<h2 id="supabase-keys-overview">Supabase Keys Overview</h2>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Value</th>
+<th>Key Type</th>
+<th>Usage</th>
+<th>RLS Enforcement</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Host</td>
-<td>127.0.0.1</td>
+<td>anon (publishable)</td>
+<td>Frontend / Expo app</td>
+<td>RLS applied</td>
 </tr>
 <tr>
-<td>Port</td>
-<td>54322</td>
-</tr>
-<tr>
-<td>Database</td>
-<td>postgres</td>
-</tr>
-<tr>
-<td>User</td>
-<td>postgres</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>postgres</td>
-</tr>
-<tr>
-<td>SSL</td>
-<td>disable</td>
+<td>service_role</td>
+<td>Backend / Server / CI/CD</td>
+<td>RLS bypassed (full access)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>JDBC URL Example:</strong></p>
-<pre><code class="language-plaintext">jdbc:postgresql://127.0.0.1:54322/postgres?user=postgres&amp;password=postgres&amp;ssl=false
-</code></pre>
-<blockquote>
-<p>You can now open your SQL client, connect using these credentials, and see tables, rows, policies, etc.</p>
-</blockquote>
-<h4 id="cloud-database-production">Cloud Database (Production)</h4>
-<p>From your Supabase Dashboard → Settings → Database → Connection Pooling, copy the <strong>connection string</strong>:</p>
+<p><strong>Tip:</strong> Never expose <code>service_role</code> key in frontend apps.</p>
+<hr />
+<h2 id="cli-commands-for-rls-policies">CLI Commands for RLS &amp; Policies</h2>
 <ul>
-<li>Format:</li>
-</ul>
-<pre><code class="language-plaintext">postgresql://&lt;db_user&gt;:&lt;db_pass&gt;@&lt;host&gt;:&lt;port&gt;/&lt;database&gt;
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-plaintext">postgresql://postgres:secretpassword@db.abcdefg.supabase.co:5432/postgres
-</code></pre>
-<p><strong>Connection Details for SQL Client:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Host</td>
-<td>db.abcdefg.supabase.co</td>
-</tr>
-<tr>
-<td>Port</td>
-<td>5432</td>
-</tr>
-<tr>
-<td>Database</td>
-<td>postgres</td>
-</tr>
-<tr>
-<td>User</td>
-<td>postgres</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>your-secret-password</td>
-</tr>
-<tr>
-<td>SSL</td>
-<td>require</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Use <code>SSL = true</code> for cloud connections.</li>
-<li>You can now visualize tables, rows, and run queries safely.</li>
+<li><code>supabase db push --local</code> → applies new migrations locally.</li>
+<li><code>supabase db reset</code> → drops local tables and reapplies all migrations.</li>
+<li><code>supabase db pull</code> → pulls schema from cloud to local migration file.</li>
+<li><code>supabase db diff -f &lt;name&gt;</code> → generates migration SQL by comparing schema changes.</li>
 </ul>
 <hr />
-<p>💡 <strong>Tips:</strong></p>
-<ul>
-<li>For local development, most clients can import the <strong>Database URL</strong> directly.</li>
-<li>For cloud, always use SSL and your <strong>anon / service_role</strong> credentials carefully.</li>
-<li>You can combine this with migration and seed files to populate the local DB exactly like production.</li>
-</ul>
-<hr />
-<h2 id="seed-data">Seed Data</h2>
-<p>You can change seed sql path on <code>config.toml</code> file like this:</p>
-<pre><code class="language-toml">sql_paths = ['./seeds/*.sql']
+<h2 id="example-todos-table-with-policies">Example Todos Table with Policies</h2>
+<pre><code class="language-bash">supabase migration new create_todos_policies
 </code></pre>
-<blockquote>
-<p>This may be efficient to keep multiple seed file for each different data applying.
-For example, <code>000_insert_todos.sql</code>, <code>001_update_todos.sql</code>, etc.</p>
-</blockquote>
-<p>In <code>supabase/seeds/000_insert_todos.sql</code> file, add some initial data:</p>
-<pre><code class="language-postgresql">INSERT INTO todos (title, is_complete)
-VALUES ('Buy groceries', false),
-    ('Finish project report', false),
-    ('Call Alice', true);
-</code></pre>
-<p>Run manually:</p>
-<pre><code class="language-bash">psql &quot;postgresql://postgres:postgres@127.0.0.1:54322/postgres&quot; -f supabase/seed.sql
-</code></pre>
-<p>Or you can use reset command to drop all tables and re-apply all migrations and seeds:</p>
-<pre><code class="language-bash">supabase db reset
-</code></pre>
-<hr />
-<h2 id="environment-variables-expo">Environment Variables (Expo)</h2>
-<p>Create a <code>.env</code> file in your project:</p>
-<ul>
-<li>local (<code>.env.local</code>):</li>
-</ul>
-<pre><code class="language-env">EXPO_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321
-EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
-</code></pre>
-<blockquote>
-<p>Local Supabase keys are not valid JWTs. You can get anon key from local dashboard under <strong>Settings → API</strong> by using
-Studio URL.</p>
-</blockquote>
-<ul>
-<li>prod (<code>.env.production</code>):</li>
-</ul>
-<pre><code class="language-env">EXPO_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
-EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
-</code></pre>
-<p>Restart Expo:</p>
-<pre><code class="language-bash">npx expo start -c
-</code></pre>
-<hr />
-<h2 id="supabase-client-typescript">Supabase Client (TypeScript)</h2>
-<h3 id="install-supabase-sdk">Install Supabase SDK</h3>
-<pre><code class="language-bash">npm install @supabase/supabase-js
-</code></pre>
-<h3 id="setup-supabase-client">Setup Supabase Client</h3>
-<p><code>utils/supabase.ts</code>:</p>
-<pre><code class="language-ts">import { createClient } from '@supabase/supabase-js';
-
-export type Todo = {
-    id: number;
-    title: string;
-    is_complete: boolean;
-    inserted_at: string;
-};
-
-export type Database = {
-    public: {
-        Tables: {
-            todos: {
-                Row: Todo;
-                Insert: Omit&lt;Todo, 'id' | 'inserted_at'&gt;;
-                Update: Partial&lt;Omit&lt;Todo, 'id'&gt;&gt;;
-            };
-        };
-    };
-};
-
-const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL as string;
-const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY as string;
-
-if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-    throw new Error('Missing Supabase environment variables');
-}
-
-export const supabase = createClient&lt;Database&gt;(
-    SUPABASE_URL,
-    SUPABASE_ANON_KEY
+<pre><code class="language-postgresql">-- Create todos table
+create table todos
+(
+    id          bigint generated by default as identity primary key,
+    user_id     uuid references auth.users (id) not null,
+    title       text                            not null,
+    is_complete boolean                  default false,
+    inserted_at timestamp with time zone default now(),
+    is_public   boolean                  default false
 );
-</code></pre>
-<hr />
-<h2 id="react-native-example-todos-screen">React Native Example (Todos Screen)</h2>
-<p><code>todos.tsx</code>:</p>
-<pre><code class="language-tsx">import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
-import { supabase } from './utils/supabase';
-import type { Todo } from './utils/supabase';
 
-export default function TodosScreen() {
-    const [todos, setTodos] = useState&lt;Todo[]&gt;([]);
-    const [loading, setLoading] = useState(true);
+-- Enable RLS
+alter table todos
+    enable row level security;
 
-    useEffect(() =&gt; {
-        const getTodos = async () =&gt; {
-            setLoading(true);
-            const {data, error} = await supabase.from('todos').select('*');
-            if (error) {
-                console.error('Error fetching todos:', error.message);
-            } else if (data) {
-                setTodos(data);
-            }
-            setLoading(false);
-        };
+-- Users can view their own todos
+create policy &quot;Users can view their own todos&quot;
+    on todos
+    for select
+    using (auth.uid() = user_id);
 
-        getTodos();
-    }, []);
+-- Users can insert todos for themselves only
+create policy &quot;Users can insert their own todos&quot;
+    on todos
+    for insert
+    with check (auth.uid() = user_id);
 
-    if (loading) {
-        return (
-            &lt;View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}&gt;
-                &lt;ActivityIndicator size=&quot;large&quot; color=&quot;#2563eb&quot;/&gt;
-            &lt;/View&gt;
-        );
-    }
+-- Users can update their own todos
+create policy &quot;Users can update their own todos&quot;
+    on todos
+    for update
+    using (auth.uid() = user_id);
 
-    return (
-        &lt;View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}&gt;
-            &lt;Text style={{fontWeight: 'bold', fontSize: 20}}&gt;Todo List&lt;/Text&gt;
-            &lt;FlatList
-                data={todos}
-                keyExtractor={(item) =&gt; item.id.toString()}
-                renderItem={({item}) =&gt; (
-                    &lt;Text&gt;
-                        {item.title} {item.is_complete ? '✅' : '⬜️'}
-                    &lt;/Text&gt;
-                )}
-            /&gt;
-        &lt;/View&gt;
-    );
-}
+-- Users can delete their own todos
+create policy &quot;Users can delete their own todos&quot;
+    on todos
+    for delete
+    using (auth.uid() = user_id);
+
+-- Optional: public read-only todos
+create policy &quot;Anyone can view public todos&quot;
+    on todos
+    for select
+    using (is_public = true);
 </code></pre>
-<hr />
-<h2 id="cloud-project-setup-prod">Cloud Project Setup (Prod)</h2>
-<p>For your production environment, you need a <strong>Supabase Cloud project</strong>:</p>
-<ol>
-<li>Go to <a href="https://supabase.com/dashboard">Supabase Dashboard</a></li>
-<li>Create a project</li>
-<li>Copy your <strong>API URL</strong> and <strong>anon key</strong> from <strong>Settings → API</strong></li>
-</ol>
-<h3 id="authentication-for-cli">Authentication for CLI</h3>
-<p>Before linking, log in with your personal access token (one-time setup):</p>
-<pre><code class="language-bash">supabase login
-</code></pre>
-<p>This will open a browser where you can get your access token from the dashboard (<code>Account Settings → Access Tokens</code>).</p>
-<h3 id="linking-local-project-to-cloud">Linking Local Project to Cloud</h3>
-<p>Link your local Supabase project folder to a specific cloud project:</p>
-<pre><code class="language-bash">supabase link --project-ref your-project-ref
-</code></pre>
-<blockquote>
-<p><code>your-project-ref</code> is the unique identifier for your Supabase cloud project (found in project settings).</p>
-</blockquote>
-<h3 id="push-local-migrations-to-cloud">Push Local Migrations to Cloud</h3>
-<p>Once linked, you can push your local migrations to the cloud database:</p>
-<pre><code class="language-bash">supabase db push
-</code></pre>
-<h3 id="unlink-from-cloud">Unlink from Cloud</h3>
-<p>If you want to disconnect your local project from the cloud:</p>
-<pre><code class="language-bash">supabase unlink
-</code></pre>
-<hr />
-<p>✅ Summary:</p>
+<p><strong>Notes:</strong></p>
 <ul>
-<li><code>supabase login</code> → authenticate CLI with your Supabase account.</li>
-<li><code>supabase link</code> → connect local project to a specific cloud project.</li>
-<li><code>supabase db push</code> → apply local migrations to the cloud database.</li>
-<li><code>supabase unlink</code> → remove the link between local and cloud projects.</li>
+<li><code>auth.uid()</code> refers to the currently authenticated user.</li>
+<li><code>with check</code> applies on insert/update, <code>using</code> applies on select/update/delete.</li>
+<li>Avoid <code>using true</code> on sensitive tables in production.</li>
+<li>Policies can be expanded to roles, groups, or other conditions.</li>
 </ul>
 <hr />
-<h2 id="cicd-deployment">CI/CD Deployment</h2>
-<p>In a CI/CD pipeline (e.g., GitHub Actions, GitLab CI, Vercel, etc.), you can automate pushing migrations and deploying
-functions.</p>
-<h3 id="generate-a-personal-access-token">Generate a Personal Access Token</h3>
-<p>In the Supabase <code>Dashboard → Account Settings → Access Tokens</code>, create a new token.<br />
-Store this securely in your CI/CD provider as a secret environment variable:</p>
-<pre><code class="language-plaintext">SUPABASE_ACCESS_TOKEN=your-token
-</code></pre>
-<h3 id="example-github-actions-workflow">Example GitHub Actions Workflow</h3>
-<p>Create <code>.github/workflows/deploy.yml</code>:</p>
-<pre><code class="language-yaml">name: Deploy Supabase
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: supabase/setup-cli@v1
-        with:
-          version: latest
-      - run: supabase link --project-ref $SUPABASE_PROJECT_REF
-        env:
-          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-      - run: supabase db push
-        env:
-          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-</code></pre>
-<hr />
-<p>✅ With this setup:</p>
+<h2 id="migrations-policies">Migrations &amp; Policies</h2>
 <ul>
-<li>Every push to <code>master</code> will link your project.</li>
-<li>Apply new migrations automatically on the cloud database.</li>
-<li>No need to run <code>supabase login</code> manually in CI/CD; the access token handles authentication.</li>
+<li><strong>Best Practice:</strong> Keep RLS policies <strong>in the same migration file</strong> as the table creation.</li>
+<li>Each migration is feature-specific, e.g., <code>20251001125133_create_todos_policies.sql</code>.</li>
+<li>For complex projects, you can separate policies into <code>schemas/policies/*.sql</code> and include them in migrations.</li>
+<li>Use <code>supabase db push</code> to apply migrations locally or to a linked cloud project.</li>
 </ul>
 <hr />
-<h2 id="database-sync-cloud-local">Database Sync (Cloud ↔ Local)</h2>
-<p>Sometimes you need to <strong>synchronize your local database</strong> with the cloud (production) database for testing or
-development.</p>
-<h3 id="pull-cloud-schema-to-local">Pull Cloud Schema to Local</h3>
-<p>Fetch the current cloud database schema and create a migration file:</p>
-<pre><code class="language-bash">supabase db pull
-</code></pre>
+<h2 id="best-practices">Best Practices</h2>
 <ul>
-<li>Creates a SQL file under <code>supabase/migrations/</code> with the full schema.</li>
-<li>Use this when local DB is empty, or you want to match cloud schema.</li>
-</ul>
-<blockquote>
-<p>Note: This only pulls the <strong>schema</strong>, not the data.</p>
-</blockquote>
-<h3 id="generate-migration-from-differences">Generate Migration from Differences</h3>
-<p>Compare your local DB with the cloud DB and create a migration for the differences:</p>
-<pre><code class="language-bash">supabase db diff -f add_new_table
-</code></pre>
-<ul>
-<li>Generates a migration file in <code>supabase/migrations/</code>.</li>
-<li>Useful when you made changes locally and want to push them to the cloud.</li>
-</ul>
-<h3 id="pull-cloud-data-optional">Pull Cloud Data (Optional)</h3>
-<p>If you want <strong>existing cloud data</strong> locally for testing:</p>
-<pre><code class="language-bash">supabase db dump --data-only &gt; supabase/seed.sql
-</code></pre>
-<p>Then reset local DB and load the data:</p>
-<pre><code class="language-bash">supabase db reset
-psql &quot;postgresql://postgres:postgres@127.0.0.1:54322/postgres&quot; -f supabase/seed.sql
-</code></pre>
-<blockquote>
-<p>This will give you a local copy of cloud data for development/testing purposes.</p>
-</blockquote>
-<hr />
-<p>✅ Summary:</p>
-<ul>
-<li><code>db pull</code> → Pull cloud schema only</li>
-<li><code>db diff</code> → Generate migration from local vs cloud differences</li>
-<li><code>db dump --data-only</code> → Pull cloud data</li>
-</ul>
-<hr />
-<h2 id="common-cli-commands">Common CLI Commands</h2>
-<pre><code class="language-bash">supabase init                     # initialize project
-supabase start                    # start local containers
-supabase stop                     # stop local containers
-supabase db reset                 # reset DB and reapply migrations
-supabase db diff -f &lt;name&gt;        # create migration from schema changes
-supabase link --project-ref &lt;ID&gt;  # link local project to cloud
-supabase db push                  # push migrations to cloud
-</code></pre>
-<hr />
-<h2 id="recommended-workflow">Recommended Workflow</h2>
-<ul>
-<li><strong>Use Cloud Supabase for the app</strong> → for Auth, Realtime, RLS, and proper anon keys.</li>
-<li><strong>Use Local Docker Supabase for DB dev</strong> → for schema changes, migrations, seeds.</li>
-<li>Deploy to production via <code>supabase db push</code> in CI/CD.</li>
+<li>Keep migrations + policies in one place for each feature.</li>
+<li>Version control all migrations.</li>
+<li>Avoid exposing <code>service_role</code> key in frontend.</li>
+<li>Always enable RLS on sensitive tables.</li>
 </ul>
 <hr />
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://supabase.com/docs">Supabase Documentation</a> – Official docs for all Supabase features</li>
-<li><a href="https://github.com/supabase/supabase">Supabase GitHub</a> – Source code, CLI, and examples</li>
-<li><a href="https://supabase.com/docs/guides/cli">Supabase CLI Reference</a> – Detailed commands and flags</li>
-<li><a href="https://supabase.com/docs/guides/with-expo">Supabase Expo Integration</a> – Using Supabase with React Native / Expo</li>
-<li><a href="https://youtu.be/i1STOfZ-_R0?si=dNpdAAbFNXsCcMTd">Youtube Video</a> – How to Run Supabase Project Locally with Supabase
-  CLI and Docker</li>
+<li><a href="https://supabase.com/docs">Supabase Docs</a></li>
+<li><a href="https://supabase.com/docs/guides/auth">Supabase Auth &amp; RLS Guide</a></li>
+<li><a href="https://supabase.com/docs/guides/database/postgres/row-level-security">Row Level Security Explained</a></li>
 </ul>
 
 

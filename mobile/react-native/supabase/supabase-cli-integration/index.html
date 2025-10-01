@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/tools/windows-on-mac-via-utm/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/supabase/supabase-cli-integration/">
       
       
-        <link rel="prev" href="../bloomrpc/">
+        <link rel="prev" href="../supabase-dashboard-integration/">
       
       
-        <link rel="next" href="../android-file-transfer/">
+        <link rel="next" href="../supabase-cli-database-setup/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Windows on Mac via UTM - My Dev Notes</title>
+        <title>Supabase CLI Integration - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows-on-mac-via-utm" class="md-skip">
+        <a href="#supabase-cli-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Windows on Mac via UTM
+              Supabase CLI Integration
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -375,6 +375,8 @@
   
   
   
+    
+  
   
     
     
@@ -382,11 +384,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../mobile/android/android-firebase-integration/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -418,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -443,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -465,7 +469,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -487,7 +491,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../freelance/freelance-guide/" class="md-tabs__link">
+        <a href="../../../../freelance/freelance-guide/" class="md-tabs__link">
           
   
   
@@ -505,8 +509,6 @@
   
   
   
-    
-  
   
     
     
@@ -514,13 +516,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../editor/intellij/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../tools/editor/intellij/" class="md-tabs__link">
           
   
   
@@ -545,7 +545,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +581,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-actions/" class="md-nav__link">
+      <a href="../../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/tmate/" class="md-nav__link">
+      <a href="../../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1042,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1065,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
         
   
   
@@ -1143,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1166,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1242,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../database/tools/sequel-ace/" class="md-nav__link">
+      <a href="../../../../database/tools/sequel-ace/" class="md-nav__link">
         
   
   
@@ -1372,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1452,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1475,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1617,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1640,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1718,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1889,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1912,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1935,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1970,8 +1970,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1985,17 +1987,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -2008,7 +2013,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Mobile
@@ -2073,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2096,7 +2101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -2119,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2142,7 +2147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2224,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2247,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2270,7 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -2293,7 +2298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2321,8 +2326,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2349,11 +2356,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
         
           
           <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
@@ -2369,7 +2376,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             React Native
@@ -2383,7 +2390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/react-native-basics/" class="md-nav__link">
+      <a href="../../react-native-basics/" class="md-nav__link">
         
   
   
@@ -2406,7 +2413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/react-native-with-typescript/" class="md-nav__link">
+      <a href="../../react-native-with-typescript/" class="md-nav__link">
         
   
   
@@ -2429,7 +2436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/react-native-utilities/" class="md-nav__link">
+      <a href="../../react-native-utilities/" class="md-nav__link">
         
   
   
@@ -2452,7 +2459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/react-native-form-handling/" class="md-nav__link">
+      <a href="../../react-native-form-handling/" class="md-nav__link">
         
   
   
@@ -2522,7 +2529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/expo/expo-project-setup/" class="md-nav__link">
+      <a href="../../expo/expo-project-setup/" class="md-nav__link">
         
   
   
@@ -2545,7 +2552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/expo/expo-router/" class="md-nav__link">
+      <a href="../../expo/expo-router/" class="md-nav__link">
         
   
   
@@ -2576,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/tailwind-css/" class="md-nav__link">
+      <a href="../../tailwind-css/" class="md-nav__link">
         
   
   
@@ -2599,7 +2606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/nativewind/" class="md-nav__link">
+      <a href="../../nativewind/" class="md-nav__link">
         
   
   
@@ -2619,8 +2626,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2639,11 +2648,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8" checked>
         
           
           <label class="md-nav__link" for="__nav_7_3_8" id="__nav_7_3_8_label" tabindex="0">
@@ -2659,7 +2668,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7_3_8">
             <span class="md-nav__icon md-icon"></span>
             Supabase
@@ -2673,7 +2682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/supabase/supabase-dashboard-integration/" class="md-nav__link">
+      <a href="../supabase-dashboard-integration/" class="md-nav__link">
         
   
   
@@ -2693,10 +2702,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../mobile/react-native/supabase/supabase-cli-integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Supabase CLI Integration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2707,6 +2738,290 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-supabase-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Supabase CLI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-supabase-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize Supabase Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-local-supabase-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Local Supabase (Docker)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Start Local Supabase (Docker)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-supabase-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Supabase Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-local-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Local Database
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-setup-rls-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Setup &amp; RLS Policies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables-expo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables (Expo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supabase-client-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supabase Client (TypeScript)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Supabase Client (TypeScript)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-supabase-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Supabase SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-supabase-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Supabase Client
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-native-example-todos-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Native Example (Todos Screen)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-project-setup-prod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Project Setup (Prod)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Project Setup (Prod)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-for-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication for CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-local-project-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking Local Project to Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-local-migrations-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Local Migrations to Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlink-from-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlink from Cloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-personal-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate a Personal Access Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-github-actions-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example GitHub Actions Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-sync-cloud-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Sync (Cloud ↔ Local)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database Sync (Cloud ↔ Local)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pull-cloud-schema-to-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Cloud Schema to Local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-migration-from-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Migration from Differences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-cloud-data-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Cloud Data (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-cli-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common CLI Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2719,7 +3034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/supabase/supabase-cli-database-setup/" class="md-nav__link">
+      <a href="../supabase-cli-database-setup/" class="md-nav__link">
         
   
   
@@ -2742,7 +3057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile/react-native/supabase/supabase-cli-rls-policies/" class="md-nav__link">
+      <a href="../supabase-cli-rls-policies/" class="md-nav__link">
         
   
   
@@ -2898,7 +3213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -2921,7 +3236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-installation/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -2944,7 +3259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2967,7 +3282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-examples/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -2990,7 +3305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -3013,7 +3328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/dockerfile/" class="md-nav__link">
+      <a href="../../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -3036,7 +3351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-compose/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -3059,7 +3374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -3143,7 +3458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -3166,7 +3481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -3189,7 +3504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -3295,7 +3610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -3318,7 +3633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -3341,7 +3656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -3364,7 +3679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -3387,7 +3702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -3410,7 +3725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -3433,7 +3748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -3456,7 +3771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -3479,7 +3794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -3502,7 +3817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -3525,7 +3840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -3548,7 +3863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -3571,7 +3886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -3594,7 +3909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -3617,7 +3932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -3640,7 +3955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -3663,7 +3978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -3686,7 +4001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -3709,7 +4024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -3732,7 +4047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -3820,7 +4135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -3843,7 +4158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -3866,7 +4181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -3889,7 +4204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -3912,7 +4227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -3935,7 +4250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -3958,7 +4273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -4093,7 +4408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -4116,7 +4431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -4139,7 +4454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -4249,7 +4564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -4272,7 +4587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -4295,7 +4610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -4318,7 +4633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -4341,7 +4656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -4364,7 +4679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -4387,7 +4702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -4410,7 +4725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -4433,7 +4748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -4456,7 +4771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -4479,7 +4794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -4502,7 +4817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -4525,7 +4840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -4548,7 +4863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -4571,7 +4886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -4594,7 +4909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -4617,7 +4932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -4640,7 +4955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
         
   
   
@@ -4663,7 +4978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
         
   
   
@@ -4686,7 +5001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
         
   
   
@@ -4709,7 +5024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
         
   
   
@@ -4732,7 +5047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -4826,7 +5141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -4849,7 +5164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/terraform/tfenv/" class="md-nav__link">
+      <a href="../../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -4932,7 +5247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data/data-tools/" class="md-nav__link">
+      <a href="../../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -5019,7 +5334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -5042,7 +5357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -5065,7 +5380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/dns-records/" class="md-nav__link">
+      <a href="../../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -5088,7 +5403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -5111,7 +5426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -5134,7 +5449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -5157,7 +5472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -5234,7 +5549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../../../freelance/freelance-guide/" class="md-nav__link">
         
   
   
@@ -5308,7 +5623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../../../../freelance/website/website-setup/" class="md-nav__link">
         
   
   
@@ -5331,7 +5646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5354,7 +5669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5436,7 +5751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5459,7 +5774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5482,7 +5797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5505,7 +5820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -5528,7 +5843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -5551,7 +5866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
         
   
   
@@ -5625,7 +5940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
         
   
   
@@ -5648,7 +5963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
         
   
   
@@ -5671,7 +5986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
         
   
   
@@ -5694,7 +6009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
         
   
   
@@ -5776,7 +6091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
         
   
   
@@ -5799,7 +6114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
         
   
   
@@ -5822,7 +6137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
         
   
   
@@ -5845,7 +6160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
         
   
   
@@ -5896,10 +6211,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -5929,20 +6242,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   
@@ -5955,7 +6265,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -6016,7 +6326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/intellij/" class="md-nav__link">
+      <a href="../../../../tools/editor/intellij/" class="md-nav__link">
         
   
   
@@ -6039,7 +6349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/vscode/" class="md-nav__link">
+      <a href="../../../../tools/editor/vscode/" class="md-nav__link">
         
   
   
@@ -6121,7 +6431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -6144,7 +6454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/slack-message/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -6167,7 +6477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -6190,7 +6500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -6221,7 +6531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chrome-extensions/" class="md-nav__link">
+      <a href="../../../../tools/chrome-extensions/" class="md-nav__link">
         
   
   
@@ -6244,7 +6554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -6267,7 +6577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -6290,7 +6600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../multi-gitter/" class="md-nav__link">
+      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -6313,7 +6623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../multipass/" class="md-nav__link">
+      <a href="../../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -6336,7 +6646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bloomrpc/" class="md-nav__link">
+      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -6356,32 +6666,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Windows on Mac via UTM
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -6392,89 +6680,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-download-the-windows-arm-iso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Download the Windows ARM ISO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-create-a-new-vm-in-utm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Create a New VM in UTM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-configure-vm-display-and-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Configure VM Display and Input
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-install-windows-arm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4: Install Windows ARM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-post-installation-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 5: Post-Installation Tips
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -6487,7 +6692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../android-file-transfer/" class="md-nav__link">
+      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -6510,7 +6715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useful-resources-tools/" class="md-nav__link">
+      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -6587,7 +6792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -6610,7 +6815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -6660,63 +6865,264 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#install-supabase-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Install Supabase CLI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-download-the-windows-arm-iso" class="md-nav__link">
+  <a href="#initialize-supabase-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Download the Windows ARM ISO
+      Initialize Supabase Project
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-create-a-new-vm-in-utm" class="md-nav__link">
+  <a href="#start-local-supabase-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Create a New VM in UTM
+      Start Local Supabase (Docker)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Start Local Supabase (Docker)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-supabase-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Supabase Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-local-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Local Database
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-setup-rls-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Setup &amp; RLS Policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-configure-vm-display-and-input" class="md-nav__link">
+  <a href="#environment-variables-expo" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Configure VM Display and Input
+      Environment Variables (Expo)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-install-windows-arm" class="md-nav__link">
+  <a href="#supabase-client-typescript" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Install Windows ARM
+      Supabase Client (TypeScript)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Supabase Client (TypeScript)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-supabase-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Supabase SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-supabase-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Supabase Client
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-native-example-todos-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Native Example (Todos Screen)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-post-installation-tips" class="md-nav__link">
+  <a href="#cloud-project-setup-prod" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Post-Installation Tips
+      Cloud Project Setup (Prod)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Project Setup (Prod)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-for-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication for CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-local-project-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking Local Project to Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-local-migrations-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Local Migrations to Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlink-from-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlink from Cloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-personal-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate a Personal Access Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-github-actions-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example GitHub Actions Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-sync-cloud-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Sync (Cloud ↔ Local)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database Sync (Cloud ↔ Local)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pull-cloud-schema-to-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Cloud Schema to Local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-migration-from-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Migration from Differences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-cloud-data-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Cloud Data (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-cli-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common CLI Commands
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#recommended-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      Recommended Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -6738,84 +7144,332 @@
 
 
 
-<h1 id="windows-on-mac-via-utm">Windows on Mac via UTM</h1>
-<p>This guide explains how to set up a Windows ARM virtual machine on macOS using <strong>UTM</strong> and <strong>CrystalFetch ISO Downloader
-</strong>. It covers downloading the ISO, configuring the VM, and optimizing display settings.</p>
+<h1 id="supabase-cli-integration">Supabase CLI Integration</h1>
+<p>This guide shows how to integrate <strong>Supabase</strong> with a <strong>React Native (Expo, TypeScript)</strong> project using the official
+<code>todos</code> example.</p>
 <hr />
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="install-supabase-cli">Install Supabase CLI</h2>
+<p>Install globally:</p>
+<pre><code class="language-bash">brew install supabase/tap/supabase
+# or
+npm install -g supabase
+</code></pre>
+<p>Check version:</p>
+<pre><code class="language-bash">supabase --version
+</code></pre>
+<hr />
+<h2 id="initialize-supabase-project">Initialize Supabase Project</h2>
+<pre><code class="language-bash">supabase init
+# or
+npx supabase init
+</code></pre>
+<p>This creates a <code>supabase/</code> folder with:</p>
 <ul>
-<li>A Mac with Apple Silicon (M1, M2, etc.)</li>
-<li><a href="https://mac.getutm.app/">UTM</a> installed</li>
-<li>CrystalFetch ISO Downloader app</li>
+<li><code>migrations/</code>: This is where your SQL migration files for table and column changes will go.</li>
+<li><code>seed.sql</code>: This is where you can put SQL commands to seed initial data into your database.</li>
+<li><code>config.toml</code>: This is the configuration file for your Supabase project.</li>
 </ul>
 <hr />
-<h2 id="step-1-download-the-windows-arm-iso">Step 1: Download the Windows ARM ISO</h2>
-<ol>
-<li>Open <strong>CrystalFetch ISO Downloader</strong> on your Mac.</li>
-<li>Select the <strong>Windows 11 ARM Insider Preview</strong> build you want to download.</li>
-<li>Choose <strong>Home + Pro edition</strong> (default selection works for most users).</li>
-<li>Wait until the download is complete. You will have an ISO file ready to use with UTM.</li>
-</ol>
-<p><img alt="CrystalFetch ISO Download" src="../images/crystalfetch_download.png" /></p>
+<h2 id="start-local-supabase-docker">Start Local Supabase (Docker)</h2>
+<p>Pre-requisite: <a href="https://docs.docker.com/get-docker/">Docker installed</a>.</p>
+<pre><code class="language-bash">supabase start
+</code></pre>
+<p>This runs PostgreSQL, Studio, Auth, Realtime, and Storage locally by using Docker.</p>
+<h3 id="check-supabase-status">Check Supabase Status</h3>
+<p>You can inspect the local services with:</p>
+<pre><code class="language-bash">supabase status
+</code></pre>
+<p>This shows useful connection details:</p>
+<ul>
+<li><strong>API URL</strong> → REST API base endpoint for client requests</li>
+<li><strong>GraphQL URL</strong> → GraphQL endpoint</li>
+<li><strong>S3 Storage URL</strong> → Storage service endpoint</li>
+<li><strong>Database URL</strong> → PostgreSQL connection string (use in psql/clients)</li>
+<li><strong>Studio URL</strong> → Local Supabase Studio (browser UI)</li>
+<li><strong>Mailpit URL</strong> → Local email testing server (see passwordless links)</li>
+<li><strong>Publishable key</strong> → Public (client-side) key for local dev (not a real JWT)</li>
+<li><strong>Secret key</strong> → Private (server-side) key for admin operations</li>
+<li><strong>S3 Access Key / Secret Key</strong> → Credentials for accessing storage</li>
+<li><strong>S3 Region</strong> → Dummy region for local S3 storage</li>
+</ul>
+<h3 id="stop-local-database">Stop Local Database</h3>
+<p>To stop:</p>
+<pre><code class="language-bash">supabase stop
+</code></pre>
+<p>Stop the local Supabase Docker containers without taking a backup:</p>
+<pre><code class="language-bash">supabase stop --no-backup
+</code></pre>
+<ul>
+<li>Use this if you want to cleanly shut down local services.</li>
+<li>The <code>--no-backup</code> flag prevents creating a dump before stopping.</li>
+</ul>
 <hr />
-<h2 id="step-2-create-a-new-vm-in-utm">Step 2: Create a New VM in UTM</h2>
-<ol>
-<li>Open <strong>UTM</strong>.</li>
-<li>Click <strong>+</strong> to create a new virtual machine.</li>
-<li>Select <strong>Virtualize</strong> → <strong>Windows ARM</strong>.</li>
+<h2 id="database-setup-rls-policies">Database Setup &amp; RLS Policies</h2>
+<ul>
 <li>
-<p>Configure the following settings:</p>
-<ul>
-<li><strong>CPU:</strong> 4 cores (recommended)</li>
-<li><strong>Memory:</strong> 4096 MB or more</li>
-<li><strong>Storage:</strong> 64 GB NVMe disk (sparse disk recommended)</li>
-</ul>
+<p>You can follow the <a href="../supabase-cli-database-setup/">Database Setup guide</a> to create a <code>todos</code> table with a migration
+  and add some initial data with seeds.</p>
 </li>
 <li>
-<p>Under <strong>CD/DVD Drive</strong>, select the ISO file you downloaded from CrystalFetch.</p>
+<p>You can follow the <a href="../supabase-cli-rls-policies/">RLS &amp; Policies guide</a> to add Row Level Security policies.</p>
 </li>
-</ol>
+</ul>
 <hr />
-<h2 id="step-3-configure-vm-display-and-input">Step 3: Configure VM Display and Input</h2>
+<h2 id="environment-variables-expo">Environment Variables (Expo)</h2>
+<p>Create a <code>.env</code> file in your project:</p>
 <ul>
-<li><strong>Keyboard Layout:</strong> Turkish Q (or US if you use an English keyboard)</li>
-<li><strong>Display Settings:</strong><ul>
-<li>Enable Retina / scaled display if available</li>
-<li>Allocate more video memory if the screen appears blurry</li>
+<li>local (<code>.env.local</code>):</li>
 </ul>
-</li>
-<li><strong>UTM Guest Tools:</strong> Install after Windows is running for better graphics and input integration</li>
+<pre><code class="language-env">EXPO_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321
+EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
+</code></pre>
+<blockquote>
+<p>Local Supabase keys are not valid JWTs. You can get anon key from local dashboard under <strong>Settings → API</strong> by using
+Studio URL.</p>
+</blockquote>
+<ul>
+<li>prod (<code>.env.production</code>):</li>
 </ul>
-<p><img alt="UTM Windows Install" src="../images/utm_windows_install.png" /></p>
+<pre><code class="language-env">EXPO_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
+EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
+</code></pre>
+<p>Restart Expo:</p>
+<pre><code class="language-bash">npx expo start -c
+</code></pre>
 <hr />
-<h2 id="step-4-install-windows-arm">Step 4: Install Windows ARM</h2>
+<h2 id="supabase-client-typescript">Supabase Client (TypeScript)</h2>
+<h3 id="install-supabase-sdk">Install Supabase SDK</h3>
+<pre><code class="language-bash">npm install @supabase/supabase-js
+</code></pre>
+<h3 id="setup-supabase-client">Setup Supabase Client</h3>
+<p><code>utils/supabase.ts</code>:</p>
+<pre><code class="language-ts">import {createClient} from '@supabase/supabase-js';
+
+export type Todo = {
+    id: number;
+    title: string;
+    is_complete: boolean;
+    inserted_at: string;
+};
+
+export type Database = {
+    public: {
+        Tables: {
+            todos: {
+                Row: Todo;
+                Insert: Omit&lt;Todo, 'id' | 'inserted_at'&gt;;
+                Update: Partial&lt;Omit&lt;Todo, 'id'&gt;&gt;;
+            };
+        };
+    };
+};
+
+const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL as string;
+const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY as string;
+
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+    throw new Error('Missing Supabase environment variables');
+}
+
+export const supabase = createClient&lt;Database&gt;(
+    SUPABASE_URL,
+    SUPABASE_ANON_KEY
+);
+</code></pre>
+<hr />
+<h2 id="react-native-example-todos-screen">React Native Example (Todos Screen)</h2>
+<p><code>todos.tsx</code>:</p>
+<pre><code class="language-tsx">import React, {useState, useEffect} from 'react';
+import {View, Text, FlatList, ActivityIndicator} from 'react-native';
+import {supabase} from './utils/supabase';
+import type {Todo} from './utils/supabase';
+
+export default function TodosScreen() {
+    const [todos, setTodos] = useState&lt;Todo[]&gt;([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() =&gt; {
+        const getTodos = async () =&gt; {
+            setLoading(true);
+            const {data, error} = await supabase.from('todos').select('*');
+            if (error) {
+                console.error('Error fetching todos:', error.message);
+            } else if (data) {
+                setTodos(data);
+            }
+            setLoading(false);
+        };
+
+        getTodos();
+    }, []);
+
+    if (loading) {
+        return (
+            &lt;View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}&gt;
+                &lt;ActivityIndicator size=&quot;large&quot; color=&quot;#2563eb&quot;/&gt;
+            &lt;/View&gt;
+        );
+    }
+
+    return (
+        &lt;View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}&gt;
+            &lt;Text style={{fontWeight: 'bold', fontSize: 20}}&gt;Todo List&lt;/Text&gt;
+            &lt;FlatList
+                data={todos}
+                keyExtractor={(item) =&gt; item.id.toString()}
+                renderItem={({item}) =&gt; (
+                    &lt;Text&gt;
+                        {item.title} {item.is_complete ? '✅' : '⬜️'}
+                    &lt;/Text&gt;
+                )}
+            /&gt;
+        &lt;/View&gt;
+    );
+}
+</code></pre>
+<hr />
+<h2 id="cloud-project-setup-prod">Cloud Project Setup (Prod)</h2>
+<p>For your production environment, you need a <strong>Supabase Cloud project</strong>:</p>
 <ol>
-<li>Start the VM. It should boot from the ISO.</li>
-<li>Follow the Windows installation steps:<ul>
-<li>Select language, keyboard layout, and time zone.</li>
-<li>Choose the NVMe virtual disk as the installation target.</li>
-</ul>
-</li>
-<li>Complete the installation. Once finished, <strong>remove the ISO from the CD/DVD drive</strong> in UTM.</li>
-<li>Restart the VM. It should boot directly into Windows ARM from the virtual disk.</li>
+<li>Go to <a href="https://supabase.com/dashboard">Supabase Dashboard</a></li>
+<li>Create a project</li>
+<li>Copy your <strong>API URL</strong> and <strong>anon key</strong> from <strong>Settings → API</strong></li>
 </ol>
-<p><img alt="UTM Windows Start" src="../images/utm_windows_start.png" /></p>
+<h3 id="authentication-for-cli">Authentication for CLI</h3>
+<p>Before linking, log in with your personal access token (one-time setup):</p>
+<pre><code class="language-bash">supabase login
+</code></pre>
+<p>This will open a browser where you can get your access token from the dashboard (<code>Account Settings → Access Tokens</code>).</p>
+<h3 id="linking-local-project-to-cloud">Linking Local Project to Cloud</h3>
+<p>Link your local Supabase project folder to a specific cloud project:</p>
+<pre><code class="language-bash">supabase link --project-ref your-project-ref
+</code></pre>
+<blockquote>
+<p><code>your-project-ref</code> is the unique identifier for your Supabase cloud project (found in project settings).</p>
+</blockquote>
+<h3 id="push-local-migrations-to-cloud">Push Local Migrations to Cloud</h3>
+<p>Once linked, you can push your local migrations to the cloud database:</p>
+<pre><code class="language-bash">supabase db push
+</code></pre>
+<h3 id="unlink-from-cloud">Unlink from Cloud</h3>
+<p>If you want to disconnect your local project from the cloud:</p>
+<pre><code class="language-bash">supabase unlink
+</code></pre>
 <hr />
-<h2 id="step-5-post-installation-tips">Step 5: Post-Installation Tips</h2>
+<p>✅ Summary:</p>
 <ul>
-<li><strong>Storage:</strong> The VM disk will consume space based on what you allocated (e.g., 64 GB) and used by Windows + apps.</li>
-<li><strong>Display Optimization:</strong> Adjust scaling in Windows settings and install UTM Guest Tools to reduce blurriness.</li>
-<li><strong>Shutting Down:</strong> Use “Shut Down” instead of “Stop” to avoid booting from ISO again.</li>
-<li><strong>Deleting the VM:</strong> Remove the VM in UTM and delete the associated <code>.utm</code> folder from
-  <code>~/Library/Containers/com.utmapp.UTM/Data/Documents/&lt;UTM_NAME&gt;/</code> to free space.</li>
+<li><code>supabase login</code> → authenticate CLI with your Supabase account.</li>
+<li><code>supabase link</code> → connect local project to a specific cloud project.</li>
+<li><code>supabase db push</code> → apply local migrations to the cloud database.</li>
+<li><code>supabase unlink</code> → remove the link between local and cloud projects.</li>
 </ul>
-<p><img alt="UTM Windows Success" src="../images/utm_windows_success.png" /></p>
 <hr />
-<h2 id="notes">Notes</h2>
+<h2 id="cicd-deployment">CI/CD Deployment</h2>
+<p>In a CI/CD pipeline (e.g., GitHub Actions, GitLab CI, Vercel, etc.), you can automate pushing migrations and deploying
+functions.</p>
+<h3 id="generate-a-personal-access-token">Generate a Personal Access Token</h3>
+<p>In the Supabase <code>Dashboard → Account Settings → Access Tokens</code>, create a new token.<br />
+Store this securely in your CI/CD provider as a secret environment variable:</p>
+<pre><code class="language-plaintext">SUPABASE_ACCESS_TOKEN=your-token
+</code></pre>
+<h3 id="example-github-actions-workflow">Example GitHub Actions Workflow</h3>
+<p>Create <code>.github/workflows/deploy.yml</code>:</p>
+<pre><code class="language-yaml">name: Deploy Supabase
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase link --project-ref $SUPABASE_PROJECT_REF
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      - run: supabase db push
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+</code></pre>
+<hr />
+<p>✅ With this setup:</p>
 <ul>
-<li>You do <strong>not need a license key</strong> to run Windows ARM Insider Preview in a virtual machine, but a license is required
-  for production use or activation.</li>
-<li>Performance will vary depending on your Mac model and allocated resources.</li>
+<li>Every push to <code>master</code> will link your project.</li>
+<li>Apply new migrations automatically on the cloud database.</li>
+<li>No need to run <code>supabase login</code> manually in CI/CD; the access token handles authentication.</li>
+</ul>
+<hr />
+<h2 id="database-sync-cloud-local">Database Sync (Cloud ↔ Local)</h2>
+<p>Sometimes you need to <strong>synchronize your local database</strong> with the cloud (production) database for testing or
+development.</p>
+<h3 id="pull-cloud-schema-to-local">Pull Cloud Schema to Local</h3>
+<p>Fetch the current cloud database schema and create a migration file:</p>
+<pre><code class="language-bash">supabase db pull
+</code></pre>
+<ul>
+<li>Creates a SQL file under <code>supabase/migrations/</code> with the full schema.</li>
+<li>Use this when local DB is empty, or you want to match cloud schema.</li>
+</ul>
+<blockquote>
+<p>Note: This only pulls the <strong>schema</strong>, not the data.</p>
+</blockquote>
+<h3 id="generate-migration-from-differences">Generate Migration from Differences</h3>
+<p>Compare your local DB with the cloud DB and create a migration for the differences:</p>
+<pre><code class="language-bash">supabase db diff -f add_new_table
+</code></pre>
+<ul>
+<li>Generates a migration file in <code>supabase/migrations/</code>.</li>
+<li>Useful when you made changes locally and want to push them to the cloud.</li>
+</ul>
+<h3 id="pull-cloud-data-optional">Pull Cloud Data (Optional)</h3>
+<p>If you want <strong>existing cloud data</strong> locally for testing:</p>
+<pre><code class="language-bash">supabase db dump --data-only &gt; supabase/seed.sql
+</code></pre>
+<p>Then reset local DB and load the data:</p>
+<pre><code class="language-bash">supabase db reset
+psql &quot;postgresql://postgres:postgres@127.0.0.1:54322/postgres&quot; -f supabase/seed.sql
+</code></pre>
+<blockquote>
+<p>This will give you a local copy of cloud data for development/testing purposes.</p>
+</blockquote>
+<hr />
+<p>✅ Summary:</p>
+<ul>
+<li><code>db pull</code> → Pull cloud schema only</li>
+<li><code>db diff</code> → Generate migration from local vs cloud differences</li>
+<li><code>db dump --data-only</code> → Pull cloud data</li>
+</ul>
+<hr />
+<h2 id="common-cli-commands">Common CLI Commands</h2>
+<pre><code class="language-bash">supabase init                     # initialize project
+supabase start                    # start local containers
+supabase stop                     # stop local containers
+supabase db reset                 # reset DB and reapply migrations
+supabase db diff -f &lt;name&gt;        # create migration from schema changes
+supabase link --project-ref &lt;ID&gt;  # link local project to cloud
+supabase db push                  # push migrations to cloud
+</code></pre>
+<hr />
+<h2 id="recommended-workflow">Recommended Workflow</h2>
+<ul>
+<li><strong>Use Cloud Supabase for the app</strong> → for Auth, Realtime, RLS, and proper anon keys.</li>
+<li><strong>Use Local Docker Supabase for DB dev</strong> → for schema changes, migrations, seeds.</li>
+<li>Deploy to production via <code>supabase db push</code> in CI/CD.</li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://supabase.com/docs">Supabase Documentation</a> – Official docs for all Supabase features</li>
+<li><a href="https://github.com/supabase/supabase">Supabase GitHub</a> – Source code, CLI, and examples</li>
+<li><a href="https://supabase.com/docs/guides/cli">Supabase CLI Reference</a> – Detailed commands and flags</li>
+<li><a href="https://supabase.com/docs/guides/with-expo">Supabase Expo Integration</a> – Using Supabase with React Native / Expo</li>
+<li><a href="https://youtu.be/i1STOfZ-_R0?si=dNpdAAbFNXsCcMTd">Youtube Video</a> – How to Run Supabase Project Locally with Supabase
+  CLI and Docker</li>
 </ul>
 
 
@@ -6895,10 +7549,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
