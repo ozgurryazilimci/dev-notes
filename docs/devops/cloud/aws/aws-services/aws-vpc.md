@@ -136,3 +136,12 @@ subnets, route tables, gateways, and security.
 - Prefer NAT Gateways over NAT Instances for high availability.
 - Use VPC Endpoints for private service access.
 - Enable VPC Flow Logs for troubleshooting and auditing.
+
+---
+
+## References
+
+- [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [IBB Tech Medium](https://hbayraktar.medium.com/)
+- [IBB Tech Presentation](https://github.com/hakanbayraktar/ibb-tech/blob/main/sistem-network-atolyesi/30-eylul/30%20Eyl%C3%BCl.pdf)
+- [IBB Tech Lab](https://github.com/hakanbayraktar/ibb-tech/blob/main/sistem-network-atolyesi/30-eylul/Custom-VPC-Bastion%20Host-Apache%20Web-Server.pdf)
