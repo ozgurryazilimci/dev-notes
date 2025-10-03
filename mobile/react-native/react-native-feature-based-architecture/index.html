@@ -12,13 +12,13 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/shadcn-ui/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/react-native-feature-based-architecture/">
       
       
-        <link rel="prev" href="../tanstack-react-query/">
+        <link rel="prev" href="../react-native-form-handling/">
       
       
-        <link rel="next" href="../../../devops/docker/docker-introduction/">
+        <link rel="next" href="../expo/expo-project-setup/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>shadcn/ui - My Dev Notes</title>
+        <title>React Native Feature Based Architecture - My Dev Notes</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shadcnui" class="md-skip">
+        <a href="#react-native-feature-based-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              shadcn/ui
+              React Native Feature Based Architecture
             
           </span>
         </div>
@@ -2487,10 +2487,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../react-native-feature-based-architecture/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    React Native Feature Based Architecture
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2501,6 +2523,320 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industry-leaders-major-companies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industry Leaders &amp; Major Companies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industry Leaders &amp; Major Companies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-facebookmeta-react-native-creators" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Facebook/Meta (React Native Creators)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-airbnb-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Airbnb Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-netflix-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Netflix Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-spotify-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Spotify Engineering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactreact-native-community-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      React/React Native Community Leaders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="React/React Native Community Leaders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-dan-abramov-react-core-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Dan Abramov (React Core Team)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-kent-c-dodds-testing-library-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Kent C. Dodds (Testing Library Creator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-robin-wieruch-react-expert-author" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Robin Wieruch (React Expert &amp; Author)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-josh-w-comeau-css-react-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Josh W. Comeau (CSS &amp; React Expert)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-research-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Academic &amp; Research Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Academic &amp; Research Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-martin-fowler-software-architecture-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Martin Fowler (Software Architecture Expert)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-eric-evans-domain-driven-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Eric Evans (Domain-Driven Design)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-robert-c-martin-clean-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Robert C. Martin (Clean Architecture)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-projects-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source Projects &amp; Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industry-articles-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industry Articles &amp; Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conference-talks-presentations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conference Talks &amp; Presentations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-frameworks-supporting-this-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools &amp; Frameworks Supporting This Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-patterns-supporting-feature-based-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architectural Patterns Supporting Feature-Based Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-scalability-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance &amp; Scalability Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criticism-alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criticism &amp; Alternative Approaches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-userprofile-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: UserProfile Feature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: UserProfile Feature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-export-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Export Convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits Demonstrated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Benefits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2854,32 +3190,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    shadcn/ui
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../shadcn-ui/" class="md-nav__link">
         
   
   
@@ -2890,284 +3204,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-initialize-your-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Initialize your project
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-install-dependencies-with-npm" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Install dependencies with npm
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-external-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using External Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#component-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#button" class="md-nav__link">
-    <span class="md-ellipsis">
-      Button
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spinner" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spinner
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
-    <span class="md-ellipsis">
-      Label
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#combining-form-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combining Form Components
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spinner-kbd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spinner &amp; Kbd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#button-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Button Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#input-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#field" class="md-nav__link">
-    <span class="md-ellipsis">
-      Field
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#item" class="md-nav__link">
-    <span class="md-ellipsis">
-      Item
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#empty" class="md-nav__link">
-    <span class="md-ellipsis">
-      Empty
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theming" class="md-nav__link">
-    <span class="md-ellipsis">
-      Theming
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Theming">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#css-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSS Variables
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utility-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utility Classes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cli-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      CLI Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about-radix-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      About Radix UI
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ai-elements" class="md-nav__link">
-    <span class="md-ellipsis">
-      AI Elements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
-    <span class="md-ellipsis">
-      FAQ
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -6957,37 +6993,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#industry-leaders-major-companies" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Industry Leaders &amp; Major Companies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="Industry Leaders &amp; Major Companies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-initialize-your-project" class="md-nav__link">
+  <a href="#1-facebookmeta-react-native-creators" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Initialize your project
+      1. Facebook/Meta (React Native Creators)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-install-dependencies-with-npm" class="md-nav__link">
+  <a href="#2-airbnb-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Install dependencies with npm
+      2. Airbnb Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-netflix-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Netflix Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-spotify-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Spotify Engineering
     </span>
   </a>
   
@@ -6999,127 +7053,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-components" class="md-nav__link">
+  <a href="#reactreact-native-community-leaders" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Components
+      React/React Native Community Leaders
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-external-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using External Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#component-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Examples">
+    <nav class="md-nav" aria-label="React/React Native Community Leaders">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#button" class="md-nav__link">
+  <a href="#1-dan-abramov-react-core-team" class="md-nav__link">
     <span class="md-ellipsis">
-      Button
+      1. Dan Abramov (React Core Team)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#2-kent-c-dodds-testing-library-creator" class="md-nav__link">
     <span class="md-ellipsis">
-      Input
+      2. Kent C. Dodds (Testing Library Creator)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spinner" class="md-nav__link">
+  <a href="#3-robin-wieruch-react-expert-author" class="md-nav__link">
     <span class="md-ellipsis">
-      Spinner
+      3. Robin Wieruch (React Expert &amp; Author)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
+  <a href="#4-josh-w-comeau-css-react-expert" class="md-nav__link">
     <span class="md-ellipsis">
-      Label
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#combining-form-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combining Form Components
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spinner-kbd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spinner &amp; Kbd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#button-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Button Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#input-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#field" class="md-nav__link">
-    <span class="md-ellipsis">
-      Field
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#item" class="md-nav__link">
-    <span class="md-ellipsis">
-      Item
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#empty" class="md-nav__link">
-    <span class="md-ellipsis">
-      Empty
+      4. Josh W. Comeau (CSS &amp; React Expert)
     </span>
   </a>
   
@@ -7131,28 +7104,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#theming" class="md-nav__link">
+  <a href="#academic-research-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      Theming
+      Academic &amp; Research Sources
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Theming">
+    <nav class="md-nav" aria-label="Academic &amp; Research Sources">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#css-variables" class="md-nav__link">
+  <a href="#1-martin-fowler-software-architecture-expert" class="md-nav__link">
     <span class="md-ellipsis">
-      CSS Variables
+      1. Martin Fowler (Software Architecture Expert)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#utility-classes" class="md-nav__link">
+  <a href="#2-eric-evans-domain-driven-design" class="md-nav__link">
     <span class="md-ellipsis">
-      Utility Classes
+      2. Eric Evans (Domain-Driven Design)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-robert-c-martin-clean-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Robert C. Martin (Clean Architecture)
     </span>
   </a>
   
@@ -7164,46 +7146,127 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cli-commands" class="md-nav__link">
+  <a href="#open-source-projects-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      CLI Commands
+      Open Source Projects &amp; Examples
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-radix-ui" class="md-nav__link">
+  <a href="#industry-articles-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      About Radix UI
+      Industry Articles &amp; Best Practices
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-elements" class="md-nav__link">
+  <a href="#conference-talks-presentations" class="md-nav__link">
     <span class="md-ellipsis">
-      AI Elements
+      Conference Talks &amp; Presentations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
+  <a href="#tools-frameworks-supporting-this-approach" class="md-nav__link">
     <span class="md-ellipsis">
-      FAQ
+      Tools &amp; Frameworks Supporting This Approach
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="FAQ">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-patterns-supporting-feature-based-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architectural Patterns Supporting Feature-Based Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-scalability-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance &amp; Scalability Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criticism-alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criticism &amp; Alternative Approaches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-userprofile-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: UserProfile Feature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: UserProfile Feature">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
+  <a href="#feature-export-convention" class="md-nav__link">
     <span class="md-ellipsis">
-      References
+      Feature Export Convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits Demonstrated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Benefits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Guidelines
     </span>
   </a>
   
@@ -7211,6 +7274,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
   
 </li>
       
@@ -7230,290 +7302,203 @@
 
 
 
-<h1 id="shadcnui">shadcn/ui</h1>
-<h2 id="introduction">Introduction</h2>
-<p><strong>shadcn/ui</strong> is an open-source, accessible, and fully customizable component library for React.<br />
-It provides a headless design system that works with your Tailwind setup. (<a href="https://ui.shadcn.com/docs">ui.shadcn.com</a>)</p>
-<hr />
-<h2 id="installation">Installation</h2>
-<h3 id="1-initialize-your-project">1. Initialize your project</h3>
-<pre><code class="language-bash">npx shadcn@latest init
-</code></pre>
-<p>This sets up the necessary configuration for shadcn/ui in your project.</p>
-<h3 id="2-install-dependencies-with-npm">2. Install dependencies with npm</h3>
-<pre><code class="language-bash">npm install
-</code></pre>
-<p>Make sure <code>react</code>, <code>react-dom</code>, and <code>tailwindcss</code> are installed as well.</p>
-<hr />
-<h2 id="adding-components">Adding Components</h2>
-<p>To add a core component:</p>
-<pre><code class="language-bash">npx shadcn@latest add button
-npx shadcn@latest add input
-npx shadcn@latest add spinner
-npx shadcn@latest add label
-</code></pre>
-<p>After adding, import them in your components:</p>
-<pre><code class="language-tsx">import {Button} from &quot;@/components/ui/button&quot;;
-import {Input} from &quot;@/components/ui/input&quot;;
-import {Spinner} from &quot;@/components/ui/spinner&quot;;
-import {Label} from &quot;@/components/ui/label&quot;;
-</code></pre>
-<hr />
-<h2 id="using-external-components">Using External Components</h2>
-<p>You can also add components from external registries:</p>
-<pre><code class="language-bash">npx shadcn@latest add https://nativeui.io/registry/button
+<h1 id="react-native-feature-based-architecture">React Native Feature-Based Architecture</h1>
+<h2 id="overview">Overview</h2>
+<p>Feature-based (or feature-driven) architecture is widely endorsed by top tech companies, industry leaders, and the
+React/React Native community. This document provides comprehensive references supporting this approach and demonstrates
+a practical example with a <code>UserProfile</code> feature.</p>
+<h2 id="industry-leaders-major-companies">Industry Leaders &amp; Major Companies</h2>
+<h3 id="1-facebookmeta-react-native-creators">1. Facebook/Meta (React Native Creators)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://reactnative.dev/docs/project-structure">React Native Documentation - Project Structure</a></li>
+<li><strong>Recommendation</strong>: "Organize your project by feature, not by file type"</li>
+<li><strong>Quote</strong>: <em>"Instead of organizing files by their type (components, screens, etc.), organize them by feature. This
+  makes it easier to find related files and understand the codebase."</em></li>
+</ul>
+<h3 id="2-airbnb-engineering">2. Airbnb Engineering</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://github.com/airbnb/javascript/tree/master/react#naming">Airbnb JavaScript Style Guide</a></li>
+<li><strong>Blog
+  </strong>: <a href="https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2">"Rearchitecting Airbnb's Frontend"</a></li>
+<li><strong>Approach</strong>: Feature-based organization with clear boundaries</li>
+<li><strong>Quote</strong>: <em>"We organize our code by feature rather than by file type, which makes it easier to find related code and
+  understand the relationships between different parts of the application."</em></li>
+</ul>
+<h3 id="3-netflix-engineering">3. Netflix Engineering</h3>
+<ul>
+<li><strong>Source
+  </strong>: <a href="https://netflixtechblog.com/componentization-at-netflix-8c3d4c8b6b8e">Netflix Tech Blog - "Componentization at Netflix"</a></li>
+<li><strong>Approach</strong>: Micro-frontend architecture with feature-based modules</li>
+<li><strong>Quote</strong>: <em>"We've found that organizing code by business domain (features) rather than technical concerns leads to
+  better maintainability and team autonomy."</em></li>
+</ul>
+<h3 id="4-spotify-engineering">4. Spotify Engineering</h3>
+<ul>
+<li><strong>Source
+  </strong>: <a href="https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/">Spotify Engineering Culture</a></li>
+<li><strong>Approach</strong>: Squad model with feature-based ownership</li>
+<li><strong>Quote</strong>: <em>"Each squad owns a specific feature or component, with full autonomy over their codebase organization."</em></li>
+</ul>
+<h2 id="reactreact-native-community-leaders">React/React Native Community Leaders</h2>
+<h3 id="1-dan-abramov-react-core-team">1. Dan Abramov (React Core Team)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://twitter.com/dan_abramov/status/1027248875072114689">Twitter Thread on Project Structure</a></li>
+<li><strong>Quote</strong>: <em>"I prefer organizing by features. Put files that change together close to each other."</em></li>
+<li><strong>Principle</strong>: Colocation of related code</li>
+</ul>
+<h3 id="2-kent-c-dodds-testing-library-creator">2. Kent C. Dodds (Testing Library Creator)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://kentcdodds.com/blog/colocation">Blog Post - "Colocation"</a></li>
+<li><strong>Quote</strong>: <em>"The concept of colocation is: place code as close to where it's relevant as possible."</em></li>
+<li><strong>Recommendation</strong>: Feature-based organization with colocation principles</li>
+</ul>
+<h3 id="3-robin-wieruch-react-expert-author">3. Robin Wieruch (React Expert &amp; Author)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://www.robinwieruch.de/react-folder-structure/">Blog - "React Folder Structure"</a></li>
+<li><strong>Quote</strong>: <em>"Feature-based folder structure scales better than technical-based folder structure."</em></li>
+</ul>
+<h3 id="4-josh-w-comeau-css-react-expert">4. Josh W. Comeau (CSS &amp; React Expert)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://www.joshwcomeau.com/react/file-structure/">Blog - "Delightful React File/Directory Structure"</a></li>
+<li><strong>Quote</strong>: <em>"I'm a big fan of feature-based organization. It keeps related code close together."</em></li>
+</ul>
+<h2 id="academic-research-sources">Academic &amp; Research Sources</h2>
+<h3 id="1-martin-fowler-software-architecture-expert">1. Martin Fowler (Software Architecture Expert)</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://martinfowler.com/articles/modular-monoliths.html">Article - "Modular Monoliths"</a></li>
+<li><strong>Principle</strong>: Domain-driven design with feature boundaries</li>
+<li><strong>Quote</strong>: <em>"Organize around business capabilities, not technical layers."</em></li>
+</ul>
+<h3 id="2-eric-evans-domain-driven-design">2. Eric Evans (Domain-Driven Design)</h3>
+<ul>
+<li><strong>Source</strong>: Book - "Domain-Driven Design: Tackling Complexity in the Heart of Software"</li>
+<li><strong>Principle</strong>: Bounded contexts align with feature boundaries</li>
+</ul>
+<h3 id="3-robert-c-martin-clean-architecture">3. Robert C. Martin (Clean Architecture)</h3>
+<ul>
+<li><strong>Source</strong>: Book - "Clean Architecture: A Craftsman's Guide to Software Structure and Design"</li>
+<li><strong>Principle</strong>: "Screaming Architecture" - structure should reveal intent</li>
+<li><strong>Quote</strong>: <em>"The architecture should scream about the use cases of the application."</em></li>
+</ul>
+<h2 id="open-source-projects-examples">Open Source Projects &amp; Examples</h2>
+<ul>
+<li><strong>Ignite CLI</strong>: <a href="https://github.com/infinitered/ignite">Feature-based template</a></li>
+<li><strong>React Native Boilerplate</strong>: <a href="https://github.com/thecodingmachine/react-native-boilerplate">Feature-driven structure</a></li>
+<li><strong>Spectrum</strong>: <a href="https://github.com/withspectrum/spectrum">Feature-based organization</a></li>
+<li><strong>Microsoft Fluent UI</strong>: <a href="https://github.com/microsoft/fluentui">Feature-based packages</a></li>
+<li><strong>Ant Design</strong>: <a href="https://github.com/ant-design/ant-design">Component-feature organization</a></li>
+</ul>
+<h2 id="industry-articles-best-practices">Industry Articles &amp; Best Practices</h2>
+<ul>
+<li><a href="https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1">"Feature-Based Architecture for React Applications"</a>
+  by Alex Moldovan</li>
+<li><a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">"Scaling React Applications"</a> by Dan Abramov</li>
+<li><a href="https://medium.com/@konstantin.tarkus/react-app-architecture-best-practices-b9ce67c3b8e6">"React Architecture Best Practices"</a></li>
+<li><a href="https://dev.to/vadorequest/a-2021-guide-about-structuring-your-next-js-project-in-a-flexible-and-efficient-way-2o8h">"React Project Structure Best Practices"</a></li>
+<li><a href="https://dev.to/profydev/screaming-architecture-evolution-of-a-react-folder-structure-4g25">"Feature-Driven Development in React"</a></li>
+</ul>
+<h2 id="conference-talks-presentations">Conference Talks &amp; Presentations</h2>
+<ul>
+<li>React Conf Talks on "Scaling React Applications" recommend feature-based organization</li>
+<li>React Native EU/US Conferences showcase large-scale apps using feature-based structures</li>
+</ul>
+<h2 id="tools-frameworks-supporting-this-approach">Tools &amp; Frameworks Supporting This Approach</h2>
+<ul>
+<li><strong>Next.js</strong>: Feature-based organization in <code>app/</code> directory</li>
+<li><strong>Nx Monorepo</strong>: Feature libraries as first-class citizens</li>
+<li><strong>Create React App</strong>: Community templates favor feature-based structure</li>
+</ul>
+<h2 id="architectural-patterns-supporting-feature-based-organization">Architectural Patterns Supporting Feature-Based Organization</h2>
+<ul>
+<li><strong>Micro-Frontends</strong>: Feature-based boundaries enable micro-frontend architecture</li>
+<li><strong>Component-Driven Development</strong>: Features as component
+  boundaries (<a href="https://storybook.js.org/docs/react/workflows/component-driven-development">Storybook Docs</a>)</li>
+<li><strong>Atomic Design with Features</strong>: Features maintain their own atomic hierarchies</li>
+</ul>
+<h2 id="performance-scalability-benefits">Performance &amp; Scalability Benefits</h2>
+<ul>
+<li><strong>Code Splitting</strong>: Natural feature-based boundaries (<a href="https://reactjs.org/docs/code-splitting.html">React Docs</a>)</li>
+<li><strong>Bundle Optimization</strong>: Features can be independently optimized and
+  lazy-loaded (<a href="https://webpack.js.org/plugins/split-chunks-plugin/">Webpack Docs</a>)</li>
+<li><strong>Team Scalability</strong>: Feature-based architecture aligns with team ownership and Conway's Law</li>
+</ul>
+<h2 id="criticism-alternative-approaches">Criticism &amp; Alternative Approaches</h2>
+<ul>
+<li>Layer-based architecture advocates prefer technical separation; feature-based scales better in modern apps</li>
+<li>Atomic Design purists prefer strict atomic hierarchy; hybrid approach works within features</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Feature-based architecture is widely supported by:</p>
+<ul>
+<li>✅ React/React Native creators and core team members</li>
+<li>✅ Major tech companies</li>
+<li>✅ Industry experts and thought leaders</li>
+<li>✅ Open source community consensus</li>
+<li>✅ Academic research</li>
+<li>✅ Modern tooling and frameworks</li>
+</ul>
+<h2 id="example-userprofile-feature">Example: <code>UserProfile</code> Feature</h2>
+<h3 id="feature-export-convention">Feature Export Convention</h3>
+<ul>
+<li>Public component exported from feature directory:</li>
+</ul>
+<pre><code class="language-tsx">import {UserProfile} from '@/features/UserProfile';
 </code></pre>
 <ul>
-<li>Downloads the external component into your local <code>components/ui</code> folder.</li>
-<li>You can now use it like any internal shadcn/ui component:</li>
+<li>File placement:<ul>
+<li><code>src/features/UserProfile/UserProfile.tsx</code> → main component</li>
+<li><code>src/features/UserProfile/index.ts</code> → public API barrel</li>
+<li>Sub-components, hooks, utilities, types in the same directory</li>
 </ul>
-<pre><code class="language-tsx">import {Button} from &quot;@/components/ui/external/button&quot;;
-
-export function ExternalButtonDemo() {
-    return &lt;Button&gt;External Button&lt;/Button&gt;;
-}
+</li>
+</ul>
+<h3 id="architecture-structure">Architecture Structure</h3>
+<pre><code>src/features/UserProfile/
+├── index.ts
+├── UserProfile.tsx
+├── types.ts
+├── components/
+│   ├── ProfileHeader.tsx
+│   ├── ProfileDetails.tsx
+│   └── ProfileSettings/
+│       ├── index.ts
+│       ├── SettingsForm.tsx
+│       └── SettingsActions.tsx
+├── hooks/
+│   ├── useUserProfile.ts
+│   └── useUserSettings.ts
+└── lib/
+    ├── validations.ts
+    └── formatters.ts
 </code></pre>
-<hr />
-<h2 id="component-examples">Component Examples</h2>
-<h3 id="button">Button</h3>
-<pre><code class="language-tsx">&lt;Button&gt;Click me&lt;/Button&gt;
-&lt;Button variant=&quot;secondary&quot;&gt;Secondary&lt;/Button&gt;
-&lt;Button disabled&gt;Disabled&lt;/Button&gt;
-</code></pre>
-<h3 id="input">Input</h3>
-<pre><code class="language-tsx">&lt;Input type=&quot;text&quot; placeholder=&quot;Type here...&quot;/&gt;
-&lt;Input type=&quot;email&quot; placeholder=&quot;Email&quot;/&gt;
-</code></pre>
-<h3 id="spinner">Spinner</h3>
-<pre><code class="language-tsx">&lt;Spinner className=&quot;w-6 h-6 text-blue-500&quot;/&gt;
-</code></pre>
-<h3 id="label">Label</h3>
-<pre><code class="language-tsx">&lt;Label htmlFor=&quot;email&quot;&gt;Email&lt;/Label&gt;
-&lt;Input id=&quot;email&quot; placeholder=&quot;Enter your email&quot;/&gt;
-</code></pre>
-<h3 id="combining-form-components">Combining Form Components</h3>
-<pre><code class="language-tsx">&lt;form&gt;
-    &lt;Label htmlFor=&quot;name&quot;&gt;Name&lt;/Label&gt;
-    &lt;Input id=&quot;name&quot; placeholder=&quot;Your name&quot;/&gt;
-
-    &lt;Label htmlFor=&quot;email&quot;&gt;Email&lt;/Label&gt;
-    &lt;Input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Your email&quot;/&gt;
-
-    &lt;Button type=&quot;submit&quot;&gt;Submit&lt;/Button&gt;
-&lt;/form&gt;
-</code></pre>
-<h3 id="spinner-kbd">Spinner &amp; Kbd</h3>
-<p><strong>Spinner:</strong> Loading indicator.</p>
-<pre><code class="language-tsx">import {Spinner} from &quot;@/components/ui/spinner&quot;;
-
-&lt;Spinner/&gt;
-</code></pre>
-<p><strong>Kbd:</strong> Display keyboard keys.</p>
-<pre><code class="language-tsx">import {Kbd, KbdGroup} from &quot;@/components/ui/kbd&quot;;
-
-&lt;Kbd&gt;Ctrl&lt;/Kbd&gt;
-&lt;KbdGroup&gt;
-    &lt;Kbd&gt;Ctrl&lt;/Kbd&gt;
-    &lt;Kbd&gt;B&lt;/Kbd&gt;
-&lt;/KbdGroup&gt;
-</code></pre>
-<h3 id="button-group">Button Group</h3>
-<p>Groups related buttons, split buttons, or prefixes/suffixes.</p>
-<pre><code class="language-tsx">import {ButtonGroup} from &quot;@/components/ui/button-group&quot;;
-
-&lt;ButtonGroup&gt;
-    &lt;Button&gt;Button 1&lt;/Button&gt;
-    &lt;Button&gt;Button 2&lt;/Button&gt;
-&lt;/ButtonGroup&gt;
-</code></pre>
-<p>Nested example:</p>
-<pre><code class="language-tsx">&lt;ButtonGroup&gt;
-    &lt;ButtonGroup&gt;
-        &lt;Button&gt;Button 1&lt;/Button&gt;
-        &lt;Button&gt;Button 2&lt;/Button&gt;
-    &lt;/ButtonGroup&gt;
-    &lt;ButtonGroup&gt;
-        &lt;Button&gt;Button 3&lt;/Button&gt;
-        &lt;Button&gt;Button 4&lt;/Button&gt;
-    &lt;/ButtonGroup&gt;
-&lt;/ButtonGroup&gt;
-</code></pre>
-<p>With text and input:</p>
-<pre><code class="language-tsx">&lt;ButtonGroup&gt;
-    &lt;ButtonGroupText&gt;Prefix&lt;/ButtonGroupText&gt;
-    &lt;Input placeholder=&quot;Type here...&quot;/&gt;
-    &lt;Button&gt;Button&lt;/Button&gt;
-&lt;/ButtonGroup&gt;
-</code></pre>
-<h3 id="input-group">Input Group</h3>
-<p>Combine inputs with icons, buttons, labels.</p>
-<pre><code class="language-tsx">import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput,
-} from &quot;@/components/ui/input-group&quot;;
-
-&lt;InputGroup&gt;
-    &lt;InputGroupInput placeholder=&quot;Search...&quot;/&gt;
-    &lt;InputGroupAddon&gt;
-        &lt;SearchIcon/&gt;
-    &lt;/InputGroupAddon&gt;
-&lt;/InputGroup&gt;
-</code></pre>
-<h3 id="field">Field</h3>
-<p>Unified component for complex forms.</p>
-<pre><code class="language-tsx">import {
-    Field,
-    FieldDescription,
-    FieldError,
-    FieldLabel,
-} from &quot;@/components/ui/field&quot;;
-
-&lt;Field&gt;
-    &lt;FieldLabel htmlFor=&quot;username&quot;&gt;Username&lt;/FieldLabel&gt;
-    &lt;Input id=&quot;username&quot; placeholder=&quot;Max Leiter&quot;/&gt;
-    &lt;FieldDescription&gt;Choose a unique username for your account.&lt;/FieldDescription&gt;
-&lt;/Field&gt;
-</code></pre>
-<p>Supports all form controls (input, textarea, select, checkbox, radio, switch, slider).</p>
-<p>Grouping fields:</p>
-<pre><code class="language-tsx">&lt;FieldSet&gt;
-    &lt;FieldLegend/&gt;
-    &lt;FieldGroup&gt;
-        &lt;Field/&gt;
-        &lt;Field/&gt;
-    &lt;/FieldGroup&gt;
-&lt;/FieldSet&gt;
-</code></pre>
-<h3 id="item">Item</h3>
-<p>Flexible container for lists, cards, avatars, etc.</p>
-<pre><code class="language-tsx">import {
-    Item,
-    ItemContent,
-    ItemDescription,
-    ItemMedia,
-    ItemTitle,
-} from &quot;@/components/ui/item&quot;;
-
-&lt;Item&gt;
-    &lt;ItemMedia variant=&quot;icon&quot;&gt;
-        &lt;HomeIcon/&gt;
-    &lt;/ItemMedia&gt;
-    &lt;ItemContent&gt;
-        &lt;ItemTitle&gt;Dashboard&lt;/ItemTitle&gt;
-        &lt;ItemDescription&gt;Overview of your account and activity.&lt;/ItemDescription&gt;
-    &lt;/ItemContent&gt;
-&lt;/Item&gt;
-</code></pre>
-<p><code>ItemGroup</code> can wrap multiple items; <code>asChild</code> prop allows links.</p>
-<h3 id="empty">Empty</h3>
-<p>For empty states.</p>
-<pre><code class="language-tsx">import {
-    Empty,
-    EmptyContent,
-    EmptyDescription,
-    EmptyMedia,
-    EmptyTitle,
-} from &quot;@/components/ui/empty&quot;;
-
-&lt;Empty&gt;
-    &lt;EmptyMedia variant=&quot;icon&quot;&gt;
-        &lt;InboxIcon/&gt;
-    &lt;/EmptyMedia&gt;
-    &lt;EmptyTitle&gt;No messages&lt;/EmptyTitle&gt;
-    &lt;EmptyDescription&gt;You don't have any messages yet.&lt;/EmptyDescription&gt;
-    &lt;EmptyContent&gt;
-        &lt;Button&gt;Send a message&lt;/Button&gt;
-    &lt;/EmptyContent&gt;
-&lt;/Empty&gt;
-</code></pre>
-<p>Works with avatars and input groups as well.</p>
-<hr />
-<h2 id="theming">Theming</h2>
-<h3 id="css-variables">CSS Variables</h3>
-<p>Enable CSS variables for theming:</p>
-<pre><code class="language-json">{
-  &quot;tailwind&quot;: {
-    &quot;cssVariables&quot;: true
-  }
-}
-</code></pre>
-<h3 id="utility-classes">Utility Classes</h3>
-<p>Disable CSS variables and use utility classes instead:</p>
-<pre><code class="language-json">{
-  &quot;tailwind&quot;: {
-    &quot;cssVariables&quot;: false
-  }
-}
-</code></pre>
-<hr />
-<h2 id="cli-commands">CLI Commands</h2>
+<h3 id="key-benefits-demonstrated">Key Benefits Demonstrated</h3>
 <ul>
-<li><code>init</code> → Setup project for shadcn/ui</li>
-<li><code>add &lt;component&gt;</code> → Add a component</li>
-<li><code>view</code> → View available components</li>
+<li>Clear separation of business logic (hooks) and UI (components)</li>
+<li>Related functionality colocated in feature folder</li>
+<li>Hierarchical sub-feature organization</li>
+<li>Clean public API via index.ts</li>
+<li>Testability at multiple levels</li>
 </ul>
-<hr />
-<h2 id="about-radix-ui">About Radix UI</h2>
-<p><strong>Radix UI</strong> is a set of low-level, accessible primitives for React. It provides the underlying behavior for components
-like Dialogs, Tabs, Checkboxes, and Switches, ensuring accessibility and keyboard interactions out-of-the-box.</p>
-<p><strong>Example: Using Radix Checkbox directly</strong></p>
-<pre><code class="language-tsx">import * as Checkbox from &quot;@radix-ui/react-checkbox&quot;;
-
-&lt;Checkbox.Root id=&quot;accept&quot;&gt;
-    &lt;Checkbox.Indicator&gt;✔&lt;/Checkbox.Indicator&gt;
-&lt;/Checkbox.Root&gt;
-&lt;label htmlFor=&quot;accept&quot;&gt;Accept terms&lt;/label&gt;
-</code></pre>
-<p><strong>Integration with shadcn/ui:</strong><br />
-shadcn/ui wraps Radix primitives with Tailwind-styled components, so you get styled, reusable components without
-worrying about accessibility or behavior.</p>
-<p>For full Radix UI documentation, visit <a href="https://www.radix-ui.com/">radix-ui.com</a>.</p>
-<hr />
-<h2 id="ai-elements">AI Elements</h2>
-<p><a href="https://github.com/vercel/ai-elements"><strong>AI Elements</strong></a> by Vercel provides React components for building AI-powered
-UIs, such as chat and dynamic content components.<br />
-It is a complementary tool: while shadcn/ui provides general UI components and styling, AI Elements adds AI-specific
-interactive components that can integrate alongside shadcn/ui components in a React project.</p>
-<p><strong>Example: Chat Component</strong></p>
-<pre><code class="language-tsx">import {Chat} from &quot;@vercel/ai-elements/react&quot;;
-
-export function AIChatDemo() {
-    return (
-        &lt;div className=&quot;max-w-md mx-auto&quot;&gt;
-            &lt;h2 className=&quot;text-lg font-bold mb-4&quot;&gt;AI Chat Demo&lt;/h2&gt;
-            &lt;Chat
-                apiKey={process.env.NEXT_PUBLIC_AI_API_KEY}
-                systemMessage=&quot;You are a helpful assistant.&quot;
-                placeholder=&quot;Type a message...&quot;
-            /&gt;
-        &lt;/div&gt;
-    );
-}
-</code></pre>
-<p>This shows how AI Elements can provide interactive AI-powered UI, which can be combined with shadcn/ui components like
-<code>Button</code> or <code>Spinner</code> for a complete user experience.</p>
-<hr />
-<h2 id="faq">FAQ</h2>
-<p><strong>Q: Can I install components via npm?</strong><br />
-A: Yes, you can install the core shadcn/ui package with <code>npm install</code>. The CLI handles adding components.</p>
-<p><strong>Q: Can I add external components?</strong><br />
-A: Yes, using a URL or registry, e.g.:</p>
-<pre><code class="language-bash">npx shadcn@latest add https://nativeui.io/registry/button
-</code></pre>
-<p><strong>Q: How do I customize colors or sizes?</strong><br />
-A: Use Tailwind classes or enable <code>cssVariables</code> in <code>components.json</code>.</p>
-<hr />
-<h3 id="references">References</h3>
+<h3 id="performance-benefits">Performance Benefits</h3>
 <ul>
-<li><a href="https://x.com/shadcn">shadcn on X</a></li>
-<li><a href="https://ui.shadcn.com/docs/changelog">shadcn/ui Changelog</a></li>
-<li><a href="https://ui.shadcn.com/docs">shadcn/ui Docs</a></li>
-<li><a href="https://github.com/vercel/ai-elements">Vercel AI Elements GitHub</a></li>
-<li><a href="https://ai-sdk.dev/elements/overview">AI SDK Elements Overview</a></li>
-<li><a href="https://www.radix-ui.com">Radix UI</a></li>
+<li>Code splitting via dynamic import</li>
+<li>Bundle optimization and tree-shaking per feature</li>
 </ul>
-<p>For more examples and up-to-date docs, visit <a href="https://ui.shadcn.com/docs">shadcn/ui official site</a>.</p>
+<h3 id="implementation-guidelines">Implementation Guidelines</h3>
+<ul>
+<li>Define public API first</li>
+<li>Separate hooks and UI</li>
+<li>Use sub-features for complex modules</li>
+<li>Keep dependencies flowing inward</li>
+<li>Centralize API calls and caching in shared utilities</li>
+</ul>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://github.com/enaqx/awesome-react">Awesome React</a></li>
+<li><a href="https://reactpatterns.com/">React Patterns</a></li>
+<li><a href="https://reactnative.directory/">React Native Directory</a></li>
+<li><a href="https://stateofjs.com/">State of JS Survey</a></li>
+</ul>
 
 
 
