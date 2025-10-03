@@ -125,6 +125,7 @@ nav:
               - Supabase CLI RLS Policy: mobile/react-native/supabase/supabase-cli-rls-policies.md
           - UX Pilot: mobile/react-native/ux-pilot.md
           - TanStack React Query: mobile/react-native/tanstack-react-query.md
+          - shadcn/ui: mobile/react-native/shadcn-ui.md
   - Devops:
       - Docker:
           - Docker Introduction: devops/docker/docker-introduction.md
