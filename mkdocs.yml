@@ -113,6 +113,7 @@ nav:
           - React Native With Typescript: mobile/react-native/react-native-with-typescript.md
           - React Native Utilities: mobile/react-native/react-native-utilities.md
           - React Native Form Handling: mobile/react-native/react-native-form-handling.md
+          - React Native Feature Based Architecture: mobile/react-native/react-native-feature-based-architecture.md
           - Expo:
               - Expo Project Setup: mobile/react-native/expo/expo-project-setup.md
               - Expo Router: mobile/react-native/expo/expo-router.md
