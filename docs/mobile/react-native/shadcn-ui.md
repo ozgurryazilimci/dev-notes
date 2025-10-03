@@ -317,6 +317,30 @@ Disable CSS variables and use utility classes instead:
 
 ---
 
+## About Radix UI
+
+**Radix UI** is a set of low-level, accessible primitives for React. It provides the underlying behavior for components
+like Dialogs, Tabs, Checkboxes, and Switches, ensuring accessibility and keyboard interactions out-of-the-box.
+
+**Example: Using Radix Checkbox directly**
+
+```tsx
+import * as Checkbox from "@radix-ui/react-checkbox";
+
+<Checkbox.Root id="accept">
+    <Checkbox.Indicator>✔</Checkbox.Indicator>
+</Checkbox.Root>
+<label htmlFor="accept">Accept terms</label>
+```
+
+**Integration with shadcn/ui:**  
+shadcn/ui wraps Radix primitives with Tailwind-styled components, so you get styled, reusable components without
+worrying about accessibility or behavior.
+
+For full Radix UI documentation, visit [radix-ui.com](https://www.radix-ui.com/).
+
+---
+
 ## AI Elements
 
 [**AI Elements**](https://github.com/vercel/ai-elements) by Vercel provides React components for building AI-powered
@@ -372,5 +396,6 @@ A: Use Tailwind classes or enable `cssVariables` in `components.json`.
 - [shadcn/ui Docs](https://ui.shadcn.com/docs)
 - [Vercel AI Elements GitHub](https://github.com/vercel/ai-elements)
 - [AI SDK Elements Overview](https://ai-sdk.dev/elements/overview)
+- [Radix UI](https://www.radix-ui.com)
 
 For more examples and up-to-date docs, visit [shadcn/ui official site](https://ui.shadcn.com/docs).
