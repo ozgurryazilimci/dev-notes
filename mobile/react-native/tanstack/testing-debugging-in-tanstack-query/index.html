@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/react-native-with-typescript/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/tanstack/testing-debugging-in-tanstack-query/">
       
       
-        <link rel="prev" href="../react-native-basics/">
+        <link rel="prev" href="../managing-query-keys-in-tanstack-query/">
       
       
-        <link rel="next" href="../react-native-utilities/">
+        <link rel="next" href="../../ux-pilot/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>React Native With Typescript - My Dev Notes</title>
+        <title>Testing & Debugging In TanStack Query - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react-native-with-typescript" class="md-skip">
+        <a href="#testing-debugging-in-tanstack-react-query" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React Native With Typescript
+              Testing & Debugging In TanStack Query
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -390,7 +390,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../../android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -422,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devops/docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -447,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -469,7 +469,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -491,7 +491,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../freelance/freelance-guide/" class="md-tabs__link">
+        <a href="../../../../freelance/freelance-guide/" class="md-tabs__link">
           
   
   
@@ -520,7 +520,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tools/editor/intellij/" class="md-tabs__link">
+        <a href="../../../../tools/editor/intellij/" class="md-tabs__link">
           
   
   
@@ -545,7 +545,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +581,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-actions/" class="md-nav__link">
+      <a href="../../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/tmate/" class="md-nav__link">
+      <a href="../../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1042,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1065,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
         
   
   
@@ -1143,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1166,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1242,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/tools/sequel-ace/" class="md-nav__link">
+      <a href="../../../../database/tools/sequel-ace/" class="md-nav__link">
         
   
   
@@ -1372,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1452,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1475,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1617,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1640,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1718,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1889,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1912,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1935,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2078,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2101,7 +2101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -2124,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2147,7 +2147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2229,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2252,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2275,7 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -2298,7 +2298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2398,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-basics/" class="md-nav__link">
+      <a href="../../react-native-basics/" class="md-nav__link">
         
   
   
@@ -2418,32 +2418,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    React Native With Typescript
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../react-native-with-typescript/" class="md-nav__link">
         
   
   
@@ -2454,251 +2432,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hello-world-app" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hello World App
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-text" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Text
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#view-component" class="md-nav__link">
-    <span class="md-ellipsis">
-      View Component
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#button-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Button Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#props" class="md-nav__link">
-    <span class="md-ellipsis">
-      Props
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#state-with-usestate" class="md-nav__link">
-    <span class="md-ellipsis">
-      State with useState
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#children-with-propswithchildren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Children (with PropsWithChildren)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alert
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flexbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flexbox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Image
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#imagebackground" class="md-nav__link">
-    <span class="md-ellipsis">
-      ImageBackground
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scrollview" class="md-nav__link">
-    <span class="md-ellipsis">
-      ScrollView
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#touchableopacity" class="md-nav__link">
-    <span class="md-ellipsis">
-      TouchableOpacity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-hook" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom Hook
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#switch" class="md-nav__link">
-    <span class="md-ellipsis">
-      Switch
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#textinput" class="md-nav__link">
-    <span class="md-ellipsis">
-      TextInput
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#class-component" class="md-nav__link">
-    <span class="md-ellipsis">
-      Class Component
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stack-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stack Navigation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flatlist" class="md-nav__link">
-    <span class="md-ellipsis">
-      FlatList
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activity-indicator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activity Indicator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fetch-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context-api-with-usecontext" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context API with useContext
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ref-memo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ref &amp; memo
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2711,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-utilities/" class="md-nav__link">
+      <a href="../../react-native-utilities/" class="md-nav__link">
         
   
   
@@ -2734,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-form-handling/" class="md-nav__link">
+      <a href="../../react-native-form-handling/" class="md-nav__link">
         
   
   
@@ -2757,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-feature-based-architecture/" class="md-nav__link">
+      <a href="../../react-native-feature-based-architecture/" class="md-nav__link">
         
   
   
@@ -2827,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expo/expo-project-setup/" class="md-nav__link">
+      <a href="../../expo/expo-project-setup/" class="md-nav__link">
         
   
   
@@ -2850,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expo/expo-router/" class="md-nav__link">
+      <a href="../../expo/expo-router/" class="md-nav__link">
         
   
   
@@ -2881,7 +2614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tailwind-css/" class="md-nav__link">
+      <a href="../../tailwind-css/" class="md-nav__link">
         
   
   
@@ -2904,7 +2637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nativewind/" class="md-nav__link">
+      <a href="../../nativewind/" class="md-nav__link">
         
   
   
@@ -2978,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-dashboard-integration/" class="md-nav__link">
+      <a href="../../supabase/supabase-dashboard-integration/" class="md-nav__link">
         
   
   
@@ -3001,7 +2734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-integration/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-integration/" class="md-nav__link">
         
   
   
@@ -3024,7 +2757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-database-setup/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-database-setup/" class="md-nav__link">
         
   
   
@@ -3047,7 +2780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-rls-policies/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-rls-policies/" class="md-nav__link">
         
   
   
@@ -3075,8 +2808,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -3093,11 +2828,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_10" checked>
         
           
           <label class="md-nav__link" for="__nav_7_3_10" id="__nav_7_3_10_label" tabindex="0">
@@ -3113,7 +2848,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7_3_10">
             <span class="md-nav__icon md-icon"></span>
             TanStack
@@ -3127,7 +2862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tanstack/tanstack-query/" class="md-nav__link">
+      <a href="../tanstack-query/" class="md-nav__link">
         
   
   
@@ -3150,7 +2885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tanstack/managing-query-keys-in-tanstack-query/" class="md-nav__link">
+      <a href="../managing-query-keys-in-tanstack-query/" class="md-nav__link">
         
   
   
@@ -3170,10 +2905,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../tanstack/testing-debugging-in-tanstack-query/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Testing & Debugging In TanStack Query
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3184,6 +2941,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Tools Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-tests-for-cache-invalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Tests for Cache Invalidation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Tests for Cache Invalidation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Utilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3204,7 +3032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ux-pilot/" class="md-nav__link">
+      <a href="../../ux-pilot/" class="md-nav__link">
         
   
   
@@ -3227,7 +3055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shadcn-ui/" class="md-nav__link">
+      <a href="../../shadcn-ui/" class="md-nav__link">
         
   
   
@@ -3375,7 +3203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -3398,7 +3226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-installation/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -3421,7 +3249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -3444,7 +3272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-examples/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -3467,7 +3295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -3490,7 +3318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/dockerfile/" class="md-nav__link">
+      <a href="../../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -3513,7 +3341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-compose/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -3536,7 +3364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -3620,7 +3448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -3643,7 +3471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -3666,7 +3494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -3772,7 +3600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -3795,7 +3623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -3818,7 +3646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -3841,7 +3669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -3864,7 +3692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -3887,7 +3715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -3910,7 +3738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -3933,7 +3761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -3956,7 +3784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -3979,7 +3807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -4002,7 +3830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -4025,7 +3853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -4048,7 +3876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -4071,7 +3899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -4094,7 +3922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -4117,7 +3945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -4140,7 +3968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -4163,7 +3991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -4186,7 +4014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -4209,7 +4037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -4297,7 +4125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -4320,7 +4148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -4343,7 +4171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -4366,7 +4194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -4389,7 +4217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -4412,7 +4240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -4435,7 +4263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -4570,7 +4398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -4593,7 +4421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -4616,7 +4444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -4726,7 +4554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -4749,7 +4577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -4772,7 +4600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -4795,7 +4623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -4818,7 +4646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -4841,7 +4669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -4864,7 +4692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -4887,7 +4715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -4910,7 +4738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -4933,7 +4761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -4956,7 +4784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -4979,7 +4807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -5002,7 +4830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -5025,7 +4853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -5048,7 +4876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -5071,7 +4899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -5094,7 +4922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -5117,7 +4945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
         
   
   
@@ -5140,7 +4968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
         
   
   
@@ -5163,7 +4991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
         
   
   
@@ -5186,7 +5014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
         
   
   
@@ -5209,7 +5037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -5303,7 +5131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -5326,7 +5154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/terraform/tfenv/" class="md-nav__link">
+      <a href="../../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -5409,7 +5237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data/data-tools/" class="md-nav__link">
+      <a href="../../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -5496,7 +5324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -5519,7 +5347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -5542,7 +5370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-records/" class="md-nav__link">
+      <a href="../../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -5565,7 +5393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -5588,7 +5416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -5611,7 +5439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -5634,7 +5462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -5711,7 +5539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../../../freelance/freelance-guide/" class="md-nav__link">
         
   
   
@@ -5785,7 +5613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../../../../freelance/website/website-setup/" class="md-nav__link">
         
   
   
@@ -5808,7 +5636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5831,7 +5659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5913,7 +5741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5936,7 +5764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5959,7 +5787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5982,7 +5810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -6005,7 +5833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -6028,7 +5856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
         
   
   
@@ -6102,7 +5930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
         
   
   
@@ -6125,7 +5953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
         
   
   
@@ -6148,7 +5976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
         
   
   
@@ -6171,7 +5999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
         
   
   
@@ -6253,7 +6081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
         
   
   
@@ -6276,7 +6104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
         
   
   
@@ -6299,7 +6127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
         
   
   
@@ -6322,7 +6150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
         
   
   
@@ -6488,7 +6316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/editor/intellij/" class="md-nav__link">
+      <a href="../../../../tools/editor/intellij/" class="md-nav__link">
         
   
   
@@ -6511,7 +6339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/editor/vscode/" class="md-nav__link">
+      <a href="../../../../tools/editor/vscode/" class="md-nav__link">
         
   
   
@@ -6593,7 +6421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -6616,7 +6444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-message/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -6639,7 +6467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -6662,7 +6490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -6693,7 +6521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/chrome-extensions/" class="md-nav__link">
+      <a href="../../../../tools/chrome-extensions/" class="md-nav__link">
         
   
   
@@ -6716,7 +6544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -6739,7 +6567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -6762,7 +6590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -6785,7 +6613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multipass/" class="md-nav__link">
+      <a href="../../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -6808,7 +6636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -6831,7 +6659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -6854,7 +6682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -6877,7 +6705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -6954,7 +6782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -6977,7 +6805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -7027,225 +6855,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hello-world-app" class="md-nav__link">
+  <a href="#developer-tools-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      Hello World App
+      Developer Tools Integration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-text" class="md-nav__link">
+  <a href="#writing-tests-for-cache-invalidation" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Text
+      Writing Tests for Cache Invalidation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Tests for Cache Invalidation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Utilities
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#view-component" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#example-test" class="md-nav__link">
     <span class="md-ellipsis">
-      View Component
+      Example Test
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#button-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Button Usage
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#props" class="md-nav__link">
-    <span class="md-ellipsis">
-      Props
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#state-with-usestate" class="md-nav__link">
-    <span class="md-ellipsis">
-      State with useState
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#children-with-propswithchildren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Children (with PropsWithChildren)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alert
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flexbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flexbox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Image
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#imagebackground" class="md-nav__link">
-    <span class="md-ellipsis">
-      ImageBackground
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scrollview" class="md-nav__link">
-    <span class="md-ellipsis">
-      ScrollView
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#touchableopacity" class="md-nav__link">
-    <span class="md-ellipsis">
-      TouchableOpacity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-hook" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom Hook
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#switch" class="md-nav__link">
-    <span class="md-ellipsis">
-      Switch
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#textinput" class="md-nav__link">
-    <span class="md-ellipsis">
-      TextInput
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#class-component" class="md-nav__link">
-    <span class="md-ellipsis">
-      Class Component
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stack-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stack Navigation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flatlist" class="md-nav__link">
-    <span class="md-ellipsis">
-      FlatList
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activity-indicator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activity Indicator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fetch-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context-api-with-usecontext" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context API with useContext
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ref-memo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ref &amp; memo
+      References
     </span>
   </a>
   
@@ -7267,474 +6921,82 @@
 
 
 
-<h1 id="react-native-with-typescript">React Native With TypeScript</h1>
-<p>This documentation is a complete learning path for developers who want to master <strong>React Native CLI with TypeScript</strong>.
-Each topic includes explanations, code examples, and best practices.</p>
-<hr />
-<h2 id="hello-world-app">Hello World App</h2>
-<p>Your first React Native CLI app.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-tsx">import React from &quot;react&quot;;
-import { Text, View } from &quot;react-native&quot;;
+<h1 id="testing-debugging-in-tanstack-react-query">Testing &amp; Debugging in TanStack React Query</h1>
+<p>Cache invalidation is one of the trickiest parts of state management. Ensuring it's done correctly requires both
+<strong>debugging tools</strong> and <strong>reliable tests</strong>.</p>
+<h2 id="developer-tools-integration">Developer Tools Integration</h2>
+<p>For Chrome, Firefox, and Edge users: Third-party browser extensions are available for debugging TanStack Query directly
+in browser DevTools. These provide the same functionality as the framework-specific devtools packages:</p>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/tanstack-query-devtools/annajfchloimdhceglpgglpeepfghfai">Chrome logo Devtools for Chrome</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tanstack-query-devtools/">Firefox logo Devtools for Firefox</a></li>
+<li><a href="https://microsoftedge.microsoft.com/addons/detail/tanstack-query-devtools/edmdpkgkacmjopodhfolmphdenmddobj">Edge logo Devtools for Edge</a></li>
+</ul>
+<p>React Query provides <strong>DevTools</strong> to help visualize queries, cache states, and invalidation in real time.</p>
+<pre><code class="language-tsx">import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
 
-const App = () =&gt; {
+function App() {
     return (
-        &lt;View&gt;
-            &lt;Text&gt;Hello World!&lt;/Text&gt;
-        &lt;/View&gt;
-    );
-};
-
-export default App;
-</code></pre>
-<hr />
-<h2 id="using-text">Using Text</h2>
-<p>The <code>Text</code> component is used to display strings.</p>
-<p><strong>Example with styling:</strong></p>
-<pre><code class="language-tsx">&lt;Text style={{fontSize: 20, fontWeight: &quot;bold&quot;, color: &quot;blue&quot;}}&gt;
-    Welcome to React Native with TypeScript!
-&lt;/Text&gt;
-</code></pre>
-<hr />
-<h2 id="view-component">View Component</h2>
-<p><code>View</code> is the container for layout and styling.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-tsx">&lt;View style={{backgroundColor: &quot;#eee&quot;, padding: 20}}&gt;
-    &lt;Text&gt;Inside a View&lt;/Text&gt;
-&lt;/View&gt;
-</code></pre>
-<hr />
-<h2 id="button-usage">Button Usage</h2>
-<p><code>Button</code> is used for simple press actions.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-tsx">&lt;Button title=&quot;Click Me&quot; onPress={() =&gt; alert(&quot;Button pressed!&quot;)}/&gt;
-</code></pre>
-<hr />
-<h2 id="components">Components</h2>
-<p>A component is a reusable piece of UI.</p>
-<p><strong>Functional Component Example:</strong></p>
-<pre><code class="language-tsx">type Props = { name: string };
-const User: React.FC&lt;Props&gt; = ({name}) =&gt; &lt;Text&gt;Hello {name}&lt;/Text&gt;;
-const LongUser: React.FunctionComponent&lt;Props&gt; = ({name}) =&gt; &lt;Text&gt;Hello {name}&lt;/Text&gt;;
-</code></pre>
-<hr />
-<h2 id="props">Props</h2>
-<p>Props are inputs to components.</p>
-<p><strong>Defining and using props in a component:</strong></p>
-<pre><code class="language-tsx">type GreetingProps = {
-    name: string;
-    age: number
-};
-
-const Greeting: React.FC&lt;GreetingProps&gt; = ({name, age}) =&gt; {
-    return &lt;Text&gt;Hello {name}, you are {age} years old.&lt;/Text&gt;;
-};
-</code></pre>
-<p><strong>Passing props from a parent:</strong></p>
-<pre><code class="language-tsx">const App = () =&gt; {
-    return &lt;Greeting name=&quot;John&quot; age={25}/&gt;;
-};
-</code></pre>
-<hr />
-<h2 id="state-with-usestate">State with useState</h2>
-<p><code>useState</code> manages component state.</p>
-<pre><code class="language-tsx">const [count, setCount] = useState&lt;number&gt;(0);
-
-&lt;Button title=&quot;Increase&quot; onPress={() =&gt; setCount(count + 1)}/&gt;
-&lt;Text&gt;{count}&lt;/Text&gt;
-</code></pre>
-<hr />
-<h2 id="children-with-propswithchildren">Children (with PropsWithChildren)</h2>
-<p>Components can accept child elements.</p>
-<pre><code class="language-tsx">import React, { PropsWithChildren } from &quot;react&quot;;
-import { View } from &quot;react-native&quot;;
-
-const Card: React.FC&lt;PropsWithChildren&gt; = ({children}) =&gt; (
-    &lt;View style={{padding: 10, borderWidth: 1}}&gt;{children}&lt;/View&gt;
-);
-
-&lt;Card&gt;
-    &lt;Text&gt;Hello inside a Card!&lt;/Text&gt;
-&lt;/Card&gt;
-</code></pre>
-<p>Components can accept child elements using <code>PropsWithChildren</code>.<br />
-You can also extend your own props interface so that both <code>children</code> and custom props are supported.</p>
-<p><strong>Example with extended Props:</strong></p>
-<pre><code class="language-tsx">import React, { PropsWithChildren } from &quot;react&quot;;
-import { View, Text } from &quot;react-native&quot;;
-
-type CardProps = PropsWithChildren&lt;{
-    title: string;
-}&gt;;
-
-const Card: React.FC&lt;CardProps&gt; = ({title, children}) =&gt; (
-    &lt;View style={{padding: 10, borderWidth: 1}}&gt;
-        &lt;Text style={{fontWeight: &quot;bold&quot;}}&gt;{title}&lt;/Text&gt;
-        {children}
-    &lt;/View&gt;
-);
-
-const App = () =&gt; (
-    &lt;Card title=&quot;User Info&quot;&gt;
-        &lt;Text&gt;Name: John&lt;/Text&gt;
-        &lt;Text&gt;Age: 25&lt;/Text&gt;
-    &lt;/Card&gt;
-);
-</code></pre>
-<hr />
-<h2 id="alert">Alert</h2>
-<p>Alerts interact with users.</p>
-<pre><code class="language-tsx">&lt;Button
-    title=&quot;Show Alert&quot;
-    onPress={() =&gt; Alert.alert(&quot;Warning&quot;, &quot;This is an alert!&quot;)}
-/&gt;
-</code></pre>
-<hr />
-<h2 id="flexbox">Flexbox</h2>
-<p><strong>Key points:</strong></p>
-<ul>
-<li>Default <code>flexDirection</code> = column</li>
-<li><code>justifyContent</code> = vertical alignment</li>
-<li><code>alignItems</code> = horizontal alignment</li>
-</ul>
-<pre><code class="language-tsx">&lt;View style={{flex: 1, justifyContent: &quot;center&quot;, alignItems: &quot;center&quot;}}&gt;
-    &lt;Text&gt;Centered Content&lt;/Text&gt;
-&lt;/View&gt;
-</code></pre>
-<ul>
-<li><code>flexDirection</code> options: <code>column</code>, <code>column-reverse</code>, <code>row</code>, <code>row-reverse</code>.</li>
-</ul>
-<pre><code class="language-tsx">&lt;View style={{flexDirection: 'row'}}&gt;
-    &lt;Text&gt;A&lt;/Text&gt;
-    &lt;Text&gt;B&lt;/Text&gt;
-&lt;/View&gt;
-
-&lt;View style={{flexDirection: 'row-reverse'}}&gt;
-    &lt;Text&gt;A&lt;/Text&gt;
-    &lt;Text&gt;B&lt;/Text&gt;
-&lt;/View&gt;
-</code></pre>
-<hr />
-<h2 id="image">Image</h2>
-<pre><code class="language-tsx">&lt;Image
-    style={{width: 100, height: 100, borderRadius: 50}}
-    source={{uri: &quot;https://placekitten.com/200/200&quot;}}
-/&gt;
-</code></pre>
-<hr />
-<h2 id="imagebackground">ImageBackground</h2>
-<pre><code class="language-tsx">&lt;ImageBackground
-    source={require(&quot;./bg.png&quot;)}
-    style={{width: &quot;100%&quot;, height: 200}}
-    imageStyle={{borderRadius: 20}}
-&gt;
-    &lt;Text&gt;Overlay text&lt;/Text&gt;
-&lt;/ImageBackground&gt;
-</code></pre>
-<hr />
-<h2 id="scrollview">ScrollView</h2>
-<pre><code class="language-tsx">&lt;ScrollView contentContainerStyle={{padding: 20}}&gt;
-    &lt;Text&gt;Item 1&lt;/Text&gt;
-    &lt;Text&gt;Item 2&lt;/Text&gt;
-    &lt;Text&gt;Item 3&lt;/Text&gt;
-&lt;/ScrollView&gt;
-</code></pre>
-<p><strong>ScrollView with Object Mapping:</strong></p>
-<pre><code class="language-tsx">&lt;ScrollView&gt;
-    {users.map(u =&gt; (
-        &lt;Text key={u.id}&gt;{u.name}&lt;/Text&gt;
-    ))}
-&lt;/ScrollView&gt;
-</code></pre>
-<hr />
-<h2 id="touchableopacity">TouchableOpacity</h2>
-<pre><code class="language-tsx">&lt;TouchableOpacity onPress={() =&gt; alert(&quot;Pressed!&quot;)}&gt;
-    &lt;Text&gt;Press Me&lt;/Text&gt;
-&lt;/TouchableOpacity&gt;
-</code></pre>
-<hr />
-<h2 id="custom-hook">Custom Hook</h2>
-<pre><code class="language-tsx">function useCounter(initial: number) {
-    const [count, setCount] = useState&lt;number&gt;(initial);
-    const increment = () =&gt; setCount(prev =&gt; prev + 1);
-    return {count, increment};
+        &lt;QueryClientProvider client={queryClient}&gt;
+            &lt;MyComponents/&gt;
+            &lt;ReactQueryDevtools initialIsOpen={false}/&gt;
+        &lt;/QueryClientProvider&gt;
+    )
 }
 </code></pre>
-<hr />
-<h2 id="switch">Switch</h2>
-<pre><code class="language-tsx">const [enabled, setEnabled] = useState(false);
-
-&lt;Switch
-    value={enabled}
-    onValueChange={() =&gt; setEnabled(prev =&gt; !prev)}
-/&gt;
-</code></pre>
-<hr />
-<h2 id="textinput">TextInput</h2>
-<pre><code class="language-tsx">&lt;TextInput
-    placeholder=&quot;Enter your name&quot;
-    value={name}
-    onChangeText={setName}
-    style={{borderWidth: 1, borderRadius: 5, padding: 10}}
-/&gt;
-</code></pre>
-<hr />
-<h2 id="modal">Modal</h2>
-<pre><code class="language-tsx">&lt;Modal visible={true} transparent animationType=&quot;slide&quot;&gt;
-    &lt;View style={{flex: 1, justifyContent: &quot;flex-end&quot;}}&gt;
-        &lt;View style={{height: 200, backgroundColor: &quot;white&quot;}}&gt;
-            &lt;Text&gt;Modal Content&lt;/Text&gt;
-        &lt;/View&gt;
-    &lt;/View&gt;
-&lt;/Modal&gt;
-</code></pre>
-<hr />
-<h2 id="class-component">Class Component</h2>
-<pre><code class="language-tsx">class Counter extends React.Component&lt;{}, { count: number }&gt; {
-    state = {count: 0};
-
-    render() {
-        return (
-            &lt;View&gt;
-                &lt;Text&gt;{this.state.count}&lt;/Text&gt;
-                &lt;Button
-                    title=&quot;Add&quot;
-                    onPress={() =&gt; this.setState({count: this.state.count + 1})}
-                /&gt;
-            &lt;/View&gt;
-        );
-    }
-}
-</code></pre>
-<p><strong>Lifecycle:</strong></p>
+<p>With DevTools, you can:</p>
 <ul>
-<li><code>componentDidMount</code> → after first render</li>
-<li><code>componentDidUpdate</code> → after state/prop change</li>
-<li><code>componentWillUnmount</code> → cleanup</li>
+<li>Inspect query keys and their current state</li>
+<li>See which queries are marked invalidated</li>
+<li>Debug the lifecycle of queries and mutations</li>
 </ul>
 <hr />
-<h2 id="stack-navigation">Stack Navigation</h2>
-<p>To use stack navigation, first install the required packages:</p>
-<pre><code class="language-bash">npm install @react-navigation/native @react-navigation/native-stack
-</code></pre>
-<p>Then configure your stack:</p>
-<pre><code class="language-tsx">import * as React from 'react';
-import { Button, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-// 1. Create the stack
-type RootStackParamList = {
-    Home: undefined;
-    Profile: { userId: string };
-};
-
-const Stack = createNativeStackNavigator&lt;RootStackParamList&gt;();
-
-// 2. Define screens
-const HomeScreen = ({navigation}) =&gt; (
-    &lt;View&gt;
-        &lt;Text&gt;Home Screen&lt;/Text&gt;
-        &lt;Button
-            title=&quot;Go to Profile&quot;
-            onPress={() =&gt; navigation.navigate('Profile', {userId: '123'})}
-        /&gt;
-    &lt;/View&gt;
-);
-
-const ProfileScreen = ({route}) =&gt; (
-    &lt;View&gt;
-        &lt;Text&gt;Profile Screen&lt;/Text&gt;
-        &lt;Text&gt;User ID: {route.params.userId}&lt;/Text&gt;
-    &lt;/View&gt;
-);
-
-// 3. Use the stack in NavigationContainer
-const App = () =&gt; (
-    &lt;NavigationContainer&gt;
-        &lt;Stack.Navigator initialRouteName=&quot;Home&quot;&gt;
-            &lt;Stack.Screen name=&quot;Home&quot; component={HomeScreen}/&gt;
-            &lt;Stack.Screen name=&quot;Profile&quot; component={ProfileScreen}/&gt;
-        &lt;/Stack.Navigator&gt;
-    &lt;/NavigationContainer&gt;
-);
-
-export default App;
-</code></pre>
-<hr />
-<h2 id="flatlist">FlatList</h2>
-<pre><code class="language-tsx">&lt;FlatList
-    data={users}
-    renderItem={({item}) =&gt; &lt;Text&gt;{item.name}&lt;/Text&gt;}
-    keyExtractor={item =&gt; item.id.toString()}
-/&gt;
-</code></pre>
-<hr />
-<h2 id="activity-indicator">Activity Indicator</h2>
-<pre><code class="language-tsx">&lt;ActivityIndicator size=&quot;large&quot; color=&quot;blue&quot;/&gt;
-</code></pre>
-<hr />
-<h2 id="fetch-api">Fetch API</h2>
-<pre><code class="language-tsx">useEffect(() =&gt; {
-    fetch(&quot;https://dummyjson.com/users&quot;)
-        .then(res =&gt; res.json())
-        .then(data =&gt; setUsers(data.users));
-}, []);
-</code></pre>
-<hr />
-<h2 id="context-api-with-usecontext">Context API with useContext</h2>
-<pre><code class="language-tsx">const ThemeContext = React.createContext(&quot;light&quot;);
-
-const Child = () =&gt; {
-    const theme = React.useContext(ThemeContext);
-    return &lt;Text&gt;Theme: {theme}&lt;/Text&gt;;
-};
-
-const App = () =&gt; (
-    &lt;ThemeContext.Provider value=&quot;dark&quot;&gt;
-        &lt;Child/&gt;
-    &lt;/ThemeContext.Provider&gt;
-);
-</code></pre>
-<hr />
-<h2 id="ref-memo">Ref &amp; memo</h2>
-<pre><code class="language-tsx">const inputRef = useRef&lt;TextInput&gt;(null);
-
-&lt;TextInput ref={inputRef}/&gt;
-
-const Memoized = React.memo(MyComponent);
-</code></pre>
-<hr />
-<h1 id="styling-tools">Styling &amp; Tools</h1>
-<h2 id="stylesheet">StyleSheet</h2>
-<pre><code class="language-tsx">const styles = StyleSheet.create({
-    text: {fontSize: 20, color: &quot;red&quot;},
-});
-</code></pre>
-<hr />
-<h2 id="redux-toolkit-example">Redux Toolkit Example</h2>
-<h3 id="slice-counterslicets">Slice (counterSlice.ts)</h3>
-<pre><code class="language-tsx">import { createSlice } from '@reduxjs/toolkit';
-
-export const counterSlice = createSlice({
-    name: 'counter',
-    initialState: {
-        count: 0,
-        author: {
-            name: 'John',
-            surname: 'Doe'
-        }
-    },
-    reducers: {
-        increment(state) {
-            state.count++;
+<h2 id="writing-tests-for-cache-invalidation">Writing Tests for Cache Invalidation</h2>
+<p>To ensure correctness, write tests that explicitly check query cache behavior after mutations.</p>
+<h3 id="test-utilities">Test Utilities</h3>
+<pre><code class="language-ts">// test-utils.ts
+export function createTestQueryClient() {
+    return new QueryClient({
+        defaultOptions: {
+            queries: {retry: false},
         },
-        decrement(state) {
-            state.count--;
+        logger: {
+            log: console.log,
+            warn: console.warn,
+            error: () =&gt; {
+            }, // suppress errors during tests
         },
-        refresh(state) {
-            state.count = 0;
+    })
+}
+</code></pre>
+<h3 id="example-test">Example Test</h3>
+<pre><code class="language-ts">// invalidation.test.ts
+test('invalidates todo list after adding new todo', async () =&gt; {
+    const queryClient = createTestQueryClient()
+
+    // prefetch existing todos
+    await queryClient.prefetchQuery({
+        queryKey: queryKeys.todos.all,
+        queryFn: () =&gt; ['todo1', 'todo2'],
+    })
+
+    // simulate mutation that adds a new todo
+    await queryClient.executeMutation({
+        mutationFn: () =&gt; Promise.resolve('todo3'),
+        onSuccess: () =&gt; {
+            queryClient.invalidateQueries({queryKey: queryKeys.todos.all})
         },
-        setAuthor(state, action) {
-            const name = action.payload.name;
-            const surname = action.payload.surname;
+    })
 
-            state.author.name = name;
-            state.author.surname = surname;
-        }
-    },
-});
-
-export const {increment, decrement, setAuthor} = counterSlice.actions;
-export default counterSlice.reducer;
-</code></pre>
-<h3 id="store-storets">Store (store.ts)</h3>
-<pre><code class="language-tsx">import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
-
-export const store = configureStore({
-    reducer: {counter: counterReducer},
-});
-
-export type RootState = ReturnType&lt;typeof store.getState&gt;;
-export type AppDispatch = typeof store.dispatch;
-</code></pre>
-<h3 id="app-with-provider-apptsx">App with Provider (App.tsx)</h3>
-<pre><code class="language-tsx">import React from 'react';
-import { Provider } from 'react-redux';
-import { store } from './store';
-import Main from './Main';
-
-const App = () =&gt; (
-    &lt;Provider store={store}&gt;
-        &lt;Main/&gt;
-    &lt;/Provider&gt;
-);
-
-export default App;
-</code></pre>
-<h3 id="using-useselector-maintsx">Using useSelector (Main.tsx)</h3>
-<pre><code class="language-tsx">import React from 'react';
-import { Text, View } from 'react-native';
-import { useSelector } from 'react-redux';
-import { RootState } from './store';
-
-const Main = () =&gt; {
-    const count = useSelector((state: RootState) =&gt; state.counter.count);
-    const author = useSelector((state: RootState) =&gt; state.counter.author);
-
-    return (
-        &lt;View&gt;
-            &lt;Text&gt;Count: {count}&lt;/Text&gt;
-            &lt;Text&gt;Author: {author.name} {author.surname}&lt;/Text&gt;
-        &lt;/View&gt;
-    );
-};
-
-export default Main;
-</code></pre>
-<h3 id="using-usedispatch-counterbuttonstsx">Using useDispatch (CounterButtons.tsx)</h3>
-<pre><code class="language-tsx">import React from 'react';
-import { Button, View } from 'react-native';
-import { useDispatch } from 'react-redux';
-import { decrement, increment, refresh, setAuthor } from './counterSlice';
-
-const CounterButtons = () =&gt; {
-    const dispatch = useDispatch();
-
-    return (
-        &lt;View&gt;
-            &lt;Button title=&quot;Increment&quot; onPress={() =&gt; dispatch(increment())}/&gt;
-            &lt;Button title=&quot;Decrement&quot; onPress={() =&gt; dispatch(decrement())}/&gt;
-            &lt;Button title=&quot;Reset&quot; onPress={() =&gt; dispatch(refresh())}/&gt;
-            &lt;Button
-                title=&quot;Set Author&quot;
-                onPress={() =&gt; dispatch(setAuthor({name: 'Alex', surname: 'Smith'}))}
-            /&gt;
-        &lt;/View&gt;
-    );
-};
-
-export default CounterButtons;
-
+    // assert cache invalidation
+    expect(queryClient.getQueryState(queryKeys.todos.all)?.isInvalidated).toBe(true)
+})
 </code></pre>
 <hr />
-<h2 id="asyncstorage">AsyncStorage</h2>
-<pre><code class="language-tsx">await AsyncStorage.setItem(&quot;token&quot;, &quot;123&quot;);
-const token = await AsyncStorage.getItem(&quot;token&quot;);
-await AsyncStorage.removeItem(&quot;token&quot;);
-</code></pre>
-<hr />
-<h1 id="references">References</h1>
+<h2 id="references">References</h2>
 <ul>
-<li><a href="https://reactnative.dev">React Native</a></li>
-<li><a href="https://react.dev">React</a></li>
-<li><a href="https://docs.expo.dev">Expo</a></li>
-<li><a href="https://redux-toolkit.js.org">Redux Toolkit</a></li>
-<li><a href="https://react-native-async-storage.github.io/async-storage/docs/usage/">Async Storage</a></li>
-<li><a href="https://reactnavigation.org/docs/getting-started">React Navigation</a></li>
-<li><a href="https://dummyjson.com/docs/">Dummy Json</a></li>
-<li><a href="https://www.youtube.com/watch?v=CZfU-falD_s&amp;list=PLkcIcaxfjelbSrGLKY4bKh4ppHC7IusKI">Youtube Tutorial Videos</a></li>
+<li><a href="https://tanstack.com/query/latest">TanStack Official Docs</a></li>
+<li><a href="https://tanstack.com/query/v5/docs/framework/react/devtools">DevTools</a></li>
 </ul>
 
 
@@ -7814,10 +7076,10 @@ await AsyncStorage.removeItem(&quot;token&quot;);
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

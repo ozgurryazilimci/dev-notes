@@ -12,28 +12,28 @@
         <meta name="author" content="Özgür Yazılımcı">
       
       
-        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/tanstack-react-query/">
+        <link rel="canonical" href="https://notes.ozguryazilimci.com/mobile/react-native/tanstack/managing-query-keys-in-tanstack-query/">
       
       
-        <link rel="prev" href="../ux-pilot/">
+        <link rel="prev" href="../tanstack-query/">
       
       
-        <link rel="next" href="../shadcn-ui/">
+        <link rel="next" href="../testing-debugging-in-tanstack-query/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>TanStack React Query - My Dev Notes</title>
+        <title>Managing Query Keys In TanStack Query - My Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tanstack-react-query" class="md-skip">
+        <a href="#managing-query-keys-cache-invalidation-in-tanstack-react-query" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-header__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TanStack React Query
+              Managing Query Keys In TanStack Query
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../shell/shell-commands/" class="md-tabs__link">
+        <a href="../../../../shell/shell-commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../git/git-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../git/git-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
+        <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../backend/maven/maven-wrapper/" class="md-tabs__link">
+        <a href="../../../../backend/maven/maven-wrapper/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
+        <a href="../../../../frontend/nodejs/nvm-npm/" class="md-tabs__link">
           
   
   
@@ -390,7 +390,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../android/android-firebase-integration/" class="md-tabs__link">
+        <a href="../../../android/android-firebase-integration/" class="md-tabs__link">
           
   
   
@@ -422,7 +422,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devops/docker/docker-introduction/" class="md-tabs__link">
+        <a href="../../../../devops/docker/docker-introduction/" class="md-tabs__link">
           
   
   
@@ -447,7 +447,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../data/data-tools/" class="md-tabs__link">
+        <a href="../../../../data/data-tools/" class="md-tabs__link">
           
   
   
@@ -469,7 +469,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
+        <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-tabs__link">
           
   
   
@@ -491,7 +491,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../freelance/freelance-guide/" class="md-tabs__link">
+        <a href="../../../../freelance/freelance-guide/" class="md-tabs__link">
           
   
   
@@ -520,7 +520,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tools/editor/intellij/" class="md-tabs__link">
+        <a href="../../../../tools/editor/intellij/" class="md-tabs__link">
           
   
   
@@ -545,7 +545,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
+        <a href="../../../../other/modem-admin-wifi-passwords/" class="md-tabs__link">
           
   
   
@@ -581,7 +581,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
+    <a href="../../../.." title="My Dev Notes" class="md-nav__button md-logo" aria-label="My Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/shell-commands/" class="md-nav__link">
+      <a href="../../../../shell/shell-commands/" class="md-nav__link">
         
   
   
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shell/bash-completion/" class="md-nav__link">
+      <a href="../../../../shell/bash-completion/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/git-cheatsheet/" class="md-nav__link">
+      <a href="../../../../git/git-cheatsheet/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-actions/" class="md-nav__link">
+      <a href="../../../../git/github-actions/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/tmate/" class="md-nav__link">
+      <a href="../../../../git/tmate/" class="md-nav__link">
         
   
   
@@ -847,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/list-github-actions/" class="md-nav__link">
+      <a href="../../../../git/list-github-actions/" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-pages-custom-domain/" class="md-nav__link">
+      <a href="../../../../git/github-pages-custom-domain/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-multiple-accounts/" class="md-nav__link">
+      <a href="../../../../git/github-multiple-accounts/" class="md-nav__link">
         
   
   
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../git/github-commit-hash-copy/" class="md-nav__link">
+      <a href="../../../../git/github-commit-hash-copy/" class="md-nav__link">
         
   
   
@@ -1042,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1065,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
+      <a href="../../../../database/mysql/mysql-pid-file-error/" class="md-nav__link">
         
   
   
@@ -1143,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-cheatsheet/" class="md-nav__link">
         
   
   
@@ -1166,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
+      <a href="../../../../database/postgresql/postgresql-jsonb-operations/" class="md-nav__link">
         
   
   
@@ -1242,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/tools/sequel-ace/" class="md-nav__link">
+      <a href="../../../../database/tools/sequel-ace/" class="md-nav__link">
         
   
   
@@ -1372,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/maven/maven-wrapper/" class="md-nav__link">
+      <a href="../../../../backend/maven/maven-wrapper/" class="md-nav__link">
         
   
   
@@ -1452,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/jenv/" class="md-nav__link">
+      <a href="../../../../backend/java/jenv/" class="md-nav__link">
         
   
   
@@ -1475,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/sdkman/" class="md-nav__link">
+      <a href="../../../../backend/java/sdkman/" class="md-nav__link">
         
   
   
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/checkstyle-introduction/" class="md-nav__link">
         
   
   
@@ -1617,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/maven-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1640,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/checkstyle/editor-support-intellij-idea-checkstyle-plugin/" class="md-nav__link">
         
   
   
@@ -1718,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-introduction/" class="md-nav__link">
         
   
   
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
+      <a href="../../../../backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation/" class="md-nav__link">
         
   
   
@@ -1889,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/nvm-npm/" class="md-nav__link">
         
   
   
@@ -1912,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/yarn/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/yarn/" class="md-nav__link">
         
   
   
@@ -1935,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
+      <a href="../../../../frontend/nodejs/npm-to-yarn-cheatsheet/" class="md-nav__link">
         
   
   
@@ -2078,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-firebase-integration/" class="md-nav__link">
+      <a href="../../../android/android-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2101,7 +2101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-keystore-settings/" class="md-nav__link">
+      <a href="../../../android/android-keystore-settings/" class="md-nav__link">
         
   
   
@@ -2124,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-google-maps-integration/" class="md-nav__link">
+      <a href="../../../android/android-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2147,7 +2147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/android-push-notification-integration/" class="md-nav__link">
+      <a href="../../../android/android-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2229,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-firebase-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-firebase-integration/" class="md-nav__link">
         
   
   
@@ -2252,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-google-maps-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-google-maps-integration/" class="md-nav__link">
         
   
   
@@ -2275,7 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-test-flight-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-test-flight-integration/" class="md-nav__link">
         
   
   
@@ -2298,7 +2298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ios/ios-push-notification-integration/" class="md-nav__link">
+      <a href="../../../ios/ios-push-notification-integration/" class="md-nav__link">
         
   
   
@@ -2398,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-basics/" class="md-nav__link">
+      <a href="../../react-native-basics/" class="md-nav__link">
         
   
   
@@ -2421,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-with-typescript/" class="md-nav__link">
+      <a href="../../react-native-with-typescript/" class="md-nav__link">
         
   
   
@@ -2444,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-utilities/" class="md-nav__link">
+      <a href="../../react-native-utilities/" class="md-nav__link">
         
   
   
@@ -2467,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-form-handling/" class="md-nav__link">
+      <a href="../../react-native-form-handling/" class="md-nav__link">
         
   
   
@@ -2490,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-native-feature-based-architecture/" class="md-nav__link">
+      <a href="../../react-native-feature-based-architecture/" class="md-nav__link">
         
   
   
@@ -2560,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expo/expo-project-setup/" class="md-nav__link">
+      <a href="../../expo/expo-project-setup/" class="md-nav__link">
         
   
   
@@ -2583,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expo/expo-router/" class="md-nav__link">
+      <a href="../../expo/expo-router/" class="md-nav__link">
         
   
   
@@ -2614,7 +2614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tailwind-css/" class="md-nav__link">
+      <a href="../../tailwind-css/" class="md-nav__link">
         
   
   
@@ -2637,7 +2637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nativewind/" class="md-nav__link">
+      <a href="../../nativewind/" class="md-nav__link">
         
   
   
@@ -2711,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-dashboard-integration/" class="md-nav__link">
+      <a href="../../supabase/supabase-dashboard-integration/" class="md-nav__link">
         
   
   
@@ -2734,7 +2734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-integration/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-integration/" class="md-nav__link">
         
   
   
@@ -2757,7 +2757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-database-setup/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-database-setup/" class="md-nav__link">
         
   
   
@@ -2780,7 +2780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../supabase/supabase-cli-rls-policies/" class="md-nav__link">
+      <a href="../../supabase/supabase-cli-rls-policies/" class="md-nav__link">
         
   
   
@@ -2808,15 +2808,66 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_10" id="__nav_7_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    TanStack
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            TanStack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../ux-pilot/" class="md-nav__link">
+      <a href="../tanstack-query/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    UX Pilot
+    TanStack Query
     
   </span>
   
@@ -2848,7 +2899,7 @@
   
   
   <span class="md-ellipsis">
-    TanStack React Query
+    Managing Query Keys In TanStack Query
     
   </span>
   
@@ -2861,7 +2912,7 @@
   
   
   <span class="md-ellipsis">
-    TanStack React Query
+    Managing Query Keys In TanStack Query
     
   </span>
   
@@ -2884,169 +2935,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react-query" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Why React Query?
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#understanding-query-keys-the-foundation" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠 Setup
+      Understanding Query Keys: The Foundation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#organizing-query-keys-patterns-strategies" class="md-nav__link">
     <span class="md-ellipsis">
-      🔑 Core Concepts
+      Organizing Query Keys: Patterns &amp; Strategies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔑 Core Concepts">
+    <nav class="md-nav" aria-label="Organizing Query Keys: Patterns &amp; Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-query" class="md-nav__link">
+  <a href="#1-co-location-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Query
+      1. Co-Location Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-mutation" class="md-nav__link">
+  <a href="#2-custom-hooks-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Mutation
+      2. Custom Hooks Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-query-invalidation" class="md-nav__link">
+  <a href="#3-query-key-factory-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Query Invalidation
+      3. Query Key Factory Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-query-states" class="md-nav__link">
+  <a href="#4-advanced-query-options-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Query States
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-usesuspensequery" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. useSuspenseQuery
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-usequeries" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. useQueries
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-suspended-queries-usesuspensequeries" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Suspended Queries (useSuspenseQueries)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-data-alias" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. data alias
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-enabled-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Enabled Queries
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-caching-data-freshness" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Caching &amp; Data Freshness
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="10. Caching &amp; Data Freshness">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#staletime" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 staleTime
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gctime-cachetime" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 gcTime (cacheTime)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#timeline-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      🕒 Timeline Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-devtools" class="md-nav__link">
-    <span class="md-ellipsis">
-      11. DevTools
+      4. Advanced Query Options Pattern
     </span>
   </a>
   
@@ -3058,55 +3004,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-features" class="md-nav__link">
+  <a href="#effective-cache-invalidation-strategies" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚡ Advanced Features
+      Effective Cache Invalidation Strategies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚡ Advanced Features">
+    <nav class="md-nav" aria-label="Effective Cache Invalidation Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#refetching" class="md-nav__link">
+  <a href="#1-centralized-invalidation-service" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Refetching
+      1. Centralized Invalidation Service
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#caching" class="md-nav__link">
+  <a href="#2-optimistic-updates-with-rollback" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Caching
+      2. Optimistic Updates with Rollback
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pagination-infinite-queries" class="md-nav__link">
+  <a href="#3-selective-invalidation-with-predicates" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Pagination &amp; Infinite Queries
+      3. Selective Invalidation with Predicates
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optimistic-updates" class="md-nav__link">
+  <a href="#4-background-data-updates" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Optimistic Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#typescript-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Typescript Support
+      4. Background Data Updates
     </span>
   </a>
   
@@ -3114,22 +3051,91 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-debugging-invalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing &amp; Debugging Invalidation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-mitigations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls &amp; Mitigations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls &amp; Mitigations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-over-invalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Over-invalidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-stale-while-revalidate-glitches" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Stale-While-Revalidate Glitches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-memory-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Memory Leaks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-missed-invalidations" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Missed Invalidations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 References
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Summary
+      References
     </span>
   </a>
   
@@ -3151,7 +3157,61 @@
   
   
     <li class="md-nav__item">
-      <a href="../shadcn-ui/" class="md-nav__link">
+      <a href="../testing-debugging-in-tanstack-query/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing & Debugging In TanStack Query
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-pilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UX Pilot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shadcn-ui/" class="md-nav__link">
         
   
   
@@ -3299,7 +3359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-introduction/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-introduction/" class="md-nav__link">
         
   
   
@@ -3322,7 +3382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-installation/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-installation/" class="md-nav__link">
         
   
   
@@ -3345,7 +3405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-cheatsheet/" class="md-nav__link">
         
   
   
@@ -3368,7 +3428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-examples/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-examples/" class="md-nav__link">
         
   
   
@@ -3391,7 +3451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-useful-scripts/" class="md-nav__link">
         
   
   
@@ -3414,7 +3474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/dockerfile/" class="md-nav__link">
+      <a href="../../../../devops/docker/dockerfile/" class="md-nav__link">
         
   
   
@@ -3437,7 +3497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-compose/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-compose/" class="md-nav__link">
         
   
   
@@ -3460,7 +3520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/docker/docker-swarm/" class="md-nav__link">
+      <a href="../../../../devops/docker/docker-swarm/" class="md-nav__link">
         
   
   
@@ -3544,7 +3604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-introduction/" class="md-nav__link">
         
   
   
@@ -3567,7 +3627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-installation/" class="md-nav__link">
         
   
   
@@ -3590,7 +3650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-presentation/" class="md-nav__link">
         
   
   
@@ -3696,7 +3756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/pod/" class="md-nav__link">
         
   
   
@@ -3719,7 +3779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/namespace/" class="md-nav__link">
         
   
   
@@ -3742,7 +3802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/label-selector-annotation/" class="md-nav__link">
         
   
   
@@ -3765,7 +3825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/deployment-replicaset/" class="md-nav__link">
         
   
   
@@ -3788,7 +3848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rollout-rollback/" class="md-nav__link">
         
   
   
@@ -3811,7 +3871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/statefulset/" class="md-nav__link">
         
   
   
@@ -3834,7 +3894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/daemonset/" class="md-nav__link">
         
   
   
@@ -3857,7 +3917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/job-cronjob/" class="md-nav__link">
         
   
   
@@ -3880,7 +3940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-structure-service/" class="md-nav__link">
         
   
   
@@ -3903,7 +3963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/ingress/" class="md-nav__link">
         
   
   
@@ -3926,7 +3986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/network-policy/" class="md-nav__link">
         
   
   
@@ -3949,7 +4009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/volume-secret-configmap/" class="md-nav__link">
         
   
   
@@ -3972,7 +4032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/image-secret/" class="md-nav__link">
         
   
   
@@ -3995,7 +4055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/probes-resource-limits-env-variables/" class="md-nav__link">
         
   
   
@@ -4018,7 +4078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/affinity-taint-toleration/" class="md-nav__link">
         
   
   
@@ -4041,7 +4101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/persistent-volume-claim/" class="md-nav__link">
         
   
   
@@ -4064,7 +4124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/storage-class/" class="md-nav__link">
         
   
   
@@ -4087,7 +4147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/authentication/" class="md-nav__link">
         
   
   
@@ -4110,7 +4170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/rbac/" class="md-nav__link">
         
   
   
@@ -4133,7 +4193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-objects/service-account/" class="md-nav__link">
         
   
   
@@ -4221,7 +4281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubectl/" class="md-nav__link">
         
   
   
@@ -4244,7 +4304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/kubeadm/" class="md-nav__link">
         
   
   
@@ -4267,7 +4327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/minikube/" class="md-nav__link">
         
   
   
@@ -4290,7 +4350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/dashboards/" class="md-nav__link">
         
   
   
@@ -4313,7 +4373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/helm/" class="md-nav__link">
         
   
   
@@ -4336,7 +4396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/monitoring-prometheus-efk-stack/" class="md-nav__link">
         
   
   
@@ -4359,7 +4419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
+      <a href="../../../../devops/kubernetes/kubernetes-tools/service-mesh/" class="md-nav__link">
         
   
   
@@ -4494,7 +4554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-introduction/" class="md-nav__link">
         
   
   
@@ -4517,7 +4577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-cli/" class="md-nav__link">
         
   
   
@@ -4540,7 +4600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services-overview/" class="md-nav__link">
         
   
   
@@ -4650,7 +4710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-billing-and-cost-management/" class="md-nav__link">
         
   
   
@@ -4673,7 +4733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam/" class="md-nav__link">
         
   
   
@@ -4696,7 +4756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-iam-demo/" class="md-nav__link">
         
   
   
@@ -4719,7 +4779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-s3/" class="md-nav__link">
         
   
   
@@ -4742,7 +4802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-glacier/" class="md-nav__link">
         
   
   
@@ -4765,7 +4825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ec2/" class="md-nav__link">
         
   
   
@@ -4788,7 +4848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-efs/" class="md-nav__link">
         
   
   
@@ -4811,7 +4871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-vpc/" class="md-nav__link">
         
   
   
@@ -4834,7 +4894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudfront/" class="md-nav__link">
         
   
   
@@ -4857,7 +4917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-route53/" class="md-nav__link">
         
   
   
@@ -4880,7 +4940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-rds/" class="md-nav__link">
         
   
   
@@ -4903,7 +4963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-redshift/" class="md-nav__link">
         
   
   
@@ -4926,7 +4986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-dynamodb/" class="md-nav__link">
         
   
   
@@ -4949,7 +5009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-elasticache/" class="md-nav__link">
         
   
   
@@ -4972,7 +5032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudwatch/" class="md-nav__link">
         
   
   
@@ -4995,7 +5055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudtrial/" class="md-nav__link">
         
   
   
@@ -5018,7 +5078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-cloudformation/" class="md-nav__link">
         
   
   
@@ -5041,7 +5101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sns/" class="md-nav__link">
         
   
   
@@ -5064,7 +5124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-sqs/" class="md-nav__link">
         
   
   
@@ -5087,7 +5147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-swf/" class="md-nav__link">
         
   
   
@@ -5110,7 +5170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-ses/" class="md-nav__link">
         
   
   
@@ -5133,7 +5193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
+      <a href="../../../../devops/cloud/aws/aws-services/aws-athena-examples/" class="md-nav__link">
         
   
   
@@ -5227,7 +5287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
+      <a href="../../../../devops/terraform/terraform-cheatsheet/" class="md-nav__link">
         
   
   
@@ -5250,7 +5310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/terraform/tfenv/" class="md-nav__link">
+      <a href="../../../../devops/terraform/tfenv/" class="md-nav__link">
         
   
   
@@ -5333,7 +5393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data/data-tools/" class="md-nav__link">
+      <a href="../../../../data/data-tools/" class="md-nav__link">
         
   
   
@@ -5420,7 +5480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
+      <a href="../../../../network/ip-addresses-ip-ranges-cidr/" class="md-nav__link">
         
   
   
@@ -5443,7 +5503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-nameservers/" class="md-nav__link">
+      <a href="../../../../network/dns-nameservers/" class="md-nav__link">
         
   
   
@@ -5466,7 +5526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/dns-records/" class="md-nav__link">
+      <a href="../../../../network/dns-records/" class="md-nav__link">
         
   
   
@@ -5489,7 +5549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/domain-hosting-lookup/" class="md-nav__link">
+      <a href="../../../../network/domain-hosting-lookup/" class="md-nav__link">
         
   
   
@@ -5512,7 +5572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/shell-network-commands/" class="md-nav__link">
+      <a href="../../../../network/shell-network-commands/" class="md-nav__link">
         
   
   
@@ -5535,7 +5595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/overriding-hostnames/" class="md-nav__link">
+      <a href="../../../../network/overriding-hostnames/" class="md-nav__link">
         
   
   
@@ -5558,7 +5618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../network/internet-speed-ip/" class="md-nav__link">
+      <a href="../../../../network/internet-speed-ip/" class="md-nav__link">
         
   
   
@@ -5635,7 +5695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/freelance-guide/" class="md-nav__link">
+      <a href="../../../../freelance/freelance-guide/" class="md-nav__link">
         
   
   
@@ -5709,7 +5769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/website-setup/" class="md-nav__link">
+      <a href="../../../../freelance/website/website-setup/" class="md-nav__link">
         
   
   
@@ -5732,7 +5792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/ssl-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5755,7 +5815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
+      <a href="../../../../freelance/website/mail-server-setup-cpanel/" class="md-nav__link">
         
   
   
@@ -5837,7 +5897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-installation/" class="md-nav__link">
         
   
   
@@ -5860,7 +5920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-studio/" class="md-nav__link">
         
   
   
@@ -5883,7 +5943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-admin-dashboard/" class="md-nav__link">
         
   
   
@@ -5906,7 +5966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-installation/" class="md-nav__link">
         
   
   
@@ -5929,7 +5989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-theme-customization/" class="md-nav__link">
         
   
   
@@ -5952,7 +6012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/wordpress-monetization/" class="md-nav__link">
         
   
   
@@ -6026,7 +6086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/astra-theme/" class="md-nav__link">
         
   
   
@@ -6049,7 +6109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/cenote-theme/" class="md-nav__link">
         
   
   
@@ -6072,7 +6132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/tyche-theme/" class="md-nav__link">
         
   
   
@@ -6095,7 +6155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/themes/storefront-theme/" class="md-nav__link">
         
   
   
@@ -6177,7 +6237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/really-simple-security-plugin/" class="md-nav__link">
         
   
   
@@ -6200,7 +6260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/joinchat-plugin/" class="md-nav__link">
         
   
   
@@ -6223,7 +6283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/loco-translate-plugin/" class="md-nav__link">
         
   
   
@@ -6246,7 +6306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
+      <a href="../../../../freelance/website/wordpress/plugins/woocommerce-plugin/" class="md-nav__link">
         
   
   
@@ -6412,7 +6472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/editor/intellij/" class="md-nav__link">
+      <a href="../../../../tools/editor/intellij/" class="md-nav__link">
         
   
   
@@ -6435,7 +6495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/editor/vscode/" class="md-nav__link">
+      <a href="../../../../tools/editor/vscode/" class="md-nav__link">
         
   
   
@@ -6517,7 +6577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-reminder/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-reminder/" class="md-nav__link">
         
   
   
@@ -6540,7 +6600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-message/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-message/" class="md-nav__link">
         
   
   
@@ -6563,7 +6623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-user-group-creation/" class="md-nav__link">
         
   
   
@@ -6586,7 +6646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/slack/slack-github-workflows/" class="md-nav__link">
+      <a href="../../../../tools/slack/slack-github-workflows/" class="md-nav__link">
         
   
   
@@ -6617,7 +6677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/chrome-extensions/" class="md-nav__link">
+      <a href="../../../../tools/chrome-extensions/" class="md-nav__link">
         
   
   
@@ -6640,7 +6700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/apicurio-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/apicurio-via-docker/" class="md-nav__link">
         
   
   
@@ -6663,7 +6723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/kafkaui-via-docker/" class="md-nav__link">
+      <a href="../../../../tools/kafkaui-via-docker/" class="md-nav__link">
         
   
   
@@ -6686,7 +6746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multi-gitter/" class="md-nav__link">
+      <a href="../../../../tools/multi-gitter/" class="md-nav__link">
         
   
   
@@ -6709,7 +6769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/multipass/" class="md-nav__link">
+      <a href="../../../../tools/multipass/" class="md-nav__link">
         
   
   
@@ -6732,7 +6792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/bloomrpc/" class="md-nav__link">
+      <a href="../../../../tools/bloomrpc/" class="md-nav__link">
         
   
   
@@ -6755,7 +6815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
+      <a href="../../../../tools/windows-on-mac-via-utm/" class="md-nav__link">
         
   
   
@@ -6778,7 +6838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/android-file-transfer/" class="md-nav__link">
+      <a href="../../../../tools/android-file-transfer/" class="md-nav__link">
         
   
   
@@ -6801,7 +6861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/useful-resources-tools/" class="md-nav__link">
+      <a href="../../../../tools/useful-resources-tools/" class="md-nav__link">
         
   
   
@@ -6878,7 +6938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
+      <a href="../../../../other/modem-admin-wifi-passwords/" class="md-nav__link">
         
   
   
@@ -6901,7 +6961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../other/recommended-reading-list/" class="md-nav__link">
+      <a href="../../../../other/recommended-reading-list/" class="md-nav__link">
         
   
   
@@ -6951,169 +7011,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react-query" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Why React Query?
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#understanding-query-keys-the-foundation" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠 Setup
+      Understanding Query Keys: The Foundation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#organizing-query-keys-patterns-strategies" class="md-nav__link">
     <span class="md-ellipsis">
-      🔑 Core Concepts
+      Organizing Query Keys: Patterns &amp; Strategies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔑 Core Concepts">
+    <nav class="md-nav" aria-label="Organizing Query Keys: Patterns &amp; Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-query" class="md-nav__link">
+  <a href="#1-co-location-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Query
+      1. Co-Location Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-mutation" class="md-nav__link">
+  <a href="#2-custom-hooks-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Mutation
+      2. Custom Hooks Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-query-invalidation" class="md-nav__link">
+  <a href="#3-query-key-factory-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Query Invalidation
+      3. Query Key Factory Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-query-states" class="md-nav__link">
+  <a href="#4-advanced-query-options-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Query States
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-usesuspensequery" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. useSuspenseQuery
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-usequeries" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. useQueries
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-suspended-queries-usesuspensequeries" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Suspended Queries (useSuspenseQueries)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-data-alias" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. data alias
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-enabled-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Enabled Queries
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-caching-data-freshness" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Caching &amp; Data Freshness
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="10. Caching &amp; Data Freshness">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#staletime" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 staleTime
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gctime-cachetime" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 gcTime (cacheTime)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#timeline-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      🕒 Timeline Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-devtools" class="md-nav__link">
-    <span class="md-ellipsis">
-      11. DevTools
+      4. Advanced Query Options Pattern
     </span>
   </a>
   
@@ -7125,55 +7080,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-features" class="md-nav__link">
+  <a href="#effective-cache-invalidation-strategies" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚡ Advanced Features
+      Effective Cache Invalidation Strategies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚡ Advanced Features">
+    <nav class="md-nav" aria-label="Effective Cache Invalidation Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#refetching" class="md-nav__link">
+  <a href="#1-centralized-invalidation-service" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Refetching
+      1. Centralized Invalidation Service
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#caching" class="md-nav__link">
+  <a href="#2-optimistic-updates-with-rollback" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Caching
+      2. Optimistic Updates with Rollback
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pagination-infinite-queries" class="md-nav__link">
+  <a href="#3-selective-invalidation-with-predicates" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Pagination &amp; Infinite Queries
+      3. Selective Invalidation with Predicates
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optimistic-updates" class="md-nav__link">
+  <a href="#4-background-data-updates" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Optimistic Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#typescript-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Typescript Support
+      4. Background Data Updates
     </span>
   </a>
   
@@ -7181,22 +7127,91 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-debugging-invalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing &amp; Debugging Invalidation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-mitigations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls &amp; Mitigations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls &amp; Mitigations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-over-invalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Over-invalidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-stale-while-revalidate-glitches" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Stale-While-Revalidate Glitches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-memory-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Memory Leaks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-missed-invalidations" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Missed Invalidations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 References
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Summary
+      References
     </span>
   </a>
   
@@ -7218,459 +7233,302 @@
 
 
 
-<h1 id="tanstack-react-query">TanStack React Query</h1>
-<p>TanStack React Query is a powerful library for <strong>managing server state</strong> in React applications. It simplifies data
-fetching, caching, synchronization, and updating while keeping your UI in sync with your backend APIs.</p>
+<h1 id="managing-query-keys-cache-invalidation-in-tanstack-react-query">Managing Query Keys &amp; Cache Invalidation in TanStack React Query</h1>
+<h2 id="introduction">Introduction</h2>
+<p>As React Query is used more broadly in growing apps, issues like <strong>stale data</strong>, <strong>memory usage</strong>, and <strong>missed
+invalidations</strong> become painful. The article argues that without consistent strategies, teams may ship bugs due to
+forgotten cache invalidations. It emphasizes that <strong>query keys</strong> and how you organize/invalidate them are foundational
+to a robust caching layer.</p>
 <hr />
-<h2 id="why-react-query">🚀 Why React Query?</h2>
+<h2 id="understanding-query-keys-the-foundation">Understanding Query Keys: The Foundation</h2>
 <ul>
-<li>Eliminates manual state management for server data.</li>
-<li>Built-in caching and background updates.</li>
-<li>Automatic retry and error handling.</li>
-<li>Works seamlessly with REST, GraphQL, or any async function.</li>
-<li>Great developer experience (DevTools included).</li>
+<li>A <strong>query key</strong> is the unique identifier React Query uses to cache data.</li>
+<li>
+<p>It can be a string, array, or nested structures, e.g.:</p>
+<ul>
+<li><code>['todos']</code></li>
+<li><code>['todo', todoId]</code></li>
+<li><code>['todos', { status: 'done', userId: 1 }]</code></li>
 </ul>
+</li>
+<li>
+<p>React Query uses deterministic hashing so:</p>
+<ol>
+<li>Order of object properties doesn’t matter</li>
+<li>Arrays and objects get consistently hashed</li>
+<li>Equivalent keys (e.g. <code>{status, userId}</code> vs <code>{userId, status}</code>) resolve to the same cache entry</li>
+</ol>
+</li>
+</ul>
+<p>This determinism is key to reliably invalidating queries or grouping them logically.</p>
 <hr />
-<h2 id="setup">🛠 Setup</h2>
-<p>Before you can use <code>useQuery</code> or <code>useMutation</code>, you need to configure a <strong>Query Client</strong> and wrap your app with
-<code>QueryClientProvider</code>.</p>
-<p>First, install React Query and (optionally) DevTools:</p>
-<pre><code class="language-bash">npm install @tanstack/react-query
-npm install @tanstack/react-query-devtools
+<h2 id="organizing-query-keys-patterns-strategies">Organizing Query Keys: Patterns &amp; Strategies</h2>
+<p>The article explains several patterns, from simpler to more structured:</p>
+<h3 id="1-co-location-pattern">1. Co-Location Pattern</h3>
+<p>Query logic stays inline where it’s used. Example:</p>
+<pre><code class="language-tsx">function UserProfile({userId}) {
+    const {data: user} = useQuery({
+        queryKey: ['user', userId],
+        queryFn: () =&gt; fetchUser(userId)
+    })
+    const {data: posts} = useQuery({
+        queryKey: ['posts', userId],
+        queryFn: () =&gt; fetchUserPosts(userId)
+    })
+    return (/* render UI */)
+}
 </code></pre>
-<p>Or with Yarn / pnpm:</p>
-<pre><code class="language-bash">yarn add @tanstack/react-query @tanstack/react-query-devtools
-# or
-pnpm add @tanstack/react-query @tanstack/react-query-devtools
-</code></pre>
-<p>After installation, you need to configure a Query Client and wrap your app with <code>QueryClientProvider</code>:</p>
-<pre><code class="language-tsx">import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
-import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
-import App from './App'
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Simple, intuitive</li>
+<li>Clear dependency between UI and data</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Duplication of query key definitions</li>
+<li>Hard to maintain consistency across codebase</li>
+<li>Invalidation logic can get scattered</li>
+</ul>
+<h3 id="2-custom-hooks-pattern">2. Custom Hooks Pattern</h3>
+<p>Extracts query logic into reusable hooks:</p>
+<pre><code class="language-ts">// hooks/useUser.ts
+export function useUser(userId: string) {
+    return useQuery({
+        queryKey: ['user', userId],
+        queryFn: () =&gt; fetchUser(userId)
+    })
+}
 
-// Create a client instance with default options
-const queryClient = new QueryClient({
-    defaultOptions: {
-        queries: {
-            staleTime: 1000 * 60 * 5,     // 5 minutes &quot;fresh&quot;
-            gcTime: 1000 * 60 * 10,       // 10 minutes before garbage collection
-            refetchOnWindowFocus: false,  // don't auto refetch when window refocuses
-            retry: 2,                     // retry failed requests up to 2 times
-        },
-        mutations: {
-            retry: 1,                     // mutations retry once if failed
-        },
+// hooks/useUserPosts.ts
+export function useUserPosts(userId: string) {
+    return useQuery({
+        queryKey: ['posts', userId],
+        queryFn: () =&gt; fetchUserPosts(userId)
+    })
+}
+
+// In component
+function UserProfile({userId}) {
+    const {data: user} = useUser(userId)
+    const {data: posts} = useUserPosts(userId)
+    return (/* render UI */)
+}
+</code></pre>
+<p>This helps DRY (don’t repeat yourself) the query logic, but still relies on consistent key usage.</p>
+<h3 id="3-query-key-factory-pattern">3. Query Key Factory Pattern</h3>
+<p>Centralize your query key definitions in one file, to avoid typos and keep consistency:</p>
+<pre><code class="language-ts">// queryKeys.ts
+export const queryKeys = {
+    users: {
+        all: ['users'] as const,
+        detail: (id: string) =&gt; ['users', id] as const,
+        posts: (id: string) =&gt; ['users', id, 'posts'] as const,
     },
-})
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    &lt;React.StrictMode&gt;
-        &lt;QueryClientProvider client={queryClient}&gt;
-            &lt;App/&gt;
-            &lt;ReactQueryDevtools initialIsOpen={false}/&gt;
-        &lt;/QueryClientProvider&gt;
-    &lt;/React.StrictMode&gt;
-)
-</code></pre>
-<hr />
-<h2 id="core-concepts">🔑 Core Concepts</h2>
-<h3 id="1-query">1. <strong>Query</strong></h3>
-<p>Queries are used to fetch and cache data.</p>
-<pre><code class="language-tsx">import {useQuery} from '@tanstack/react-query'
-import axios from 'axios'
-
-async function fetchUsers() {
-    const {data} = await axios.get('/api/users')
-    return data
+    posts: {
+        all: ['posts'] as const,
+        detail: (id: string) =&gt; ['posts', id] as const,
+        comments: (id: string) =&gt; ['posts', id, 'comments'] as const,
+    },
 }
-
-export default function Users() {
-    const {data, error, isLoading} = useQuery({
-        queryKey: ['users'],
-        queryFn: fetchUsers,
+</code></pre>
+<p>Then in hooks:</p>
+<pre><code class="language-ts">function useUser(id: string) {
+    return useQuery({
+        queryKey: queryKeys.users.detail(id),
+        queryFn: () =&gt; fetchUser(id),
     })
-
-    if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;
-    if (error) return &lt;p&gt;Error loading users&lt;/p&gt;
-
-    return (
-        &lt;ul&gt;
-            {data.map(user =&gt; (
-                &lt;li key={user.id}&gt;{user.name}&lt;/li&gt;
-            ))}
-        &lt;/ul&gt;
-    )
 }
 </code></pre>
-<hr />
-<h3 id="2-mutation">2. <strong>Mutation</strong></h3>
-<p>Mutations are used to create, update, or delete data.</p>
-<pre><code class="language-tsx">import {useMutation, useQueryClient} from '@tanstack/react-query'
-import axios from 'axios'
-
-async function addUser(user) {
-    const {data} = await axios.post('/api/users', user)
-    return data
+<p>When invalidating:</p>
+<pre><code class="language-ts">queryClient.invalidateQueries({
+    queryKey: queryKeys.users.posts(userId)
+})
+queryClient.invalidateQueries({
+    queryKey: queryKeys.users.all
+})
+</code></pre>
+<p>This pattern is especially useful when you have multiple related queries that need consistent invalidation.</p>
+<h3 id="4-advanced-query-options-pattern">4. Advanced Query Options Pattern</h3>
+<p>Combine key definitions with default query option logic:</p>
+<pre><code class="language-ts">// queryOptions.ts
+interface QueryConfig {
+    staleTime?: number
+    cacheTime?: number
+    retry?: boolean | number
 }
 
-export default function AddUser() {
-    const queryClient = useQueryClient()
-
-    const mutation = useMutation({
-        mutationFn: addUser,
-        onSuccess: () =&gt; {
-            queryClient.invalidateQueries({queryKey: ['users']})
-        },
-    })
-
-    return (
-        &lt;button
-            onClick={() =&gt; mutation.mutate({name: 'New User'})}
-            disabled={mutation.isLoading}
-        &gt;
-            {mutation.isLoading ? 'Adding...' : 'Add User'}
-        &lt;/button&gt;
-    )
-}
-</code></pre>
-<hr />
-<h3 id="3-query-invalidation">3. <strong>Query Invalidation</strong></h3>
-<p>Keeps cache fresh by refetching queries.</p>
-<pre><code class="language-tsx">queryClient.invalidateQueries({queryKey: ['users']})
-</code></pre>
-<hr />
-<h3 id="4-query-states">4. <strong>Query States</strong></h3>
-<ul>
-<li><strong>isLoading</strong></li>
-<li><strong>isFetching</strong></li>
-<li><strong>isError</strong></li>
-<li><strong>isSuccess</strong></li>
-</ul>
-<pre><code class="language-tsx">const {data, isLoading, isError, error, isFetching} = useQuery({...})
-</code></pre>
-<hr />
-<h3 id="5-usesuspensequery">5. <strong>useSuspenseQuery</strong></h3>
-<ul>
-<li>Works with <strong>React Suspense</strong>.</li>
-<li>Instead of returning loading/error states, it throws promises that Suspense boundaries can handle.</li>
-</ul>
-<pre><code class="language-tsx">import {useSuspenseQuery} from '@tanstack/react-query'
-
-function UserList() {
-    const {data} = useSuspenseQuery({
-        queryKey: ['users'],
-        queryFn: fetchUsers,
-    })
-
-    return (
-        &lt;ul&gt;
-            {data.map(user =&gt; &lt;li key={user.id}&gt;{user.name}&lt;/li&gt;)}
-        &lt;/ul&gt;
-    )
+export function createQueryOptions&lt;T&gt;(
+    key: readonly unknown[],
+    fetcher: () =&gt; Promise&lt;T&gt;,
+    config?: QueryConfig
+) {
+    return {
+        queryKey: key,
+        queryFn: fetcher,
+        staleTime: config?.staleTime ?? 5 * 60 * 1000,
+        cacheTime: config?.cacheTime ?? 30 * 60 * 1000,
+        retry: config?.retry ?? 3,
+    }
 }
 
-function App() {
-    return (
-        &lt;React.Suspense fallback={&lt;p&gt;Loading...&lt;/p&gt;}&gt;
-            &lt;UserList/&gt;
-        &lt;/React.Suspense&gt;
-    )
-}
-
-</code></pre>
-<hr />
-<h3 id="6-usequeries">6. <strong>useQueries</strong></h3>
-<ul>
-<li>Run <strong>multiple queries in parallel</strong>.</li>
-<li>Useful when you need several independent datasets.</li>
-</ul>
-<pre><code class="language-tsx">import {useQueries} from '@tanstack/react-query'
-
-const results = useQueries({
-    queries: [
-        {queryKey: ['user', 1], queryFn: () =&gt; fetchUser(1)},
-        {queryKey: ['posts'], queryFn: fetchPosts},
-    ],
-})
-
-const [userResult, postsResult] = results
-</code></pre>
-<hr />
-<h3 id="7-suspended-queries-usesuspensequeries">7. <strong>Suspended Queries (useSuspenseQueries)</strong></h3>
-<ul>
-<li>Same as useQueries but with Suspense.</li>
-</ul>
-<pre><code class="language-tsx">import {useSuspenseQueries} from '@tanstack/react-query'
-
-const results = useSuspenseQueries({
-    queries: [
-        {queryKey: ['user', 1], queryFn: () =&gt; fetchUser(1)},
-        {queryKey: ['posts'], queryFn: fetchPosts},
-    ],
-})
-
-const [userResult, postsResult] = results
-</code></pre>
-<hr />
-<h3 id="8-data-alias">8. <strong>data alias</strong></h3>
-<ul>
-<li>Every query result has both <code>.data</code> and <code>.dataUpdatedAt</code>.</li>
-<li>You can alias the data prop when destructuring to avoid naming conflicts:</li>
-</ul>
-<pre><code class="language-tsx">const {data: users} = useQuery({
-    queryKey: ['users'],
-    queryFn: fetchUsers,
-})
-
-const {data: posts} = useQuery({
-    queryKey: ['posts'],
-    queryFn: fetchPosts,
-})
-</code></pre>
-<hr />
-<h3 id="9-enabled-queries">9. <strong>Enabled Queries</strong></h3>
-<p>By default, queries run automatically.<br />
-With <code>enabled</code>, you can <strong>conditionally fetch</strong> data.</p>
-<pre><code class="language-tsx">const {data, isLoading} = useQuery({
-    queryKey: ['user', userId],
-    queryFn: () =&gt; fetchUser(userId),
-    enabled: !!userId, // Only runs if userId is defined
-})
-</code></pre>
-<ul>
-<li><code>enabled: false</code> → query does not run automatically.</li>
-<li>Useful for dependent queries (fetch posts <strong>after</strong> user is loaded).</li>
-</ul>
-<pre><code class="language-tsx">const {data: user} = useQuery({
-    queryKey: ['user', userId],
-    queryFn: () =&gt; fetchUser(userId),
-})
-
-const {data: posts} = useQuery({
-    queryKey: ['posts', user?.id],
-    queryFn: () =&gt; fetchPosts(user!.id),
-    enabled: !!user, // wait until user exists
-})
-
-</code></pre>
-<hr />
-<h3 id="10-caching-data-freshness">10. <strong>Caching &amp; Data Freshness</strong></h3>
-<p>React Query caches every query result in memory.<br />
-Understanding <strong>when it reuses cache vs. when it refetches</strong> is key.</p>
-<hr />
-<h4 id="staletime">🔑 <code>staleTime</code></h4>
-<ul>
-<li>How long the data is considered <strong>fresh</strong>.</li>
-<li>Default: <code>0</code> → data is immediately stale.</li>
-<li>If data is <strong>fresh</strong>, React Query will not refetch automatically.</li>
-</ul>
-<pre><code class="language-tsx">useQuery({
-    queryKey: ['todos'],
-    queryFn: fetchTodos,
-    staleTime: 1000 * 60, // 1 minute
-})
-</code></pre>
-<h4 id="gctime-cachetime">🔑 <code>gcTime (cacheTime)</code></h4>
-<ul>
-<li>How long unused (inactive) data stays in cache before being garbage collected.</li>
-<li>Default: <code>5 minutes</code>.</li>
-<li>If another component mounts with the same queryKey during this time, the cached data is reused.</li>
-</ul>
-<pre><code class="language-tsx">useQuery({
-    queryKey: ['todos'],
-    queryFn: fetchTodos,
-    cacheTime: 1000 * 60 * 10, // 10 minutes
-})
-</code></pre>
-<h4 id="timeline-example">🕒 Timeline Example</h4>
-<p>With <code>staleTime = 1 min</code> and <code>cacheTime = 5 min</code>:</p>
-<pre><code class="language-pgsql">0s ─── Fetch API (first time) ───&gt; Cached (Fresh ✅)
-↓
-0s - 60s → Fresh (no refetch)
-↓
-60s → Data becomes Stale (still cached ❗, may refetch if needed)
-↓
-60s - 300s → Stale but available in cache
-↓
-300s → cacheTime expires → Data removed from cache 🗑
-↓
-Next mount → API fetch again
-</code></pre>
-<h4 id="summary">Summary</h4>
-<ul>
-<li><code>staleTime</code> → How long data is considered fresh.</li>
-<li><code>cacheTime</code> → How long inactive data remains in memory.</li>
-<li><strong>Stale ≠ deleted</strong>: stale means “old but cached”. Deleted happens only after <code>cacheTime</code>.</li>
-</ul>
-<hr />
-<h3 id="11-devtools">11. <strong>DevTools</strong></h3>
-<p>For Chrome, Firefox, and Edge users: Third-party browser extensions are available for debugging TanStack Query directly
-in browser DevTools. These provide the same functionality as the framework-specific devtools packages:</p>
-<ul>
-<li><a href="https://chromewebstore.google.com/detail/tanstack-query-devtools/annajfchloimdhceglpgglpeepfghfai">Chrome logo Devtools for Chrome</a></li>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tanstack-query-devtools/">Firefox logo Devtools for Firefox</a></li>
-<li><a href="https://microsoftedge.microsoft.com/addons/detail/tanstack-query-devtools/edmdpkgkacmjopodhfolmphdenmddobj">Edge logo Devtools for Edge</a></li>
-</ul>
-<pre><code class="language-tsx">import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
-
-function App() {
-    return (
-        &lt;QueryClientProvider client={queryClient}&gt;
-            &lt;MyComponents/&gt;
-            &lt;ReactQueryDevtools initialIsOpen={false}/&gt;
-        &lt;/QueryClientProvider&gt;
-    )
-}
-</code></pre>
-<hr />
-<h2 id="advanced-features">⚡ Advanced Features</h2>
-<h3 id="refetching">✅ Refetching</h3>
-<pre><code class="language-tsx">useQuery({
-    queryKey: ['users'],
-    queryFn: fetchUsers,
-    refetchOnWindowFocus: true,
-    refetchInterval: 5000,
-})
-</code></pre>
-<h3 id="caching">✅ Caching</h3>
-<pre><code class="language-tsx">useQuery({
-    queryKey: ['users'],
-    queryFn: fetchUsers,
-    staleTime: 1000 * 60,
-    gcTime: 1000 * 60 * 5,
-})
-</code></pre>
-<h3 id="pagination-infinite-queries">✅ Pagination &amp; Infinite Queries</h3>
-<pre><code class="language-tsx">import {useInfiniteQuery} from '@tanstack/react-query'
-
-async function fetchPosts({pageParam = 1}) {
-    const res = await fetch(`/api/posts?page=${pageParam}`)
-    return res.json()
-}
-
-export default function Posts() {
-    const {
-        data,
-        fetchNextPage,
-        hasNextPage,
-        isFetchingNextPage,
-    } = useInfiniteQuery({
-        queryKey: ['posts'],
-        queryFn: fetchPosts,
-        getNextPageParam: (lastPage) =&gt; lastPage.nextPage ?? false,
-    })
-
-    return (
-        &lt;div&gt;
-            {data?.pages.map((page, i) =&gt; (
-                &lt;React.Fragment key={i}&gt;
-                    {page.items.map(post =&gt; (
-                        &lt;p key={post.id}&gt;{post.title}&lt;/p&gt;
-                    ))}
-                &lt;/React.Fragment&gt;
-            ))}
-            &lt;button onClick={() =&gt; fetchNextPage()} disabled={!hasNextPage || isFetchingNextPage}&gt;
-                {isFetchingNextPage ? 'Loading more...' : 'Load More'}
-            &lt;/button&gt;
-        &lt;/div&gt;
-    )
-}
-</code></pre>
-<h3 id="optimistic-updates">✅ Optimistic Updates</h3>
-<pre><code class="language-tsx">const mutation = useMutation({
-    mutationFn: updateUser,
-    onMutate: async (newUser) =&gt; {
-        await queryClient.cancelQueries({queryKey: ['users']})
-        const previousUsers = queryClient.getQueryData(['users'])
-        queryClient.setQueryData(['users'], (old) =&gt;
-            old.map(user =&gt;
-                user.id === newUser.id ? {...user, ...newUser} : user
-            )
+// hooks/useUser.ts
+export function useUser(id: string) {
+    return useQuery(
+        createQueryOptions(
+            queryKeys.users.detail(id),
+            () =&gt; fetchUser(id),
+            {staleTime: 60 * 1000}
         )
-        return {previousUsers}
-    },
-    onError: (err, newUser, context) =&gt; {
-        queryClient.setQueryData(['users'], context.previousUsers)
-    },
-    onSettled: () =&gt; {
-        queryClient.invalidateQueries({queryKey: ['users']})
-    },
-})
-</code></pre>
-<h3 id="typescript-support">✅ Typescript Support</h3>
-<p>👉 In modern React Query with TypeScript, you often don’t need useEffect to react to query changes. Why?</p>
-<ul>
-<li>React Query already handles <strong>fetching lifecycle</strong> (loading, error, success).</li>
-<li>If you need to run something <strong>after success</strong>, you can use <code>onSuccess</code> in <code>useQuery</code> options instead of manually
-  checking with <code>useEffect</code>.</li>
-<li>That makes your code <strong>cleaner and more declarative</strong>.</li>
-</ul>
-<p>Here’s a typed query example fetching
-from <a href="https://jsonplaceholder.typicode.com/todos">https://jsonplaceholder.typicode.com/todos</a>:</p>
-<pre><code class="language-tsx">import {useQuery} from '@tanstack/react-query'
-import axios from 'axios'
-
-// Define a TypeScript type for the Todo
-type Todo = {
-    userId: number
-    id: number
-    title: string
-    completed: boolean
-}
-
-// Fetcher function with typing
-const fetchTodos = async (): Promise&lt;Todo[]&gt; =&gt; {
-    const {data} = await axios.get&lt;Todo[]&gt;('https://jsonplaceholder.typicode.com/todos')
-    return data
-}
-
-export default function Todos() {
-    const {data: todos, isLoading, isError, error} = useQuery&lt;Todo[]&gt;({
-        queryKey: ['todos'],
-        queryFn: fetchTodos,
-        onSuccess: (data) =&gt; {
-            console.log('Fetched todos:', data.length)
-        },
-    })
-
-    if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;
-    if (isError) return &lt;p&gt;Error: {(error as Error).message}&lt;/p&gt;
-
-    return (
-        &lt;ul&gt;
-            {todos?.slice(0, 5).map(todo =&gt; (
-                &lt;li key={todo.id}&gt;
-                    {todo.title} {todo.completed ? '✅' : '❌'}
-                &lt;/li&gt;
-            ))}
-        &lt;/ul&gt;
     )
 }
 </code></pre>
-<p>🔑 <strong>Key Points</strong>:</p>
-<ul>
-<li><strong>Generics in</strong> <code>useQuery&lt;Todo[]&gt;</code> tell React Query what type the data should be.</li>
-<li>Axios also uses <code>&lt;Todo[]&gt;</code> so the compiler checks the API response matches our type.</li>
-<li><code>onSuccess</code> replaces the old pattern of <code>useEffect</code> to “react to data being ready”.</li>
-</ul>
+<p>This ensures your queries have consistent configurations across the app and makes overrides easier.</p>
 <hr />
-<h2 id="references">📚 References</h2>
-<ul>
-<li><a href="https://tanstack.com/query/latest">TanStack Official Docs</a></li>
-<li><a href="https://github.com/TanStack/query">TanStack GitHub</a></li>
-<li><a href="https://tanstack.com/query/v5/docs/framework/react/devtools">DevTools</a></li>
-</ul>
+<h2 id="effective-cache-invalidation-strategies">Effective Cache Invalidation Strategies</h2>
+<h3 id="1-centralized-invalidation-service">1. Centralized Invalidation Service</h3>
+<p>Create a service module to manage all invalidation logic:</p>
+<pre><code class="language-ts">class QueryInvalidationService {
+    constructor(private queryClient: QueryClient) {
+    }
+
+    invalidateUser(userId: string) {
+        this.queryClient.invalidateQueries({
+            queryKey: queryKeys.users.detail(userId)
+        })
+    }
+
+    invalidateUserPosts(userId: string) {
+        this.queryClient.invalidateQueries({
+            queryKey: queryKeys.users.posts(userId)
+        })
+    }
+
+    invalidatePost(postId: string) {
+        this.queryClient.invalidateQueries({
+            queryKey: queryKeys.posts.detail(postId)
+        })
+        this.queryClient.invalidateQueries({
+            queryKey: queryKeys.posts.comments(postId)
+        })
+    }
+}
+</code></pre>
+<p>Then use it in your mutation hooks to keep invalidations consistent and centralized.</p>
+<h3 id="2-optimistic-updates-with-rollback">2. Optimistic Updates with Rollback</h3>
+<p>Update cache immediately, and revert on error:</p>
+<pre><code class="language-ts">function useUpdateTodo() {
+    const queryClient = useQueryClient();
+    return useMutation({
+        mutationFn: updateTodo,
+        onMutate: async (newTodo) =&gt; {
+            await queryClient.cancelQueries({
+                queryKey: queryKeys.todos.detail(newTodo.id)
+            });
+            const previous = queryClient.getQueryData(
+                queryKeys.todos.detail(newTodo.id)
+            );
+            queryClient.setQueryData(
+                queryKeys.todos.detail(newTodo.id),
+                newTodo
+            );
+            return {previous};
+        },
+        onError: (err, newTodo, context) =&gt; {
+            queryClient.setQueryData(
+                queryKeys.todos.detail(newTodo.id),
+                context?.previous
+            );
+        },
+        onSettled: (newTodo) =&gt; {
+            queryClient.invalidateQueries({
+                queryKey: queryKeys.todos.detail(newTodo.id)
+            });
+        },
+    });
+}
+</code></pre>
+<h3 id="3-selective-invalidation-with-predicates">3. Selective Invalidation with Predicates</h3>
+<p>Use <code>predicate</code> to target only specific queries:</p>
+<pre><code class="language-ts">queryClient.invalidateQueries({
+    queryKey: queryKeys.todos.all,
+    predicate: (query) =&gt; {
+        const [, filters] = query.queryKey;
+        return filters?.status === 'completed';
+    }
+})
+</code></pre>
+<h3 id="4-background-data-updates">4. Background Data Updates</h3>
+<p>Keep data up-to-date using <code>refetchOnWindowFocus</code>, <code>refetchInterval</code>, etc.:</p>
+<pre><code class="language-ts">function useTodoList() {
+    return useQuery({
+        queryKey: queryKeys.todos.all,
+        queryFn: fetchTodos,
+        refetchOnWindowFocus: true,
+        refetchInterval: 60 * 1000,
+        refetchIntervalInBackground: false,
+    })
+}
+</code></pre>
 <hr />
-<h2 id="summary_1">✅ Summary</h2>
+<h2 id="testing-debugging-invalidation">Testing &amp; Debugging Invalidation</h2>
 <ul>
-<li>Data fetching + caching + syncing out of the box.</li>
-<li>Simple hooks (<code>useQuery</code>, <code>useMutation</code>).</li>
-<li>Powerful tools for pagination, infinite loading, and optimistic UI.</li>
-<li>DevTools for debugging.</li>
+<li>Use <strong>React Query DevTools</strong> to visualize cache states and query lifecycles.</li>
+<li>Create test query clients with controlled options (e.g. <code>retry: false</code>) to assert that invalidations happen as
+  expected.</li>
+<li>Write tests that check whether queries become invalidated after mutations.</li>
 </ul>
-<p>👉 Use it whenever your app relies heavily on <strong>server-side state</strong>.</p>
+<p>You can follow this <a href="../testing-debugging-in-tanstack-query/">documentation</a> for more details.</p>
+<hr />
+<h2 id="common-pitfalls-mitigations">Common Pitfalls &amp; Mitigations</h2>
+<h3 id="1-over-invalidation">1. Over-invalidation</h3>
+<p>Invalidating too broadly can lead to over-fetching. Use precise keys and avoid invalidating everything.</p>
+<h3 id="2-stale-while-revalidate-glitches">2. Stale-While-Revalidate Glitches</h3>
+<p>Users may briefly see stale data. Counter this by using <code>staleTime</code>, <code>keepPreviousData</code>, or optimistic updates.</p>
+<h3 id="3-memory-leaks">3. Memory Leaks</h3>
+<p>If <code>cacheTime</code> is too long and you keep many keys alive, memory usage may grow. Balance caching vs cleanup.</p>
+<h3 id="4-missed-invalidations">4. Missed Invalidations</h3>
+<p>One of the biggest risks is forgetting to invalidate dependent queries after a mutation. Use centralized logic or key
+factories to reduce that risk.</p>
+<hr />
+<h2 id="best-practices-for-scaling">Best Practices for Scaling</h2>
+<ol>
+<li>Maintain a <strong>consistent query key structure</strong> across your project.</li>
+<li>Use <strong>TypeScript-safe query keys</strong> (e.g. <code>as const</code>) to reduce typos.</li>
+<li>Create <strong>standard configurations</strong> (stale / cache / retry) for different categories of queries.</li>
+<li>Organize your directory structure for query-related code:</li>
+</ol>
+<pre><code>src/
+  queries/
+    keys/
+      userKeys.ts
+      todoKeys.ts
+    hooks/
+      user/
+        useUser.ts
+        useUserPosts.ts
+      todo/
+        useTodoList.ts
+        useUpdateTodo.ts
+    services/
+      invalidation/
+        userInvalidation.ts
+        todoInvalidation.ts
+  config/
+    queryConfig.ts
+    queryClient.ts
+</code></pre>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>Managing query keys and invalidation in React Query is challenging but manageable. The article recommends a progression
+from <strong>co-location → custom hooks → key factories → advanced options</strong>, combined with centralized invalidation,
+optimistic updates, and background refreshes. With these patterns, your caching logic can scale with your app without
+becoming fragile.</p>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.wisp.blog/blog/managing-query-keys-for-cache-invalidation-in-react-query">Managing Query Keys for Cache Invalidation in React Query — Wisp</a></li>
+<li><a href="https://tanstack.com/query/latest">React Query Documentation</a>  </li>
+</ul>
 
 
 
@@ -7749,10 +7607,10 @@ export default function Todos() {
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
