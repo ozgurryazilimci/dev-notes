@@ -1,4 +1,4 @@
-# TanStack React Query
+# TanStack Query
 
 TanStack React Query is a powerful library for **managing server state** in React applications. It simplifies data
 fetching, caching, synchronization, and updating while keeping your UI in sync with your backend APIs.
@@ -73,7 +73,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 ## 🔑 Core Concepts
 
-### 1. **Query**
+### 1. **useQuery**
 
 Queries are used to fetch and cache data.
 
@@ -105,9 +105,31 @@ export default function Users() {
 }
 ```
 
+Query keys can be simple or complex arrays to uniquely identify each query:
+
+```tsx
+// Simple query key
+useQuery({
+    queryKey: ['todos'],
+    queryFn: fetchTodos
+})
+
+// Query key with variables
+useQuery({
+    queryKey: ['todo', todoId],
+    queryFn: () => fetchTodoById(todoId)
+})
+
+// Complex query key with filters
+useQuery({
+    queryKey: ['todos', {status: 'done', userId: 1}],
+    queryFn: () => fetchTodosByFilter({status: 'done', userId: 1})
+})
+```
+
 ---
 
-### 2. **Mutation**
+### 2. **useMutation**
 
 Mutations are used to create, update, or delete data.
 
@@ -143,7 +165,7 @@ export default function AddUser() {
 
 ---
 
-### 3. **Query Invalidation**
+### 3. **invalidateQueries**
 
 Keeps cache fresh by refetching queries.
 
@@ -163,6 +185,9 @@ queryClient.invalidateQueries({queryKey: ['users']})
 ```tsx
 const {data, isLoading, isError, error, isFetching} = useQuery({...})
 ```
+
+For all other states, refer to
+the [official docs](https://tanstack.com/query/latest/docs/framework/react/reference/useQuery).
 
 ---
 
@@ -219,7 +244,7 @@ const [userResult, postsResult] = results
 
 ---
 
-### 7. **Suspended Queries (useSuspenseQueries)**
+### 7. **useSuspenseQueries**
 
 - Same as useQueries but with Suspense.
 
@@ -347,30 +372,6 @@ Next mount → API fetch again
 - `staleTime` → How long data is considered fresh.
 - `cacheTime` → How long inactive data remains in memory.
 - **Stale ≠ deleted**: stale means “old but cached”. Deleted happens only after `cacheTime`.
-
----
-
-### 11. **DevTools**
-
-For Chrome, Firefox, and Edge users: Third-party browser extensions are available for debugging TanStack Query directly
-in browser DevTools. These provide the same functionality as the framework-specific devtools packages:
-
-- [Chrome logo Devtools for Chrome](https://chromewebstore.google.com/detail/tanstack-query-devtools/annajfchloimdhceglpgglpeepfghfai)
-- [Firefox logo Devtools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tanstack-query-devtools/)
-- [Edge logo Devtools for Edge](https://microsoftedge.microsoft.com/addons/detail/tanstack-query-devtools/edmdpkgkacmjopodhfolmphdenmddobj)
-
-```tsx
-import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
-
-function App() {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <MyComponents/>
-            <ReactQueryDevtools initialIsOpen={false}/>
-        </QueryClientProvider>
-    )
-}
-```
 
 ---
 
@@ -527,15 +528,3 @@ export default function Todos() {
 
 - [TanStack Official Docs](https://tanstack.com/query/latest)
 - [TanStack GitHub](https://github.com/TanStack/query)
-- [DevTools](https://tanstack.com/query/v5/docs/framework/react/devtools)
-
----
-
-## ✅ Summary
-
-- Data fetching + caching + syncing out of the box.
-- Simple hooks (`useQuery`, `useMutation`).
-- Powerful tools for pagination, infinite loading, and optimistic UI.
-- DevTools for debugging.
-
-👉 Use it whenever your app relies heavily on **server-side state**.
