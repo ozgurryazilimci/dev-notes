@@ -275,6 +275,13 @@ This is useful when you only want to work on a **specific app or package** witho
 
 ---
 
+## Pnpm Integration
+
+If you use **pnpm** as your package manager, you can follow this document for additional setup and commands:
+[PNPM](../../frontend/package-managers/pnpm.md)
+
+---
+
 ## Advanced Features
 
 - **Remote Caching**: Share task results across machines/CI to speed up builds.

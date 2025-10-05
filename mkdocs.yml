@@ -93,10 +93,11 @@ nav:
                   - Codestyle Introduction: backend/java/coding-standards/codestyle/codestyle-introduction.md
                   - Codestyle IntelliJ IDEA Installation: backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation.md
   - Frontend:
-      - Node.js:
-          - Nvm & Npm: frontend/nodejs/nvm-npm.md
-          - Yarn: frontend/nodejs/yarn.md
-          - Npm To Yarn Cheatsheet: frontend/nodejs/npm-to-yarn-cheatsheet.md
+      - Package Managers:
+          - Nvm & Npm: frontend/package-managers/nvm-npm.md
+          - Yarn: frontend/package-managers/yarn.md
+          - Npm To Yarn Cheatsheet: frontend/package-managers/npm-to-yarn-cheatsheet.md
+          - Pnpm: frontend/package-managers/pnpm.md
   - Mobile:
       - Android:
           - Android Firebase Integration: mobile/android/android-firebase-integration.md
