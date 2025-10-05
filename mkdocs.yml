@@ -130,6 +130,7 @@ nav:
               - Testing & Debugging In TanStack Query: mobile/react-native/tanstack/testing-debugging-in-tanstack-query.md
           - UX Pilot: mobile/react-native/ux-pilot.md
           - shadcn/ui: mobile/react-native/shadcn-ui.md
+          - Turborepo: mobile/react-native/turborepo.md
   - Devops:
       - Docker:
           - Docker Introduction: devops/docker/docker-introduction.md
