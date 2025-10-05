@@ -389,7 +389,7 @@ A: Use Tailwind classes or enable `cssVariables` in `components.json`.
 
 ---
 
-### References
+## References
 
 - [shadcn on X](https://x.com/shadcn)
 - [shadcn/ui Changelog](https://ui.shadcn.com/docs/changelog)

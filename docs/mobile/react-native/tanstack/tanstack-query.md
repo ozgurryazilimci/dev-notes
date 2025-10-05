@@ -377,7 +377,7 @@ Next mount → API fetch again
 
 ## ⚡ Advanced Features
 
-### ✅ Refetching
+### Refetching
 
 ```tsx
 useQuery({
@@ -388,7 +388,7 @@ useQuery({
 })
 ```
 
-### ✅ Caching
+### Caching
 
 ```tsx
 useQuery({
@@ -399,7 +399,7 @@ useQuery({
 })
 ```
 
-### ✅ Pagination & Infinite Queries
+### Pagination & Infinite Queries
 
 ```tsx
 import {useInfiniteQuery} from '@tanstack/react-query'
@@ -438,7 +438,7 @@ export default function Posts() {
 }
 ```
 
-### ✅ Optimistic Updates
+### Optimistic Updates
 
 ```tsx
 const mutation = useMutation({
@@ -462,7 +462,7 @@ const mutation = useMutation({
 })
 ```
 
-### ✅ Typescript Support
+### Typescript Support
 
 👉 In modern React Query with TypeScript, you often don’t need useEffect to react to query changes. Why?
 
