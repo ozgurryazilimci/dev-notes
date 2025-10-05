@@ -97,6 +97,18 @@
          <lastmod>2025-10-05</lastmod>
     </url>
     <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-config/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-container-services/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-directory-service/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
          <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-dynamodb/</loc>
          <lastmod>2025-10-05</lastmod>
     </url>
@@ -125,6 +137,26 @@
          <lastmod>2025-10-05</lastmod>
     </url>
     <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-kinesis/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-kms/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-lambda-and-api-gateway/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-opsworks/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-organizations/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
          <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-rds/</loc>
          <lastmod>2025-10-05</lastmod>
     </url>
@@ -145,11 +177,19 @@
          <lastmod>2025-10-05</lastmod>
     </url>
     <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-snowball/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
          <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-sns/</loc>
          <lastmod>2025-10-05</lastmod>
     </url>
     <url>
          <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-sqs/</loc>
+         <lastmod>2025-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://notes.ozguryazilimci.com/devops/cloud/aws/aws-services/aws-storage-gateway/</loc>
          <lastmod>2025-10-05</lastmod>
     </url>
     <url>
