@@ -250,22 +250,29 @@ nav:
                   - Loco Translate Plugin: freelance/website/wordpress/plugins/loco-translate-plugin.md
                   - WooCommerce Plugin: freelance/website/wordpress/plugins/woocommerce-plugin.md
   - Tools:
-      - Editor:
-          - IntelliJ IDEA: tools/editor/intellij.md
-          - Visual Studio Code: tools/editor/vscode.md
-      - Slack:
-          - Slack Reminder: tools/slack/slack-reminder.md
-          - Slack Message: tools/slack/slack-message.md
-          - Slack User Group Creation: tools/slack/slack-user-group-creation.md
-          - Slack GitHub Workflows: tools/slack/slack-github-workflows.md
+      - API Tools:
+          - Apicurio via Docker: tools/api-tools/apicurio-via-docker.md
+          - BloomRPC: tools/api-tools/bloomrpc.md
+      - Automation:
+          - Multi-Gitter: tools/automation/multi-gitter.md
+          - n8n: tools/automation/n8n.md
+      - Communication:
+          - Slack:
+              - Slack Reminder: tools/communication/slack/slack-reminder.md
+              - Slack Message: tools/communication/slack/slack-message.md
+              - Slack User Group Creation: tools/communication/slack/slack-user-group-creation.md
+              - Slack GitHub Workflows: tools/communication/slack/slack-github-workflows.md
+      - Data Tools:
+          - KafkaUI via Docker: tools/data-tools/kafkaui-via-docker.md
+      - Editors:
+          - IntelliJ IDEA: tools/editors/intellij.md
+          - Visual Studio Code: tools/editors/vscode.md
+      - Virtualization:
+          - Multipass: tools/virtualization/multipass.md
+          - Windows on Mac via UTM: tools/virtualization/windows-on-mac-via-utm.md
+      - Miscellaneous:
+          - Android File Transfer: tools/miscellaneous/android-file-transfer.md
       - Chrome Extensions: tools/chrome-extensions.md
-      - Apicurio via Docker: tools/apicurio-via-docker.md
-      - KafkaUI via Docker: tools/kafkaui-via-docker.md
-      - Multi-Gitter: tools/multi-gitter.md
-      - Multipass: tools/multipass.md
-      - BloomRPC: tools/bloomrpc.md
-      - Windows on Mac via UTM: tools/windows-on-mac-via-utm.md
-      - Android File Transfer: tools/android-file-transfer.md
       - Useful Resources & Tools: tools/useful-resources-tools.md
   - Other:
       - Modem Admin & Wi-Fi Passwords: other/modem-admin-wifi-passwords.md
