@@ -22,7 +22,7 @@ gives you building blocks to create custom designs.
 
 - [Node.js](https://nodejs.org/) installed (`brew install node` on macOS)
 - Git installed
-- A code editor like [VS Code](../../tools/editor/vscode.md)
+- A code editor like [VS Code](../../tools/editors/vscode.md)
 
 ### Installation Steps
 

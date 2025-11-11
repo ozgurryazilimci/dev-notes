@@ -147,7 +147,7 @@ A curated list of tools, platforms, and resources useful for developers and tech
 - [PyCharm](https://www.jetbrains.com/pycharm/) – Jetbrains IDE for Python development.
 - [XCode](https://developer.apple.com/xcode/) - IDE for iOS and macOS development.
 - [Chucker](https://github.com/ChuckerTeam/chucker) - HTTP inspector for Android.
-- [BloomRPC](bloomrpc.md) - GUI client for gRPC services.
+- [BloomRPC](api-tools/bloomrpc.md) - GUI client for gRPC services.
 
 ## AI & Chat Tools
 
@@ -159,12 +159,12 @@ A curated list of tools, platforms, and resources useful for developers and tech
 - [Split.io](https://split.io/) – Feature flagging and experimentation platform.
 - [Keybase](https://keybase.io/) – Secure messaging and file-sharing platform.
 - [act](https://nektosact.com/usage/runners.html) – Run GitHub Actions workflows locally.
-- [Multi Gitter](multi-gitter.md) – Tool to apply changes across multiple GitHub repositories.
-- [Apicurio](apicurio-via-docker.md) - API design and documentation tool.
-- [KafkaUI](kafkaui-via-docker.md) - Web-based UI for managing Apache Kafka clusters.
-- [Multipass](multipass.md) - Lightweight Ubuntu VMs for development and testing.
-- [UTM](windows-on-mac-via-utm.md) - Run Windows on Mac using UTM virtualization.
-- [Android File Transfer](android-file-transfer.md) - Transfer files between Android and Mac.
+- [Multi Gitter](automation/multi-gitter.md) – Tool to apply changes across multiple GitHub repositories.
+- [Apicurio](api-tools/apicurio-via-docker.md) - API design and documentation tool.
+- [KafkaUI](data-tools/kafkaui-via-docker.md) - Web-based UI for managing Apache Kafka clusters.
+- [Multipass](virtualization/multipass.md) - Lightweight Ubuntu VMs for development and testing.
+- [UTM](virtualization/windows-on-mac-via-utm.md) - Run Windows on Mac using UTM virtualization.
+- [Android File Transfer](miscellaneous/android-file-transfer.md) - Transfer files between Android and Mac.
 
 ## Coding Practice & Interview Preparation
 
