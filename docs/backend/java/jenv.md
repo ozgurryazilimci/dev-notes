@@ -5,7 +5,7 @@ jEnv is a command line tool to help you forget how to set the JAVA_HOME environm
 
 ---
 
-## 1. Install jEnv
+## Install jEnv
 
 ```bash
 brew install jenv
@@ -13,7 +13,7 @@ brew install jenv
 
 ---
 
-## 2. Configure your shell
+## Configure your shell
 
 Add jEnv to your shell environment:
 
@@ -35,7 +35,7 @@ source ~/.zshrc # Reload the shell
 
 ---
 
-## 3. Enable the export plugin
+## Enable the export plugin
 
 Enable plugins to automatically set `JAVA_HOME` and integrate with Maven:
 
@@ -51,7 +51,7 @@ Restart your shell:
 exec $SHELL -l
 ```
 
-## 4. Add JDKs/JREs
+## Add JDKs/JREs
 
 Make sure the paths match the JDKs you have installed.
 
@@ -64,7 +64,7 @@ jenv add /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
 
 ---
 
-## 5. List managed JDKs
+## List managed JDKs
 
 ```bash
 $ jenv versions
@@ -75,7 +75,7 @@ $ jenv versions
 
 ---
 
-## 6. Configure global version
+## Configure global version
 
 ```bash
 jenv global oracle64-1.6.0.39
@@ -83,7 +83,7 @@ jenv global oracle64-1.6.0.39
 
 ---
 
-## 7. Configure local version (per directory)
+## Configure local version (per directory)
 
 ```bash
 jenv local oracle64-1.6.0.39
@@ -91,7 +91,7 @@ jenv local oracle64-1.6.0.39
 
 ---
 
-## 8. Configure shell instance version
+## Configure shell instance version
 
 ```bash
 jenv shell oracle64-1.6.0.39
@@ -99,7 +99,7 @@ jenv shell oracle64-1.6.0.39
 
 ---
 
-## 9. Verify
+## Verify
 
 Verify the current jenv version:
 

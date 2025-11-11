@@ -92,6 +92,9 @@ nav:
               - Codestyle:
                   - Codestyle Introduction: backend/java/coding-standards/codestyle/codestyle-introduction.md
                   - Codestyle IntelliJ IDEA Installation: backend/java/coding-standards/codestyle/codestyle-intellij-idea-installation.md
+      - Python:
+          - Python Installation: backend/python/python-installation.md
+          - Pyenv: backend/python/pyenv.md
   - Frontend:
       - Package Managers:
           - Nvm & Npm: frontend/package-managers/nvm-npm.md

@@ -110,6 +110,8 @@ actions.
 | **Expressions**     | Use JS logic directly inside node parameters.                    |
 | **Custom Node SDK** | Build & publish your own node packages.                          |
 
+> You can pin output data from any node to use it for test executions or debugging.
+
 ---
 
 ## 🧰 Resources
