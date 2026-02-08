@@ -81,6 +81,9 @@ nav:
   - Backend:
       - Maven:
           - Maven Wrapper: backend/maven/maven-wrapper.md
+          - Maven Project Setup: backend/maven/maven-project-setup.md
+      - Gradle:
+          - Gradle Project Setup: backend/gradle/gradle-project-setup.md
       - Java:
           - Jenv: backend/java/jenv.md
           - Sdkman: backend/java/sdkman.md
@@ -95,6 +98,9 @@ nav:
       - Python:
           - Python Installation: backend/python/python-installation.md
           - Pyenv: backend/python/pyenv.md
+      - Spring:
+          - Spring Test:
+              - Spring Boot Testing Guide: backend/spring/test/spring-boot-testing-guide.md
   - Frontend:
       - Package Managers:
           - Nvm & Npm: frontend/package-managers/nvm-npm.md
