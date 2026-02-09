@@ -29,36 +29,37 @@ Below is a sample **Gradle project** using Spring Boot and Java 21.
 
 ```groovy
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.5.4'
-    id 'io.spring.dependency-management' version '1.1.6'
+  id 'java'
+  id 'org.springframework.boot' version '3.5.4'
+  id 'io.spring.dependency-management' version '1.1.6'
 }
 
 group = 'com.example'
 version = '1.0.0-SNAPSHOT'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
 
-    implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 ```
+
 </details>
 
 ---
@@ -75,9 +76,77 @@ To enable Swagger UI and OpenAPI documentation, add the following dependency:
 
 ```groovy
 dependencies {
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+  implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 }
 ```
+
+Swagger UI and OpenAPI endpoints will be available at  
+`/swagger-ui/index.html` and `/v3/api-docs`.
+
+Legacy Swagger support using Springfox can be added with:
+
+```groovy
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '2.2.2.RELEASE'
+  id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+}
+
+group 'com.example'
+version '1.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+
+  // spring boot
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+
+  implementation 'io.springfox:springfox-swagger2:2.9.2'
+  implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+  //test
+  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
+```
+
+```java
+package com.example.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+
+  @Bean
+  public Docket api() {
+    return new Docket(DocumentationType.SWAGGER_2)
+        .select()
+        .apis(RequestHandlerSelectors.basePackage("com.example"))
+        .paths(PathSelectors.any())
+        .build();
+  }
+}
+```
+
+Then you can use `@Api(tags = "Orders")` and `@ApiOperation("Create a new order")` annotations in your controllers to
+enhance the documentation.
 
 Swagger UI and OpenAPI endpoints will be available at  
 `/swagger-ui.html` and `/v3/api-docs`.
@@ -90,7 +159,7 @@ To add SLF4J API for logging abstraction:
 
 ```groovy
 dependencies {
-    implementation 'org.slf4j:slf4j-api'
+  implementation 'org.slf4j:slf4j-api'
 }
 ```
 
@@ -169,9 +238,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class, args);
+  }
 }
 ```
 

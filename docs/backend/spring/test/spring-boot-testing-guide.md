@@ -200,6 +200,72 @@ class OrderIntegrationTest {
 }
 ```
 
+```java
+package com.example.presentation.rest;
+
+import com.example.application.order.OrderService;
+import com.example.application.order.command.CreateOrderCommand;
+import com.example.application.order.result.OrderResult;
+import com.example.presentation.rest.OrderController;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.math.BigDecimal;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@WebMvcTest(OrderController.class)
+class OrderControllerTest {
+
+  @Autowired
+  private MockMvc mockMvc;
+
+  @MockBean
+  private OrderService orderService;
+
+  @Autowired
+  private ObjectMapper objectMapper;
+
+  // ---------- CREATE ORDER TEST ----------
+
+  @Test
+  void should_create_order_successfully() throws Exception {
+    // given
+    CreateOrderCommand command = new CreateOrderCommand(
+        "customer-123",
+        BigDecimal.valueOf(250.0)
+    );
+
+    OrderResult result = new OrderResult(
+        1L,
+        "customer-123",
+        BigDecimal.valueOf(250.0),
+        "CREATED"
+    );
+
+    when(orderService.createOrder(any(CreateOrderCommand.class))).thenReturn(result);
+
+    // when & then
+    mockMvc.perform(post("/orders")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(command)))
+           .andExpect(status().isOk())
+           .andExpect(jsonPath("$.id").value(1L))
+           .andExpect(jsonPath("$.status").value("CREATED"))
+           .andExpect(jsonPath("$.customerId").value("customer-123"))
+           .andExpect(jsonPath("$.amount").value(250.0));
+  }
+}
+```
+
 ---
 
 ### Key Points
