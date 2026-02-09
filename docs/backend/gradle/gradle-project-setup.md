@@ -276,7 +276,7 @@ class ApplicationTests {
 | 8.0 – 8.x      | 8                    | 21                   | Latest Java 21 support                |
 | 9.x (future)   | 11                   | TBD                  | Planned future support for newer Java |
 
-### Notes:
+**Notes:**
 
 - Gradle supports running on higher Java versions, but **some plugins or tasks may not work** if the Gradle version is
   too old.
