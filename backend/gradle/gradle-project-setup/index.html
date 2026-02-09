@@ -1665,6 +1665,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gradle-and-java-version-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradle and Java Version Compatibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradle and Java Version Compatibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -8049,6 +8073,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gradle-and-java-version-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradle and Java Version Compatibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradle and Java Version Compatibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -8291,6 +8339,52 @@ class ApplicationTests {
   }
 }
 </code></pre>
+<hr />
+<h2 id="gradle-and-java-version-compatibility">Gradle and Java Version Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Gradle Version</th>
+<th>Minimum Java Version</th>
+<th>Maximum Java Version</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 – 6.9</td>
+<td>8</td>
+<td>14</td>
+<td>Java 14 requires Gradle 6.7+</td>
+</tr>
+<tr>
+<td>7.0 – 7.5</td>
+<td>8</td>
+<td>17</td>
+<td>Gradle 7.3+ fully supports Java 17</td>
+</tr>
+<tr>
+<td>8.0 – 8.x</td>
+<td>8</td>
+<td>21</td>
+<td>Latest Java 21 support</td>
+</tr>
+<tr>
+<td>9.x (future)</td>
+<td>11</td>
+<td>TBD</td>
+<td>Planned future support for newer Java</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes">Notes:</h3>
+<ul>
+<li>Gradle supports running on higher Java versions, but <strong>some plugins or tasks may not work</strong> if the Gradle version is
+  too old.</li>
+<li>Always check the <a href="https://docs.gradle.org/current/release-notes.html">Gradle Release Notes</a> for detailed Java
+  compatibility.</li>
+<li>Spring Boot 3.x requires <strong>Java 17+</strong>, so Gradle 7.3+ is recommended for full support.</li>
+</ul>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
