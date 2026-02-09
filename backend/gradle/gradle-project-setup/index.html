@@ -8096,36 +8096,37 @@ It uses Groovy or Kotlin DSL scripts to define:</p>
 
 
 <pre><code class="language-groovy">plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.5.4'
-    id 'io.spring.dependency-management' version '1.1.6'
+  id 'java'
+  id 'org.springframework.boot' version '3.5.4'
+  id 'io.spring.dependency-management' version '1.1.6'
 }
 
 group = 'com.example'
 version = '1.0.0-SNAPSHOT'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
 
-    implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 </code></pre>
+
 
 </details>
 
@@ -8136,16 +8137,77 @@ tasks.named('test') {
 <h3 id="swagger-openapi-support">Swagger (OpenAPI) Support</h3>
 <p>To enable Swagger UI and OpenAPI documentation, add the following dependency:</p>
 <pre><code class="language-groovy">dependencies {
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+  implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 }
 </code></pre>
+<p>Swagger UI and OpenAPI endpoints will be available at<br />
+<code>/swagger-ui/index.html</code> and <code>/v3/api-docs</code>.</p>
+<p>Legacy Swagger support using Springfox can be added with:</p>
+<pre><code class="language-groovy">plugins {
+  id 'java'
+  id 'org.springframework.boot' version '2.2.2.RELEASE'
+  id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+}
+
+group 'com.example'
+version '1.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+
+  // spring boot
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+
+  implementation 'io.springfox:springfox-swagger2:2.9.2'
+  implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+  //test
+  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
+</code></pre>
+<pre><code class="language-java">package com.example.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+
+  @Bean
+  public Docket api() {
+    return new Docket(DocumentationType.SWAGGER_2)
+        .select()
+        .apis(RequestHandlerSelectors.basePackage(&quot;com.example&quot;))
+        .paths(PathSelectors.any())
+        .build();
+  }
+}
+</code></pre>
+<p>Then you can use <code>@Api(tags = "Orders")</code> and <code>@ApiOperation("Create a new order")</code> annotations in your controllers to
+enhance the documentation.</p>
 <p>Swagger UI and OpenAPI endpoints will be available at<br />
 <code>/swagger-ui.html</code> and <code>/v3/api-docs</code>.</p>
 <hr />
 <h3 id="logging-support-slf4j">Logging Support (SLF4J)</h3>
 <p>To add SLF4J API for logging abstraction:</p>
 <pre><code class="language-groovy">dependencies {
-    implementation 'org.slf4j:slf4j-api'
+  implementation 'org.slf4j:slf4j-api'
 }
 </code></pre>
 <p>Spring Boot already provides a default logging implementation (Logback), so no additional configuration is required.</p>
@@ -8208,9 +8270,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class, args);
+  }
 }
 </code></pre>
 <hr />

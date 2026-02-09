@@ -8351,6 +8351,70 @@ class OrderIntegrationTest {
   }
 }
 </code></pre>
+<pre><code class="language-java">package com.example.presentation.rest;
+
+import com.example.application.order.OrderService;
+import com.example.application.order.command.CreateOrderCommand;
+import com.example.application.order.result.OrderResult;
+import com.example.presentation.rest.OrderController;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.math.BigDecimal;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@WebMvcTest(OrderController.class)
+class OrderControllerTest {
+
+  @Autowired
+  private MockMvc mockMvc;
+
+  @MockBean
+  private OrderService orderService;
+
+  @Autowired
+  private ObjectMapper objectMapper;
+
+  // ---------- CREATE ORDER TEST ----------
+
+  @Test
+  void should_create_order_successfully() throws Exception {
+    // given
+    CreateOrderCommand command = new CreateOrderCommand(
+        &quot;customer-123&quot;,
+        BigDecimal.valueOf(250.0)
+    );
+
+    OrderResult result = new OrderResult(
+        1L,
+        &quot;customer-123&quot;,
+        BigDecimal.valueOf(250.0),
+        &quot;CREATED&quot;
+    );
+
+    when(orderService.createOrder(any(CreateOrderCommand.class))).thenReturn(result);
+
+    // when &amp; then
+    mockMvc.perform(post(&quot;/orders&quot;)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(command)))
+           .andExpect(status().isOk())
+           .andExpect(jsonPath(&quot;$.id&quot;).value(1L))
+           .andExpect(jsonPath(&quot;$.status&quot;).value(&quot;CREATED&quot;))
+           .andExpect(jsonPath(&quot;$.customerId&quot;).value(&quot;customer-123&quot;))
+           .andExpect(jsonPath(&quot;$.amount&quot;).value(250.0));
+  }
+}
+</code></pre>
 <hr />
 <h3 id="key-points_2">Key Points</h3>
 <ul>
