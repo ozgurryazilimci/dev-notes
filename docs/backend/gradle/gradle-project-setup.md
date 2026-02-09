@@ -267,6 +267,25 @@ class ApplicationTests {
 
 ---
 
+## Gradle and Java Version Compatibility
+
+| Gradle Version | Minimum Java Version | Maximum Java Version | Notes                                 |
+|----------------|----------------------|----------------------|---------------------------------------|
+| 6.0 – 6.9      | 8                    | 14                   | Java 14 requires Gradle 6.7+          |
+| 7.0 – 7.5      | 8                    | 17                   | Gradle 7.3+ fully supports Java 17    |
+| 8.0 – 8.x      | 8                    | 21                   | Latest Java 21 support                |
+| 9.x (future)   | 11                   | TBD                  | Planned future support for newer Java |
+
+### Notes:
+
+- Gradle supports running on higher Java versions, but **some plugins or tasks may not work** if the Gradle version is
+  too old.
+- Always check the [Gradle Release Notes](https://docs.gradle.org/current/release-notes.html) for detailed Java
+  compatibility.
+- Spring Boot 3.x requires **Java 17+**, so Gradle 7.3+ is recommended for full support.
+
+---
+
 ## Summary
 
 - Gradle uses `build.gradle` instead of `pom.xml`
