@@ -282,6 +282,8 @@ nav:
       - Virtualization:
           - Multipass: tools/virtualization/multipass.md
           - Windows on Mac via UTM: tools/virtualization/windows-on-mac-via-utm.md
+      - Productivity Tools:
+          - Productivity Tools Comparison: tools/productivity-tools/productivity-tools-comparison.md
       - Miscellaneous:
           - Android File Transfer: tools/miscellaneous/android-file-transfer.md
       - Chrome Extensions: tools/chrome-extensions.md
