@@ -76,6 +76,7 @@ nav:
       - PostgreSQL:
           - PostgreSQL Cheatsheet: database/postgresql/postgresql-cheatsheet.md
           - PostgreSQL JSONB Operations: database/postgresql/postgresql-jsonb-operations.md
+          - PostgreSQL Streaming Sequin: database/postgresql/postgres-streaming-sequin.md
       - Tools:
           - Sequel Ace: database/tools/sequel-ace.md
   - Backend:
