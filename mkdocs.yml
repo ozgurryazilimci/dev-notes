@@ -152,6 +152,8 @@ nav:
           - Dockerfile: devops/docker/dockerfile.md
           - Docker Compose: devops/docker/docker-compose.md
           - Docker Swarm: devops/docker/docker-swarm.md
+      - Podman:
+          - Podman Introduction: devops/podman/podman-introduction.md
       - Kubernetes:
           - Kubernetes Introduction: devops/kubernetes/kubernetes-introduction.md
           - Kubernetes Installation: devops/kubernetes/kubernetes-installation.md
